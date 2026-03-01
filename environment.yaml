@@ -1,0 +1,19 @@
+name: flu-ha-trees-mhcII-binding
+
+channels:
+  - conda-forge
+  - bioconda
+
+dependencies:
+  - altair=6.0
+  - augur=33.0
+  - black
+  - mamba
+  - marimo=0.20
+  - ncbi-datasets-cli=18.18
+  - pandas=2.3
+  - pip
+  - python=3.13
+  - snakefmt
+  - snakemake=9.16
+  - ruff
