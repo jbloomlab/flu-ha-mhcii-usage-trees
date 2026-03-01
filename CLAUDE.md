@@ -15,3 +15,21 @@
 
 ## Code linting and formatting
 After every change, run `snakefmt`, `snakemake --lint`, `black`, and `ruff` for formatting and linting.
+
+## Pipeline rules
+
+### `get_ncbi_dataset_zip`
+Downloads all Influenza A virus sequences from NCBI using `datasets download virus genome taxon` (taxon ID in `config.yaml`). Includes genome, CDS, annotation, and biosample data. Outputs a zip file and a datestamp recording the download date.
+
+The zip contains:
+- `data_report.jsonl`: per-record metadata (accession, virus name with subtype, segment number, collection date, location, host, completeness)
+- `annotation_report.jsonl`: per-gene annotation with gene name (e.g., "HA"), CDS name, and CDS FASTA sequence IDs
+- `cds.fna`: nucleotide CDS FASTA with both full CDSs (e.g., "hemagglutinin") and mature peptide fragments (HA1, HA2, sig_peptide). Headers have format `>accession:start-end name [polyprotein=...] [organism=...]`
+- `genomic.fna`: full segment nucleotide sequences
+- `biosample_report.jsonl`: BioSample metadata
+
+To parse full-length HA CDSs by subtype downstream:
+- Filter `cds.fna` for full CDS entries (name "hemagglutinin", not HA1/HA2/sig_peptide fragments)
+- Use `data_report.jsonl` field `segment` ("4" = HA) and `virus.organismName` or `virus.lineage` for subtype
+- Use `annotation_report.jsonl` field `gene-name` ("HA") and `gene-cds-nuc-fasta-seq-id` to match CDS FASTA entries
+- `dataformat tsv virus-genome --package <zip>` and `dataformat tsv virus-annotation --package <zip>` convert reports to TSV

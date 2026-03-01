@@ -1,7 +1,7 @@
 [project]
-name = ""flu-ha-trees-mhcII-binding
+name = "flu-ha-trees-mhcII-binding"
 version = "0.1"
-description = "Phylogenetic trees of influenza hemagglutinin labeled by MHC II binding"
+description = "Phylogenetic trees of influenza hemagglutinin annotated by MHC II binding"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
@@ -10,8 +10,8 @@ authors = [
 requires-python = ">=3.13"
 
 [project.urls]
-Homepage = ""https://github.com/jbloomlab/flu-ha-trees-mhcII-binding"
-Repository = ""https://github.com/jbloomlab/flu-ha-trees-mhcII-binding"
+Homepage = "https://github.com/jbloomlab/flu-ha-trees-mhcII-binding"
+Repository = "https://github.com/jbloomlab/flu-ha-trees-mhcII-binding"
 Issues = "https://github.com/jbloomlab/flu-ha-trees-mhcII-binding/issues"
 
 [tool.ruff]

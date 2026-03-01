@@ -1,4 +1,4 @@
-# Phylogenetic trees of influenza hemagglutinin labeled by MHC II binding
+# Phylogenetic trees of influenza hemagglutinin annotated by MHC II binding
 Build interactive Nextstrain phylogenetic trees of influenza HA from different subtypes and annotate by MHC II binding.
 Trees are built and maintained by the [Bloom lab](https://jbloomlab.org/).
 
@@ -16,3 +16,11 @@ Structure of repo:
 To run the pipeline, build and activate the conda environment in [environment.yaml](environment.yaml), and then run:
 
     snakemake --software-deployment-method conda -j <n_cpus>
+
+## Steps in pipeline
+
+### `get_ncbi_dataset_zip`: Download influenza sequences from GenBank
+Download all Influenza A virus sequences and metadata from GenBank using `ncbi-datasets-cli`.
+The download includes genomic sequences, CDS nucleotide sequences, gene annotations, and BioSample metadata as a single zip archive.
+The taxon ID for the downloaded sequences is specified in [config.yaml](config.yaml) as *datasets_taxid*.
+A datestamp file in [results/ncbi_dataset](results/ncbi_dataset) records the download date.

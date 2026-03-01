@@ -1,1 +1,9 @@
-results
+.*
+!.git*
+_*
+*.out
+
+results/*
+!results/ncbi_dataset/
+results/ncbi_dataset/*
+!results/ncbi_dataset/*_download_date.txt
