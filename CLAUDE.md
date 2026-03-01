@@ -44,3 +44,11 @@ Outputs per tree:
 - `results/{tree}/ha_metadata_all.tsv`: columns are `accession`, `strain`, `subtype`, `date`, `host`, `host_common_name`, `location`, `region`, `passage_history`, `length`
 - `results/{tree}/ha_cds_all.fasta.gz`: gzipped full-length HA CDS nucleotide FASTA keyed by accession
 - `results/{tree}/extract_ha_cds_stats.txt`: extraction statistics (subtype counts, filtering counts, CDS length distribution)
+
+### `subsample`
+Per-subtype rule that subsamples HA sequences using `augur subsample`. The subsampling configuration is defined per tree in `config["trees"][tree]["augur_subsample"]` and follows the `augur subsample` YAML config schema (with `defaults` and/or `samples` sections). The config is written to a YAML file at runtime and passed via `--config`. Uses `--metadata-id-columns accession` to match the metadata format. A fixed `--seed 1` ensures reproducibility. The `include_exclude_files` input collects any `include`/`exclude` file paths from the config so Snakemake tracks them as dependencies.
+
+Outputs per tree:
+- `results/{tree}/ha_metadata_subsampled.tsv`: subsampled metadata
+- `results/{tree}/ha_cds_subsampled.fasta`: subsampled HA CDS nucleotide FASTA
+- `results/{tree}/subsample_config.yaml`: the augur subsample YAML config used

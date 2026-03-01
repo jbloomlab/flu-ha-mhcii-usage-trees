@@ -19,8 +19,8 @@ CDS length distribution (n=75767):
   90th percentile: 1701
   99th percentile: 1701
   99.9th percentile: 1701
-CDS length range filter [1698, 1704]:
-  dropped too short (<1698): 1623
+CDS length range filter [1695, 1704]:
+  dropped too short (<1695): 1546
   dropped too long (>1704): 5
-  kept: 74139 of 75767
-Written 74139 HA CDS sequences for 'H3N\d{1,2}'
+  kept: 74216 of 75767
+Written 74216 HA CDS sequences for 'H3N\d{1,2}'

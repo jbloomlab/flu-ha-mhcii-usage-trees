@@ -1,0 +1,7 @@
+samples:
+  subsample_all:
+    exclude_ambiguous_dates_by: month
+    group_by:
+    - year
+    - region
+    max_sequences: 2000

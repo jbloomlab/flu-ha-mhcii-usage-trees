@@ -33,3 +33,8 @@ This processes the large zip once so downstream per-subtype rules can work from 
 For each tree defined in [config.yaml](config.yaml), extract full-length hemagglutinin (HA) coding sequences and associated metadata.
 Subtypes are parsed from genomic FASTA headers and filtered by the `subtype` regex in the config (e.g., `H5N\d{1,2}` for all H5Nx) and the `cds_length_range` specifying the sequence length in the config; note also we drop any sequences with ambiguous nucleotides, missing dates, or that are not valid coding sequences.
 Outputs per-tree FASTA and metadata TSV files in `results/{tree}/`.
+
+### `subsample`: Subsample sequences per subtype
+Subsample the HA sequences for each tree using [augur subsample](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/subsample.html).
+The subsampling strategy (grouping, max sequences, date filtering, include/exclude lists) is configured per tree in [config.yaml](config.yaml) under `augur_subsample`.
+Outputs subsampled FASTA and metadata TSV files in `results/{tree}/`.

@@ -1,5 +1,7 @@
 """Snakemake file that runs analysis."""
 
+import yaml
+
 
 configfile: "config.yaml"
 
@@ -9,9 +11,8 @@ rule all:
         "results/ncbi_dataset/ncbi_dataset_download_date.txt",
         expand(
             [
-                "results/{tree}/ha_metadata_all.tsv",
-                "results/{tree}/ha_cds_all.fasta.gz",
-                "results/{tree}/extract_ha_cds_stats.txt",
+                "results/{tree}/ha_metadata_subsampled.tsv",
+                "results/{tree}/ha_cds_subsampled.fasta",
             ],
             tree=config["trees"],
         ),
@@ -75,11 +76,60 @@ rule extract_ha_cds:
         fasta="results/{tree}/ha_cds_all.fasta.gz",
         stats="results/{tree}/extract_ha_cds_stats.txt",
     params:
-        subtype_regex=lambda w: config["trees"][w.tree]["subtype"],
-        cds_length_range=lambda w: config["trees"][w.tree]["cds_length_range"],
+        subtype_regex=lambda wc: config["trees"][wc.tree]["subtype"],
+        cds_length_range=lambda wc: config["trees"][wc.tree]["cds_length_range"],
     log:
         "results/logs/extract_ha_cds_{tree}.txt",
     conda:
         "environment.yaml"
     script:
         "scripts/extract_ha_cds.py"
+
+
+rule subsample:
+    """Subsample the HAs for a tree using augur subsample."""
+    input:
+        sequences=rules.extract_ha_cds.output.fasta,
+        metadata=rules.extract_ha_cds.output.metadata,
+        # the list below is files listing sequences to include / exclude
+        include_exclude_files=lambda wc: [
+            cfg[key2]
+            for key1 in ["defaults", "samples"]
+            if key1 in config["trees"][wc.tree]["augur_subsample"]
+            for cfg in (
+                [config["trees"][wc.tree]["augur_subsample"][key1]]
+                if key1 == "defaults"
+                else config["trees"][wc.tree]["augur_subsample"][key1].values()
+            )
+            for key2 in ["exclude", "include"]
+            if key2 in cfg
+        ],
+    output:
+        sequences="results/{tree}/ha_cds_subsampled.fasta",
+        metadata="results/{tree}/ha_metadata_subsampled.tsv",
+        config="results/{tree}/subsample_config.yaml",
+    params:
+        build_config_yaml=lambda wc: yaml.dump(
+            config["trees"][wc.tree]["augur_subsample"], default_flow_style=False
+        ),
+        seed=1,
+        strain_id="accession",
+    conda:
+        "environment.yaml"
+    log:
+        "results/logs/subsample_{tree}.txt",
+    shell:
+        """
+        cat > {output.config} <<'EOF'
+{params.build_config_yaml}EOF
+
+        augur subsample \
+            --metadata-id-columns {params.strain_id} \
+            --sequences {input.sequences} \
+            --metadata {input.metadata} \
+            --config {output.config} \
+            --output-sequences {output.sequences} \
+            --output-metadata {output.metadata} \
+            --seed {params.seed} \
+            &> {log}
+        """
