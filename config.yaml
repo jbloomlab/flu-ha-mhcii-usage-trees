@@ -1,2 +1,20 @@
-# taxon ID for NCBI datasets download
-datasets_taxid: 11320
+# taxon ID for NCBI dataset download
+dataset_taxid: 11320
+
+# make separate trees for each of these HA subtypes, with per-tree configuration
+trees:
+  H1:
+    subtype: 'H1N\d{1,2}'  # regex for subtype
+    cds_length_range: [1692, 1704]  # only keep CDS in this range
+  H2:
+    subtype: 'H2N\d{1,2}'
+    cds_length_range: [1689, 1710]
+  H3:
+    subtype: 'H3N\d{1,2}'
+    cds_length_range: [1695, 1704]
+  H5:
+    subtype: 'H5N\d{1,2}'
+    cds_length_range: [1692, 1710]
+  H7:
+    subtype: 'H7N\d{1,2}'
+    cds_length_range: [1659, 1713]
