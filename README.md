@@ -32,23 +32,23 @@ This processes the large zip once so downstream per-subtype rules can work from 
 ### `extract_ha_cds`: Extract HA sequences and metadata per subtype
 For each tree defined in [config.yaml](config.yaml), extract full-length hemagglutinin (HA) coding sequences and associated metadata.
 Subtypes are parsed from genomic FASTA headers and filtered by the `subtype` regex in the config (e.g., `H5N\d{1,2}` for all H5Nx) and the `cds_length_range` specifying the sequence length in the config; note also we drop any sequences with ambiguous nucleotides, missing dates, or that are not valid coding sequences.
-Outputs per-tree FASTA and metadata TSV files in `results/{tree}/`.
+Outputs per-tree FASTA and metadata TSV files in `results/trees/{tree}/`.
 
 ### `subsample`: Subsample sequences per subtype
 Subsample the HA sequences for each tree using [augur subsample](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/subsample.html).
 The subsampling strategy (grouping, max sequences, date filtering, include/exclude lists) is configured per tree in [config.yaml](config.yaml) under `augur_subsample`.
-Outputs subsampled FASTA and metadata TSV files in `results/{tree}/`.
+Outputs subsampled FASTA and metadata TSV files in `results/trees/{tree}/`.
 
 ### `align`: Align sequences
 Align the subsampled HA CDS sequences for each tree using [augur align](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/align.html) (which wraps `mafft`).
 A per-tree reference sequence (configured as `reference_sequence` in [config.yaml](config.yaml)) guides the alignment; the reference is removed from the output.
-Outputs the aligned FASTA in `results/{tree}/`.
+Outputs the aligned FASTA in `results/trees/{tree}/`.
 
 ### `tree`: Infer phylogenetic tree
 Infer a maximum-likelihood phylogenetic tree from the alignment using [augur tree](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/tree.html) (which wraps IQ-TREE).
 Uses a fixed seed for reproducibility and collapses zero-length branches.
-Outputs a raw Newick tree in `results/{tree}/` (before any temporal refinement).
+Outputs a raw Newick tree in `results/trees/{tree}/` (before any temporal refinement).
 
 ### `refine`: Refine tree with temporal information
 Refine the raw tree using [augur refine](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/refine.html) (which wraps TreeTime) to build a time-resolved phylogeny.
-Outputs a refined Newick tree and a node-data JSON with branch lengths and inferred dates in `results/{tree}/`.
+Outputs a refined Newick tree and a node-data JSON with branch lengths and inferred dates in `results/trees/{tree}/`.

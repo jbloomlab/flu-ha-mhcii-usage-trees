@@ -2,11 +2,17 @@
 !.git*
 _*
 *.out
-
-*.log
-*.insertions.csv
+*.swp
 
 results/ncbi_dataset/*
 !results/ncbi_dataset/*_download_date.txt
+
+results/trees/*/*
+!results/trees/*/extract_cds_stats.txt
+!results/trees/*/metadata_all.tsv
+!results/trees/*/cds_all.fasta.gz
+!results/trees/*/cds_subsampled.fasta
+!results/trees/*/metadata_subsampled.tsv
+!results/trees/*/alignment.fasta
 
 results/logs

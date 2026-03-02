@@ -11,7 +11,7 @@ rule all:
         "results/ncbi_dataset/ncbi_dataset_download_date.txt",
         expand(
             [
-                "results/{tree}/tree.nwk",
+                "results/trees/{tree}/tree.nwk",
             ],
             tree=config["trees"],
         ),
@@ -71,9 +71,9 @@ rule extract_ha_cds:
         genomic_headers=rules.format_ncbi_dataset.output.genomic_headers,
         zipfile=rules.get_ncbi_dataset_zip.output.zipfile,
     output:
-        metadata="results/{tree}/ha_metadata_all.tsv",
-        fasta="results/{tree}/ha_cds_all.fasta.gz",
-        stats="results/{tree}/extract_ha_cds_stats.txt",
+        metadata="results/trees/{tree}/metadata_all.tsv",
+        fasta="results/trees/{tree}/cds_all.fasta.gz",
+        stats="results/trees/{tree}/extract_cds_stats.txt",
     params:
         subtype_regex=lambda wc: config["trees"][wc.tree]["subtype"],
         cds_length_range=lambda wc: config["trees"][wc.tree]["cds_length_range"],
@@ -86,7 +86,7 @@ rule extract_ha_cds:
 
 
 rule subsample:
-    """Subsample the HAs for a tree using augur subsample."""
+    """Subsample the CDSs for a tree using augur subsample."""
     input:
         sequences=rules.extract_ha_cds.output.fasta,
         metadata=rules.extract_ha_cds.output.metadata,
@@ -104,9 +104,9 @@ rule subsample:
             if key2 in cfg
         ],
     output:
-        sequences="results/{tree}/ha_cds_subsampled.fasta",
-        metadata="results/{tree}/ha_metadata_subsampled.tsv",
-        config="results/{tree}/subsample_config.yaml",
+        sequences="results/trees/{tree}/cds_subsampled.fasta",
+        metadata="results/trees/{tree}/metadata_subsampled.tsv",
+        config="results/trees/{tree}/subsample_config.yaml",
     params:
         build_config_yaml=lambda wc: yaml.dump(
             config["trees"][wc.tree]["augur_subsample"], default_flow_style=False
@@ -140,7 +140,7 @@ rule align:
         sequences=rules.subsample.output.sequences,
         reference_sequence=lambda wc: config["trees"][wc.tree]["reference_sequence"],
     output:
-        alignment="results/{tree}/alignment.fasta",
+        alignment="results/trees/{tree}/alignment.fasta",
     threads: 4
     conda:
         "environment.yaml"
@@ -163,7 +163,7 @@ rule tree:
     input:
         alignment=rules.align.output.alignment,
     output:
-        tree="results/{tree}/tree_raw.nwk",
+        tree="results/trees/{tree}/tree_raw.nwk",
     threads: 4
     conda:
         "environment.yaml"
@@ -187,8 +187,8 @@ rule refine:
         alignment=rules.align.output.alignment,
         metadata=rules.subsample.output.metadata,
     output:
-        tree="results/{tree}/tree.nwk",
-        node_data="results/{tree}/branch_lengths.json",
+        tree="results/trees/{tree}/tree.nwk",
+        node_data="results/trees/{tree}/branch_lengths.json",
     params:
         strain_id="accession",
     conda:

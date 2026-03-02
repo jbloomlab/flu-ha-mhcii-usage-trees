@@ -41,33 +41,33 @@ Processes the NCBI zip once into TSV intermediates. Uses `dataformat tsv virus-g
 Per-subtype rule (wildcard `{tree}`) that extracts full-length HA CDS sequences and metadata. Uses `scripts/extract_ha_cds.py`. Filters genome metadata to HA segment (segment 4), joins with subtypes parsed from genomic FASTA headers, filters by the `subtype` regex in `config["trees"][tree]`, then extracts matching full-length hemagglutinin CDS entries (not HA1/HA2/sig_peptide fragments) from `cds.fna` in the zip. Sequences with ambiguous nucleotides (not ACTG) are dropped, sequences that fail Biopython `translate(cds=True)` are dropped, and sequences outside the `cds_length_range` in config are dropped. Outputs are sorted by date then strain. Output files are suffixed `_all` to indicate they are before any subsampling.
 
 Outputs per tree:
-- `results/{tree}/ha_metadata_all.tsv`: columns are `accession`, `strain`, `subtype`, `date`, `host`, `host_common_name`, `location`, `region`, `passage_history`, `length`
-- `results/{tree}/ha_cds_all.fasta.gz`: gzipped full-length HA CDS nucleotide FASTA keyed by accession
-- `results/{tree}/extract_ha_cds_stats.txt`: extraction statistics (subtype counts, filtering counts, CDS length distribution)
+- `results/trees/{tree}/metadata_all.tsv`: columns are `accession`, `strain`, `subtype`, `date`, `host`, `host_common_name`, `location`, `region`, `passage_history`, `length`
+- `results/trees/{tree}/cds_all.fasta.gz`: gzipped full-length HA CDS nucleotide FASTA keyed by accession
+- `results/trees/{tree}/extract_cds_stats.txt`: extraction statistics (subtype counts, filtering counts, CDS length distribution)
 
 ### `subsample`
 Per-subtype rule that subsamples HA sequences using `augur subsample`. The subsampling configuration is defined per tree in `config["trees"][tree]["augur_subsample"]` and follows the `augur subsample` YAML config schema (with `defaults` and/or `samples` sections). The config is written to a YAML file at runtime and passed via `--config`. Uses `--metadata-id-columns accession` to match the metadata format. A fixed `--seed 1` ensures reproducibility. The `include_exclude_files` input collects any `include`/`exclude` file paths from the config so Snakemake tracks them as dependencies.
 
 Outputs per tree:
-- `results/{tree}/ha_metadata_subsampled.tsv`: subsampled metadata
-- `results/{tree}/ha_cds_subsampled.fasta`: subsampled HA CDS nucleotide FASTA
-- `results/{tree}/subsample_config.yaml`: the augur subsample YAML config used
+- `results/trees/{tree}/metadata_subsampled.tsv`: subsampled metadata
+- `results/trees/{tree}/cds_subsampled.fasta`: subsampled HA CDS nucleotide FASTA
+- `results/trees/{tree}/subsample_config.yaml`: the augur subsample YAML config used
 
 ### `align`
 Per-subtype rule that aligns subsampled HA CDS sequences using `augur align` (which wraps `mafft`). Uses a per-tree reference sequence specified in `config["trees"][tree]["reference_sequence"]` (a FASTA file in `data/`) to guide the alignment. The reference is removed from the output alignment via `--remove-reference`. Uses 4 threads.
 
 Outputs per tree:
-- `results/{tree}/alignment.fasta`: aligned HA CDS nucleotide FASTA (without the reference sequence)
+- `results/trees/{tree}/alignment.fasta`: aligned HA CDS nucleotide FASTA (without the reference sequence)
 
 ### `tree`
 Per-subtype rule that infers a phylogenetic tree from the alignment using `augur tree` (which wraps IQ-TREE by default). Uses `--tree-builder-args='-seed 1 -czb'` for reproducibility (`-seed 1`) and to collapse zero-length branches (`-czb`). Uses 4 threads. The output is named `tree_raw.nwk` to indicate it is before any temporal refinement.
 
 Outputs per tree:
-- `results/{tree}/tree_raw.nwk`: inferred maximum-likelihood tree in Newick format
+- `results/trees/{tree}/tree_raw.nwk`: inferred maximum-likelihood tree in Newick format
 
 ### `refine`
 Per-subtype rule that refines the raw tree using `augur refine` (which wraps TreeTime). Takes the raw tree, alignment, and subsampled metadata as inputs. Uses `--metadata-id-columns accession` to match the metadata format. Builds a time-resolved tree (`--timetree`) using FFT-based marginal date estimation (`--use-fft`).
 
 Outputs per tree:
-- `results/{tree}/tree.nwk`: time-resolved refined tree in Newick format
-- `results/{tree}/branch_lengths.json`: node data JSON with branch lengths, divergence, and inferred dates
+- `results/trees/{tree}/tree.nwk`: time-resolved refined tree in Newick format
+- `results/trees/{tree}/branch_lengths.json`: node data JSON with branch lengths, divergence, and inferred dates
