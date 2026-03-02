@@ -1,6 +1,13 @@
 # taxon ID for NCBI dataset download
 dataset_taxid: 11320  # influenza A virus taxon id
 
+# The final exported auspice JSONs are put in a file with the name
+# "auspices/{auspice_prefix}_{tree}.json" for each {tree} in `trees`
+# defined below. Typically make this the same name as this repo if
+# you want to be able to view via Nextstrain community builds, eg
+# https://nextstrain.org/community/jbloomlab/flu-ha-trees-mhcII-binding@main/H5
+auspice_prefix: flu-ha-trees-mhcII-binding
+
 # make separate trees for each of these HA subtypes, with per-tree configuration
 trees:
 
@@ -10,6 +17,7 @@ trees:
     augur_subsample:  # configuration to augur subsample
       samples:
         subsample_all:
+          exclude: data/H5/accessions_to_exclude.txt
           exclude_ambiguous_dates_by: month
           max_sequences: 2000
           group_by: [year, region]

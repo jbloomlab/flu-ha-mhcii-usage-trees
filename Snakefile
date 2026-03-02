@@ -1,5 +1,7 @@
 """Snakemake file that runs analysis."""
 
+
+import os
 import yaml
 
 
@@ -8,12 +10,8 @@ configfile: "config.yaml"
 
 rule all:
     input:
-        "results/ncbi_dataset/ncbi_dataset_download_date.txt",
-        expand(
-            [
-                "results/trees/{tree}/tree.nwk",
-                "results/trees/{tree}/nt_muts.json",
-            ],
+        auspice_jsons=expand(
+            os.path.join("auspice", config["auspice_prefix"] + "_{tree}.json"),
             tree=config["trees"],
         ),
 
@@ -231,5 +229,33 @@ rule ancestral:
             --root-sequence {input.root_sequence} \
             --output-node-data {output.node_data} \
             --seed 1 \
+            &> {log}
+        """
+
+
+rule export:
+    """Export auspice json."""
+    input:
+        tree=rules.refine.output.tree,
+        branch_lengths=rules.refine.output.node_data,
+        nt_muts=rules.ancestral.output.node_data,
+        metadata=rules.subsample.output.metadata,
+    output:
+        auspice_json=os.path.join("auspice", config["auspice_prefix"] +  "_{tree}.json"),
+    params:
+        strain_id="accession",
+    conda:
+        "environment.yaml"
+    log:
+        "results/logs/export_{tree}.txt",
+    shell:
+        """
+        augur export v2 \
+            --tree {input.tree} \
+            --node-data {input.branch_lengths} {input.nt_muts} \
+            --include-root-sequence-inline \
+            --metadata {input.metadata} \
+            --metadata-id-columns {params.strain_id} \
+            --output {output.auspice_json} \
             &> {log}
         """

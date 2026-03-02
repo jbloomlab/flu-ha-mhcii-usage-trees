@@ -57,3 +57,8 @@ Outputs a refined Newick tree and a node-data JSON with branch lengths and infer
 Infer ancestral nucleotide sequences using [augur ancestral](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/ancestral.html).
 Mutations are reported relative to the same reference sequence used for alignment.
 Outputs a node-data JSON with nucleotide mutations per branch in `results/trees/{tree}/`.
+
+### `export`: Export auspice JSONs
+Export interactive auspice v2 JSONs using [augur export](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/export_v2.html).
+The output files are placed in `auspice/` with names like `{auspice_prefix}_{tree}.json` (the prefix is set in [config.yaml](config.yaml), typically matching the repo name for [Nextstrain community builds](https://docs.nextstrain.org/en/latest/guides/share/community-builds.html)).
+These are the final pipeline outputs targeted by `rule all`.
