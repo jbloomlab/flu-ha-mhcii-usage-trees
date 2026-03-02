@@ -71,3 +71,9 @@ Per-subtype rule that refines the raw tree using `augur refine` (which wraps Tre
 Outputs per tree:
 - `results/trees/{tree}/tree.nwk`: time-resolved refined tree in Newick format
 - `results/trees/{tree}/branch_lengths.json`: node data JSON with branch lengths, divergence, and inferred dates
+
+### `ancestral`
+Per-subtype rule that infers ancestral nucleotide sequences using `augur ancestral`. Takes the refined tree and alignment as inputs. Uses `--root-sequence` with the same reference sequence used for alignment (`config["trees"][tree]["reference_sequence"]`) so that mutations are reported relative to that reference's coordinate system. Uses `--seed 1` for reproducibility.
+
+Outputs per tree:
+- `results/trees/{tree}/nt_muts.json`: node data JSON with nucleotide mutations on each branch

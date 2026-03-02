@@ -12,6 +12,7 @@ rule all:
         expand(
             [
                 "results/trees/{tree}/tree.nwk",
+                "results/trees/{tree}/nt_muts.json",
             ],
             tree=config["trees"],
         ),
@@ -206,5 +207,29 @@ rule refine:
             --output-node-data {output.node_data} \
             --timetree \
             --use-fft \
+            &> {log}
+        """
+
+
+rule ancestral:
+    """Infer ancestral nucleotide sequences with augur ancestral."""
+    input:
+        tree=rules.refine.output.tree,
+        alignment=rules.align.output.alignment,
+        root_sequence=lambda wc: config["trees"][wc.tree]["reference_sequence"],
+    output:
+        node_data="results/trees/{tree}/nt_muts.json",
+    conda:
+        "environment.yaml"
+    log:
+        "results/logs/ancestral_{tree}.txt",
+    shell:
+        """
+        augur ancestral \
+            --tree {input.tree} \
+            --alignment {input.alignment} \
+            --root-sequence {input.root_sequence} \
+            --output-node-data {output.node_data} \
+            --seed 1 \
             &> {log}
         """

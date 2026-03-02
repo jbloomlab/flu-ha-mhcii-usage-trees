@@ -52,3 +52,8 @@ Outputs a raw Newick tree in `results/trees/{tree}/` (before any temporal refine
 ### `refine`: Refine tree with temporal information
 Refine the raw tree using [augur refine](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/refine.html) (which wraps TreeTime) to build a time-resolved phylogeny.
 Outputs a refined Newick tree and a node-data JSON with branch lengths and inferred dates in `results/trees/{tree}/`.
+
+### `ancestral`: Infer ancestral sequences
+Infer ancestral nucleotide sequences using [augur ancestral](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/ancestral.html).
+Mutations are reported relative to the same reference sequence used for alignment.
+Outputs a node-data JSON with nucleotide mutations per branch in `results/trees/{tree}/`.
