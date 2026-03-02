@@ -11,7 +11,7 @@ rule all:
         "results/ncbi_dataset/ncbi_dataset_download_date.txt",
         expand(
             [
-                "results/{tree}/alignment.fasta",
+                "results/{tree}/tree_raw.nwk",
             ],
             tree=config["trees"],
         ),
@@ -154,5 +154,27 @@ rule align:
             --nthreads {threads} \
             --reference-sequence {input.reference_sequence} \
             --remove-reference \
+            &> {log}
+        """
+
+
+rule tree:
+    """Infer tree using augur tree."""
+    input:
+        alignment=rules.align.output.alignment,
+    output:
+        tree="results/{tree}/tree_raw.nwk",
+    threads: 4
+    conda:
+        "environment.yaml"
+    log:
+        "results/logs/tree_{tree}.txt",
+    shell:
+        """
+        augur tree \
+            --alignment {input.alignment} \
+            --output {output.tree} \
+            --nthreads {threads} \
+            --tree-builder-args='-seed 1 -czb' \
             &> {log}
         """

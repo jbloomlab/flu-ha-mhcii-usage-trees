@@ -43,3 +43,8 @@ Outputs subsampled FASTA and metadata TSV files in `results/{tree}/`.
 Align the subsampled HA CDS sequences for each tree using [augur align](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/align.html) (which wraps `mafft`).
 A per-tree reference sequence (configured as `reference_sequence` in [config.yaml](config.yaml)) guides the alignment; the reference is removed from the output.
 Outputs the aligned FASTA in `results/{tree}/`.
+
+### `tree`: Infer phylogenetic tree
+Infer a maximum-likelihood phylogenetic tree from the alignment using [augur tree](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/tree.html) (which wraps IQ-TREE).
+Uses a fixed seed for reproducibility and collapses zero-length branches.
+Outputs a raw Newick tree in `results/{tree}/` (before any temporal refinement).

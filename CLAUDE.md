@@ -58,3 +58,9 @@ Per-subtype rule that aligns subsampled HA CDS sequences using `augur align` (wh
 
 Outputs per tree:
 - `results/{tree}/alignment.fasta`: aligned HA CDS nucleotide FASTA (without the reference sequence)
+
+### `tree`
+Per-subtype rule that infers a phylogenetic tree from the alignment using `augur tree` (which wraps IQ-TREE by default). Uses `--tree-builder-args='-seed 1 -czb'` for reproducibility (`-seed 1`) and to collapse zero-length branches (`-czb`). Uses 4 threads. The output is named `tree_raw.nwk` to indicate it is before any temporal refinement.
+
+Outputs per tree:
+- `results/{tree}/tree_raw.nwk`: inferred maximum-likelihood tree in Newick format
