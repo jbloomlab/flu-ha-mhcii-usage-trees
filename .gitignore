@@ -3,6 +3,9 @@
 _*
 *.out
 
+*.log
+*.insertions.csv
+
 results/ncbi_dataset/*
 !results/ncbi_dataset/*_download_date.txt
 

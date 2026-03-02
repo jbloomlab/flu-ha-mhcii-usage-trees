@@ -11,8 +11,7 @@ rule all:
         "results/ncbi_dataset/ncbi_dataset_download_date.txt",
         expand(
             [
-                "results/{tree}/ha_metadata_subsampled.tsv",
-                "results/{tree}/ha_cds_subsampled.fasta",
+                "results/{tree}/alignment.fasta",
             ],
             tree=config["trees"],
         ),
@@ -131,5 +130,29 @@ rule subsample:
             --output-sequences {output.sequences} \
             --output-metadata {output.metadata} \
             --seed {params.seed} \
+            &> {log}
+        """
+
+
+rule align:
+    """Align the sequences using augur align."""
+    input:
+        sequences=rules.subsample.output.sequences,
+        reference_sequence=lambda wc: config["trees"][wc.tree]["reference_sequence"],
+    output:
+        alignment="results/{tree}/alignment.fasta",
+    threads: 4
+    conda:
+        "environment.yaml"
+    log:
+        "results/logs/align_{tree}.txt",
+    shell:
+        """
+        augur align \
+            --sequences {input.sequences} \
+            --output {output.alignment} \
+            --nthreads {threads} \
+            --reference-sequence {input.reference_sequence} \
+            --remove-reference \
             &> {log}
         """

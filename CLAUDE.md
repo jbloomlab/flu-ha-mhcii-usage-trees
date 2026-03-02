@@ -52,3 +52,9 @@ Outputs per tree:
 - `results/{tree}/ha_metadata_subsampled.tsv`: subsampled metadata
 - `results/{tree}/ha_cds_subsampled.fasta`: subsampled HA CDS nucleotide FASTA
 - `results/{tree}/subsample_config.yaml`: the augur subsample YAML config used
+
+### `align`
+Per-subtype rule that aligns subsampled HA CDS sequences using `augur align` (which wraps `mafft`). Uses a per-tree reference sequence specified in `config["trees"][tree]["reference_sequence"]` (a FASTA file in `data/`) to guide the alignment. The reference is removed from the output alignment via `--remove-reference`. Uses 4 threads.
+
+Outputs per tree:
+- `results/{tree}/alignment.fasta`: aligned HA CDS nucleotide FASTA (without the reference sequence)
