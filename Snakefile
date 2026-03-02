@@ -11,7 +11,7 @@ rule all:
         "results/ncbi_dataset/ncbi_dataset_download_date.txt",
         expand(
             [
-                "results/{tree}/tree_raw.nwk",
+                "results/{tree}/tree.nwk",
             ],
             tree=config["trees"],
         ),
@@ -176,5 +176,35 @@ rule tree:
             --output {output.tree} \
             --nthreads {threads} \
             --tree-builder-args='-seed 1 -czb' \
+            &> {log}
+        """
+
+
+rule refine:
+    """Refine the tree using augur refine."""
+    input:
+        tree=rules.tree.output.tree,
+        alignment=rules.align.output.alignment,
+        metadata=rules.subsample.output.metadata,
+    output:
+        tree="results/{tree}/tree.nwk",
+        node_data="results/{tree}/branch_lengths.json",
+    params:
+        strain_id="accession",
+    conda:
+        "environment.yaml"
+    log:
+        "results/logs/refine_{tree}.txt",
+    shell:
+        """
+        augur refine \
+            --tree {input.tree} \
+            --alignment {input.alignment} \
+            --metadata {input.metadata} \
+            --metadata-id-columns {params.strain_id} \
+            --output-tree {output.tree} \
+            --output-node-data {output.node_data} \
+            --timetree \
+            --use-fft \
             &> {log}
         """

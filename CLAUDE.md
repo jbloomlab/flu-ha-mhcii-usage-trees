@@ -64,3 +64,10 @@ Per-subtype rule that infers a phylogenetic tree from the alignment using `augur
 
 Outputs per tree:
 - `results/{tree}/tree_raw.nwk`: inferred maximum-likelihood tree in Newick format
+
+### `refine`
+Per-subtype rule that refines the raw tree using `augur refine` (which wraps TreeTime). Takes the raw tree, alignment, and subsampled metadata as inputs. Uses `--metadata-id-columns accession` to match the metadata format. Builds a time-resolved tree (`--timetree`) using FFT-based marginal date estimation (`--use-fft`).
+
+Outputs per tree:
+- `results/{tree}/tree.nwk`: time-resolved refined tree in Newick format
+- `results/{tree}/branch_lengths.json`: node data JSON with branch lengths, divergence, and inferred dates

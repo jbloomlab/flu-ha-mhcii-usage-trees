@@ -48,3 +48,7 @@ Outputs the aligned FASTA in `results/{tree}/`.
 Infer a maximum-likelihood phylogenetic tree from the alignment using [augur tree](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/tree.html) (which wraps IQ-TREE).
 Uses a fixed seed for reproducibility and collapses zero-length branches.
 Outputs a raw Newick tree in `results/{tree}/` (before any temporal refinement).
+
+### `refine`: Refine tree with temporal information
+Refine the raw tree using [augur refine](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/refine.html) (which wraps TreeTime) to build a time-resolved phylogeny.
+Outputs a refined Newick tree and a node-data JSON with branch lengths and inferred dates in `results/{tree}/`.
