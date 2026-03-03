@@ -22,6 +22,8 @@ trees:
           max_sequences: 2000
           group_by: [year, region]
     reference_sequence: data/H5/reference_sequence.fa  # reference CDS for alignment
+    annotation: data/H5/annotation.gff  # GFF3 gene annotation for augur ancestral
+    genes: [SigPep, HA1, HA2]  # genes in annotation to translate
 
 #  H1:
 #    subtype: 'H1N\d{1,2}'

@@ -78,8 +78,14 @@ Per-subtype rule that infers ancestral nucleotide sequences using `augur ancestr
 Outputs per tree:
 - `results/trees/{tree}/nt_muts.json`: node data JSON with nucleotide mutations on each branch
 
+### `translate`
+Per-subtype rule that translates nucleotide mutations to amino acid mutations using `augur translate`. Takes the refined tree, ancestral nucleotide mutations, and a GFF3 annotation file (`config["trees"][tree]["annotation"]`) as inputs. The `--genes` flag (`config["trees"][tree]["genes"]`) specifies which genes to translate (e.g., SigPep, HA1, HA2).
+
+Outputs per tree:
+- `results/trees/{tree}/aa_muts.json`: node data JSON with amino acid mutations on each branch
+
 ### `export`
-Per-subtype rule that exports an auspice JSON for visualization. Uses `augur export v2`. Takes the refined tree, branch lengths, nucleotide mutations, and subsampled metadata as inputs. Uses `--metadata-id-columns accession` and `--include-root-sequence-inline`. The output path is `auspice/{auspice_prefix}_{tree}.json`, where `auspice_prefix` is set in `config.yaml` (typically matching the repo name for Nextstrain community builds). The `rule all` target is these auspice JSONs.
+Per-subtype rule that exports an auspice JSON for visualization. Uses `augur export v2`. Takes the refined tree, branch lengths, nucleotide mutations, amino acid mutations, and subsampled metadata as inputs. Uses `--metadata-id-columns accession` and `--include-root-sequence-inline`. The output path is `auspice/{auspice_prefix}_{tree}.json`, where `auspice_prefix` is set in `config.yaml` (typically matching the repo name for Nextstrain community builds). The `rule all` target is these auspice JSONs.
 
 Outputs per tree:
 - `auspice/{auspice_prefix}_{tree}.json`: auspice v2 JSON for interactive tree visualization

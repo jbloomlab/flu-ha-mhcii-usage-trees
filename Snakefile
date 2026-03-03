@@ -1,6 +1,5 @@
 """Snakemake file that runs analysis."""
 
-
 import os
 import yaml
 
@@ -233,15 +232,42 @@ rule ancestral:
         """
 
 
+rule translate:
+    """Translate nucleotide mutations to amino acid mutations."""
+    input:
+        tree=rules.refine.output.tree,
+        node_data=rules.ancestral.output.node_data,
+        annotation=lambda wc: config["trees"][wc.tree]["annotation"],
+    output:
+        node_data="results/trees/{tree}/aa_muts.json",
+    params:
+        genes=lambda wc: " ".join(config["trees"][wc.tree]["genes"]),
+    conda:
+        "environment.yaml"
+    log:
+        "results/logs/translate_{tree}.txt",
+    shell:
+        """
+        augur translate \
+            --tree {input.tree} \
+            --ancestral-sequences {input.node_data} \
+            --reference-sequence {input.annotation} \
+            --genes {params.genes} \
+            --output-node-data {output.node_data} \
+            &> {log}
+        """
+
+
 rule export:
     """Export auspice json."""
     input:
         tree=rules.refine.output.tree,
         branch_lengths=rules.refine.output.node_data,
         nt_muts=rules.ancestral.output.node_data,
+        aa_muts=rules.translate.output.node_data,
         metadata=rules.subsample.output.metadata,
     output:
-        auspice_json=os.path.join("auspice", config["auspice_prefix"] +  "_{tree}.json"),
+        auspice_json=os.path.join("auspice", config["auspice_prefix"] + "_{tree}.json"),
     params:
         strain_id="accession",
     conda:
@@ -252,7 +278,7 @@ rule export:
         """
         augur export v2 \
             --tree {input.tree} \
-            --node-data {input.branch_lengths} {input.nt_muts} \
+            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} \
             --include-root-sequence-inline \
             --metadata {input.metadata} \
             --metadata-id-columns {params.strain_id} \
