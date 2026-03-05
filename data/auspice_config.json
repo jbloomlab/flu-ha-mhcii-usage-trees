@@ -1,0 +1,59 @@
+{
+  "maintainers": [
+    {"name": "Bernadeta Dadonaite and Jesse Bloom", "url": "https://jbloomlab.org/"}
+  ],
+  "data_provenance": [
+    {
+      "name": "GenBank",
+      "url": "https://www.ncbi.nlm.nih.gov/genbank/"
+    }
+  ],
+  "build_url": "https://github.com/jbloomlab/flu-ha-trees-mhcII-binding",
+  "colorings": [
+    {
+      "key": "gt",
+      "title": "Genotype",
+      "type": "categorical"
+    },
+    {
+      "key": "num_date",
+      "title": "Date",
+      "type": "continuous"
+    },
+    {
+      "key": "region",
+      "title": "Region",
+      "type": "categorical"
+    },
+    {
+      "key": "subtype",
+      "title": "subtype",
+      "type": "categorical"
+    },
+    {
+      "key": "host",
+      "title": "host",
+      "type": "categorical"
+    }
+  ],
+  "metadata_columns": [
+    "strain",
+    "location",
+    "passage_history"
+  ],
+  "panels": [
+     "tree",
+     "entropy",
+     "frequencies"
+  ],
+  "display_defaults": {
+    "tip_label": "strain",
+    "color_by": "subtype",
+    "transmission_lines": false
+  },
+  "filters": [
+    "region",
+    "subtype",
+    "host"
+  ]
+}

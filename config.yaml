@@ -24,6 +24,12 @@ trees:
     reference_sequence: data/H5/reference_sequence.fa  # reference CDS for alignment
     annotation: data/H5/annotation.gff  # GFF3 gene annotation for augur ancestral
     genes: [SigPep, HA1, HA2]  # genes in annotation to translate
+    mutation_effects: data/H5/mutation_effects.tsv  # effects of mutations, must have columns "protein", "protein_site", "phenotype", "effect"
+    phenotypes:  # phenotypes from mutation_effects to map to tree, keys column in TSV, values name on tree
+      entry difference between noSA tufted duck MHCII and SA23 cells: MHCII entry increase
+      tufted duck MHCII binding escape: MHCII binding
+    title: Influenza H5 HA phylogeny colored by predicted tufted duck MHC-II usage
+    auspice_config: data/auspice_config.json  # auspice configuration, colors for phenotypes added separately
 
 #  H1:
 #    subtype: 'H1N\d{1,2}'

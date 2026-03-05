@@ -1,6 +1,8 @@
 """Snakemake file that runs analysis."""
 
 import os
+import shlex
+
 import yaml
 
 
@@ -266,10 +268,12 @@ rule export:
         nt_muts=rules.ancestral.output.node_data,
         aa_muts=rules.translate.output.node_data,
         metadata=rules.subsample.output.metadata,
+        auspice_config=lambda wc: config["trees"][wc.tree]["auspice_config"],
     output:
         auspice_json=os.path.join("auspice", config["auspice_prefix"] + "_{tree}.json"),
     params:
         strain_id="accession",
+        title=lambda wc: shlex.quote(config["trees"][wc.tree]["title"]),
     conda:
         "environment.yaml"
     log:
@@ -283,5 +287,7 @@ rule export:
             --metadata {input.metadata} \
             --metadata-id-columns {params.strain_id} \
             --output {output.auspice_json} \
+            --title {params.title} \
+            --auspice-config {input.auspice_config} \
             &> {log}
         """

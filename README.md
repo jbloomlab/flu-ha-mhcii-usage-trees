@@ -65,5 +65,6 @@ Outputs a node-data JSON with amino acid mutations per branch in `results/trees/
 
 ### `export`: Export auspice JSONs
 Export interactive auspice v2 JSONs using [augur export](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/export_v2.html).
+Each tree uses an auspice config file (configured as `auspice_config` in [config.yaml](config.yaml)) that defines colorings, filters, display defaults, and metadata; and a `title` for the tree visualization.
 The output files are placed in `auspice/` with names like `{auspice_prefix}_{tree}.json` (the prefix is set in [config.yaml](config.yaml), typically matching the repo name for [Nextstrain community builds](https://docs.nextstrain.org/en/latest/guides/share/community-builds.html)).
 These are the final pipeline outputs targeted by `rule all`.

@@ -85,7 +85,7 @@ Outputs per tree:
 - `results/trees/{tree}/aa_muts.json`: node data JSON with amino acid mutations on each branch
 
 ### `export`
-Per-subtype rule that exports an auspice JSON for visualization. Uses `augur export v2`. Takes the refined tree, branch lengths, nucleotide mutations, amino acid mutations, and subsampled metadata as inputs. Uses `--metadata-id-columns accession` and `--include-root-sequence-inline`. The output path is `auspice/{auspice_prefix}_{tree}.json`, where `auspice_prefix` is set in `config.yaml` (typically matching the repo name for Nextstrain community builds). The `rule all` target is these auspice JSONs.
+Per-subtype rule that exports an auspice JSON for visualization. Uses `augur export v2`. Takes the refined tree, branch lengths, nucleotide mutations, amino acid mutations, subsampled metadata, and an auspice config file (`config["trees"][tree]["auspice_config"]`) as inputs. Uses `--metadata-id-columns accession`, `--include-root-sequence-inline`, `--title` (from `config["trees"][tree]["title"]`, shell-escaped with `shlex.quote`), and `--auspice-config`. The output path is `auspice/{auspice_prefix}_{tree}.json`, where `auspice_prefix` is set in `config.yaml` (typically matching the repo name for Nextstrain community builds). The `rule all` target is these auspice JSONs.
 
 Outputs per tree:
 - `auspice/{auspice_prefix}_{tree}.json`: auspice v2 JSON for interactive tree visualization
