@@ -31,13 +31,19 @@
       "type": "categorical"
     },
     {
-      "key": "host",
-      "title": "host",
+      "key": "host_general",
+      "title": "host general",
+      "type": "categorical"
+    },
+    {
+      "key": "host_order",
+      "title": "host order",
       "type": "categorical"
     }
   ],
   "metadata_columns": [
     "strain",
+    "host_specific",
     "location",
     "passage_history"
   ],
@@ -54,6 +60,7 @@
   "filters": [
     "region",
     "subtype",
-    "host"
+    "host_general",
+    "host_order"
   ]
 }

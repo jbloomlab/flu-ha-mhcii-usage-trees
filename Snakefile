@@ -71,7 +71,7 @@ rule extract_ha_cds:
         genomic_headers=rules.format_ncbi_dataset.output.genomic_headers,
         zipfile=rules.get_ncbi_dataset_zip.output.zipfile,
     output:
-        metadata="results/trees/{tree}/metadata_all.tsv",
+        metadata="results/trees/{tree}/metadata_all_pre_host.tsv",
         fasta="results/trees/{tree}/cds_all.fasta.gz",
         stats="results/trees/{tree}/extract_cds_stats.txt",
     params:
@@ -85,11 +85,48 @@ rule extract_ha_cds:
         "scripts/extract_ha_cds.py"
 
 
+rule download_taxonomy:
+    """Download NCBI taxonomy dump for taxonkit."""
+    output:
+        taxonomy_dir=directory("results/ncbi_taxonomy"),
+    log:
+        "results/logs/download_taxonomy.txt",
+    conda:
+        "environment.yaml"
+    shell:
+        """
+        mkdir -p {output.taxonomy_dir} 2> {log}
+        wget -q -O {output.taxonomy_dir}/taxdump.tar.gz \
+            http://ftp.ncbi.nih.gov/pub/taxonomy/taxdump.tar.gz \
+            2>> {log}
+        tar -xzf {output.taxonomy_dir}/taxdump.tar.gz \
+            -C {output.taxonomy_dir} \
+            names.dmp nodes.dmp delnodes.dmp merged.dmp \
+            2>> {log}
+        rm {output.taxonomy_dir}/taxdump.tar.gz 2>> {log}
+        """
+
+
+rule annotate_host_taxonomy:
+    """Annotate metadata with host taxonomy (general class, order)."""
+    input:
+        metadata=rules.extract_ha_cds.output.metadata,
+        taxonomy_dir=rules.download_taxonomy.output.taxonomy_dir,
+    output:
+        metadata="results/trees/{tree}/metadata_all.tsv",
+    log:
+        "results/logs/annotate_host_taxonomy_{tree}.txt",
+    conda:
+        "environment.yaml"
+    script:
+        "scripts/annotate_host_taxonomy.py"
+
+
 rule subsample:
     """Subsample the CDSs for a tree using augur subsample."""
     input:
         sequences=rules.extract_ha_cds.output.fasta,
-        metadata=rules.extract_ha_cds.output.metadata,
+        metadata=rules.annotate_host_taxonomy.output.metadata,
         # the list below is files listing sequences to include / exclude
         include_exclude_files=lambda wc: [
             cfg[key2]

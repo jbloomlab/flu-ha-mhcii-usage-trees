@@ -34,6 +34,15 @@ For each tree defined in [config.yaml](config.yaml), extract full-length hemaggl
 Subtypes are parsed from genomic FASTA headers and filtered by the `subtype` regex in the config (e.g., `H5N\d{1,2}` for all H5Nx) and the `cds_length_range` specifying the sequence length in the config; note also we drop any sequences with ambiguous nucleotides, missing dates, or that are not valid coding sequences.
 Outputs per-tree FASTA and metadata TSV files in `results/trees/{tree}/`.
 
+### `download_taxonomy`: Download NCBI taxonomy
+Download the NCBI taxonomy dump files for use by `taxonkit`.
+These files are used to look up host taxonomy (class, order) from NCBI taxonomy IDs.
+
+### `annotate_host_taxonomy`: Classify hosts by taxonomy
+For each tree, annotate the metadata with host taxonomy information using `taxonkit` to look up lineage from NCBI taxonomy IDs.
+Renames `host` to `host_specific` (the NCBI Taxonomy scientific name), and adds `host_general` (classifying each host as "avian", "human", or "non-human mammal") and `host_order` (the taxonomic order).
+Outputs the annotated metadata TSV in `results/trees/{tree}/`.
+
 ### `subsample`: Subsample sequences per subtype
 Subsample the HA sequences for each tree using [augur subsample](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/subsample.html).
 The subsampling strategy (grouping, max sequences, date filtering, include/exclude lists) is configured per tree in [config.yaml](config.yaml) under `augur_subsample`.

@@ -41,9 +41,21 @@ Processes the NCBI zip once into TSV intermediates. Uses `dataformat tsv virus-g
 Per-subtype rule (wildcard `{tree}`) that extracts full-length HA CDS sequences and metadata. Uses `scripts/extract_ha_cds.py`. Filters genome metadata to HA segment (segment 4), joins with subtypes parsed from genomic FASTA headers, filters by the `subtype` regex in `config["trees"][tree]`, then extracts matching full-length hemagglutinin CDS entries (not HA1/HA2/sig_peptide fragments) from `cds.fna` in the zip. Sequences with ambiguous nucleotides (not ACTG) are dropped, sequences that fail Biopython `translate(cds=True)` are dropped, and sequences outside the `cds_length_range` in config are dropped. Outputs are sorted by date then strain. Output files are suffixed `_all` to indicate they are before any subsampling.
 
 Outputs per tree:
-- `results/trees/{tree}/metadata_all.tsv`: columns are `accession`, `strain`, `subtype`, `date`, `host`, `host_tax_id`, `location`, `region`, `passage_history`, `length`
+- `results/trees/{tree}/metadata_all_pre_host.tsv`: columns are `accession`, `strain`, `subtype`, `date`, `host`, `host_tax_id`, `location`, `region`, `passage_history`, `length`
 - `results/trees/{tree}/cds_all.fasta.gz`: gzipped full-length HA CDS nucleotide FASTA keyed by accession
 - `results/trees/{tree}/extract_cds_stats.txt`: extraction statistics (subtype counts, filtering counts, CDS length distribution)
+
+### `download_taxonomy`
+Downloads NCBI taxonomy dump files (`taxdump.tar.gz`) from NCBI FTP for use by `taxonkit`. Extracts `names.dmp`, `nodes.dmp`, `delnodes.dmp`, and `merged.dmp`. Outputs to `results/ncbi_taxonomy/` directory. This is a shared resource used by all per-tree `annotate_host_taxonomy` rules.
+
+Outputs:
+- `results/ncbi_taxonomy/`: directory containing NCBI taxonomy dump files
+
+### `annotate_host_taxonomy`
+Per-subtype rule that annotates metadata with host taxonomy classification. Uses `scripts/annotate_host_taxonomy.py`. Takes the pre-host metadata from `extract_ha_cds` and the NCBI taxonomy dump. Uses `taxonkit` to look up lineage (class and order) for each unique `host_tax_id`. Renames `host` to `host_specific`, adds `host_general` (classifies as "avian", "human", or "non-human mammal" based on taxonomy class; raises error for any non-null host outside these categories; deleted tax IDs with no lineage are treated as unknown with a warning), and `host_order` (taxonomic order of the host). Null/empty host tax IDs pass through as null for all host columns.
+
+Outputs per tree:
+- `results/trees/{tree}/metadata_all.tsv`: columns are `accession`, `strain`, `subtype`, `date`, `host_specific`, `host_tax_id`, `host_general`, `host_order`, `location`, `region`, `passage_history`, `length`
 
 ### `subsample`
 Per-subtype rule that subsamples HA sequences using `augur subsample`. The subsampling configuration is defined per tree in `config["trees"][tree]["augur_subsample"]` and follows the `augur subsample` YAML config schema (with `defaults` and/or `samples` sections). The config is written to a YAML file at runtime and passed via `--config`. Uses `--metadata-id-columns accession` to match the metadata format. A fixed `--seed 1` ensures reproducibility. The `include_exclude_files` input collects any `include`/`exclude` file paths from the config so Snakemake tracks them as dependencies.

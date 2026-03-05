@@ -16,4 +16,5 @@ dependencies:
   - python=3.13
   - snakefmt
   - snakemake=9.16
+  - taxonkit=0.20
   - ruff

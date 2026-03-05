@@ -7,6 +7,8 @@ _*
 results/ncbi_dataset/*
 !results/ncbi_dataset/*_download_date.txt
 
+results/ncbi_taxonomy
+
 results/trees/*/*
 !results/trees/*/extract_cds_stats.txt
 !results/trees/*/metadata_all.tsv

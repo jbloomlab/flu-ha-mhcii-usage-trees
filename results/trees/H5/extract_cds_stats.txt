@@ -1,16 +1,16 @@
 All HA CDSs extracted from NCBI metadata for subtype regex 'H5N\d{1,2}' (before subsampling)
 
-HA-segment accessions with parseable subtype: 248972
-  matching any HxNx pattern: 241125
-  matching tree subtype regex 'H5N\d{1,2}': 29636
+HA-segment accessions with parseable subtype: 249197
+  matching any HxNx pattern: 241350
+  matching tree subtype regex 'H5N\d{1,2}': 29735
   not matching any HxNx pattern: 7847
-Metadata accessions matching subtype regex: 29636
-Accessions with full-length HA CDS found: 29180
+Metadata accessions matching subtype regex: 29735
+Accessions with full-length HA CDS found: 29279
 Accessions without full-length HA CDS: 456
 Dropped for missing collection date: 460
 Dropped for ambiguous nucleotides: 787
 Dropped for invalid CDS: 2214
-CDS length distribution (n=25719):
+CDS length distribution (n=25818):
   min: 261, max: 1731
   0.1th percentile: 921
   1st percentile: 1695
@@ -22,5 +22,5 @@ CDS length distribution (n=25719):
 CDS length range filter [1692, 1710]:
   dropped too short (<1692): 134
   dropped too long (>1710): 9
-  kept: 25576 of 25719
-Written 25576 HA CDS sequences for 'H5N\d{1,2}'
+  kept: 25675 of 25818
+Written 25675 HA CDS sequences for 'H5N\d{1,2}'
