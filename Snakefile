@@ -55,7 +55,7 @@ rule format_ncbi_dataset:
         dataformat tsv virus-genome \
             --package {input.zipfile} \
             --fields accession,isolate-lineage,isolate-collection-date,\
-isolate-lineage-source,host-name,host-common-name,geo-location,geo-region,\
+isolate-lineage-source,host-name,host-tax-id,geo-location,geo-region,\
 lab-host,is-lab-host,completeness,length,segment,release-date,biosample-acc,\
 sra-accs,is-vaccine-strain,purpose-of-sampling \
             > {output.genome_metadata} 2> {log}

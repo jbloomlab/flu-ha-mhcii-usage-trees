@@ -35,13 +35,13 @@ To parse full-length HA CDSs by subtype downstream:
 - `dataformat tsv virus-genome --package <zip>` and `dataformat tsv virus-annotation --package <zip>` convert reports to TSV
 
 ### `format_ncbi_dataset`
-Processes the NCBI zip once into TSV intermediates. Uses `dataformat tsv virus-genome` to extract genome metadata to `results/ncbi_dataset/genome_metadata.tsv`, and extracts FASTA header lines from `genomic.fna` to `results/ncbi_dataset/genomic_headers.txt` (used to parse subtypes, which are only in the FASTA headers).
+Processes the NCBI zip once into TSV intermediates. Uses `dataformat tsv virus-genome` to extract genome metadata to `results/ncbi_dataset/genome_metadata.tsv` (includes `host-name` as NCBI Taxonomy scientific name and `host-tax-id` as the corresponding NCBI Taxonomy ID), and extracts FASTA header lines from `genomic.fna` to `results/ncbi_dataset/genomic_headers.txt` (used to parse subtypes, which are only in the FASTA headers).
 
 ### `extract_ha_cds`
 Per-subtype rule (wildcard `{tree}`) that extracts full-length HA CDS sequences and metadata. Uses `scripts/extract_ha_cds.py`. Filters genome metadata to HA segment (segment 4), joins with subtypes parsed from genomic FASTA headers, filters by the `subtype` regex in `config["trees"][tree]`, then extracts matching full-length hemagglutinin CDS entries (not HA1/HA2/sig_peptide fragments) from `cds.fna` in the zip. Sequences with ambiguous nucleotides (not ACTG) are dropped, sequences that fail Biopython `translate(cds=True)` are dropped, and sequences outside the `cds_length_range` in config are dropped. Outputs are sorted by date then strain. Output files are suffixed `_all` to indicate they are before any subsampling.
 
 Outputs per tree:
-- `results/trees/{tree}/metadata_all.tsv`: columns are `accession`, `strain`, `subtype`, `date`, `host`, `host_common_name`, `location`, `region`, `passage_history`, `length`
+- `results/trees/{tree}/metadata_all.tsv`: columns are `accession`, `strain`, `subtype`, `date`, `host`, `host_tax_id`, `location`, `region`, `passage_history`, `length`
 - `results/trees/{tree}/cds_all.fasta.gz`: gzipped full-length HA CDS nucleotide FASTA keyed by accession
 - `results/trees/{tree}/extract_cds_stats.txt`: extraction statistics (subtype counts, filtering counts, CDS length distribution)
 
