@@ -43,6 +43,7 @@ trees:
       - "#fde725"
     title: Influenza H5 HA phylogeny colored by predicted tufted duck MHC-II usage
     auspice_config: data/auspice_config.json  # auspice configuration, colors for phenotypes added separately
+    description: data/description.md
 
 #  H1:
 #    subtype: 'H1N\d{1,2}'

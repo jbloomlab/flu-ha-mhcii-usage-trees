@@ -386,6 +386,7 @@ rule export:
         metadata=rules.collapse_host_order.output.metadata,
         auspice_config=lambda wc: config["trees"][wc.tree]["auspice_config"],
         phenotype_auspice_config=rules.generate_phenotype_auspice_config.output.auspice_config,
+        description=lambda wc: config["trees"][wc.tree]["description"],
     output:
         auspice_json=os.path.join("auspice", config["auspice_prefix"] + "_{tree}.json"),
     params:
@@ -406,5 +407,6 @@ rule export:
             --output {output.auspice_json} \
             --title {params.title} \
             --auspice-config {input.auspice_config} {input.phenotype_auspice_config} \
+            --description {input.description} \
             &> {log}
         """
