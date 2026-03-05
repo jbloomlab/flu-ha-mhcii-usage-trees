@@ -260,6 +260,68 @@ rule translate:
         """
 
 
+rule score_mutation_effects:
+    """Score tree nodes based on per-mutation phenotype effects."""
+    input:
+        tree=rules.refine.output.tree,
+        aa_muts=rules.translate.output.node_data,
+        mutation_effects=lambda wc: config["trees"][wc.tree]["mutation_effects"],
+    output:
+        node_data="results/trees/{tree}/mutation_effects_scores.json",
+    params:
+        phenotypes=lambda wc: " ".join(
+            shlex.quote(p) for p in config["trees"][wc.tree]["phenotypes"]
+        ),
+        phenotype_names=lambda wc: " ".join(
+            shlex.quote(config["trees"][wc.tree]["phenotypes"][p])
+            for p in config["trees"][wc.tree]["phenotypes"]
+        ),
+    conda:
+        "environment.yaml"
+    log:
+        "results/logs/score_mutation_effects_{tree}.txt",
+    shell:
+        """
+        python scripts/score_mutation_effects.py \
+            --tree-newick {input.tree} \
+            --aa-muts {input.aa_muts} \
+            --mutation-effects {input.mutation_effects} \
+            --phenotypes {params.phenotypes} \
+            --phenotype-names {params.phenotype_names} \
+            --output {output.node_data} \
+            &> {log}
+        """
+
+
+rule generate_phenotype_auspice_config:
+    """Generate auspice config with color scales for phenotype scores."""
+    input:
+        node_data=rules.score_mutation_effects.output.node_data,
+    output:
+        auspice_config="results/trees/{tree}/auspice_config_phenotypes.json",
+    params:
+        phenotype_names=lambda wc: " ".join(
+            shlex.quote(config["trees"][wc.tree]["phenotypes"][p])
+            for p in config["trees"][wc.tree]["phenotypes"]
+        ),
+        continuous_scale=lambda wc: " ".join(
+            shlex.quote(c) for c in config["trees"][wc.tree]["phenotype_color_scale"]
+        ),
+    conda:
+        "environment.yaml"
+    log:
+        "results/logs/generate_phenotype_auspice_config_{tree}.txt",
+    shell:
+        """
+        python scripts/generate_phenotype_auspice_config.py \
+            --phenotypes {params.phenotype_names} \
+            --continuous-scale {params.continuous_scale} \
+            --node-data {input.node_data} \
+            --output {output.auspice_config} \
+            &> {log}
+        """
+
+
 rule export:
     """Export auspice json."""
     input:
@@ -267,8 +329,10 @@ rule export:
         branch_lengths=rules.refine.output.node_data,
         nt_muts=rules.ancestral.output.node_data,
         aa_muts=rules.translate.output.node_data,
+        mutation_effects_scores=rules.score_mutation_effects.output.node_data,
         metadata=rules.subsample.output.metadata,
         auspice_config=lambda wc: config["trees"][wc.tree]["auspice_config"],
+        phenotype_auspice_config=rules.generate_phenotype_auspice_config.output.auspice_config,
     output:
         auspice_json=os.path.join("auspice", config["auspice_prefix"] + "_{tree}.json"),
     params:
@@ -282,12 +346,12 @@ rule export:
         """
         augur export v2 \
             --tree {input.tree} \
-            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} \
+            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.mutation_effects_scores} \
             --include-root-sequence-inline \
             --metadata {input.metadata} \
             --metadata-id-columns {params.strain_id} \
             --output {output.auspice_json} \
             --title {params.title} \
-            --auspice-config {input.auspice_config} \
+            --auspice-config {input.auspice_config} {input.phenotype_auspice_config} \
             &> {log}
         """

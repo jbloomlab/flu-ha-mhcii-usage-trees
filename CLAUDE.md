@@ -84,8 +84,20 @@ Per-subtype rule that translates nucleotide mutations to amino acid mutations us
 Outputs per tree:
 - `results/trees/{tree}/aa_muts.json`: node data JSON with amino acid mutations on each branch
 
+### `score_mutation_effects`
+Per-subtype rule that scores tree nodes based on per-mutation phenotype effects. Uses `scripts/score_mutation_effects.py`. Takes the refined tree, amino acid mutations node data, and a mutation effects TSV file (`config["trees"][tree]["mutation_effects"]`) as inputs. The mutation effects TSV must have columns `protein`, `protein_site`, `wildtype`, `mutant`, `phenotype`, `effect`. The script validates that the set of proteins in the mutation effects file exactly matches the set of genes in the amino acid mutations node data (raises an error if not). Phenotypes to score are specified in `config["trees"][tree]["phenotypes"]` (keys are phenotype column values in the TSV, values are display names for the tree). For each phenotype, computes cumulative amino acid mutations from root to each node, then calculates three metrics: total effect (sum), max magnitude effect (mutation with largest absolute effect value), and the identity of that max magnitude mutation.
+
+Outputs per tree:
+- `results/trees/{tree}/mutation_effects_scores.json`: node data JSON with phenotype scores for each node
+
+### `generate_phenotype_auspice_config`
+Per-subtype rule that generates an auspice config JSON defining color scales for phenotype scores. Uses `scripts/generate_phenotype_auspice_config.py`. Takes the mutation effects scores node data as input. Reads min/max values for each phenotype's total effect and max magnitude effect, then creates continuous viridis color scales. The color scale hex values are configured per tree in `config["trees"][tree]["phenotype_color_scale"]`. Also adds a categorical coloring for max magnitude mutation.
+
+Outputs per tree:
+- `results/trees/{tree}/auspice_config_phenotypes.json`: auspice config JSON with phenotype color scales
+
 ### `export`
-Per-subtype rule that exports an auspice JSON for visualization. Uses `augur export v2`. Takes the refined tree, branch lengths, nucleotide mutations, amino acid mutations, subsampled metadata, and an auspice config file (`config["trees"][tree]["auspice_config"]`) as inputs. Uses `--metadata-id-columns accession`, `--include-root-sequence-inline`, `--title` (from `config["trees"][tree]["title"]`, shell-escaped with `shlex.quote`), and `--auspice-config`. The output path is `auspice/{auspice_prefix}_{tree}.json`, where `auspice_prefix` is set in `config.yaml` (typically matching the repo name for Nextstrain community builds). The `rule all` target is these auspice JSONs.
+Per-subtype rule that exports an auspice JSON for visualization. Uses `augur export v2`. Takes the refined tree, branch lengths, nucleotide mutations, amino acid mutations, mutation effects scores, subsampled metadata, an auspice config file (`config["trees"][tree]["auspice_config"]`), and the generated phenotype auspice config as inputs. Uses `--metadata-id-columns accession`, `--include-root-sequence-inline`, `--title` (from `config["trees"][tree]["title"]`, shell-escaped with `shlex.quote`), and `--auspice-config` (both the base config and the phenotype config). The output path is `auspice/{auspice_prefix}_{tree}.json`, where `auspice_prefix` is set in `config.yaml` (typically matching the repo name for Nextstrain community builds). The `rule all` target is these auspice JSONs.
 
 Outputs per tree:
 - `auspice/{auspice_prefix}_{tree}.json`: auspice v2 JSON for interactive tree visualization

@@ -63,8 +63,20 @@ Translate nucleotide mutations to amino acid mutations using [augur translate](h
 Uses a GFF3 annotation file to define gene regions (SigPep, HA1, HA2) for translation.
 Outputs a node-data JSON with amino acid mutations per branch in `results/trees/{tree}/`.
 
+### `score_mutation_effects`: Score nodes by mutation phenotype effects
+Score each tree node based on the cumulative effect of its amino acid mutations on measured phenotypes.
+Per-mutation effects are provided in a TSV file (configured as `mutation_effects` in [config.yaml](config.yaml)).
+The script validates that proteins in the effects file match the genes in the tree's amino acid mutations.
+For each phenotype (configured under `phenotypes`), computes the total effect, the max magnitude effect, and the identity of the max magnitude mutation.
+Outputs a node-data JSON with phenotype scores in `results/trees/{tree}/`.
+
+### `generate_phenotype_auspice_config`: Generate color scales for phenotype scores
+Generate an auspice config JSON that defines continuous viridis color scales for each phenotype's total effect and max magnitude effect scores, and a categorical coloring for the max magnitude mutation.
+The color scale is configured per tree as `phenotype_color_scale` in [config.yaml](config.yaml).
+Outputs an auspice config JSON in `results/trees/{tree}/`.
+
 ### `export`: Export auspice JSONs
 Export interactive auspice v2 JSONs using [augur export](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/export_v2.html).
-Each tree uses an auspice config file (configured as `auspice_config` in [config.yaml](config.yaml)) that defines colorings, filters, display defaults, and metadata; and a `title` for the tree visualization.
+Each tree uses an auspice config file (configured as `auspice_config` in [config.yaml](config.yaml)) that defines colorings, filters, display defaults, and metadata; a generated phenotype auspice config with color scales for mutation effect scores; and a `title` for the tree visualization.
 The output files are placed in `auspice/` with names like `{auspice_prefix}_{tree}.json` (the prefix is set in [config.yaml](config.yaml), typically matching the repo name for [Nextstrain community builds](https://docs.nextstrain.org/en/latest/guides/share/community-builds.html)).
 These are the final pipeline outputs targeted by `rule all`.
