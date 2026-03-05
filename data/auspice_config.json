@@ -54,7 +54,7 @@
   ],
   "display_defaults": {
     "tip_label": "strain",
-    "color_by": "subtype",
+    "color_by": "host_general",
     "transmission_lines": false
   },
   "filters": [

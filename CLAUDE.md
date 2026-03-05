@@ -65,6 +65,12 @@ Outputs per tree:
 - `results/trees/{tree}/cds_subsampled.fasta`: subsampled HA CDS nucleotide FASTA
 - `results/trees/{tree}/subsample_config.yaml`: the augur subsample YAML config used
 
+### `collapse_host_order`
+Per-subtype rule that collapses low-frequency host orders to "other" in the subsampled metadata. Uses `scripts/collapse_host_order.py`. Host orders with frequency below `config["collapse_low_freq_host_order"]` (default 0.005) in the subsampled dataset are renamed to "other". Null host orders are left as-is. Logs the orders collapsed and their frequencies.
+
+Outputs per tree:
+- `results/trees/{tree}/metadata_subsampled_collapsed.tsv`: subsampled metadata with low-frequency host orders collapsed to "other"
+
 ### `align`
 Per-subtype rule that aligns subsampled HA CDS sequences using `augur align` (which wraps `mafft`). Uses a per-tree reference sequence specified in `config["trees"][tree]["reference_sequence"]` (a FASTA file in `data/`) to guide the alignment. The reference is removed from the output alignment via `--remove-reference`. Uses 4 threads.
 
@@ -78,7 +84,7 @@ Outputs per tree:
 - `results/trees/{tree}/tree_raw.nwk`: inferred maximum-likelihood tree in Newick format
 
 ### `refine`
-Per-subtype rule that refines the raw tree using `augur refine` (which wraps TreeTime). Takes the raw tree, alignment, and subsampled metadata as inputs. Uses `--metadata-id-columns accession` to match the metadata format. Builds a time-resolved tree (`--timetree`) using FFT-based marginal date estimation (`--use-fft`).
+Per-subtype rule that refines the raw tree using `augur refine` (which wraps TreeTime). Takes the raw tree, alignment, and collapsed subsampled metadata as inputs. Uses `--metadata-id-columns accession` to match the metadata format. Builds a time-resolved tree (`--timetree`) using FFT-based marginal date estimation (`--use-fft`).
 
 Outputs per tree:
 - `results/trees/{tree}/tree.nwk`: time-resolved refined tree in Newick format

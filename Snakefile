@@ -171,6 +171,22 @@ rule subsample:
         """
 
 
+rule collapse_host_order:
+    """Collapse low-frequency host orders to 'other' in subsampled metadata."""
+    input:
+        metadata=rules.subsample.output.metadata,
+    output:
+        metadata="results/trees/{tree}/metadata_subsampled_collapsed.tsv",
+    params:
+        collapse_low_freq_host_order=config["collapse_low_freq_host_order"],
+    log:
+        "results/logs/collapse_host_order_{tree}.txt",
+    conda:
+        "environment.yaml"
+    script:
+        "scripts/collapse_host_order.py"
+
+
 rule align:
     """Align the sequences using augur align."""
     input:
@@ -222,7 +238,7 @@ rule refine:
     input:
         tree=rules.tree.output.tree,
         alignment=rules.align.output.alignment,
-        metadata=rules.subsample.output.metadata,
+        metadata=rules.collapse_host_order.output.metadata,
     output:
         tree="results/trees/{tree}/tree.nwk",
         node_data="results/trees/{tree}/branch_lengths.json",
@@ -367,7 +383,7 @@ rule export:
         nt_muts=rules.ancestral.output.node_data,
         aa_muts=rules.translate.output.node_data,
         mutation_effects_scores=rules.score_mutation_effects.output.node_data,
-        metadata=rules.subsample.output.metadata,
+        metadata=rules.collapse_host_order.output.metadata,
         auspice_config=lambda wc: config["trees"][wc.tree]["auspice_config"],
         phenotype_auspice_config=rules.generate_phenotype_auspice_config.output.auspice_config,
     output:

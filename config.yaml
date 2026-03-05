@@ -1,6 +1,9 @@
 # taxon ID for NCBI dataset download
 dataset_taxid: 11320  # influenza A virus taxon id
 
+# host orders with frequency below this in subsampled data are collapsed to "other"
+collapse_low_freq_host_order: 0.005
+
 # The final exported auspice JSONs are put in a file with the name
 # "auspices/{auspice_prefix}_{tree}.json" for each {tree} in `trees`
 # defined below. Typically make this the same name as this repo if

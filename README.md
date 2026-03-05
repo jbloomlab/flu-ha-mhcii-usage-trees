@@ -48,6 +48,11 @@ Subsample the HA sequences for each tree using [augur subsample](https://docs.ne
 The subsampling strategy (grouping, max sequences, date filtering, include/exclude lists) is configured per tree in [config.yaml](config.yaml) under `augur_subsample`.
 Outputs subsampled FASTA and metadata TSV files in `results/trees/{tree}/`.
 
+### `collapse_host_order`: Collapse low-frequency host orders
+For each tree, collapse host orders that appear at frequency below `collapse_low_freq_host_order` (default 0.005) in the subsampled data to "other".
+This reduces the number of colors needed when visualizing by host order in auspice.
+Outputs modified subsampled metadata in `results/trees/{tree}/`.
+
 ### `align`: Align sequences
 Align the subsampled HA CDS sequences for each tree using [augur align](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/align.html) (which wraps `mafft`).
 A per-tree reference sequence (configured as `reference_sequence` in [config.yaml](config.yaml)) guides the alignment; the reference is removed from the output.
