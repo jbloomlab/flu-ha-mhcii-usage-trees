@@ -18,5 +18,3 @@ results/trees/*/*
 !results/trees/*/alignment.fasta
 
 results/logs
-
-auspice

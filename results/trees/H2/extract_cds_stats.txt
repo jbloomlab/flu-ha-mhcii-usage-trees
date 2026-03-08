@@ -1,0 +1,26 @@
+All HA CDSs extracted from NCBI metadata for subtype regex 'H2N\d{1,2}' (before subsampling)
+
+HA-segment accessions with parseable subtype: 249643
+  matching any HxNx pattern: 241796
+  matching tree subtype regex 'H2N\d{1,2}': 1071
+  not matching any HxNx pattern: 7847
+Metadata accessions matching subtype regex: 1071
+Accessions with full-length HA CDS found: 1057
+Accessions without full-length HA CDS: 14
+Dropped for missing collection date: 105
+Dropped for ambiguous nucleotides: 44
+Dropped for invalid CDS: 45
+CDS length distribution (n=863):
+  min: 1683, max: 1689
+  0.1th percentile: 1685
+  1st percentile: 1689
+  10th percentile: 1689
+  median: 1689
+  90th percentile: 1689
+  99th percentile: 1689
+  99.9th percentile: 1689
+CDS length range filter [1689, 1710]:
+  dropped too short (<1689): 4
+  dropped too long (>1710): 0
+  kept: 859 of 863
+Written 859 HA CDS sequences for 'H2N\d{1,2}'
