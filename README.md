@@ -89,6 +89,10 @@ Generate an auspice config JSON that defines continuous viridis color scales for
 The color scale is configured per tree as `phenotype_color_scale` in [config.yaml](config.yaml).
 Outputs an auspice config JSON in `results/trees/{tree}/`.
 
+### `format_description`: Format description markdown per tree
+For each tree, format the shared description markdown file by replacing `{tree}` with the tree name (e.g., "H5").
+This produces a tree-specific description file in `results/trees/{tree}/` that is passed to `augur export`.
+
 ### `export`: Export auspice JSONs
 Export interactive auspice v2 JSONs using [augur export](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/export_v2.html).
 Each tree uses an auspice config file (configured as `auspice_config` in [config.yaml](config.yaml)) that defines colorings, filters, display defaults, and metadata; a generated phenotype auspice config with color scales for mutation effect scores; a markdown `description` file for the tree sidebar; and a `title` for the tree visualization.

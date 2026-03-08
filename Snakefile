@@ -375,6 +375,23 @@ rule generate_phenotype_auspice_config:
         """
 
 
+rule format_description:
+    """Format description markdown, replacing {tree} with the tree name."""
+    input:
+        description=lambda wc: config["trees"][wc.tree]["description"],
+    output:
+        description="results/trees/{tree}/description.md",
+    log:
+        "results/logs/format_description_{tree}.txt",
+    conda:
+        "environment.yaml"
+    shell:
+        """
+        sed 's/{{tree}}/{wildcards.tree}/g' {input.description} \
+            > {output.description} 2> {log}
+        """
+
+
 rule export:
     """Export auspice json."""
     input:
@@ -386,7 +403,7 @@ rule export:
         metadata=rules.collapse_host_order.output.metadata,
         auspice_config=lambda wc: config["trees"][wc.tree]["auspice_config"],
         phenotype_auspice_config=rules.generate_phenotype_auspice_config.output.auspice_config,
-        description=lambda wc: config["trees"][wc.tree]["description"],
+        description=rules.format_description.output.description,
     output:
         auspice_json=os.path.join("auspice", config["auspice_prefix"] + "_{tree}.json"),
     params:

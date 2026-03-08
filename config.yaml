@@ -50,4 +50,4 @@ trees:
       phenotype_color_scale: *phenotype_color_scale
       title: ?f'Influenza {subtype} HA phylogeny colored by predicted tufted duck MHC-II usage'
       auspice_config: data/auspice_config/auspice_config.json
-      description: data/auspice_config/description.md
+      description: data/auspice_config/description.md  # in file, "{tree}" replaced with tree name (eg, "H5")
