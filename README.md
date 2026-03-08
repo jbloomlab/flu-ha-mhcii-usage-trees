@@ -9,7 +9,7 @@ Structure of repo:
   - [environment.yaml](environment.yaml): conda environment
   - [Snakefile](Snakefile): Snakemake file with pipeline
   - [./scripts/](scripts): scripts used by pipeline
-  - [./data/](data): input data
+  - [./data/](data): input data (see [data/README.md](data/README.md) for details on the subdirectory structure, mutation effect data, and the `build_protein_sites_and_mutation_effects.py` script that generates `protein_sites.tsv` and `mutation_effects.tsv` for each tree)
   - `./results/`: results created by pipeline
   - [./auspice/](auspice): final JSON trees for visualization via [https://auspice.us/](https://auspice.us/) or [Nextstrain community builds](https://docs.nextstrain.org/en/latest/guides/share/community-builds.html).
 

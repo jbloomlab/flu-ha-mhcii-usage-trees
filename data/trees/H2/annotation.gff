@@ -1,0 +1,5 @@
+##gff-version 3
+##sequence-region reference_sequence 1 1689
+reference_sequence	.	gene	1	45	.	+	.	gene_name=SigPep
+reference_sequence	.	gene	46	1020	.	+	.	gene_name=HA1
+reference_sequence	.	gene	1021	1689	.	+	.	gene_name=HA2
