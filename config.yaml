@@ -1,3 +1,5 @@
+__use_yte__: true  # enable YTE templating for Snakemake configfile
+
 # taxon ID for NCBI dataset download
 dataset_taxid: 11320  # influenza A virus taxon id
 
@@ -11,74 +13,41 @@ collapse_low_freq_host_order: 0.005
 # https://nextstrain.org/community/jbloomlab/flu-ha-trees-mhcII-binding@main/H5
 auspice_prefix: flu-ha-trees-mhcII-binding
 
+# Shared viridis color scale for phenotype scores on trees
+phenotype_color_scale: &phenotype_color_scale
+  - "#440154"
+  - "#472d7b"
+  - "#3b528b"
+  - "#2c728e"
+  - "#21918c"
+  - "#28ae80"
+  - "#5ec962"
+  - "#addc30"
+  - "#fde725"
+
 # make separate trees for each of these HA subtypes, with per-tree configuration
 trees:
-
-  H5:
-    subtype: 'H5N\d{1,2}'  # regex for subtype
-    cds_length_range: data/trees/H5/cds_length_range.yaml  # YAML with [min, max] length filter; either can be null
-    augur_subsample:  # configuration to augur subsample
-      samples:
-        subsample_all:
-          exclude: data/trees/H5/accessions_to_exclude.txt
-          exclude_ambiguous_dates_by: month
-          max_sequences: 2000
-          group_by: [year, region]
-    reference_sequence: data/trees/H5/reference_sequence.fa  # reference CDS for alignment
-    annotation: data/trees/H5/annotation.gff  # GFF3 gene annotation for augur ancestral
-    genes: [SigPep, HA1, HA2]  # genes in annotation to translate
-    mutation_effects: data/trees/H5/mutation_effects.tsv  # effects of mutations, must have columns "protein", "protein_site", "phenotype", "effect"
-    phenotypes:  # phenotypes from mutation_effects to map to tree, keys column in TSV, values name on tree
-      H5 tufted duck MHCII entry increase: MHCII entry increase (H5)
-      H5 tufted duck MHCII binding: MHCII binding (H5)
-      H7 tufted duck MHCII entry increase: MHCII entry increase (H7)
-      H7 tufted duck MHCII binding: MHCII binding (H7)
-    phenotype_color_scale:  # viridis color scale for phenotype scores on tree
-      - "#440154"
-      - "#472d7b"
-      - "#3b528b"
-      - "#2c728e"
-      - "#21918c"
-      - "#28ae80"
-      - "#5ec962"
-      - "#addc30"
-      - "#fde725"
-    title: Influenza H5 HA phylogeny colored by predicted tufted duck MHC-II usage
-    auspice_config: data/auspice_config/auspice_config.json  # auspice configuration, colors for phenotypes added separately
-    description: data/auspice_config/description.md
-
-#  H1:
-#    subtype: 'H1N\d{1,2}'
-#    augur_subsample:
-#      samples:
-#        subsample_all:
-#          exclude_ambiguous_dates_by: month
-#          max_sequences: 2000
-#          group_by: [year, region]
-
-#  H2:
-#    subtype: 'H2N\d{1,2}'
-#    augur_subsample:
-#      samples:
-#        subsample_all:
-#          exclude_ambiguous_dates_by: month
-#          max_sequences: 2000
-#          group_by: [year, region]
-
-#  H3:
-#    subtype: 'H3N\d{1,2}'
-#    augur_subsample:
-#      samples:
-#        subsample_all:
-#          exclude_ambiguous_dates_by: month
-#          max_sequences: 2000
-#          group_by: [year, region]
-
-#  H7:
-#    subtype: 'H7N\d{1,2}'
-#    augur_subsample:
-#      samples:
-#        subsample_all:
-#          exclude_ambiguous_dates_by: month
-#          max_sequences: 2000
-#          group_by: [year, region]
+  ?for subtype in ["H1", "H2", "H3", "H5", "H7"]:
+    ?subtype:
+      subtype: ?f'{subtype}N\\d{{1,2}}'  # regex for subtype
+      cds_length_range: ?f'data/trees/{subtype}/cds_length_range.yaml'
+      augur_subsample:
+        samples:
+          subsample_all:
+            exclude: ?f'data/trees/{subtype}/accessions_to_exclude.txt'
+            exclude_ambiguous_dates_by: month
+            max_sequences: 2000
+            group_by: [year, region]
+      reference_sequence: ?f'data/trees/{subtype}/reference_sequence.fa'
+      annotation: ?f'data/trees/{subtype}/annotation.gff'
+      genes: [SigPep, HA1, HA2]
+      mutation_effects: ?f'data/trees/{subtype}/mutation_effects.tsv'
+      phenotypes:
+        H5 tufted duck MHCII entry increase: MHCII entry increase (H5)
+        H5 tufted duck MHCII binding: MHCII binding (H5)
+        H7 tufted duck MHCII entry increase: MHCII entry increase (H7)
+        H7 tufted duck MHCII binding: MHCII binding (H7)
+      phenotype_color_scale: *phenotype_color_scale
+      title: ?f'Influenza {subtype} HA phylogeny colored by predicted tufted duck MHC-II usage'
+      auspice_config: data/auspice_config/auspice_config.json
+      description: data/auspice_config/description.md
