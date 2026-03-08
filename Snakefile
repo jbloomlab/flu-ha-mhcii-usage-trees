@@ -70,13 +70,13 @@ rule extract_ha_cds:
         genome_metadata=rules.format_ncbi_dataset.output.genome_metadata,
         genomic_headers=rules.format_ncbi_dataset.output.genomic_headers,
         zipfile=rules.get_ncbi_dataset_zip.output.zipfile,
+        cds_length_range=lambda wc: config["trees"][wc.tree]["cds_length_range"],
     output:
         metadata="results/trees/{tree}/metadata_all_pre_host.tsv",
         fasta="results/trees/{tree}/cds_all.fasta.gz",
         stats="results/trees/{tree}/extract_cds_stats.txt",
     params:
         subtype_regex=lambda wc: config["trees"][wc.tree]["subtype"],
-        cds_length_range=lambda wc: config["trees"][wc.tree]["cds_length_range"],
     log:
         "results/logs/extract_ha_cds_{tree}.txt",
     conda:

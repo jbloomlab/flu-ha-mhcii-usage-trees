@@ -26,6 +26,8 @@ Each subdirectory has the following files:
 
   - `accessions_to_exclude.txt`: a list of Genbank accessions to exclude from the final tree, listed one-per-line. You should manually add to this file if there are outlier or incorrect sequences you want to exclude from the tree. If there are no sequences to exclude, make this an empty file.
 
+  - `cds_length_range.yaml`: YAML file specifying the allowed CDS nucleotide length range for filtering sequences. Has a single key `cds_length_range` with a two-element list `[min, max]`. Either bound can be `null` to impose no limit on that side (e.g., `[1692, null]` for no upper bound). To set this length range for a new subtype, first set contents to `cds_length_range: [null, null]` and then look at the output in `results/trees/{tree}/extract_cds_stats.txt` which prints distribution of length ranges to set reasonable limits.
+
   - `protein_sites.tsv`: TSV file with the following columns:
     + *reference_sequential_site*: 1, 2, numbering of the protein encoded by `reference_sequence.fa`
     + *reference_aa*: amino acid in the protein encoded by `reference_sequence.fa` at this site
@@ -43,6 +45,8 @@ Each subdirectory has the following files:
     + *mutant*: the mutant amino-acid at the site in the experiment used to measure the mutation effect
     + *phenotype*: the phenotype being measured; these phenotypes must include all phenotypes provided under the *phenotypes* key for the *trees* in [../config.yaml](../config.yaml).
     + *effect*: number giving the effect of the mutation on the phenotype
+
+To add a new tree, manually add `reference_sequence.fa`, `annotation.gff`, `accessions_to_exclude.txt`, and `cds_length_range.yaml`. Then run the script described in next subsection ([build_protein_sites_and_mutation_effects.py](build_protein_sites_and_mutation_effects.py)) to build the `protein_sites.tsv` and `mutation_effects.tsv` files.
 
 ## Script to build `protein_sites.tsv` and `mutation_effects.tsv`
 The `protein_sites.tsv` and `mutation_effects.tsv` files for the tree input data are built by the script [build_protein_sites_and_mutation_effects.py](build_protein_sites_and_mutation_effects.py) from the input data in [./mutation_effect_data/](mutation_effect_data) and the configuration in [build_protein_sites_and_mutation_effects_config.yaml](build_protein_sites_and_mutation_effects_config.yaml) by running:

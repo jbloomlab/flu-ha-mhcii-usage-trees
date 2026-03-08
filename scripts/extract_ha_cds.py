@@ -7,6 +7,7 @@ import zipfile
 
 import numpy as np
 import pandas as pd
+import yaml
 from Bio.Seq import Seq
 
 METADATA_COLUMNS = [
@@ -169,7 +170,11 @@ def main():
     headers_file = snakemake.input.genomic_headers  # noqa: F821
     zip_path = snakemake.input.zipfile  # noqa: F821
     subtype_regex = snakemake.params.subtype_regex  # noqa: F821
-    cds_length_range = snakemake.params.cds_length_range  # noqa: F821
+    with open(snakemake.input.cds_length_range) as f:  # noqa: F821
+        cds_length_range = yaml.safe_load(f)["cds_length_range"]
+    if len(cds_length_range) != 2:
+        raise ValueError(f"cds_length_range must have 2 elements: {cds_length_range}")
+    min_len, max_len = cds_length_range
     out_metadata = snakemake.output.metadata  # noqa: F821
     out_fasta = snakemake.output.fasta  # noqa: F821
     out_stats = snakemake.output.stats  # noqa: F821
@@ -212,13 +217,22 @@ def main():
             f"No valid HA CDS sequences after filtering for '{subtype_regex}'"
         )
 
-    # filter by CDS length range
-    min_len, max_len = cds_length_range
+    # filter by CDS length range (either bound can be null for no limit)
     n_before = len(sequences)
-    too_short = {acc for acc, seq in sequences.items() if len(seq) < min_len}
-    too_long = {acc for acc, seq in sequences.items() if len(seq) > max_len}
+    too_short = (
+        {acc for acc, seq in sequences.items() if len(seq) < min_len}
+        if min_len is not None
+        else set()
+    )
+    too_long = (
+        {acc for acc, seq in sequences.items() if len(seq) > max_len}
+        if max_len is not None
+        else set()
+    )
     sequences = {
-        acc: seq for acc, seq in sequences.items() if min_len <= len(seq) <= max_len
+        acc: seq
+        for acc, seq in sequences.items()
+        if acc not in too_short and acc not in too_long
     }
     stats.append(f"CDS length range filter [{min_len}, {max_len}]:")
     stats.append(f"  dropped too short (<{min_len}): {len(too_short)}")
