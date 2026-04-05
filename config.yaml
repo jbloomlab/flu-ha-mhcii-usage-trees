@@ -30,14 +30,15 @@ trees:
   ?for subtype in ["H1", "H2", "H3", "H5", "H7"]:
     ?subtype:
       subtype: ?f'{subtype}N\\d{{1,2}}'  # regex for subtype
-      cds_length_range: ?f'data/trees/{subtype}/cds_length_range.yaml'
-      augur_subsample:
+      cds_length_range: ?f'data/trees/{subtype}/cds_length_range.yaml'  # only keep CDSs in this length range
+      augur_subsample:  # subsampling of sequences by augur subsample
         samples:
           subsample_all:
             exclude: ?f'data/trees/{subtype}/accessions_to_exclude.txt'
             exclude_ambiguous_dates_by: year
             max_sequences: 2000
             group_by: [year, region]
+      clock_filter_iqd: 4  # filter in augur refine to remove outliers from molecular clock; null for no filter
       reference_sequence: ?f'data/trees/{subtype}/reference_sequence.fa'
       annotation: ?f'data/trees/{subtype}/annotation.gff'
       genes: [SigPep, HA1, HA2]

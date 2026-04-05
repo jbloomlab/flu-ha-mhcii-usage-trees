@@ -250,6 +250,11 @@ rule refine:
         node_data="results/trees/{tree}/branch_lengths.json",
     params:
         strain_id="accession",
+        clock_filter_iqd_arg=lambda wc: (
+            f"--clock-filter-iqd {config['trees'][wc.tree]['clock_filter_iqd']}"
+            if config["trees"][wc.tree]["clock_filter_iqd"] is not None
+            else ""
+        ),
     conda:
         "environment.yaml"
     log:
@@ -265,6 +270,7 @@ rule refine:
             --output-node-data {output.node_data} \
             --timetree \
             --use-fft \
+            {params.clock_filter_iqd_arg} \
             &> {log}
         """
 

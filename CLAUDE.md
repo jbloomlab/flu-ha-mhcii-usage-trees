@@ -92,7 +92,7 @@ Outputs per tree:
 - `results/trees/{tree}/tree_raw.nwk`: inferred maximum-likelihood tree in Newick format
 
 ### `refine`
-Per-subtype rule that refines the raw tree using `augur refine` (which wraps TreeTime). Takes the raw tree, alignment, and collapsed subsampled metadata as inputs. Uses `--metadata-id-columns accession` to match the metadata format. Builds a time-resolved tree (`--timetree`) using FFT-based marginal date estimation (`--use-fft`).
+Per-subtype rule that refines the raw tree using `augur refine` (which wraps TreeTime). Takes the raw tree, alignment, and collapsed subsampled metadata as inputs. Uses `--metadata-id-columns accession` to match the metadata format. Builds a time-resolved tree (`--timetree`) using FFT-based marginal date estimation (`--use-fft`). Applies `--clock-filter-iqd` from `config["trees"][tree]["clock_filter_iqd"]` to remove molecular clock outliers (tips deviating more than N interquartile ranges from the root-to-tip regression); set to `null` in config for no clock filtering.
 
 Outputs per tree:
 - `results/trees/{tree}/tree.nwk`: time-resolved refined tree in Newick format
