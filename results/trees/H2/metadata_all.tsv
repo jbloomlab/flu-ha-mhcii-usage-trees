@@ -4,14 +4,27 @@ CY021805.1	A/Albany/22/1957	H2N2	1957	Homo sapiens	9606	human	Primates	USA: Alba
 CY125910.1	A/Ann Arbor/23/1957	H2N2	1957	Homo sapiens	9606	human	Primates	USA: Michigan, Ann Arbor	North America		1748
 CY031579.1	A/Ann Arbor/23/1957	H2N2	1957	Homo sapiens	9606	human	Primates	USA: Ann Arbor, MI	North America		1733
 CY125870.1	A/ITS/1/1957	H2N2	1957	Homo sapiens	9606	human	Primates	Japan: Itsukaichi	Asia		1748
+L20406.1	A/Japan/305+/1957	H2N2	1957						Asia		1773
+L20407.1	A/Japan/305-/1957	H2N2	1957						Asia		1773
+CY045812.1	A/Japan/305-MA19A/1957	H2N2	1957	Homo sapiens	9606	human	Primates		Asia	Mouselung 19+MDCK 2+egg 2 passage(s)	1734
+CY045820.1	A/Japan/305-MA19B/1957	H2N2	1957	Homo sapiens	9606	human	Primates		Asia	Mouselung 19+MDCK 2+egg 2 passage(s)	1737
 CY044325.1	A/Japan/305/1957	H2N2	1957	Homo sapiens	9606	human	Primates	Japan	Asia	Egg passage(s)	1712
 CY045804.1	A/Japan/305/1957	H2N2	1957	Homo sapiens	9606	human	Primates	Japan	Asia	egg 2 passage(s)	1741
+J02127.1	A/Japan/305/1957	H2N2	1957						Asia		1773
 KP098432.1	A/Okuda/1957	H2N2	1957	Homo sapiens	9606	human	Primates	Japan	Asia		1748
+L20408.1	A/RI/5+/1957	H2N2	1957								1773
+L20409.1	A/RI/5-/1957	H2N2	1957								1773
 CY125878.1	A/Rockville Illinois/5-CA/1957	H2N2	1957	Homo sapiens	9606	human	Primates	USA: Illinois, Rockville	North America		1748
 CY125830.1	A/Rockville Illinois/5/1957	H2N2	1957	Homo sapiens	9606	human	Primates	USA: Illinois, Rockville	North America		1748
 CY077897.1	A/Rotterdam/1957	H2N2	1957	Homo sapiens	9606	human	Primates	Netherlands: Rotterdam	Europe		1730
 KP098424.1	A/Shanghai/202/1957	H2N2	1957	Homo sapiens	9606	human	Primates	China: Shanghai	Asia		1748
+CY034052.1	A/Singapore/1-MA12/1957	H2N2	1957	Homo sapiens	9606	human	Primates	Singapore	Asia	Mouselung 12+MDCK 2+egg 2 passage(s)	1726
+CY034060.1	A/Singapore/1-MA12A/1957	H2N2	1957	Homo sapiens	9606	human	Primates	Singapore	Asia	Mouselung 12+MDCK 2+egg 2 passage(s)	1726
+CY034068.1	A/Singapore/1-MA12B/1957	H2N2	1957	Homo sapiens	9606	human	Primates	Singapore	Asia	Mouselung 12+MDCK 2+egg 2 passage(s)	1723
+CY034990.1	A/Singapore/1-MA12C/1957	H2N2	1957	Homo sapiens	9606	human	Primates		Asia	Mouselung 12+MDCK 2+egg 2 passage(s)	1726
+CY034076.1	A/Singapore/1-MA12D/1957	H2N2	1957	Homo sapiens	9606	human	Primates	Singapore	Asia	Mouselung 12+MDCK 2+egg 2 passage(s)	1716
 CY125894.1	A/Singapore/1/1957	H2N2	1957	Homo sapiens	9606	human	Primates	Singapore	Asia		1748
+L20410.1	A/Singapore/1/1957	H2N2	1957						Asia		1773
 CY034044.1	A/Singapore/1/1957	H2N2	1957	Homo sapiens	9606	human	Primates	Singapore	Asia	egg 2 passage(s)	1734
 KP098384.1	A/Zhang/4/1957	H2N2	1957	Homo sapiens	9606	human	Primates	China	Asia		1748
 CY014976.1	A/Japan/305/1957	H2N2	1957-04	Homo sapiens	9606	human	Primates	Japan: Zama	Asia		1773
@@ -41,11 +54,13 @@ KP098416.1	A/Leningrad/29/1963	H2N2	1963	Homo sapiens	9606	human	Primates	Russia
 CY125886.1	A/Ned/65/1963	H2N2	1963	Homo sapiens	9606	human	Primates	Netherlands	Europe		1748
 CY077733.1	A/Netherlands/001K1/1963	H2N2	1963	Homo sapiens	9606	human	Primates	Netherlands	Europe		1763
 CY035078.1	A/Netherlands/56/1963	H2N2	1963	Homo sapiens	9606	human	Primates	Netherlands	Europe	P2 passage(s)	1715
+CY045796.1	A/North Carolina/1-MA12/1963	H2N2	1963	Homo sapiens	9606	human	Primates			Derivative of EB072+Mouselung 12+MDCK 2+egg 2 passage(s)	1739
 CY045788.1	A/North Carolina/1/1963	H2N2	1963	Homo sapiens	9606	human	Primates	USA: North Carolina	North America	egg 2 passage(s)	1734
 CY031587.1	A/North Carolina/1/1963	H2N2	1963	Homo sapiens	9606	human	Primates	USA: North Carolina	North America		1711
 KP098392.1	A/Beijing/12/1964	H2N2	1964	Homo sapiens	9606	human	Primates	China: Beijing	Asia		1748
 CY032237.1	A/Berlin/3/1964	H2N2	1964	Homo sapiens	9606	human	Primates	Germany: Berlin	Europe	Unknown/P3 passage(s)	1735
 CY032261.1	A/Cottbus/1/1964	H2N2	1964	Homo sapiens	9606	human	Primates	Germany: Cottbus	Europe	P2 passage(s)	1711
+DQ508881.1	A/Taiwan/1964	H2N2	1964						Asia		1689
 CY031603.1	A/Moscow/1019/1965	H2N2	1965	Homo sapiens	9606	human	Primates	Russia: Moscow	Europe		1726
 CY032245.1	A/Potsdam/2/1965	H2N2	1965	Homo sapiens	9606	human	Primates	Germany: Potsdam	Europe	E2(28) passage(s)	1711
 CY034926.1	A/Czech Republic/1/1966	H2N2	1966	Homo sapiens	9606	human	Primates	Czech Republic	Europe		1705
@@ -65,6 +80,7 @@ CY021021.1	A/Albany/1/1968	H2N2	1968	Homo sapiens	9606	human	Primates	USA: Alban
 CY020413.1	A/Albany/2/1968	H2N2	1968	Homo sapiens	9606	human	Primates	USA: Albany County, NY	North America	pRhMK 2 passage(s)	1733
 CY033473.1	A/Berkeley/1/1968	H2N2	1968	Homo sapiens	9606	human	Primates	USA: Berkeley, CA	North America		1733
 CY125846.1	A/Korea/426/1968	H2N2	1968	Homo sapiens	9606	human	Primates	Korea	Asia		1734
+NC_007374.1	A/Korea/426/1968	H2N2	1968						Asia		1773
 CY036815.1	A/Korea/426/1968	H2N2	1968	Homo sapiens	9606	human	Primates	South Korea	Asia	Egg passage(s)	1734
 CY031595.1	A/Korea/426/1968	H2N2	1968	Homo sapiens	9606	human	Primates	South Korea	Asia		1733
 KP412319.1	A/Netherlands/61/1968	H2N2	1968	Homo sapiens	9606	human	Primates	Netherlands	Europe		1689
@@ -108,9 +124,11 @@ CY117075.1	A/mallard/Stralsund/48-6/1981	H2N3	1981	Anas platyrhynchos	8839	avian
 CY117131.1	A/mallard/Stralsund/55-4/1981	H2N3	1981	Anas platyrhynchos	8839	avian	Anseriformes	Germany: Stralsund	Europe	P2/P3 passage(s)	1748
 CY117139.1	A/mallard/Stralsund/55-6/1981	H2N3	1981	Anas platyrhynchos	8839	avian	Anseriformes	Germany: Stralsund	Europe	P2/P3 passage(s)	1748
 CY178735.1	A/mallard/Wisconsin/515/1981	H2N3	1981	Anas platyrhynchos	8839	avian	Anseriformes	USA: Madison, WI	North America		1747
+LC042004.2	A/pintail/Shimane/1086/1981	H2N3	1981	Anas acuta	28680	avian	Anseriformes	Japan	Asia		1689
 CY178470.1	A/mallard/Wisconsin/1120/1982	H2N3	1982	Anas platyrhynchos	8839	avian	Anseriformes	USA: Madison, WI	North America		1747
 CY178478.1	A/mallard/Wisconsin/1135/1982	H2N3	1982	Anas platyrhynchos	8839	avian	Anseriformes	USA: Madison, WI	North America		1745
 CY178615.1	A/mallard/Wisconsin/222/1982	H2N3	1982	Anas platyrhynchos	8839	avian	Anseriformes	USA: Wisconsin	North America		1747
+LC042007.2	A/whistling swan/Shimane/1447/1982	H2N3	1982	Cygnus columbianus	110926	avian	Anseriformes	Japan	Asia		1689
 CY116963.1	A/chicken/Jena/4836/1983	H2N2	1983	Gallus gallus	9031	avian	Galliformes	Germany: Jena	Europe	EX/E1 passage(s)	1748
 CY067272.1	A/mallard/Postdam/178-CIP046-qa6rnd2/1983	H2N2	1983	Anas platyrhynchos	8839	avian	Anseriformes	Germany	Europe	6 serial lung passages in quail. Stock prepared in allantoic fluid E1 passage(s)	1689
 CY116851.1	A/mallard/Potsdam/176/1983	H2N2	1983	Anas platyrhynchos	8839	avian	Anseriformes	Germany: Potsdam	Europe	X/EXE1 passage(s)	1748
@@ -170,6 +188,7 @@ CY116947.1	A/guinea fowl/New Jersey/30701/1991	H2N2	1991-06-05	Numididae	8990	av
 CY117485.1	A/ruddy turnstone/Delaware Bay/81/1993	H2N1	1993-05-15	Arenaria interpres	54971	avian	Charadriiformes	USA: Delaware Bay, New Jersey	North America	EXE1 passage(s)	1748
 CY015135.1	A/ruddy turnstone/Delaware/34/1993	H2N1	1993-05-15	Aves	8782	avian		USA: Delaware	North America		1773
 LC431476.1	A/duck/Alaska/5111/1994	H2N3	1994	Anseriformes	8826	avian	Anseriformes	USA:Alaska	North America		1753
+LC042003.2	A/duck/Alaska/5111/1994	H2N3	1994	Anseriformes	8826	avian	Anseriformes	USA	North America		1689
 CY117493.1	A/laughing gull/Delaware Bay/34/1994	H2N3	1994-05-22	Leucophaeus atricilla	126679	avian	Charadriiformes	USA: Delaware Bay, New Jersey	North America	P2 passage(s)	1748
 CY117501.1	A/ruddy turnstone/Delaware Bay/129/1994	H2N3	1994-05-22	Arenaria interpres	54971	avian	Charadriiformes	USA: Delaware Bay, New Jersey	North America	P1 passage(s)	1748
 CY116791.1	A/ruddy turnstone/Delaware Bay/157/1994	H2N3	1994-05-22	Arenaria interpres	54971	avian	Charadriiformes	USA: Delaware Bay, New Jersey	North America	P1 passage(s)	1748

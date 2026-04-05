@@ -1,4 +1,5 @@
 accession	strain	subtype	date	host_specific	host_tax_id	host_general	host_order	location	region	passage_history	length
+CY110922.1	A/Puerto Rico/8-RGcH5-1/1934	H5N1	1934	Homo sapiens	9606	human	Primates		North America		1698
 CY015081.1	A/chicken/Scotland/1959	H5N1	1959	Aves	8782	avian		United Kingdom: Scotland	Europe		1767
 KM190930.1	A/chicken/Scotland/1959	H5N1	1959	Gallus gallus	9031	avian	Galliformes	United Kingdom	Europe		1692
 GU052518.1	A/chicken/Scotland/1959	H5N1	1959	Gallus gallus	9031	avian	Galliformes	United Kingdom: Scotland	Europe		1742
@@ -22,9 +23,14 @@ AB558459.1	A/mallard/Miyagi/53/1976	H5N3	1976	Anas platyrhynchos	8839	avian	Anse
 CY180388.1	A/mallard/Wisconsin/232/1976	H5N2	1976	Anas platyrhynchos	8839	avian	Anseriformes	USA: DeSoto East, WI	North America		1726
 CY005918.1	A/mallard duck/ALB/57/1976	H5N2	1976-08-12	Aves	8782	avian		Canada: Alberta	North America		1767
 CY014615.1	A/duck/Hong Kong/205/1977	H5N3	1977	Aves	8782	avian		Hong Kong	Asia		1767
+AB542809.1	A/duck/Hong Kong/313-4/1978	H5N3	1978					Hong Kong	Asia		1695
 CY005575.1	A/duck/Hong Kong/342/1978	H5N2	1978	Aves	8782	avian		Hong Kong: Hong Kong	Asia		1767
 CY006028.1	A/goose/Hong Kong/23/1978	H5N3	1978	Aves	8782	avian		Hong Kong: Hong Kong	Asia		1767
+EF597250.1	A/duck/Hong Kong/698/1979	H5N3	1979					China	Asia		1695
 EU743301.1	A/turkey/CA/6878/1979	H5N3	1979	Meleagris gallopavo	9103	avian	Galliformes	USA	North America		1742
+LC042019.1	A/duck/Hong Kong/819/1980	H5N3	1980	Anseriformes	8826	avian	Anseriformes	Hong Kong	Asia		1749
+LC042027.1	A/duck/Hong Kong/820/1980	H5N3	1980	Anseriformes	8826	avian	Anseriformes	Hong Kong	Asia		1752
+LC042035.1	A/duck/Hong Kong/821/1980	H5N3	1980	Anseriformes	8826	avian	Anseriformes	Hong Kong	Asia		1748
 CY021381.1	A/turkey/Italy/1980	H5N2	1980	Meleagris gallopavo	9103	avian	Galliformes	Italy	Europe	Egg 1 passage(s)	1733
 CY014580.1	A/mallard duck/Alberta/645/1980	H5N2	1980-08-22	Aves	8782	avian		Canada: Alberta	North America		1767
 CY077685.1	A/duck/Victoria/26/1981	H5N2	1981	Anatidae	8830	avian	Anseriformes	Australia: Victoria	Oceania		1733
@@ -58,17 +64,43 @@ GU052860.1	A/turkey/Ireland/?/1983	H5N8	1983	Meleagris gallopavo	9103	avian	Gall
 CY178086.1	A/widgeon/Wisconsin/493/1983	H5N2	1983	Mareca penelope	8838	avian	Anseriformes	USA: Wisconsin	North America		1742
 EU871820.1	A/turkey/Ontario/84/1983	H5N1	1983-01	Meleagris gallopavo	9103	avian	Galliformes	Canada	North America		1767
 FJ610134.1	A/chicken/VA/40018/1984	H5N2	1984	Gallus gallus	9031	avian	Galliformes	USA	North America		1742
+KX879581.1	A/duck/Pennsylvania/10218-MA/1984	H5N2	1984								1731
 CY006036.1	A/duck/Potsdam/2216-4/1984	H5N6	1984	Aves	8782	avian		Germany: Potsdam	Europe		1767
+AF082041.1	A/duck/Potsdam/2216-4/1984	H5N6	1984								1700
 KM190931.1	A/duck/Potsdam/2216/1984	H5N6	1984	Anatidae	8830	avian	Anseriformes	Germany	Europe		1692
+GU183567.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+KM251542.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183557.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183558.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183561.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183554.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183556.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183565.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183566.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183568.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183559.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183555.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183560.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183563.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+KF006996.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183562.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+GU183564.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+KF006997.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+KM186130.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+KM226782.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+KM186131.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
+KF006998.1	A/mallard/Pennsylvania/10218/1984	H5N2	1984								1695
 AB558462.1	A/turkey/California/21860/1984	H5N3	1984	Meleagris gallopavo	9103	avian	Galliformes		Asia		1695
 CY014640.1	A/duck/New Zealand/41/1984	H5N2	1984-02-09	Aves	8782	avian		New Zealand	Oceania		1766
 KP674447.1	A/chicken/Pennsylvania/7659/1985	H5N2	1985	Gallus gallus	9031	avian	Galliformes	USA	North America		1742
+HF563055.1	A/duck/Potsdam/619/1985	H5N2	1985								1767
 GU052779.1	A/chicken/Florida/27716-2/1986	H5N2	1986	Gallus gallus	9031	avian	Galliformes	USA	North America		1742
 GU052747.1	A/chicken/Pennsylvania/10210/1986	H5N2	1986	Gallus gallus	9031	avian	Galliformes	USA	North America		1742
 CY014642.1	A/duck/Potsdam/1402-6/1986	H5N2	1986	Aves	8782	avian		Germany: Potsdam	Europe		1767
 EU743233.1	A/goose/OH/22911-2/1986	H5N2	1986	Anatidae	8830	avian	Anseriformes	USA	North America		1722
 FJ357091.1	A/guinea fowl/OH/22911-20/1986	H5N2	1986	Numididae	8990	avian	Galliformes	USA	North America		1721
 EU743071.1	A/turkey/MN/40550/1987	H5N2	1987	Meleagris gallopavo	9103	avian	Galliformes	USA	North America		1732
+U67783.2	Mallard/Ohio/556/1987	H5N9	1987								1721
 CY014872.1	A/black duck/New York/184/1988	H5N2	1988	Aves	8782	avian		USA: New York	North America		1767
 CY011248.1	A/wigeon/Ohio/379/1988	H5N2	1988-10-15	Mareca	1526411	avian	Anseriformes	USA: OH	North America	Egg 1/limiting dilution in egg 1 passage(s)	1733
 EU564114.1	A/Anas platyrhynchos/Altai/1285/1991	H5N3	1991	Anatidae	8830	avian	Anseriformes	Russia	Europe		1717
@@ -119,12 +151,17 @@ OK205819.1	A/chicken/Queretaro/14588-19/1995	H5N2	1995-01-09	Gallus gallus	9031	
 GU052588.1	A/chicken/Mexico/37821-771/1996	H5N2	1996	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1742
 OK205827.1	A/chicken/Queretaro/22019-853/1996	H5N2	1996	Gallus gallus	9031	avian	Galliformes	Mexico: Queretaro	North America		1773
 OK205851.1	A/chicken/San Luis Potosi/7651/1996	H5N2	1996	Gallus gallus	9031	avian	Galliformes	Mexico: San Luis Potosi	North America		1767
+NC_007362.1	A/goose/Guangdong/1/1996	H5N1	1996								1760
 GU052097.1	A/Hong Kong/483/1997	H5N1	1997	Homo sapiens	9606	human	Primates	Hong Kong	Asia		1754
 GU052142.1	A/Hong Kong/485/1997	H5N1	1997	Homo sapiens	9606	human	Primates	Hong Kong	Asia		1754
 GU052473.1	A/avian/Italy/1485/1997	H5N1	1997	Aves	8782	avian		Italy	Europe		1748
 OK205499.1	A/chicken/Chiapas/15224/1997	H5N2	1997	Gallus gallus	9031	avian	Galliformes	Mexico: Chiapas	North America		1767
 OK205507.1	A/chicken/Chiapas/15405/1997	H5N2	1997	Gallus gallus	9031	avian	Galliformes	Mexico: Chiapas	North America		1766
 GU052135.1	A/chicken/Hong Kong/786-2/1997	H5N1	1997	Gallus gallus	9031	avian	Galliformes	Hong Kong	Asia		1754
+DQ997102.1	A/chicken/Hubei/wh/1997	H5N1	1997					China	Asia		1779
+DQ997122.1	A/chicken/Hubei/wj/1997	H5N1	1997					China	Asia		1779
+DQ997133.1	A/chicken/Hubei/wl/1997	H5N1	1997					China	Asia		1779
+EF597263.1	A/chicken/Italy/312/1997	H5N2	1997					Italy	Europe		1718
 GU052403.2	A/chicken/Italy/330/1997	H5N2	1997	Gallus gallus	9031	avian	Galliformes	Italy	Europe		1748
 OK205675.1	A/chicken/Mexico/15407/1997	H5N2	1997	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1767
 EF619972.1	A/duck/Singapore/3/1997	H5N3	1997	Anatidae	8830	avian	Anseriformes	Singapore: Singapore	Asia		1761
@@ -141,6 +178,7 @@ CY015115.1	A/chicken/Italy/312/1997	H5N2	1997-10	Aves	8782	avian		Italy	Europe		
 OK205563.1	A/chicken/Guatemala/22066/1998	H5N2	1998	Gallus gallus	9031	avian	Galliformes	Guatemala	North America		1767
 OK205571.1	A/chicken/Guatemala/22189/1998	H5N2	1998	Gallus gallus	9031	avian	Galliformes	Guatemala	North America		1767
 CY022621.1	A/chicken/Italy/22A/1998	H5N9	1998	Gallus gallus	9031	avian	Galliformes	Italy	Europe	Egg 1 passage(s)	1734
+EF597267.1	A/chicken/Italy/8/1998	H5N2	1998					Italy	Europe		1706
 CY107845.1	A/chicken/Italy/8/1998	H5N2	1998	Gallus gallus	9031	avian	Galliformes	Italy	Europe		1698
 OK205643.1	A/chicken/Jalisco/229-4592/1998	H5N2	1998	Gallus gallus	9031	avian	Galliformes	Mexico: Jalisco	North America		1767
 OK205771.1	A/chicken/Morelos/227-4353/1998	H5N2	1998	Gallus gallus	9031	avian	Galliformes	Mexico: Morelos	North America		1767
@@ -150,17 +188,34 @@ OK205867.1	A/chicken/Veracruz/232-6169/1998	H5N2	1998	Gallus gallus	9031	avian	G
 OK205875.1	A/chicken/Veracruz/233-7607/1998	H5N2	1998	Gallus gallus	9031	avian	Galliformes	Mexico: Veracruz	North America		1767
 AY296064.2	A/chukar/MN/14591-7/1998	H5N2	1998	Alectoris chukar	9078	avian	Galliformes	USA	North America		1727
 MZ019501.1	A/chicken/Belgium/150/1999	H5N2	1999	Gallus gallus	9031	avian	Galliformes	Belgium	Europe		1695
+AY585363.1	A/duck/Guangxi/07/1999	H5N1	1999	Anatidae	8830	avian	Anseriformes				1708
 GU052019.1	A/goose/Hong Kong/437-6/1999	H5N1	1999	Anatidae	8830	avian	Anseriformes	Hong Kong	Asia		1754
 GU052027.1	A/goose/Hong Kong/437-8/1999	H5N1	1999	Anatidae	8830	avian	Anseriformes	Hong Kong	Asia		1754
 FJ750571.1	A/chicken/Belgium/150VB/1999	H5N2	1999-06-29	Gallus gallus	9031	avian	Galliformes	Belgium: Provincie Limburg	Europe		1695
+AY059481.1	A/Duck/Hong Kong/2986.1/2000(H5N1)	H5N1	2000						Asia		1704
+AY059476.1	A/Duck/Hong Kong/ww381/2000(H5N1)	H5N1	2000						Asia		1704
+AY059477.1	A/Duck/Hong Kong/ww382/2000(H5N1)	H5N1	2000						Asia		1704
+AY059478.1	A/Duck/Hong Kong/ww461/2000(H5N1)	H5N1	2000						Asia		1704
+AY059479.1	A/Duck/Hong Kong/ww487/2000(H5N1)	H5N1	2000						Asia		1704
 GU052073.1	A/Goose/Hong Kong/3014.5/2000	H5N1	2000	Anatidae	8830	avian	Anseriformes	Hong Kong	Asia		1754
+AY059482.1	A/Goose/Hong Kong/3014.8/2000(H5N1)	H5N1	2000						Asia		1704
+AY059474.1	A/Goose/Hong Kong/ww26/2000(H5N1)	H5N1	2000						Asia		1704
+AY059475.1	A/Goose/Hong Kong/ww28/2000(H5N1)	H5N1	2000						Asia		1704
+AY059480.1	A/Goose/Hong Kong/ww491/2000(H5N1)	H5N1	2000						Asia		1704
+DQ201829.1	A/Goose/Huadong/1/2000	H5N1	2000								1779
 OK205587.1	A/chicken/Guatemala/45511-1/2000	H5N2	2000	Gallus gallus	9031	avian	Galliformes	Guatemala	North America		1767
 OK205595.1	A/chicken/Guatemala/45511-2/2000	H5N2	2000	Gallus gallus	9031	avian	Galliformes	Guatemala	North America		1767
 OK205603.1	A/chicken/Guatemala/45511-3/2000	H5N2	2000	Gallus gallus	9031	avian	Galliformes	Guatemala	North America		1767
 OK205611.1	A/chicken/Guatemala/45511-4/2000	H5N2	2000	Gallus gallus	9031	avian	Galliformes	Guatemala	North America		1767
 GU052795.1	A/chicken/Guatemala/45511-5/2000	H5N2	2000	Gallus gallus	9031	avian	Galliformes	Guatemala	North America		1742
 OK205619.1	A/chicken/Guatemala/45511-5/2000	H5N2	2000	Gallus gallus	9031	avian	Galliformes	Guatemala	North America		1767
+AY585359.1	A/duck/Fujian/19/2000	H5N1	2000	Anatidae	8830	avian	Anseriformes				1707
+AY585373.1	A/duck/Guangdong/07/2000	H5N1	2000	Anatidae	8830	avian	Anseriformes				1708
+AY585361.1	A/duck/Guangdong/12/2000	H5N1	2000	Anatidae	8830	avian	Anseriformes				1708
+AY585374.1	A/duck/Guangdong/40/2000	H5N1	2000	Anatidae	8830	avian	Anseriformes				1708
 GU052065.1	A/duck/Hong Kong/2986.1-2/2000	H5N1	2000	Anatidae	8830	avian	Anseriformes	Hong Kong	Asia		1754
+AY585371.1	A/duck/Zhejiang/11/2000	H5N1	2000	Anatidae	8830	avian	Anseriformes				1708
+AY585377.1	A/duck/Zhejiang/52/2000	H5N1	2000	Anatidae	8830	avian	Anseriformes				1708
 GU052050.1	A/goose/Hong Kong/1032.6/2000	H5N1	2000	Anatidae	8830	avian	Anseriformes	Hong Kong	Asia		1754
 GU052057.1	A/goose/Hong Kong/1032.9/2000	H5N1	2000	Anatidae	8830	avian	Anseriformes	Hong Kong	Asia		1754
 GU052042.1	A/goose/Hong Kong/485.3/2000	H5N1	2000	Anatidae	8830	avian	Anseriformes	Hong Kong	Asia		1754
@@ -171,8 +226,18 @@ CY139837.1	A/mallard/Minnesota/355811/2000	H5N5	2000	Anas platyrhynchos	8839	avi
 EU182303.1		H5N2	2000	Aves	8782	avian		USA	North America		1712
 AY296077.2	A/Duck/NJ/117228-7/2001	H5N2	2001	Anatidae	8830	avian	Anseriformes	USA	North America		1722
 GU052089.1	A/Hong Kong/378.1/2001	H5N1	2001	Homo sapiens	9606	human	Primates	Hong Kong	Asia		1754
+AY747617.1	A/Swine/Fujian/F1/2001	H5N1	2001	Sus scrofa	9823	non-human mammal	Artiodactyla	China	Asia		1779
 OK205531.1	A/chicken/El Salvador/102711-1/2001	H5N2	2001	Gallus gallus	9031	avian	Galliformes	El Salvador	North America		1767
 OK205539.1	A/chicken/El Salvador/102711-2/2001	H5N2	2001	Gallus gallus	9031	avian	Galliformes	El Salvador	North America		1767
+AY585372.1	A/duck/Fujian/17/2001	H5N1	2001	Anatidae	8830	avian	Anseriformes				1708
+AY585360.1	A/duck/Guangdong/01/2001	H5N1	2001	Anatidae	8830	avian	Anseriformes				1708
+AY585364.1	A/duck/Guangxi/22/2001	H5N1	2001	Anatidae	8830	avian	Anseriformes				1708
+AY585365.2	A/duck/Guangxi/35/2001	H5N1	2001	Anatidae	8830	avian	Anseriformes				1707
+AY585375.1	A/duck/Guangxi/50/2001	H5N1	2001	Anatidae	8830	avian	Anseriformes				1708
+DQ997513.1	A/duck/Guangxi/xa/2001	H5N1	2001					China	Asia		1779
+AY585370.1	A/duck/Shanghai/08/2001	H5N1	2001	Anatidae	8830	avian	Anseriformes				1708
+AY585367.1	A/duck/Shanghai/13/2001	H5N1	2001	Anatidae	8830	avian	Anseriformes				1708
+AY585376.1	A/duck/Shanghai/38/2001	H5N1	2001	Anatidae	8830	avian	Anseriformes				1708
 CY028926.1	A/duck/Shantou/1101/2001(H5N1)	H5N1	2001	Anatidae	8830	avian	Anseriformes	China	Asia		1707
 CY028927.1	A/duck/Shantou/1437/2001(H5N1)	H5N1	2001	Anatidae	8830	avian	Anseriformes	China	Asia		1704
 CY028928.1	A/duck/Shantou/1930/2001(H5N1)	H5N1	2001	Anatidae	8830	avian	Anseriformes	China	Asia		1704
@@ -180,12 +245,14 @@ CY028931.1	A/duck/Shantou/4407/2001(H5N1)	H5N1	2001	Anatidae	8830	avian	Anserifo
 CY028933.1	A/duck/Shantou/4912/2001(H5N1)	H5N1	2001	Anatidae	8830	avian	Anseriformes	China	Asia		1707
 CY028936.1	A/duck/Shantou/5526/2001(H5N1)	H5N1	2001	Anatidae	8830	avian	Anseriformes	China	Asia		1707
 FJ357099.1	A/environment/NY/98899-6/2001	H5N2	2001					USA	North America		1726
+DQ997522.1	A/goose/Guangdong/xb/2001	H5N1	2001					China	Asia		1779
 GU052465.1	A/goose/Hong Kong/668.1/2001	H5N1	2001	Anatidae	8830	avian	Anseriformes	Hong Kong	Asia		1754
 CY028935.1	A/goose/Shantou/5456/2001(H5N1)	H5N1	2001	Anatidae	8830	avian	Anseriformes	China	Asia		1713
 GU052105.1	A/goose/Viet Nam/113/2001	H5N1	2001	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1754
 GU052113.1	A/goose/Viet Nam/324/2001	H5N1	2001	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1754
 CY144244.1	A/ruddy turnstone/New Jersey/828212/2001	H5N2	2001	Arenaria interpres	54971	avian	Charadriiformes	USA: Fortescue Beach, NJ	North America	E2 passage(s)	1695
 CY144236.1	A/ruddy turnstone/New Jersey/828227/2001	H5N8	2001	Arenaria interpres	54971	avian	Charadriiformes	USA: Fortescue Beach, NJ	North America	E2 passage(s)	1695
+DQ432037.1	A/swine/Fujian/2001	H5N1	2001					China	Asia		1707
 AY296078.2	A/unknown/NY/118547-11/2001	H5N2	2001					USA	North America		1721
 GU186692.1	A/waterfowl/Hong Kong/378.5/2001	H5N1	2001	Anatidae	8830	avian	Anseriformes	Hong Kong	Asia		1754
 MH597535.1	A/ruddy turnstone/Delaware/828239/2001	H5N7	2001-05-18	Arenaria interpres	54971	avian	Charadriiformes	USA: Delaware	North America		1695
@@ -193,15 +260,34 @@ MH598106.1	A/ruddy turnstone/New Jersey/828212/2001	H5N2	2001-05-23	Arenaria int
 MH598105.1	A/ruddy turnstone/New Jersey/828212/2001	H5N2	2001-05-23	Arenaria interpres	54971	avian	Charadriiformes	USA: New Jersey	North America		1712
 MH598125.1	A/ruddy turnstone/New Jersey/828227/2001	H5N8	2001-05-23	Arenaria interpres	54971	avian	Charadriiformes	USA: New Jersey	North America		1695
 GQ227604.1	A/duck/Primorie/2633/2001	H5N3	2001-08-24	Anatidae	8830	avian	Anseriformes	Russia	Europe		1742
+DQ320926.1	A/Chicken/Hong Kong/3123.1/2002	H5N1	2002					China	Asia		1698
+DQ320927.1	A/Chicken/Hong Kongi/86.3/2002	H5N1	2002					China	Asia		1698
+AY651346.1	A/Ck/HK/31.2/2002	H5N1	2002					China: Hong Kong	Asia		1701
+AY651347.1	A/Ck/HK/37.4/2002	H5N1	2002					China: Hong Kong	Asia		1701
 AY296080.2	A/Duck/NY/185502/2002	H5N2	2002	Anatidae	8830	avian	Anseriformes	USA	North America		1727
+AY651348.1	A/SCk/HK/YU100/2002	H5N1	2002					China: Hong Kong	Asia		1701
 GU186557.1	A/chicken/Guatemala/194573/2002	H5N2	2002	Gallus gallus	9031	avian	Galliformes	Guatemala	North America		1742
 OK205555.1	A/chicken/Guatemala/194573/2002	H5N2	2002	Gallus gallus	9031	avian	Galliformes	Guatemala	North America		1767
 GU186672.1	A/chicken/Hong Kong/409.1/2002	H5N1	2002	Gallus gallus	9031	avian	Galliformes	Hong Kong	Asia		1754
+DQ997182.1	A/chicken/Jiangsu/cz1/2002	H5N1	2002					China	Asia		1779
+DQ997283.1	A/chicken/Jilin/hd/2002	H5N1	2002					China	Asia		1779
+DQ997377.1	A/chicken/Jilin/hf/2002	H5N1	2002					China	Asia		1779
+DQ997308.1	A/chicken/Jilin/hh/2002	H5N1	2002					China	Asia		1779
+DQ997538.1	A/chicken/Jilin/xv/2002	H5N1	2002					China	Asia		1779
 CY034683.1	A/chicken/Texas/167280-4/2002(H5N3)	H5N3	2002	Gallus gallus	9031	avian	Galliformes	USA	North America		1767
 PQ064270.1	A/chicken/Texas/G021090002/2002	H5N3	2002	Gallus gallus	9031	avian	Galliformes	USA: Texas	North America		1763
+AY585357.1	A/duck/Fujian/01/2002	H5N1	2002	Anatidae	8830	avian	Anseriformes				1707
+AY585358.1	A/duck/Fujian/13/2002	H5N1	2002	Anatidae	8830	avian	Anseriformes				1707
+AY585362.1	A/duck/Guangdong/22/2002	H5N1	2002	Anatidae	8830	avian	Anseriformes				1708
+AY585366.1	A/duck/Guangxi/53/2002	H5N1	2002	Anatidae	8830	avian	Anseriformes				1708
+DQ997094.1	A/duck/Hubei/wg/2002	H5N1	2002					China	Asia		1779
 CY028964.1	A/duck/Hunan/1340/2002(H5N1)	H5N1	2002	Anatidae	8830	avian	Anseriformes	China	Asia		1707
+AY585368.1	A/duck/Shanghai/35/2002	H5N1	2002	Anatidae	8830	avian	Anseriformes				1707
+AY585369.1	A/duck/Shanghai/37/2002	H5N1	2002	Anatidae	8830	avian	Anseriformes				1708
+DQ997531.1	A/duck/Shanghai/xj/2002	H5N1	2002					China	Asia		1779
 CY028943.1	A/duck/Shantou/700/2002(H5N1)	H5N1	2002	Anatidae	8830	avian	Anseriformes	China	Asia		1704
 AB558458.1	A/duck/Shizuoka/40/2002	H5N3	2002	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Shizuoka	Asia		1695
+DQ997410.1	A/duck/Zhejiang/bj/2002	H5N1	2002					China	Asia		1779
 GU052494.1	A/egret/Hong Kong/757.2/2002	H5N1	2002	Ardeidae	8899	avian	Pelecaniformes	Hong Kong	Asia		1754
 GU186680.1	A/environment/Hong Kong/674.15/2002	H5N1	2002					Hong Kong	Asia		1754
 GU051872.1	A/environment/New York/200269-18/2002	H5N4	2002					USA	North America		1742
@@ -216,19 +302,41 @@ JF772164.1	A/quail/Guangxi/13/2002	H5N1	2002-07	Galliformes	8976	avian	Galliform
 CY016611.1	A/mallard/Maryland/789/2002	H5N2	2002-08-27	Anas platyrhynchos	8839	avian	Anseriformes	USA: MD	North America	Egg 1/limiting dilution in egg 1 passage(s)	1733
 FJ789840.1	A/wild bird feces/Cheonsuman2/2002	H5N3	2002-11					South Korea	Asia		1767
 AB535131.1	A/whistling swan/Shimane/580/02	H5N3	2002-12-07	Cygnus columbianus jankowskii	1450144	avian	Anseriformes	Japan:Shimane	Asia		1695
+EF587277.1	A/Beijing/01/2003	H5N1	2003	Homo sapiens	9606	human	Primates				1779
+DQ320938.1	A/Chicken/Vietnam/27/2003	H5N1	2003					Viet Nam	Asia		1698
+AY651355.1	A/Ck/HK/WF157/2003	H5N1	2003					China: Hong Kong	Asia		1692
+AB557747.1	A/Hong Kong/213-DkPass/2003	H5N1	2003	Anas platyrhynchos	8839	avian	Anseriformes		Asia	Mallard duck	1779
 EF541401.1	A/Hong Kong/213/2003	H5N1	2003	Homo sapiens	9606	human	Primates	China: Hong Kong	Asia		1750
+EU195416.1	A/Mallard/Huadong/Y/2003	H5N1	2003	Anas platyrhynchos	8839	avian	Anseriformes				1707
+EU099401.1	A/chicken/Guatemala/270475-4/2003	H5N2	2003	Gallus gallus	9031	avian	Galliformes	Guatemala	North America		1742
 OK205579.1	A/chicken/Guatemala/270475-4/2003	H5N2	2003	Gallus gallus	9031	avian	Galliformes	Guatemala	North America		1767
 GU052411.1	A/chicken/Indonesia/11/2003	H5N1	2003	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1754
 GU052150.1	A/chicken/Indonesia/8/2003	H5N1	2003	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1754
 GU052158.1	A/chicken/Indonesia/9/2003	H5N1	2003	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1754
+DQ997268.1	A/chicken/Jilin/ha/2003	H5N1	2003					China	Asia		1779
+DQ997355.1	A/chicken/Jilin/ho/2003	H5N1	2003					China	Asia		1779
+DQ997547.1	A/chicken/Jilin/xw/2003	H5N1	2003					China	Asia		1779
 GU052426.1	A/chicken/Legok/2003	H5N1	2003	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1754
 CY028959.1	A/chicken/Shantou/3744/2003(H5N1)	H5N1	2003	Gallus gallus	9031	avian	Galliformes	China	Asia		1716
+DQ497678.1	A/chicken/Vietnam/19/2003	H5N1	2003					Viet Nam	Asia		1695
+DQ497679.1	A/chicken/Vietnam/20/2003	H5N1	2003					Viet Nam	Asia		1695
+DQ497681.1	A/chicken/Vietnam/28/2003	H5N1	2003					Viet Nam	Asia		1695
+DQ497682.1	A/chicken/Vietnam/30/2003	H5N1	2003					Viet Nam	Asia		1695
+DQ497691.1	A/chicken/Vietnam/4/2003	H5N1	2003					Viet Nam	Asia		1695
+DQ497692.1	A/chicken/Vietnam/5/2003	H5N1	2003					Viet Nam	Asia		1695
+DQ497693.1	A/chicken/Vietnam/8/2003	H5N1	2003					Viet Nam	Asia		1695
 CY028986.1	A/chicken/Yunnan/5686/2003(H5N1)	H5N1	2003	Gallus gallus	9031	avian	Galliformes	China	Asia		1713
 CY028990.1	A/chicken/Yunnan/6797/2003(H5N1)	H5N1	2003	Gallus gallus	9031	avian	Galliformes	China	Asia		1713
 CY028991.1	A/chicken/Yunnan/6885/2003(H5N1)	H5N1	2003	Gallus gallus	9031	avian	Galliformes	China	Asia		1713
 CY028960.1	A/chukar/Shantou/4690/2003(H5N1)	H5N1	2003	Alectoris chukar	9078	avian	Galliformes	China	Asia		1716
+EU263345.1	A/duck/Guangxi/12/2003(H5N1)	H5N1	2003	Anatidae	8830	avian	Anseriformes	China	Asia		1779
+EU263353.1	A/duck/Guangxi/27/2003(H5N1)	H5N1	2003	Anatidae	8830	avian	Anseriformes	China	Asia		1779
+DQ997163.1	A/duck/Hubei/wp/2003	H5N1	2003					China	Asia		1779
 CY028968.1	A/duck/Hunan/1386/2003(H5N1)	H5N1	2003	Anatidae	8830	avian	Anseriformes	China	Asia		1707
 EF541405.1	A/duck/Viet Nam/Ncvd1/2003	H5N1	2003	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1741
+DQ497670.1	A/duck/Vietnam/15/2003	H5N1	2003					Viet Nam	Asia		1695
+DQ497672.1	A/duck/Vietnam/17/2003	H5N1	2003					Viet Nam	Asia		1695
+AB212280.1	A/duck/Yokohama/aq10/2003	H5N1	2003								1707
 CY028982.1	A/duck/Yunnan/4072/2003(H5N1)	H5N1	2003	Anatidae	8830	avian	Anseriformes	China	Asia		1713
 CY028983.1	A/duck/Yunnan/4645/2003(H5N1)	H5N1	2003	Anatidae	8830	avian	Anseriformes	China	Asia		1713
 CY028984.1	A/duck/Yunnan/5090/2003(H5N1)	H5N1	2003	Anatidae	8830	avian	Anseriformes	China	Asia		1713
@@ -236,11 +344,20 @@ CY028985.1	A/duck/Yunnan/5169/2003(H5N1)	H5N1	2003	Anatidae	8830	avian	Anserifor
 CY028987.1	A/duck/Yunnan/5948/2003(H5N1)	H5N1	2003	Anatidae	8830	avian	Anseriformes	China	Asia		1704
 CY028988.1	A/duck/Yunnan/6080/2003(H5N1)	H5N1	2003	Anatidae	8830	avian	Anseriformes	China	Asia		1713
 CY028989.1	A/duck/Yunnan/6603/2003(H5N1)	H5N1	2003	Anatidae	8830	avian	Anseriformes	China	Asia		1713
+DQ997405.1	A/goose/Fujian/bb/2003	H5N1	2003					China	Asia		1779
+DQ997276.1	A/goose/Jilin/hb/2003	H5N1	2003					China	Asia		1779
+HF563056.1	A/mallard/Foehr/Wv1310-13/2003	H5N2	2003								1767
 CY076929.1	A/mallard/Sweden/74/2003	H5N2	2003	Anas platyrhynchos	8839	avian	Anseriformes	Sweden	Europe	E1 passage(s)	1742
+DQ497671.1	A/mallard/Vietnam/16/2003	H5N1	2003					Viet Nam	Asia		1695
+DQ497680.1	A/mallard/Vietnam/21/2003	H5N1	2003					Viet Nam	Asia		1695
+DQ497690.1	A/mallard/Vietnam/3/2003	H5N1	2003					Viet Nam	Asia		1695
 CY028957.1	A/partridge/Shantou/2886/2003(H5N1)	H5N1	2003	Perdicinae	466544	avian	Galliformes	China	Asia		1716
 CY028958.1	A/pheasant/Shantou/3535/2003(H5N1)	H5N1	2003	Phasianinae	9072	avian	Galliformes	China	Asia		1716
 GU186446.1	A/ruddy turnstone/DE/85/2003	H5N2	2003	Arenaria interpres	54971	avian	Charadriiformes	USA	North America		1737
 GU050717.1	A/ruddy turnstone/Delaware/499/2003	H5N2	2003	Arenaria interpres	54971	avian	Charadriiformes	USA	North America		1734
+AY747609.1	A/swine/Fujian/1/2003	H5N1	2003	Sus scrofa	9823	non-human mammal	Artiodactyla	China	Asia		1766
+DQ432045.1	A/swine/Fujian/2003	H5N1	2003					China	Asia		1707
+HF563058.1	A/teal/Foehr/Wv1378-79/2003	H5N2	2003								1767
 JQ966928.1	A/condor/Guangdong/139/2003	H5N1	2003-01-23	Accipitriformes	2558200	avian	Accipitriformes	China	Asia		1779
 JF732739.1	A/ostrich/Suzhou/097/2003	H5N1	2003-04-16	Struthio camelus	8801	avian	Struthioniformes	China	Asia		1707
 MH597212.1	A/ruddy turnstone/Delaware/1016418/2003	H5N2	2003-05-24	Arenaria interpres	54971	avian	Charadriiformes	USA: Delaware	North America		1737
@@ -257,8 +374,31 @@ EF473080.1	A/chicken/Indonesia/7/2003	H5N1	2003-12-20	Gallus gallus	9031	avian	G
 HM114465.1	A/Vietnam/UT3030/2003	H5N1	2003-12-29	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1704
 HM627945.1	A/openbill stork/Thailand/VSMU-12-BKK/2003	H5N1	2003-12-30	Anastomus oscitans	1706835	avian	Ciconiiformes	Thailand: Bangkok	Asia		1781
 HM114473.1	A/Vietnam/UT3035/2003	H5N1	2003-12-31	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1704
+AY950230.1	A/Chicken/Henan/1/2004	H5N1	2004					China	Asia		1779
+AY950232.1	A/Chicken/Henan/12/2004	H5N1	2004					China	Asia		1779
+AY950233.1	A/Chicken/Henan/13/2004	H5N1	2004					China	Asia		1779
+AY950234.1	A/Chicken/Henan/16/2004	H5N1	2004					China	Asia		1779
+AY950231.1	A/Chicken/Henan/210/2004	H5N1	2004					China	Asia		1779
+DQ320934.1	A/Chicken/Malaysia/5858/2004	H5N1	2004					Malaysia	Asia		1695
+AY651326.1	A/Ck/Thailand/1/2004	H5N1	2004					Thailand	Asia		1701
+DQ076201.1	A/Ck/Thailand/73/2004	H5N1	2004					Thailand	Asia		1730
+DQ320884.1	A/Duck/Guangxi/1378/2004	H5N1	2004					China	Asia		1698
+DQ320885.1	A/Duck/Guangxi/1586/2004	H5N1	2004					China	Asia		1698
+DQ320886.1	A/Duck/Guangxi/1681/2004	H5N1	2004					China	Asia		1698
+DQ320887.1	A/Duck/Guangxi/1793/2004	H5N1	2004					China	Asia		1698
+DQ320890.1	A/Duck/Guangxi/2291/2004	H5N1	2004					China	Asia		1698
+DQ320892.1	A/Duck/Guangxi/2396/2004	H5N1	2004					China	Asia		1698
+DQ320877.1	A/Duck/Guangxi/351/2004	H5N1	2004					China	Asia		1695
+DQ320878.1	A/Duck/Guangxi/380/2004	H5N1	2004					China	Asia		1695
+DQ320881.1	A/Goose/Guangxi/1097/2004	H5N1	2004					China	Asia		1698
+DQ320889.1	A/Goose/Guangxi/2112/2004	H5N1	2004					China	Asia		1698
+DQ320891.1	A/Goose/Guangxi/2383/2004	H5N1	2004					China	Asia		1698
+DQ320880.1	A/Goose/Guangxi/914/2004	H5N1	2004					China	Asia		1695
+DQ320924.1	A/Grey heron/Hong Kong/837/2004	H5N1	2004					China	Asia		1698
+DQ320940.1	A/Mallard Duck/Vietnam/133/2004	H5N1	2004					Viet Nam	Asia		1698
 EF541392.1	A/Prachinburi/6231/2004	H5N1	2004	Homo sapiens	9606	human	Primates	Thailand	Asia		1741
 CY111598.1	A/Thailand/1(KAN-1)/2004	H5N1	2004	Homo sapiens	9606	human	Primates	Thailand: Kanchanaburi	Asia	MDCKII passage(s)	1779
+EF107522.1	A/Thailand/1(KAN-1A)/2004(H5N1)	H5N1	2004					Thailand	Asia		1736
 EF541408.1	A/Thailand/16/2004	H5N1	2004	Homo sapiens	9606	human	Primates	Thailand	Asia		1741
 EU268219.1	A/Thailand/16/2004	H5N1	2004					Thailand	Asia		1707
 EF541417.1	A/Thailand/Chaiyaphum/622/2004	H5N1	2004	Homo sapiens	9606	human	Primates	Thailand	Asia		1741
@@ -266,21 +406,76 @@ EF541411.1	A/Thailand/Kan353/2004	H5N1	2004	Homo sapiens	9606	human	Primates	Tha
 EF541410.1	A/Thailand/SP83/2004	H5N1	2004	Homo sapiens	9606	human	Primates	Thailand: Suphanburi Province	Asia		1741
 EF541402.1	A/Viet Nam/1194/2004	H5N1	2004	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1741
 EF541403.1	A/Viet Nam/1203/2004	H5N1	2004	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1741
+KM186133.1	A/Viet Nam/1203/2004	H5N1	2004						Asia		1695
+KM186136.1	A/Viet Nam/1203/2004	H5N1	2004						Asia		1695
+AY818135.1	A/Viet Nam/1203/2004	H5N1	2004					Viet Nam	Asia		1707
+KM186134.1	A/Viet Nam/1203/2004	H5N1	2004						Asia		1695
+KM186135.1	A/Viet Nam/1203/2004	H5N1	2004						Asia		1695
 HM006759.1	A/Viet Nam/1203/2004	H5N1	2004	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1779
+KM186132.1	A/Viet Nam/1203/2004	H5N1	2004						Asia		1695
 EF541404.1	A/Viet Nam/1204/2004	H5N1	2004	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1741
+DQ497722.1	A/Vietnam/CL20/2004	H5N1	2004	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1695
+AY950235.1	A/WildDuck/Guangdong/314/2004	H5N1	2004					China	Asia		1779
+AY741213.1	A/blackbird/Hunan/1/2004	H5N1	2004					China	Asia		1707
+AB212649.1	A/blow fly/Kyoto/93/2004(H5N1)	H5N1	2004					Japan: Kyoto, Tamba	Asia		1728
+AY830774.1	A/chick/Macheng/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	China	Asia		1707
+AB450564.1	A/chicken/Angthong/NIAH8334/2004	H5N1	2004					Thailand	Asia		1707
 HM172095.1	A/chicken/Anhui/39/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	China: Anhui	Asia		1707
+DQ497655.1	A/chicken/Bangli Bali/BBPV6-1/2004	H5N1	2004					Indonesia	Asia		1698
+DQ497656.1	A/chicken/Bangli Bali/BPPV6-2/2004	H5N1	2004					Indonesia	Asia		1698
+DQ080022.1	A/chicken/Henan/01/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	China	Asia		1748
+DQ997219.1	A/chicken/Henan/wu/2004	H5N1	2004					China	Asia		1779
+AY684706.1	A/chicken/Hubei/327/2004(H5N1)	H5N1	2004								1779
+AY770079.1	A/chicken/Hubei/489/2004(H5N1)	H5N1	2004	Gallus gallus	9031	avian	Galliformes	China	Asia		1779
 HM172114.1	A/chicken/Hunan/41/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	China: Hunan	Asia		1707
+AY653200.1	A/chicken/Jilin/9/2004(H5N1)	H5N1	2004					China	Asia		1779
+DQ997325.1	A/chicken/Jilin/hk/2004	H5N1	2004					China	Asia		1779
+AB450550.1	A/chicken/Kalasin/NIAH316/2004	H5N1	2004					Thailand	Asia		1707
+AB450551.1	A/chicken/Kalasin/NIAH317/2004	H5N1	2004					Thailand	Asia		1707
+AB450552.1	A/chicken/Kohn Kaen/NIAH330/2004	H5N1	2004					Thailand	Asia		1707
+DQ497650.1	A/chicken/Kulon Progo/BBVet-XII-2/2004	H5N1	2004					Indonesia	Asia		1695
+DQ497662.1	A/chicken/Kupang-1-NTT/BPPV6/2004	H5N1	2004					Indonesia	Asia		1695
+DQ497660.1	A/chicken/Kupang-2-NTT/BPPV6/2004	H5N1	2004					Indonesia	Asia		1698
+DQ497661.1	A/chicken/Kupang-3-NTT/BPPV6/2004	H5N1	2004					Indonesia	Asia		1698
+AB188824.1	A/chicken/Kyoto/3/2004(H5N1)	H5N1	2004					Japan	Asia		1704
 EF541415.1	A/chicken/Laos/44/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Laos	Asia		1741
 EF541413.1	A/chicken/Laos/7191/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Laos	Asia		1741
 EF541414.1	A/chicken/Laos/7192/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Laos	Asia		1741
+AB450557.1	A/chicken/Loei/NIAH2373/2004	H5N1	2004					Thailand	Asia		1707
+DQ497642.1	A/chicken/Malang/BBVet-IV/2004	H5N1	2004					Indonesia	Asia		1698
+DQ497658.1	A/chicken/Mangarai-NTT/BPPV6/2004	H5N1	2004					Indonesia	Asia		1698
+AB450559.1	A/chicken/Nakhon Sawan/NIAH01502/2004	H5N1	2004					Thailand	Asia		1707
+AB450560.1	A/chicken/Nakhon Sawan/NIAH01503/2004	H5N1	2004					Thailand	Asia		1707
+AB450556.1	A/chicken/NaraThiwat/NIAH1703/2004	H5N1	2004					Thailand	Asia		1707
+AB188816.1	A/chicken/Oita/8/2004(H5N1)	H5N1	2004					Japan	Asia		1704
+DQ497653.1	A/chicken/Purwakarta/BBVet-IV/2004	H5N1	2004					Indonesia	Asia		1698
+AB450558.1	A/chicken/Samutprakan/NIAH6604/2004	H5N1	2004					Thailand	Asia		1707
+DQ767725.1	A/chicken/Shandong/K01/2004	H5N1	2004					China	Asia		1779
+AB450561.1	A/chicken/Suphanburi/NIAH7540/2004	H5N1	2004					Thailand	Asia		1707
+AB450562.1	A/chicken/Suphanburi/NIAH7618/2004	H5N1	2004					Thailand	Asia		1707
 GU052644.1	A/chicken/Texas/298313-2/2004	H5N2	2004	Gallus gallus	9031	avian	Galliformes	USA	North America		1742
 AB558475.1	A/chicken/Texas/298313/2004	H5N2	2004	Gallus gallus	9031	avian	Galliformes				1695
 JN634875.1	A/chicken/Thailand/KU14/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Thailand	Asia		1778
+EF593102.1	A/chicken/Thailand/vsmu-3-BKK/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Thailand	Asia		1708
 EF541409.1	A/chicken/Viet Nam/1/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1741
+DQ099759.1	A/chicken/Viet Nam/DT-171/2004	H5N1	2004					Viet Nam	Asia		1707
+DQ099760.1	A/chicken/Viet Nam/LD-080/2004	H5N1	2004					Viet Nam	Asia		1707
+DQ099758.1	A/chicken/Viet Nam/TG-023/2004	H5N1	2004					Viet Nam	Asia		1707
+DQ099755.1	A/chicken/Viet Nam/TN-025/2004	H5N1	2004					Viet Nam	Asia		1707
 CY028700.1	A/chicken/Vietnam/10/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	egg 2 passage(s)	1734
+DQ497718.1	A/chicken/Vietnam/132/2004	H5N1	2004					Viet Nam	Asia		1695
+DQ497700.1	A/chicken/Vietnam/133/2004	H5N1	2004					Viet Nam	Asia		1695
+DQ497714.1	A/chicken/Vietnam/134/2004	H5N1	2004					Viet Nam	Asia		1695
+DQ497695.1	A/chicken/Vietnam/135/2004	H5N1	2004					Viet Nam	Asia		1695
+DQ497701.1	A/chicken/Vietnam/147/2004	H5N1	2004					Viet Nam	Asia		1695
+DQ497696.1	A/chicken/Vietnam/149/2004	H5N1	2004					Viet Nam	Asia		1695
 CY029937.1	A/chicken/Vietnam/15/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	egg 2 passage(s)	1731
+DQ497713.1	A/chicken/Vietnam/159/2004	H5N1	2004					Viet Nam	Asia		1695
 CY028708.1	A/chicken/Vietnam/23/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	egg 2 passage(s)	1735
 CY028716.1	A/chicken/Vietnam/24/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	egg 2 passage(s)	1740
+DQ497687.1	A/chicken/Vietnam/32/2004	H5N1	2004					Viet Nam	Asia		1692
+DQ497698.1	A/chicken/Vietnam/52/2004	H5N1	2004					Viet Nam	Asia		1695
+DQ497710.1	A/chicken/Vietnam/53/2004	H5N1	2004					Viet Nam	Asia		1695
 CY033169.1	A/chicken/Vietnam/830/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	egg 2 passage(s)	1740
 CY034206.1	A/chicken/Vietnam/890/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	egg 2 passage(s)	1731
 CY036695.1	A/chicken/Vietnam/921/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	egg 2 passage(s)	1732
@@ -288,27 +483,67 @@ CY036703.1	A/chicken/Vietnam/925/2004	H5N1	2004	Gallus gallus	9031	avian	Gallifo
 CY036711.1	A/chicken/Vietnam/933/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	egg 2 passage(s)	1728
 EU118132.1	A/chicken/Vietnam/G04/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1707
 GU186708.1	A/chicken/Yamaguchi/7/2004	H5N1	2004	Gallus gallus	9031	avian	Galliformes	Japan	Asia		1751
+KX531260.1	A/chicken/Yamaguchi/7/2004	H5N1	2004								1704
+AB166862.1	A/chicken/Yamaguchi/7/2004	H5N1	2004					Japan	Asia		1704
+KX531259.1	A/chicken/Yamaguchi/7/2004	H5N1	2004								1704
 CY028993.1	A/chicken/Yunnan/207/2004(H5N1)	H5N1	2004	Gallus gallus	9031	avian	Galliformes	China	Asia		1713
+DQ182483.1	A/crested eagle/Belgium/01/2004	H5N1	2004					Belgium	Europe		1707
+AB189053.1	A/crow/Kyoto/53/2004(H5N1)	H5N1	2004					Japan	Asia		1704
+AB189061.1	A/crow/Osaka/102/2004(H5N1)	H5N1	2004					Japan	Asia		1704
+AB440325.1	A/duck/Angthong/72/2004	H5N1	2004					Thailand	Asia		1707
+AB450563.1	A/duck/Angthong/NIAH8246/2004	H5N1	2004					Thailand	Asia		1707
 HM172116.1	A/duck/Guangdong/23/2004	H5N1	2004	Anatidae	8830	avian	Anseriformes	China: Guangdong	Asia		1707
 CY028969.1	A/duck/Hunan/533/2004(H5N1)	H5N1	2004	Anatidae	8830	avian	Anseriformes	China	Asia		1704
 HM172105.1	A/duck/Hunan/70/2004	H5N1	2004	Anatidae	8830	avian	Anseriformes	China: Hunan	Asia		1704
 CY028970.1	A/duck/Hunan/733/2004(H5N1)	H5N1	2004	Anatidae	8830	avian	Anseriformes	China	Asia		1704
 CY024746.1	A/duck/Italy/775/2004	H5N3	2004	Anatidae	8830	avian	Anseriformes	Italy	Europe	Egg 1 passage(s)	1733
+EF582397.1	A/duck/Kamphaengphet/NIAH6-2-0043/2004	H5N1	2004	Anatidae	8830	avian	Anseriformes	Thailand: Kamphaengphet	Asia	embryonated egg	1704
+AB450553.1	A/duck/PhangNga/NIAH181/2004	H5N1	2004					Thailand	Asia		1707
+EF582394.1	A/duck/Phetchabun/NIAH6-2-0040/2004	H5N1	2004	Anatidae	8830	avian	Anseriformes	Thailand: Phetchabun	Asia	embryonated egg	1704
+EF041479.2	A/duck/South Africa/811/2004	H5N1	2004	Anas undulata	75862	avian	Anseriformes	South Africa	Africa		1710
+DQ099756.1	A/duck/Viet Nam/TG-007A/2004	H5N1	2004					Viet Nam	Asia		1707
+DQ497702.1	A/duck/Vietnam/148/2004	H5N1	2004					Viet Nam	Asia		1695
+DQ497684.1	A/duck/Vietnam/219/2004	H5N1	2004					Viet Nam	Asia		1692
+DQ497685.1	A/duck/Vietnam/220/2004	H5N1	2004					Viet Nam	Asia		1692
+DQ497673.1	A/duck/Vietnam/40/2004	H5N1	2004					Viet Nam	Asia		1695
+DQ497683.1	A/duck/Vietnam/48/2004	H5N1	2004					Viet Nam	Asia		1695
 CY031172.1	A/duck/Vietnam/7A/2004	H5N1	2004	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia	egg 2 passage(s)	1729
 CY033177.1	A/duck/Vietnam/942B/2004	H5N1	2004	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia	egg 2 passage(s)	1737
+DQ497686.1	A/duck/Vietnam/N-XX/2004	H5N1	2004					Viet Nam	Asia		1692
 CY028994.1	A/duck/Yunnan/426/2004(H5N1)	H5N1	2004	Anatidae	8830	avian	Anseriformes	China	Asia		1713
 CY028995.1	A/duck/Yunnan/485/2004(H5N1)	H5N1	2004	Anatidae	8830	avian	Anseriformes	China	Asia		1713
 CY028996.1	A/duck/Yunnan/522/2004(H5N1)	H5N1	2004	Anatidae	8830	avian	Anseriformes	China	Asia		1713
 GU052418.1	A/environment/Viet Nam/1203/2004	H5N1	2004					Viet Nam	Asia		1754
 HM172089.1	A/goose/Guangdong/72/2004	H5N1	2004	Anatidae	8830	avian	Anseriformes	China: Guangdong	Asia		1707
+AY553802.2	A/little grebe/Thailand/Phichit-01/2004	H5N1	2004					Thailand	Asia	embryonated egg	1743
+DQ997218.1	A/mallard/Guangxi/wt/2004	H5N1	2004					China	Asia		1779
+AB450571.1	A/open-bill stork/Thailand/VSMU-20-AYA/2004	H5N1	2004					Thailand	Asia		1707
+AB450570.1	A/open-bill stork/Thailand/VSMU-9-BKK/2004	H5N1	2004					Thailand	Asia		1707
+DQ989961.1	A/open-billed stork/Nakhonsawan/BBD0104F/2004	H5N1	2004								1734
+DQ989969.1	A/open-billed stork/Nakhonsawan/BBD0404F/2004	H5N1	2004								1734
+DQ989979.1	A/open-billed stork/Suphanburi/TSD0912F/2004	H5N1	2004								1734
 GU052433.1	A/pigeon/Thailand/1B/2004	H5N1	2004	Columbidae	8930	avian	Columbiformes	Thailand	Asia		1754
 FJ265566.1	A/pigeon/Thailand/Uttaradit-01/2004	H5N1	2004	Columbidae	8930	avian	Columbiformes	Thailand	Asia	embryonic chicken egg	1765
 AB576202.1	A/pigeon/Thailand/VSMU-7-NPT/2004	H5N1	2004	Columba livia	8932	avian	Columbiformes	Thailand	Asia		1707
+AB440326.1	A/quail/Angthong/71/2004	H5N1	2004					Thailand	Asia		1707
+AB450554.1	A/quail/Phathumthani/NIAH2711/2004	H5N1	2004					Thailand	Asia		1707
 FJ265565.1	A/quail/Thailand/Phichit-01/2004	H5N1	2004	Galliformes	8976	avian	Galliformes	Thailand	Asia	embryonic chicken egg	1765
+DQ099757.1	A/quail/Viet Nam/TG-007B/2004	H5N1	2004					Viet Nam	Asia		1707
+DQ497715.1	A/quail/Vietnam/177/2004	H5N1	2004					Viet Nam	Asia		1695
 CY094847.1	A/quail/Vietnam/7B/2004	H5N1	2004	Galliformes	8976	avian	Galliformes	Viet Nam	Asia	egg 2 passage(s)	1731
 EU871921.1	A/ruddy turnstone/NJ/327/2004	H5N7	2004	Arenaria interpres	54971	avian	Charadriiformes	USA	North America		1741
 CY028961.1	A/silky chicken/Shantou/475/2004(H5N1)	H5N1	2004	Gallus gallus	9031	avian	Galliformes	China	Asia		1713
 FJ265567.1	A/sparrow/Thailand/Phitsanulok-01/2004	H5N1	2004	Passeridae	9158	avian	Passeriformes	Thailand	Asia	embryonic chicken egg	1742
+AY950236.1	A/swan/Guangxi/307/2004	H5N1	2004					China	Asia		1779
+DQ997392.1	A/swine/Anhui/ca/2004	H5N1	2004					China	Asia		1779
+DQ997262.1	A/swine/Guangxi/wz/2004	H5N1	2004					China	Asia		1779
+DQ997253.1	A/swine/Henan/wy/2004	H5N1	2004					China	Asia		1779
+EF178531.1	A/tiger/Thailand/VSMU-11-SPB/2004	H5N1	2004	Panthera tigris	9694	non-human mammal	Carnivora	Thailand: Supanburi province	Asia		1710
+EF178532.1	A/tiger/Thailand/VSMU-23-CBI/2004	H5N1	2004	Panthera tigris	9694	non-human mammal	Carnivora	Thailand: Chonburi province	Asia		1721
+AY741215.1	A/tree sparrow/Henan/1/2004	H5N1	2004					China	Asia		1707
+AY741217.1	A/tree sparrow/Henan/2/2004	H5N1	2004					China	Asia		1707
+AY741219.1	A/tree sparrow/Henan/3/2004	H5N1	2004					China	Asia		1707
+AY741221.1	A/tree sparrow/Henan/4/2004	H5N1	2004					China	Asia		1707
 GU186785.1	A/wild duck/Ohio/623/2004	H5N1	2004	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1740
 CY053325.1	A/wood duck/Ohio/623/2004	H5N1	2004	Aix sponsa	8833	avian	Anseriformes	USA: Ohio	North America	EGG 1 + LD1 passage(s)	1719
 FJ686738.1		H5N2	2004	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1742
@@ -342,11 +577,17 @@ GU183450.1	A/chicken/Banten/Pdgl-Kas/2004	H5N1	2004-10	Gallus gallus	9031	avian	
 OR950716.1	A/wild bird/Taipei/04WB12-522-11-15/2004	H5N6	2004-12-01	Aves	8782	avian		Taiwan: Taipei	Asia		1767
 GU351859.1	A/duck/Korea/GJ54/2004	H5N2	2004-12-24	Anatidae	8830	avian	Anseriformes	South Korea	Asia		1740
 JQ990145.1	A/parrot/Guangdong/258/2004	H5N2	2004-12-29	Psittacidae	9224	avian	Psittaciformes	China	Asia		1767
+DQ371928.1	A/Anhui/1/2005	H5N1	2005					China	Asia		1704
+DQ371929.1	A/Anhui/2/2005	H5N1	2005					China	Asia		1704
 HM172072.1	A/Anhui/2/2005	H5N1	2005	Homo sapiens	9606	human	Primates	China: Anhui	Asia		1776
 AB598119.1	A/Cambodia/408008/2005	H5N1	2005	Homo sapiens	9606	human	Primates	Cambodia	Asia		1731
 EF456805.1	A/Cambodia/JP52a/2005	H5N1	2005	Homo sapiens	9606	human	Primates	Cambodia	Asia		1707
 EU124095.1	A/Chicken/Agam/BBPVI/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1695
+DQ320932.1	A/Chicken/Bantul/BBVet-I/2005	H5N1	2005					Indonesia	Asia		1698
 EU124098.1	A/Chicken/Duma/BBPV-II/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1725
+DQ320876.1	A/Chicken/Fujian/1042/2005	H5N1	2005					China	Asia		1698
+DQ320898.1	A/Chicken/Guangxi/604/2005	H5N1	2005					China	Asia		1695
+DQ320910.1	A/Chicken/Hunan/999/2005	H5N1	2005					China	Asia		1695
 EU124049.1	A/Chicken/Indonesia/Wates1/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1714
 EU124053.1	A/Chicken/Indonesia/Wates126/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1717
 EU124050.1	A/Chicken/Indonesia/Wates130/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1704
@@ -357,41 +598,110 @@ EU124147.1	A/Chicken/Madiun/BBVW1420/2005	H5N1	2005	Gallus gallus	9031	avian	Gal
 EU124097.1	A/Chicken/Murao Jambi/BBPV-II/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1711
 EU124102.1	A/Chicken/Palembang/BPPV-III/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1704
 EU124096.1	A/Chicken/Salam/BBPV-II/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1727
+DQ320928.1	A/Chicken/Salatiga/BBVet-I/2005	H5N1	2005					Indonesia	Asia		1698
 EU124100.1	A/Chicken/Siak/BPPV-II/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1704
+DQ320933.1	A/Chicken/Wajo/BBVM/2005	H5N1	2005					Indonesia	Asia		1698
+DQ320925.1	A/Chinese pond heron/Hong Kong/18/2005	H5N1	2005					China	Asia		1695
+DQ320875.1	A/Duck/Fujian/897/2005	H5N1	2005					China	Asia		1695
+DQ320900.1	A/Duck/Guangxi/951/2005	H5N1	2005					China	Asia		1695
+DQ320901.1	A/Duck/Guangzhou/20/2005	H5N1	2005					China	Asia		1698
+DQ320911.1	A/Duck/Hunan/1265/2005	H5N1	2005					China	Asia		1695
+DQ320912.1	A/Duck/Hunan/1608/2005	H5N1	2005					China	Asia		1695
+DQ320913.1	A/Duck/Hunan/1652/2005	H5N1	2005					China	Asia		1695
 EU124106.1	A/Duck/Tabanan/BPPV1/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Indonesia	Asia		1704
 EF566203.1	A/Duck/Viet Nam/NCVD01/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam: Ha Tay	Asia		1710
 EF566197.1	A/Duck/Viet Nam/NCVD06/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam: An Giang	Asia		1707
+DQ320939.1	A/Duck/Vietnam/568/2005	H5N1	2005					Viet Nam	Asia		1695
+DQ320936.1	A/Duck/Vietnam/S654/2005	H5N1	2005					Viet Nam	Asia		1698
+DQ320896.1	A/Goose/Guangxi/345/2005	H5N1	2005					China	Asia		1695
+DQ320915.1	A/Goose/Shantou/2216/2005	H5N1	2005					China	Asia		1698
 HM172110.1	A/Guangxi/1/2005	H5N1	2005	Homo sapiens	9606	human	Primates	China: Guangxi	Asia		1704
+DQ371930.1	A/Guangxi/1/2005	H5N1	2005					China	Asia		1704
+AB239125.1	A/Hanoi/30408/2005	H5N1	2005					Viet Nam	Asia		1776
+GQ149235.1	A/Indonesa/5/2005	H5N1	2005								1764
 EF541394.1	A/Indonesia/5/05	H5N1	2005	Homo sapiens	9606	human	Primates	Indonesia	Asia		1729
 CY116646.1	A/Indonesia/5/2005	H5N1	2005	Homo sapiens	9606	human	Primates	Indonesia	Asia		1779
 JX235399.1	A/Indonesia/UT3006/2005	H5N1	2005	Homo sapiens	9606	human	Primates	Indonesia	Asia		1707
+EU195392.1	A/Mallard/Huadong/S/2005	H5N1	2005	Anas platyrhynchos	8839	avian	Anseriformes				1704
+EU195408.1	A/Mallard/Huadong/hn/2005	H5N1	2005	Anas platyrhynchos	8839	avian	Anseriformes				1707
+EU195400.1	A/Mallard/Huadong/lk/2005	H5N1	2005	Anas platyrhynchos	8839	avian	Anseriformes				1704
+DQ320916.1	A/Migratory Duck/Jiangxi/1653/2005	H5N1	2005					China	Asia		1698
+DQ320917.1	A/Migratory Duck/Jiangxi/1657/2005	H5N1	2005					China	Asia		1698
+DQ320918.1	A/Migratory Duck/Jiangxi/1701/2005	H5N1	2005					China	Asia		1698
+DQ320919.1	A/Migratory Duck/Jiangxi/2136/2005	H5N1	2005					China	Asia		1698
+DQ320920.1	A/Migratory Duck/Jiangxi/2295/2005	H5N1	2005					China	Asia		1698
+DQ320921.1	A/Migratory Duck/Jiangxi/2300/2005	H5N1	2005					China	Asia		1698
 HQ025949.1	A/Silver Pheasant/Thailand/VSMU-1-CBI/2005	H5N1	2005	Lophura nycthemera	9046	avian	Galliformes	Thailand: Chonburi	Asia		1708
 EU124090.1	A/Turkey/Langkat/BBPVI/2005	H5N1	2005	Meleagris gallopavo	9103	avian	Galliformes	Indonesia	Asia		1695
 EF456799.1	A/Viet Nam/JP14/2005	H5N1	2005	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1707
 EF456798.1	A/Viet Nam/JP4207/2005	H5N1	2005	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1707
 EF456802.1	A/Viet Nam/JPHN30321/2005	H5N1	2005	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1707
+EU147293.1	A/avian/Russia/5354-vac/2005	H5N1	2005					Russia	Europe		1755
 HM172454.1	A/bar-headed goose/Qinghai/3/2005	H5N1	2005	Anser indicus	8846	avian	Anseriformes	China: Qinghai	Asia		1707
+EF178528.1	A/brown-headed gull/Thailand/VSMU-28-SPK/2005	H5N1	2005	Chroicocephalus brunnicephalus	2772041	avian	Charadriiformes	Thailand: Samutprakarn	Asia		1751
 GQ122391.1	A/chicken/Bali/UT2091/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia: Bali	Asia		1707
 GQ122392.1	A/chicken/Bali/UT2092/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia: Bali	Asia		1707
 HQ200590.1	A/chicken/Cambodia/047LC3/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Cambodia: Kampot Province	Asia		1779
 GQ122395.1	A/chicken/Central Java/UT3091/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia: Central Java	Asia		1704
 KM455951.1	A/chicken/Coahuila/1433-3/2005	H5N2	2005	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1695
+DQ650659.1	A/chicken/Crimea/04/2005	H5N1	2005					Ukraine	Europe		1754
+DQ650663.1	A/chicken/Crimea/08/2005	H5N1	2005					Ukraine	Europe		1754
+DQ497667.1	A/chicken/Dairi/BPPVI/2005	H5N1	2005					Indonesia	Asia		1698
+DQ497668.1	A/chicken/Deli Serdang/BPPVI/2005	H5N1	2005					Indonesia	Asia		1698
 KM455950.1	A/chicken/Durango/1433-2/2005	H5N2	2005	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1695
 KM455889.1	A/chicken/Durango/1433-4/2005	H5N2	2005	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1695
 KM455952.1	A/chicken/Durango/1433-7/2005	H5N2	2005	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1695
 KM455913.1	A/chicken/Durango/1433-8/2005	H5N2	2005	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1695
+DQ992828.1	A/chicken/Fujian/11933/2005	H5N1	2005					China	Asia		1695
+DQ992821.1	A/chicken/Fujian/9821/2005	H5N1	2005					China	Asia		1695
 EU874899.2	A/chicken/Guangdong/1/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	China	Asia		1727
+DQ992718.1	A/chicken/Guangxi/3154/2005	H5N1	2005					China	Asia		1695
+DQ992724.1	A/chicken/Guangxi/3791/2005	H5N1	2005					China	Asia		1695
+DQ992751.1	A/chicken/Guiyang/2147/2005	H5N1	2005					China	Asia		1695
+DQ992752.1	A/chicken/Guiyang/2173/2005	H5N1	2005					China	Asia		1695
+DQ992755.1	A/chicken/Guiyang/3055/2005	H5N1	2005					China	Asia		1695
+DQ992759.1	A/chicken/Guiyang/3721/2005	H5N1	2005					China	Asia		1695
+EU243133.1	A/chicken/Hebei/102/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	China	Asia		1710
+EU243146.1	A/chicken/Hebei/126/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	China	Asia		1707
+DQ343150.1	A/chicken/Hebei/326/2005	H5N1	2005					China	Asia		1707
 KM455905.1	A/chicken/Hidalgo/1433-6/2005	H5N2	2005	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1695
 HM172112.1	A/chicken/Hunan/21/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	China: Hunan	Asia		1704
+AB261853.1	A/chicken/Ibaraki/1/2005	H5N2	2005								1695
+AB275427.1	A/chicken/Ibaraki/10/2005	H5N2	2005					Japan	Asia		1695
+AB275428.1	A/chicken/Ibaraki/11/2005	H5N2	2005					Japan	Asia		1695
+AB275429.1	A/chicken/Ibaraki/12/2005	H5N2	2005					Japan	Asia		1695
+AB275430.1	A/chicken/Ibaraki/13/2005	H5N2	2005					Japan	Asia		1695
+AB275431.1	A/chicken/Ibaraki/14/2005	H5N2	2005					Japan	Asia		1695
+AB275432.1	A/chicken/Ibaraki/15/2005	H5N2	2005					Japan	Asia		1695
+AB275433.1	A/chicken/Ibaraki/16/2005	H5N2	2005					Japan	Asia		1695
+AB275420.1	A/chicken/Ibaraki/2/2005	H5N2	2005					Japan	Asia		1695
+AB275421.1	A/chicken/Ibaraki/3/2005	H5N2	2005					Japan	Asia		1695
+AB275422.1	A/chicken/Ibaraki/4/2005	H5N2	2005					Japan	Asia		1695
+AB275423.1	A/chicken/Ibaraki/5/2005	H5N2	2005					Japan	Asia		1695
+AB275424.1	A/chicken/Ibaraki/6/2005	H5N2	2005					Japan	Asia		1695
+AB275425.1	A/chicken/Ibaraki/8/2005	H5N2	2005					Japan	Asia		1695
+AB275426.1	A/chicken/Ibaraki/9/2005	H5N2	2005					Japan	Asia		1695
+AB450567.1	A/chicken/Kalasin/NIAH3776/2005	H5N1	2005					Thailand	Asia		1707
+DQ449632.1	A/chicken/Kurgan/05/2005	H5N1	2005					Russia	Europe		1754
+DQ323672.1	A/chicken/Kurgan/3/2005(H5N1)	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Russia	Europe		1754
+HQ724523.1	A/chicken/Kurgan/3654at/2005	H5N1	2005								1758
 GU186716.1	A/chicken/Lang Son/200/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1752
 HM172453.1	A/chicken/Liaoning/23/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	China: Liaoning	Asia		1707
+DQ497643.1	A/chicken/Magetan/BBVW/2005	H5N1	2005					Indonesia	Asia		1698
 KM455897.1	A/chicken/Mexico/1433-5/2005	H5N2	2005	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1695
 FJ265569.1	A/chicken/Nakornsawan/NIAH6-3-0009/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Thailand	Asia	embryonic chicken egg	1730
 GU186732.1	A/chicken/Ninh Binh/209/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1751
+DQ497648.1	A/chicken/Purworejo/BBVW/2005	H5N1	2005					Indonesia	Asia		1698
 HM172069.1	A/chicken/Sichuan/81/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	China: Sichuan	Asia		1776
+DQ497665.1	A/chicken/Simalanggang/BPPVI/2005	H5N1	2005					Indonesia	Asia		1698
 FJ265568.1	A/chicken/Sukhothai/NIAH6-3-0005/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Thailand	Asia	embryonic chicken egg	1710
+EF582408.1	A/chicken/Sukhothai/NIAH6-3-0018/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Thailand: Sukhothai	Asia	embryonated egg	1704
 GQ122393.1	A/chicken/Sulawesi Selatan/UT2093/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia: Sulawesi Selatan	Asia		1707
 GQ122394.1	A/chicken/Sulawesi Selatan/UT2094/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Indonesia: Sulawesi Selatan	Asia		1707
+EF568922.2	A/chicken/Suphanburi/137/2005	H5N1	2005					Thailand	Asia		1709
+AB450565.1	A/chicken/Suphanburi/NIAH108192/2005	H5N1	2005					Thailand	Asia		1707
+DQ497669.1	A/chicken/Tarutung/BPPVI/2005	H5N1	2005					Indonesia	Asia		1698
+DQ497666.1	A/chicken/Tebing Tinggi/BPPVI/2005	H5N1	2005					Indonesia	Asia		1698
 FJ265573.1	A/chicken/Thailand/Kamphaengphet/NIAH6-3-0006/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Thailand	Asia	embryonic chicken egg	1730
 FJ265574.1	A/chicken/Thailand/Kamphaengphet/NIAH6-3-0008/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Thailand	Asia	embryonic chicken egg	1744
 FJ265575.1	A/chicken/Thailand/Kamphaengphet/NIAH6-3-0009/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Thailand	Asia	embryonic chicken egg	1744
@@ -401,11 +711,15 @@ FJ265577.1	A/chicken/Thailand/Sukhothai/NIAH6-3-0013/2005	H5N1	2005	Gallus gallu
 FJ265572.1	A/chicken/Uthaithani/NIAH6-3-0007/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Thailand	Asia	embryonic chicken egg	1748
 CY016867.1	A/chicken/Viet Nam/10/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	Egg 1 passage(s)	1731
 CY016875.1	A/chicken/Viet Nam/11/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	Egg 1 passage(s)	1731
+EF535027.1	A/chicken/Viet Nam/14/2005	H5N1	2005	Branta canadensis	8853	avian	Anseriformes	Viet Nam	Asia	13 weeks old Branta canadensis (Canada goose)	1776
 CY017059.1	A/chicken/Viet Nam/17/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	Egg 1 passage(s)	1731
 CY016835.1	A/chicken/Viet Nam/2/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	Egg 1 passage(s)	1731
 CY016843.1	A/chicken/Viet Nam/6/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	Egg 1 passage(s)	1729
 CY016851.1	A/chicken/Viet Nam/8/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	Egg 1 passage(s)	1741
 CY016859.1	A/chicken/Viet Nam/9/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	Egg 1 passage(s)	1731
+DQ497676.1	A/chicken/Vietnam/348/2005	H5N1	2005					Viet Nam	Asia		1692
+DQ497712.1	A/chicken/Vietnam/393/2005	H5N1	2005					Viet Nam	Asia		1695
+DQ497703.1	A/chicken/Vietnam/398/2005	H5N1	2005					Viet Nam	Asia		1695
 EU118133.1	A/chicken/Vietnam/G62/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1704
 CY034214.1	A/chicken/Vietnam/NCVD09/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	egg 2 passage(s)	1731
 CY036719.1	A/chicken/Vietnam/NCVD11/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia	egg 2 passage(s)	1731
@@ -420,13 +734,44 @@ HM172111.1	A/chicken/Xinjiang/54/2005	H5N1	2005	Gallus gallus	9031	avian	Gallifo
 HM172099.1	A/chicken/Xinjiang/67/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	China: Xinjiang	Asia		1707
 HM172106.1	A/chicken/Xinjiang/68/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	China: Xinjiang	Asia		1707
 EU635874.2	A/chicken/Yunnan/chuxiong01/2005	H5N1	2005	Gallus gallus	9031	avian	Galliformes	China	Asia		1704
+AB450572.1	A/common myna/Thailand/VSMU-10-BRM/2005	H5N1	2005					Thailand	Asia		1707
 CY016819.1	A/cygnus olor/Croatia/1/2005	H5N1	2005	Cygnus olor	8869	avian	Anseriformes	Croatia	Europe	Egg 1 passage(s)	1734
 EU430496.1	A/domestic Mallard duck/Hunan/67/2005	H5N1	2005					China	Asia		1707
 EU430511.1	A/domestic Mallard duck/Hunan/79/2005	H5N1	2005					China	Asia		1707
+EU190482.1	A/domestic goose/Pavlodar/1/2005	H5N1	2005					Kazakhstan	Asia		1735
 HM172107.1	A/duck/Anhui/56/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	China: Anhui	Asia		1704
+AJ971298.1	A/duck/France/05054a/2005(H5N3)	H5N3	2005	Anas	8835	avian	Anseriformes	France	Europe		1706
+AM040150.1	A/duck/France/05056a/2005(H5N2)	H5N2	2005	Anas sp.	42806	avian	Anseriformes	France	Europe		1706
+AJ972673.1	A/duck/France/05057b/2005(H5N2)	H5N2	2005	Anas	8835	avian	Anseriformes	France	Europe		1706
+AJ971297.1	A/duck/France/05066b/2005(H5N1)	H5N1	2005	Anas	8835	avian	Anseriformes	France	Europe		1698
+DQ992826.1	A/duck/Fujian/11094/2005	H5N1	2005					China	Asia		1695
+DQ992819.1	A/duck/Fujian/9651/2005	H5N1	2005					China	Asia		1695
+DQ992820.1	A/duck/Fujian/9713/2005	H5N1	2005					China	Asia		1695
+DQ992714.1	A/duck/Guangxi/2775/2005	H5N1	2005					China	Asia		1695
+DQ992715.1	A/duck/Guangxi/2926/2005	H5N1	2005					China	Asia		1695
+DQ992717.1	A/duck/Guangxi/3085/2005	H5N1	2005					China	Asia		1695
+DQ992721.1	A/duck/Guangxi/3548/2005	H5N1	2005					China	Asia		1695
+DQ992723.1	A/duck/Guangxi/3741/2005	H5N1	2005					China	Asia		1695
+DQ992725.1	A/duck/Guangxi/3819/2005	H5N1	2005					China	Asia		1695
+DQ992726.1	A/duck/Guangxi/4016/2005	H5N1	2005					China	Asia		1695
+DQ992727.1	A/duck/Guangxi/4184/2005	H5N1	2005					China	Asia		1695
+DQ992728.1	A/duck/Guangxi/4196/2005	H5N1	2005					China	Asia		1695
+DQ992730.1	A/duck/Guangxi/4428/2005	H5N1	2005					China	Asia		1695
+DQ992733.1	A/duck/Guangxi/4830/2005	H5N1	2005					China	Asia		1695
+DQ992736.1	A/duck/Guangxi/5165/2005	H5N1	2005					China	Asia		1695
+DQ992737.1	A/duck/Guangxi/5270/2005	H5N1	2005					China	Asia		1695
+DQ992739.1	A/duck/Guangxi/5457/2005	H5N1	2005					China	Asia		1695
+DQ992756.1	A/duck/Guiyang/3242/2005	H5N1	2005					China	Asia		1695
 HM172071.1	A/duck/Hubei/49/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	China: Hubei	Asia		1776
+DQ992787.1	A/duck/Hunan/5106/2005	H5N1	2005					China	Asia		1695
+DQ992788.1	A/duck/Hunan/5152/2005	H5N1	2005					China	Asia		1695
+EF597258.1	A/duck/Jiang Xi/1286/2005	H5N2	2005					China	Asia		1701
+EF597259.1	A/duck/Jiang Xi/1850/2005	H5N2	2005					China	Asia		1708
 HM172100.1	A/duck/Jiangxi/80/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	China: Jiangxi	Asia		1707
+DQ449640.1	A/duck/Kurgan/08/2005	H5N1	2005					Russia	Europe		1754
 GU186724.1	A/duck/Lang Son/201/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1751
+DQ230522.1	A/duck/Novosibirsk/56/2005	H5N1	2005					Russia	Europe		1754
+DQ992776.1	A/duck/Shantou/13323/2005	H5N1	2005					China	Asia		1695
 AB558466.1	A/duck/Tsukuba/168/2005	H5N2	2005	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Ibaraki, Kasumigaura Lake	Asia		1692
 AB558460.1	A/duck/Tsukuba/394/2005	H5N3	2005	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Ibaraki, Kasumigaura Lake	Asia		1695
 AB558461.1	A/duck/Tsukuba/419/2005	H5N3	2005	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Ibaraki, Kasumigaura Lake	Asia		1695
@@ -442,32 +787,92 @@ GU052441.1	A/duck/Viet Nam/NCVDCDC14/2005	H5N1	2005	Anatidae	8830	avian	Anserifo
 GU186656.1	A/duck/Viet Nam/NCVDCDC9/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1751
 CY107851.1	A/duck/Viet Nam/TG24-01/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1701
 CY034766.1	A/duck/Vietnam/177/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia	egg 2 passage(s)	1728
+DQ497674.1	A/duck/Vietnam/272/2005	H5N1	2005					Viet Nam	Asia		1692
+DQ497708.1	A/duck/Vietnam/283/2005	H5N1	2005					Viet Nam	Asia		1695
+DQ497697.1	A/duck/Vietnam/286/2005	H5N1	2005					Viet Nam	Asia		1695
+DQ497689.1	A/duck/Vietnam/317/2005	H5N1	2005					Viet Nam	Asia		1692
 CY034222.1	A/duck/Vietnam/367/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia	egg 2 passage(s)	1711
+DQ497704.1	A/duck/Vietnam/376/2005	H5N1	2005					Viet Nam	Asia		1695
 EU118128.1	A/duck/Vietnam/5001/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1704
 EU118129.1	A/duck/Vietnam/5003/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1704
 EU118130.1	A/duck/Vietnam/5004/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1704
 EU118131.1	A/duck/Vietnam/5082/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1704
+DQ497717.1	A/duck/Vietnam/543/2005	H5N1	2005					Viet Nam	Asia		1695
+DQ497709.1	A/duck/Vietnam/557/2005	H5N1	2005					Viet Nam	Asia		1695
+DQ497688.1	A/duck/Vietnam/N-TB/2005	H5N1	2005					Viet Nam	Asia		1692
 CY034230.1	A/duck/Vietnam/NCVD05/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia	egg 2 passage(s)	1728
 CY034774.1	A/duck/Vietnam/NCVD06/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia	egg 2 passage(s)	1728
 CY033185.1	A/duck/Vietnam/NCVD08/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia	egg 2 passage(s)	1730
+DQ497694.1	A/duck/Vietnam/S640/2005	H5N1	2005					Viet Nam	Asia		1695
+DQ992797.1	A/duck/Yunnan/4400/2005	H5N1	2005					China	Asia		1695
+DQ992799.1	A/duck/Yunnan/4589/2005	H5N1	2005					China	Asia		1695
+DQ992801.1	A/duck/Yunnan/5133/2005	H5N1	2005					China	Asia		1698
+DQ992803.1	A/duck/Yunnan/5251/2005	H5N1	2005					China	Asia		1695
 GU186664.1	A/environment/Viet Nam/NCVDCDC59/2005	H5N1	2005					Viet Nam	Asia		1754
 EU748903.1	A/falcon/Saudi Arabia/D1795/2005	H5N1	2005	Falco cherrug	345164	avian	Falconiformes	Saudi Arabia	Asia		1751
+CY116654.1	A/ferret/Indonesia/5-F1/2005	H5N1	2005	Mustela putorius furo	9669	non-human mammal	Carnivora		Asia		1779
+CY116662.1	A/ferret/Indonesia/5-F2/2005	H5N1	2005	Mustela putorius furo	9669	non-human mammal	Carnivora		Asia		1779
+CY116670.1	A/ferret/Indonesia/5-F3/2005	H5N1	2005	Mustela putorius furo	9669	non-human mammal	Carnivora		Asia		1779
+CY116678.1	A/ferret/Indonesia/5-F5/2005	H5N1	2005	Mustela putorius furo	9669	non-human mammal	Carnivora		Asia		1779
+CY116686.1	A/ferret/Indonesia/5-F6/2005	H5N1	2005	Mustela putorius furo	9669	non-human mammal	Carnivora		Asia		1779
+CY116694.1	A/ferret/Indonesia/5-F7/2005	H5N1	2005	Mustela putorius furo	9669	non-human mammal	Carnivora		Asia		1779
+EF178517.1	A/golden pheasant/Thailand/VSMU-21-SPB/2005	H5N1	2005	Chrysolophus pictus	9089	avian	Galliformes	Thailand	Asia		1725
+DQ992716.1	A/goose/Guangxi/3017/2005	H5N1	2005					China	Asia		1695
+DQ992719.1	A/goose/Guangxi/3316/2005	H5N1	2005					China	Asia		1695
+DQ992722.1	A/goose/Guangxi/3714/2005	H5N1	2005					China	Asia		1695
+DQ992731.1	A/goose/Guangxi/4513/2005	H5N1	2005					China	Asia		1695
 HM172070.1	A/goose/Hubei/65/2005	H5N1	2005	Anatidae	8830	avian	Anseriformes	China: Hubei	Asia		1776
+DQ676840.1	A/goose/Krasnoozerka/627/2005(H5N1)	H5N1	2005	Anatidae	8830	avian	Anseriformes	Russia	Europe		1754
+DQ992795.1	A/goose/Yunnan/3720/2005	H5N1	2005					China	Asia		1695
+DQ992796.1	A/goose/Yunnan/4129/2005	H5N1	2005					China	Asia		1695
+DQ992798.1	A/goose/Yunnan/4494/2005	H5N1	2005					China	Asia		1695
+DQ992800.1	A/goose/Yunnan/4804/2005	H5N1	2005					China	Asia		1695
+DQ230521.1	A/grebe/Novosibirsk/29/2005	H5N1	2005					Russia	Europe		1754
+DQ826532.3	A/mallard/BC/373/2005	H5N2	2005	Anas platyrhynchos	8839	avian	Anseriformes	Canada	North America		1767
+DQ387854.1	A/mallard/Bavaria/1/2005	H5N2	2005					Germany	Europe		1695
 GU051973.1	A/mallard/California/430410/2005	H5N9	2005	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1742
 CY021397.1	A/mallard/Italy/3401/2005	H5N1	2005	Anas platyrhynchos	8839	avian	Anseriformes	Italy	Europe	Egg 1 passage(s)	1722
+KC815859.1	A/mallard/Italy/3401/2005	H5N1	2005						Europe		1698
+KC815867.1	A/mallard/Italy/3401/2005	H5N1	2005						Europe		1698
+KC815875.1	A/mallard/Italy/3401/2005	H5N1	2005						Europe		1698
 GU052580.1	A/mallard/Netherlands/2/2005	H5N2	2005	Anas platyrhynchos	8839	avian	Anseriformes	Netherlands	Europe		1713
 EF405825.2	A/mallard/ON/499/2005	H5N1	2005	Anas platyrhynchos	8839	avian	Anseriformes	Canada	North America		1734
+EF491876.1	A/mallard/ON/499/2005	H5N1	2005					Canada	North America		1766
+DQ497675.1	A/mallard/Vietnam/347/2005	H5N1	2005					Viet Nam	Asia		1692
+DQ497677.1	A/mallard/Vietnam/352/2005	H5N1	2005					Viet Nam	Asia		1692
 CY031627.1	A/muscovy duck/Vietnam/NCVD02/2005	H5N1	2005	Cairina moschata	8855	avian	Anseriformes	Viet Nam	Asia	egg 2 passage(s)	1731
+AB450577.1	A/open-bill stork/Thailand/VSMU-15-ATG/2005	H5N1	2005					Thailand	Asia		1707
+AB450579.1	A/open-bill stork/Thailand/VSMU-29-NSN/2005	H5N1	2005					Thailand	Asia		1707
+DQ990003.1	A/open-billed stork/Nakhonsawan/BBA3011M/2005	H5N1	2005								1735
+DQ989987.1	A/open-billed stork/Nakhonsawan/BBD1521J/2005	H5N1	2005								1767
+DQ989995.1	A/open-billed stork/Nakhonsawan/BBD2616F/2005	H5N1	2005								1744
+AB450573.1	A/pigeon/Thailand/VSMU-11-KRI/2005	H5N1	2005					Thailand	Asia		1707
+AB450574.1	A/pigeon/Thailand/VSMU-13-KRI/2005	H5N1	2005					Thailand	Asia		1707
+AB450566.1	A/quail/Nakhon Pathom/NIAH7562/2005	H5N1	2005					Thailand	Asia		1707
 CY017051.1	A/quail/Viet Nam/15/2005	H5N1	2005	Galliformes	8976	avian	Galliformes	Viet Nam	Asia	Egg 1 passage(s)	1728
+DQ497711.1	A/quail/Vietnam/282/2005	H5N1	2005					Viet Nam	Asia		1695
+EU420038.1	A/raccoon dog/Shandong/sd1/2005	H5N1	2005								1779
+EU420046.1	A/raccoon dog/Shandong/sd2/2005	H5N1	2005								1779
 HM440051.1	A/swine/Banten/UT2071/2005	H5N1	2005	Sus scrofa	9823	non-human mammal	Artiodactyla	Indonesia	Asia		1707
 HM440059.1	A/swine/Banten/UT3062/2005	H5N1	2005	Sus scrofa	9823	non-human mammal	Artiodactyla	Indonesia	Asia		1752
 HM440067.1	A/swine/Banten/UT3063/2005	H5N1	2005	Sus scrofa	9823	non-human mammal	Artiodactyla	Indonesia	Asia		1707
 HM440075.1	A/swine/Banten/UT3081/2005	H5N1	2005	Sus scrofa	9823	non-human mammal	Artiodactyla	Indonesia	Asia		1707
 CY022637.1	A/teal/Italy/3931-38/2005	H5N2	2005	Anas	8835	avian	Anseriformes	Italy	Europe	Egg 1 passage(s)	1730
+EU532423.1	A/tiger/Shanghai/01/2005	H5N1	2005	Panthera tigris	9694	non-human mammal	Carnivora	China: Shanghai	Asia		1712
+AB450578.1	A/tree sparrow/Ratchaburi/VSMU-16-RBR/2005	H5N1	2005					Thailand	Asia		1707
+AB450575.1	A/tree sparrow/Thailand/VSMU-12-KRI/2005	H5N1	2005					Thailand	Asia		1707
+AB450576.1	A/tree sparrow/Thailand/VSMU-14-KRI/2005	H5N1	2005					Thailand	Asia		1707
+EF178506.1	A/tree sparrow/Thailand/VSMU-16-RBR/2005	H5N1	2005	Passer montanus	9160	avian	Passeriformes	Thailand	Asia		1726
 CY021525.1	A/turkey/Italy/1258/2005	H5N2	2005	Meleagris gallopavo	9103	avian	Galliformes	Italy	Europe	Egg 1 passage(s)	1736
 CY022629.1	A/turkey/Italy/1325/2005	H5N2	2005	Meleagris gallopavo	9103	avian	Galliformes	Italy	Europe	Egg 1 passage(s)	1732
+DQ407519.1	A/turkey/Turkey/1/2005	H5N1	2005						Asia		1775
 EF619980.1	A/turkey/Turkey/1/2005	H5N1	2005	Meleagris gallopavo	9103	avian	Galliformes	Turkey	Asia		1787
+KF042152.1	A/turkey/Turkey/1/2005	H5N1	2005						Asia		1750
+KF042153.1	A/turkey/Turkey/1/2005	H5N1	2005						Asia		1749
 GU186700.1	A/whooper swan/Mongolia/244/2005	H5N1	2005	Anas carolinensis	75836	avian	Anseriformes	Mongolia	Asia		1754
+DQ497705.1	A/wild bird/Vietnam/434/2005	H5N1	2005					Viet Nam	Asia		1695
+EU329177.1	A/wild duck/Hunan/021/2005	H5N1	2005					China	Asia		1776
+EU329186.1	A/wild duck/Hunan/211/2005	H5N1	2005					China	Asia		1776
 KP638516.1	A/wildbird/Anhui/82/2005	H5N1	2005	Aves	8782	avian		Viet Nam	Asia		1776
 GU183452.1	A/Muscovy duck/West Java/Bgr-Cw/2005	H5N1	2005-01	Cairina moschata	8855	avian	Anseriformes	Indonesia	Asia		1704
 KP742869.1	A/chicken/Pare/Pusvetma/2005	H5N1	2005-01	Gallus gallus	9031	avian	Galliformes	Indonesia: Pare	Asia		1707
@@ -498,6 +903,8 @@ GU361192.1	A/aquatic bird/Korea/w16/2005	H5N3	2005-10	Aves	8782	avian		South Kor
 EU124082.1	A/Chicken/Langkat/BBPV1-576/2005	H5N1	2005-10-14	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1737
 HM114537.1	A/Vietnam/UT30850/2005	H5N1	2005-10-28	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1701
 CY110933.1	A/duck/Taiwan/DV30-2/2005	H5N2	2005-10-28	Anas platyrhynchos	8839	avian	Anseriformes	Taiwan: Yilan	Asia		1733
+DQ399540.1	A/Cygnus olor/Astrakhan/Ast05-2-8/05(H5N1)	H5N1	2005-11	Cygnus olor	8869	avian	Anseriformes	Russia	Europe		1754
+DQ399547.1	A/Cygnus olor/Astrakhan/Ast05-2-9/05(H5N1)	H5N1	2005-11	Cygnus olor	8869	avian	Anseriformes	Russia	Europe		1754
 GU361193.1	A/aquatic bird/Korea/w54/2005	H5N2	2005-11	Aves	8782	avian		South Korea	Asia		1695
 GU361194.1	A/aquatic bird/Korea/w74/2005	H5N2	2005-11	Aves	8782	avian		South Korea	Asia		1695
 FJ864690.1	A/chicken/Mexico/435/2005	H5N2	2005-11	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1695
@@ -508,6 +915,11 @@ EU124168.1	A/Chicken/Vietnam/Long An 636/2005	H5N1	2005-11-21	Gallus gallus	9031
 EU124134.1	A/Duck/Vietnam/Dong Thap 680A/2005	H5N1	2005-11-21	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1736
 OR950276.1	A/duck/Taipei/05WB830-1-5-E2/2005	H5N2	2005-11-24	Anatidae	8830	avian	Anseriformes	Taiwan: Taipei	Asia		1767
 CY061885.1	A/teal/Germany/Wv632/2005	H5N1	2005-11-25	Anas	8835	avian	Anseriformes	Germany	Europe	E2 passage(s)	1767
+DQ434889.1	A/Cygnus olor/Astrakhan/Ast05-2-10/2005	H5N1	2005-11-26					Russia	Europe		1754
+DQ343502.1	A/Cygnus olor/Astrakhan/Ast05-2-2/2005	H5N1	2005-11-26					Russia	Europe		1754
+DQ358746.1	A/Cygnus olor/Astrakhan/Ast05-2-3/2005	H5N1	2005-11-26					Russia	Europe		1754
+DQ365004.1	A/Cygnus olor/Astrakhan/Ast05-2-5/2005	H5N1	2005-11-26					Russia: Astrakhan	Europe		1754
+DQ364996.1	A/Cygnus olor/Astrakhan/Ast05-2-6/2005	H5N1	2005-11-26					Russia: Astrakhan	Europe		1754
 GU361196.1	A/aquatic bird/Korea/w81/2005	H5N2	2005-12	Aves	8782	avian		South Korea	Asia		1695
 GU361197.1	A/aquatic bird/Korea/w96/2005	H5N2	2005-12	Aves	8782	avian		South Korea	Asia		1695
 KC784947.1	A/goose/Jilin/514/2005	H5N1	2005-12	Anatidae	8830	avian	Anseriformes	China	Asia		1707
@@ -556,9 +968,23 @@ EU124186.1	A/Chicken/Laos/Xaythiani 36/2006	H5N1	2006	Gallus gallus	9031	avian	G
 EU124086.1	A/Chicken/Way Kanan/BBPVIII/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1725
 EU124148.1	A/Chicken/West Java/PWT-WIJ/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1735
 EU124150.1	A/Chicken/West Java/SMI-CSLK-EC/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1701
+EF624256.1	A/China/2006	H5N1	2006	Homo sapiens	9606	human	Primates		Asia		1704
+DQ835313.1	A/China/GD01/2006	H5N1	2006	Homo sapiens	9606	human	Primates	China	Asia		1776
+FM209433.1	A/Cygnus olor/BIH/1/2006	H5N1	2006					Bosnia and Herzegovina	Europe		1736
 CY063860.1	A/Cygnus olor/Caspian Sea/2006	H5N1	2006	Cygnus olor	8869	avian	Anseriformes	Russia	Europe		1779
 EU124084.1	A/Duck/Indramayu/BBPW109/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	Indonesia	Asia		1729
 GQ923133.1	A/Guinea fowl/Oregon/459674-5/2006	H5N2	2006	Numididae	8990	avian	Galliformes	USA	North America		1742
+DQ992780.1	A/Guinea fowl/Shantou/1341/2006	H5N1	2006					China	Asia		1698
+EU015404.1	A/Indonesia/TLL002/2006	H5N1	2006	Homo sapiens	9606	human	Primates	Indonesia	Asia		1707
+EU015405.1	A/Indonesia/TLL003/2006	H5N1	2006	Homo sapiens	9606	human	Primates	Indonesia	Asia		1707
+EU015407.1	A/Indonesia/TLL005/2006	H5N1	2006	Homo sapiens	9606	human	Primates	Indonesia	Asia		1707
+EU015408.1	A/Indonesia/TLL006/2006	H5N1	2006	Homo sapiens	9606	human	Primates	Indonesia	Asia		1707
+EU015409.1	A/Indonesia/TLL007/2006	H5N1	2006	Homo sapiens	9606	human	Primates	Indonesia	Asia		1707
+EU015410.1	A/Indonesia/TLL008/2006	H5N1	2006	Homo sapiens	9606	human	Primates	Indonesia	Asia		1707
+EU015412.1	A/Indonesia/TLL010/2006	H5N1	2006	Homo sapiens	9606	human	Primates	Indonesia	Asia		1707
+EU015413.1	A/Indonesia/TLL011/2006	H5N1	2006	Homo sapiens	9606	human	Primates	Indonesia	Asia		1707
+EU015414.1	A/Indonesia/TLL012/2006	H5N1	2006	Homo sapiens	9606	human	Primates	Indonesia	Asia		1707
+DQ992842.1	A/Japanese white-eye/Hong Kong/1038/2006	H5N1	2006					China	Asia		1692
 GU050082.1	A/Northern shoveler/Mississippi/469987-3/2006	H5N2	2006	Spatula clypeata	75838	avian	Anseriformes	USA	North America		1742
 GU050052.1	A/Northern shoveler/Utah/466781/2006	H5N2	2006	Spatula clypeata	75838	avian	Anseriformes	USA	North America		1742
 GQ923573.1	A/avian/Colorado/456648/2006	H5N8	2006					USA	North America		1742
@@ -569,39 +995,72 @@ GU049904.1	A/avian/New York/448534/2006	H5N2	2006	Aves	8782	avian		USA	North Ame
 GQ117185.1	A/avian/New York/466812/2006	H5N2	2006					USA	North America		1742
 HM172085.1	A/bar-headed goose/Qinghai/1-HVRI/2006	H5N1	2006	Anser indicus	8846	avian	Anseriformes	China: Qinghai	Asia		1707
 HM172087.1	A/bar-headed goose/Tibet/8/2006	H5N1	2006	Anser indicus	8846	avian	Anseriformes	China: Tibet	Asia		1707
+EF165057.1	A/buzzard/Bavaria/13/2006	H5N1	2006					Germany	Europe		1707
+EF165049.1	A/buzzard/Bavaria/5/2006	H5N1	2006					Germany	Europe		1707
 CY107842.1	A/buzzard/Berlin/01/2006	H5N1	2006	Buteo	30396	avian	Accipitriformes	Germany	Europe		1704
 CY016787.1	A/chicken/Afghanistan/1207/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Afghanistan	Asia	Egg 1 passage(s)	1734
 CY020621.1	A/chicken/Afghanistan/1573-47/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Afghanistan	Asia	Egg 1 passage(s)	1744
 CY020629.1	A/chicken/Afghanistan/1573-65/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Afghanistan	Asia	Egg 1 passage(s)	1744
 CY021373.1	A/chicken/Afghanistan/1573-7/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Afghanistan	Asia	Egg 1 passage(s)	1731
 CY020637.1	A/chicken/Afghanistan/1573-92/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Afghanistan	Asia	Egg 1 passage(s)	1744
+EU277833.1	A/chicken/Burkina Faso/1347-16/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Burkina Faso	Africa		1716
 KM455945.1	A/chicken/Coahuila/1433-15/2006	H5N2	2006	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1695
 KM455929.1	A/chicken/Durango/1433-10/2006	H5N2	2006	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1695
 KM455921.1	A/chicken/Durango/1433-9/2006	H5N2	2006	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1695
 KR732525.1	A/chicken/Egypt/06553-NLQP/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1779
+EF441276.1	A/chicken/Egypt/1078-NAMRU3/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Egypt: Menofia governorate	Africa		1707
+EF441278.1	A/chicken/Egypt/1080-NAMRU3/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Egypt: Damietta governorate	Africa		1707
+EF441279.1	A/chicken/Egypt/1081-NAMRU3/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Egypt: Gharbiya governorate	Africa		1707
+EF469651.1	A/chicken/Egypt/12378N3-CLEVB/2006	H5N1	2006					Egypt: Gharbiya governorate	Africa		1741
+EF469652.1	A/chicken/Egypt/12379N3-CLEVB/2006	H5N1	2006					Egypt: Sharqiya governorate	Africa		1741
 CY020645.1	A/chicken/Egypt/2253-1/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Egypt	Africa	Egg 1 passage(s)	1734
+DQ992831.1	A/chicken/Fujian/584/2006	H5N1	2006					China	Asia		1695
+EF532628.1	A/chicken/Gaza/450/2006	H5N1	2006								1721
+EF532630.1	A/chicken/Gaza/713/2006	H5N1	2006								1721
+EF532631.1	A/chicken/Gaza/714/2006	H5N1	2006								1721
+DQ993026.1	A/chicken/Guangxi/1951/2006	H5N1	2006					China	Asia		1695
+DQ992745.1	A/chicken/Guangxi/463/2006	H5N1	2006					China	Asia		1695
+DQ993114.1	A/chicken/Guangxi/683/2006	H5N1	2006					China	Asia		1695
+DQ992769.1	A/chicken/Guiyang/846/2006	H5N1	2006					China	Asia		1698
 HM172080.1	A/chicken/Henan/A-7/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	China: Henan	Asia		1707
+DQ992841.1	A/chicken/Hong Kong/947/2006	H5N1	2006					China	Asia		1695
 GU052486.1	A/chicken/Hong Kong/D-06-0947/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Hong Kong	Asia		1751
+AB275434.1	A/chicken/Ibaraki/17/2006	H5N2	2006					Japan	Asia		1695
+EF532626.1	A/chicken/Israel/397/2006	H5N1	2006						Asia		1721
+EF532629.1	A/chicken/Israel/625/2006	H5N1	2006						Asia		1721
 CY021517.1	A/chicken/Ivory Coast/1787-35/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Cote d'Ivoire	Africa	Egg 1 passage(s)	1741
+DQ887062.1	A/chicken/Jalgaon/8824/2006	H5N1	2006					India: Jalgaon, Maharashtra	Asia		1723
+EU233691.1	A/chicken/Korea/CA7/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	South Korea	Asia		1779
+EU233675.1	A/chicken/Korea/IS/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	South Korea	Asia		1730
+EU233683.1	A/chicken/Korea/IS2/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	South Korea	Asia		1751
+DQ676834.1	A/chicken/Krasnodar/01/2006(H5N1)	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Russia	Europe		1754
 CY041045.1	A/chicken/Laos/31/2006(H5N1)	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Laos	Asia		1704
 HM172077.1	A/chicken/Liaoning/A-11/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	China: Liaoning	Asia		1707
 KM455937.1	A/chicken/Mexico/1433-13/2006	H5N2	2006	Gallus gallus	9031	avian	Galliformes	Mexico	North America		1695
+DQ887061.1	A/chicken/Navapur/7972/2006	H5N1	2006					India: Navapur, Nandurbar, Maharashtra	Asia		1723
 GQ117129.1	A/chicken/New York/439235/2006	H5N2	2006	Gallus gallus	9031	avian	Galliformes	USA	North America		1742
 CY016939.1	A/chicken/Nigeria/1047-30/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Nigeria	Africa	Egg 1 passage(s)	1734
 CY016947.1	A/chicken/Nigeria/1047-34/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Nigeria	Africa	Egg 1 passage(s)	1733
 CY016923.1	A/chicken/Nigeria/1047-54/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Nigeria	Africa	Egg 1 passage(s)	1734
 CY016931.1	A/chicken/Nigeria/1047-62/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Nigeria	Africa	Egg 1 passage(s)	1733
 CY016907.1	A/chicken/Nigeria/1047-8/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Nigeria	Africa	Egg 1 passage(s)	1734
+EU697232.1	A/chicken/Nigeria/228-10/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Nigeria	Africa		1707
+EU697217.1	A/chicken/Nigeria/228-5/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Nigeria	Africa		1707
+EU697224.1	A/chicken/Nigeria/228-6/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Nigeria	Africa		1707
 CY016276.1	A/chicken/Nigeria/641/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Nigeria	Africa	Egg 1 passage(s)	1732
 CY016284.1	A/chicken/Nigeria/957-20/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Nigeria	Africa	Egg 1 passage(s)	1731
 HM172076.1	A/chicken/Ningxia/24/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	China: Ningxia	Asia		1707
 CY068896.1	A/chicken/Pakistan/NARC-228/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1707
 EU919137.1	A/chicken/Phichit/NIAH1/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Thailand: Phichit province	Asia		1739
+AB450568.1	A/chicken/Phichit/NIAH606988/2006	H5N1	2006					Thailand	Asia		1707
 AB474081.1	A/chicken/Pyigyitagon/204/2006	H5N1	2006					Myanmar	Asia		1707
 CY037762.1	A/chicken/Rawalakot/NARC2441A/2006(H5N1)	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1779
 HM172073.1	A/chicken/Shandong/A-10/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	China: Shandong	Asia		1707
 HM172082.1	A/chicken/Shandong/A-5/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	China: Shandong	Asia		1707
+DQ992779.1	A/chicken/Shantou/1233/2006	H5N1	2006					China	Asia		1695
+DQ992785.1	A/chicken/Shantou/3840/2006	H5N1	2006					China	Asia		1692
 HM172113.1	A/chicken/Shanxi/10/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	China: Shanxi	Asia		1707
+DQ914814.3	A/chicken/Shanxi/2/2006	H5N1	2006					China	Asia		1776
 CY037770.1	A/chicken/Sihala/NARC3303.4/2006(H5N1)	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Pakistan: Sihala	Asia		1779
 CY016300.1	A/chicken/Sudan/1784-10/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Sudan	Africa	Egg 1 passage(s)	1734
 CY016292.1	A/chicken/Sudan/1784-7/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Sudan	Africa	Egg 1 passage(s)	1734
@@ -617,6 +1076,16 @@ KR732454.1	A/chicken/WestJava/SMI-PAT/2006	H5N1	2006	Gallus gallus	9031	avian	Ga
 KR732514.1	A/chicken/WestJava/TASIKO B/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1779
 HM172091.1	A/chicken/Xinjiang/27/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	China: Xinjiang	Asia		1707
 HM172090.1	A/chicken/Xinjiang/28/2006	H5N1	2006	Gallus gallus	9031	avian	Galliformes	China: Xinjiang	Asia		1707
+DQ659679.1	A/common bussard/Bavaria/2/2006	H5N1	2006					Germany	Europe		1707
+EF165055.1	A/common buzzard/Bavaria/11/2006	H5N1	2006					Germany	Europe		1707
+DQ992843.1	A/common magpie/Hong Kong/2125/2006	H5N1	2006					China	Asia		1695
+DQ992844.1	A/common magpie/Hong Kong/2256/2006	H5N1	2006					China	Asia		1695
+DQ992850.1	A/common magpie/Hong Kong/3033/2006	H5N1	2006					China	Asia		1695
+EF165051.1	A/common pochard/Bavaria/7/2006	H5N1	2006					Germany	Europe		1707
+AM498628.1	A/common pochard/France/06167-2.1/2006	H5N1	2006	Aythya ferina	219593	avian	Anseriformes	France	Europe		1707
+EU016355.1	A/common pochard/Switzerland/V505/2006	H5N1	2006					Switzerland	Europe		1707
+EU016358.1	A/common pochard/Switzerland/V592/2006	H5N1	2006					Switzerland	Europe		1707
+EU016359.1	A/common pochard/Switzerland/V762/2006	H5N1	2006					Switzerland	Europe		1707
 CY016779.1	A/cygnus cygnus/Iran/754/2006	H5N1	2006	Cygnus cygnus	219595	avian	Anseriformes	Iran	Asia	Egg 1 passage(s)	1739
 CY020349.1	A/cygnus olor/Italy/808/2006	H5N1	2006	Cygnus olor	8869	avian	Anseriformes	Italy: Apulia	Europe	Egg 1 passage(s)	1744
 HM172115.1	A/duck/Anhui/1/06	H5N1	2006	Anatidae	8830	avian	Anseriformes	China: Anhui	Asia		1704
@@ -625,10 +1094,25 @@ HQ200483.1	A/duck/Cambodia/D1KC167/2006	H5N1	2006	Anatidae	8830	avian	Anseriform
 HQ200593.1	A/duck/Cambodia/D1KP/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	Cambodia: Kampot Province	Asia		1767
 AB558467.1	A/duck/Chiba/1/2006	H5N3	2006	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Chiba	Asia		1695
 CY016803.1	A/duck/Cote d'Ivoire/1787-18/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	Cote d'Ivoire	Africa	Egg 1 passage(s)	1734
+EF469655.1	A/duck/Egypt/12380N3-CLEVB/2006	H5N1	2006					Egypt: Gharbiya governorate	Africa		1741
 CY016899.1	A/duck/Egypt/2253-3/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	Egypt	Africa	Egg 1 passage(s)	1743
+EF532632.1	A/duck/Gaza/760/2006	H5N1	2006								1721
+EF532622.1	A/duck/Gaza/834/2006	H5N1	2006								1721
 KM190932.1	A/duck/Germany/R751/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	Germany	Europe		1704
+DQ992742.1	A/duck/Guangxi/150/2006	H5N1	2006					China	Asia		1695
+DQ993023.1	A/duck/Guangxi/1830/2006	H5N1	2006					China	Asia		1695
+DQ993022.1	A/duck/Guangxi/2143/2006	H5N1	2006					China	Asia		1695
+DQ992744.1	A/duck/Guangxi/288/2006	H5N1	2006					China	Asia		1695
+DQ992741.1	A/duck/Guangxi/89/2006	H5N1	2006					China	Asia		1695
+DQ992775.1	A/duck/Guiyang/1418/2006	H5N1	2006					China	Asia		1695
+DQ992764.1	A/duck/Guiyang/293/2006	H5N1	2006					China	Asia		1695
+DQ992767.1	A/duck/Guiyang/497/2006	H5N1	2006					China	Asia		1695
 GU052502.1	A/duck/Hai Phong /208/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1752
+EU594349.1	A/duck/Hubei/Hangmei01/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	China	Asia		1776
 HM172097.1	A/duck/Hunan/29/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	China: Hunan	Asia		1704
+DQ992792.1	A/duck/Hunan/856/2006	H5N1	2006					China	Asia		1692
+EU233707.1	A/duck/Korea/Asan5/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	South Korea	Asia		1779
+EU233715.1	A/duck/Korea/Asan6/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	South Korea	Asia		1773
 CY041043.1	A/duck/Laos/22/2006(H5N1)	H5N1	2006	Anatidae	8830	avian	Anseriformes	Laos	Asia		1704
 CY041038.1	A/duck/Laos/25/2006(H5N1)	H5N1	2006	Anatidae	8830	avian	Anseriformes	Laos	Asia		1704
 GU050008.1	A/duck/Michigan/463796-7/2006	H5N2	2006	Anatidae	8830	avian	Anseriformes	USA	North America		1742
@@ -647,15 +1131,38 @@ GU049986.1	A/duck/Oregon/459674-3/2006	H5N2	2006	Anatidae	8830	avian	Anseriforme
 GQ923421.1	A/duck/Pennsylvania/446080-6/2006	H5N2	2006	Anatidae	8830	avian	Anseriformes	USA	North America		1742
 GQ923429.1	A/duck/Pennsylvania/446080-7/2006	H5N2	2006	Anatidae	8830	avian	Anseriformes	USA	North America		1742
 AB558471.1	A/duck/Shimane/19/2006	H5N2	2006	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Shimane	Asia		1695
+EU016352.1	A/duck/Switzerland/V389/2006	H5N1	2006					Switzerland	Europe		1707
+EU016353.1	A/duck/Switzerland/V426/2006	H5N1	2006					Switzerland	Europe		1707
+EU016354.1	A/duck/Switzerland/V487/2006	H5N1	2006					Switzerland	Europe		1707
 JQ794446.1	A/duck/Thailand/TS01/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	Thailand	Asia		1727
 JQ794470.1	A/duck/Thailand/TS04/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	Thailand	Asia		1727
 AB558469.1	A/duck/Tsukuba/536/2006	H5N2	2006	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Ibaraki, Kasumigaura Lake	Asia		1695
 AB558470.1	A/duck/Tsukuba/541/2006	H5N2	2006	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Ibaraki, Kasumigaura Lake	Asia		1695
+DQ861291.1	A/duck/Tuva/01/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	Russia	Europe		1748
 HM172109.1	A/duck/Yunnan/47/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	China: Yunnan	Asia		1707
 CY030881.1	A/duck/Yunnan/4873/2006(H5N1)	H5N1	2006	Anatidae	8830	avian	Anseriformes	China	Asia		1736
 CY030889.1	A/duck/Yunnan/5310/2006(H5N1)	H5N1	2006	Anatidae	8830	avian	Anseriformes	China	Asia		1731
+EF165054.1	A/eagle owl/Bavaria/10/2006	H5N1	2006					Germany	Europe		1707
+EU233731.1	A/environment/Korea/W149/2006	H5N1	2006					South Korea	Asia		1779
+EU233739.1	A/environment/Korea/W150/2006	H5N1	2006					South Korea	Asia		1779
 CY031036.1	A/environment/Maryland/1189/2006	H5N1	2006					USA: MD	North America	EGG1 + LD 1 passage(s)	1732
 GQ117177.1	A/environment/New York/466788/2006	H5N2	2006					USA	North America		1742
+EF165059.1	A/falcon/Bavaria/15/2006	H5N1	2006					Germany	Europe		1707
+EF634332.1	A/garganey/SanJiang/160/2006	H5N2	2006	Spatula querquedula	75856	avian	Anseriformes				1695
+EF165063.1	A/goldeneye duck/Bavaria/19/2006	H5N1	2006					Germany	Europe		1707
+EF165062.1	A/goosander/Bavaria/18/2006	H5N1	2006					Germany	Europe		1707
+EF165064.1	A/goosander/Bavaria/20/2006	H5N1	2006					Germany	Europe		1707
+DQ993027.1	A/goose/Guangxi/1458/2006	H5N1	2006					China	Asia		1695
+DQ993025.1	A/goose/Guangxi/1633/2006	H5N1	2006					China	Asia		1695
+DQ993024.1	A/goose/Guangxi/1898/2006	H5N1	2006					China	Asia		1695
+DQ993117.1	A/goose/Guangxi/532/2006	H5N1	2006					China	Asia		1695
+DQ992774.1	A/goose/Guiyang/1304/2006	H5N1	2006					China	Asia		1695
+EU401795.1	A/goose/Lahore-Pakistan/NARC-3321/4/2006	H5N1	2006					Pakistan	Asia		1779
+DQ992784.1	A/goose/Shantou/3295/2006	H5N1	2006					China	Asia		1695
+DQ992814.1	A/goose/Yunnan/1136/2006	H5N1	2006					China	Asia		1695
+DQ992816.1	A/goose/Yunnan/1144/2006	H5N1	2006					China	Asia		1695
+DQ992817.1	A/goose/Yunnan/1338/2006	H5N1	2006					China	Asia		1695
+DQ992818.1	A/goose/Yunnan/1396/2006	H5N1	2006					China	Asia		1695
 CY030905.1	A/goose/Yunnan/3798/2006(H5N1)	H5N1	2006	Anatidae	8830	avian	Anseriformes	China	Asia		1708
 CY030913.1	A/goose/Yunnan/4371/2006(H5N1)	H5N1	2006	Anatidae	8830	avian	Anseriformes	China	Asia		1705
 CY030921.1	A/goose/Yunnan/4389/2006(H5N1)	H5N1	2006	Anatidae	8830	avian	Anseriformes	China	Asia		1723
@@ -663,16 +1170,26 @@ CY030929.1	A/goose/Yunnan/4985/2006(H5N1)	H5N1	2006	Anatidae	8830	avian	Anserifo
 CY030961.1	A/goose/Yunnan/5769/2006(H5N1)	H5N1	2006	Anatidae	8830	avian	Anseriformes	China	Asia		1735
 CY030969.1	A/goose/Yunnan/5979/2006(H5N1)	H5N1	2006	Anatidae	8830	avian	Anseriformes	China	Asia		1732
 CY030977.1	A/goose/Yunnan/6193/2006(H5N1)	H5N1	2006	Anatidae	8830	avian	Anseriformes	China	Asia		1732
+EF165066.1	A/great crested grebe/Bavaria/22/2006	H5N1	2006					Germany	Europe		1707
 GQ923501.1	A/green winged teal/Delaware/458672-5/2006	H5N2	2006	Anas carolinensis	75836	avian	Anseriformes	USA	North America		1742
 GU050075.1	A/green winged teal/Delaware/468157-6/2006	H5N2	2006	Anas carolinensis	75836	avian	Anseriformes	USA	North America		1742
 GQ923181.1	A/green winged teal/Iowa/463990-3/2006	H5N2	2006	Anas carolinensis	75836	avian	Anseriformes	USA	North America		1742
 GQ923205.1	A/green winged teal/Ohio/464069/2006	H5N2	2006	Anas carolinensis	75836	avian	Anseriformes	USA	North America		1742
 GQ923285.1	A/green winged teal/Ohio/468160/2006	H5N2	2006	Anas carolinensis	75836	avian	Anseriformes	USA	North America		1742
+AM498631.1	A/greylag goose/France/06310/2006	H5N1	2006	Anser anser	8843	avian	Anseriformes	France	Europe		1707
+EU277841.1	A/guinea fowl/Burkina Faso/1347-20/2006	H5N1	2006	Numididae	8990	avian	Galliformes	Burkina Faso	Africa		1715
 CY017179.1	A/guinea fowl/Nigeria/957-12/2006	H5N1	2006	Numididae	8990	avian	Galliformes	Nigeria	Africa	Egg 1 passage(s)	1731
 CY107852.1	A/gull/Germany/R882/2006	H5N1	2006	Laridae	8910	avian	Charadriiformes	Germany	Europe		1704
+DQ992848.1	A/house crow/Hong Kong/2648/2006	H5N1	2006					China	Asia		1695
+DQ992849.1	A/house crow/Hong Kong/2858/2006	H5N1	2006					China	Asia		1695
+EU263981.1	A/human/China/GD02/2006	H5N1	2006					China	Asia		1704
+DQ992847.1	A/large-billed crow/Hong Kong/2512/2006	H5N1	2006					China	Asia		1695
+DQ992840.1	A/little egret/Hong Kong/718/2006	H5N1	2006					China	Asia		1692
+EU016351.1	A/little grebe/Switzerland/V330/2006	H5N1	2006					Switzerland	Europe		1707
 GQ923333.1	A/mallard/Arkansas/473507-1/2006	H5N2	2006	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1742
 GU050113.1	A/mallard/Arkansas/473507-13/2006	H5N2	2006	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1742
 GQ923341.1	A/mallard/Arkansas/473507-9/2006	H5N2	2006	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1742
+DQ458992.1	A/mallard/Bavaria/1/2006	H5N1	2006					Germany	Europe		1707
 GU046740.1	A/mallard/Bavaria/39/2006	H5N3	2006	Anas platyrhynchos	8839	avian	Anseriformes	Germany	Europe		1695
 GQ923469.1	A/mallard/Idaho/455398-2/2006	H5N2	2006	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1742
 GU050023.1	A/mallard/Illinois/464067-5/2006	H5N2	2006	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1742
@@ -699,32 +1216,57 @@ GQ923157.1	A/mallard/Oregon/461067-2/2006	H5N2	2006	Anas platyrhynchos	8839	avia
 GU186531.1	A/mallard/PA/454069-9/2006	H5N1	2006	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1742
 GU052845.1	A/mallard/Pennsylvania/454069-12/2006	H5N4	2006	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1742
 MH127538.1	A/mallard/South Korea/12A/2006	H5N2	2006	Anas platyrhynchos	8839	avian	Anseriformes	South Korea	Asia		1734
+EU016356.1	A/mallard/Switzerland/V537/2006	H5N1	2006					Switzerland	Europe		1707
+EU016357.1	A/mallard/Switzerland/V558/2006	H5N1	2006					Switzerland	Europe		1707
 GQ923485.1	A/mallard/Washington/456277-2/2006	H5N2	2006	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1742
 GQ923477.1	A/mallard/Washington/456277-7/2006	H5N2	2006	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1742
 GU050030.1	A/mallard/Wisconsin/464979/2006	H5N2	2006	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1742
+DQ992845.1	A/munia/Hong Kong/2454/2006	H5N1	2006					China	Asia		1692
 FJ434373.1	A/mute swan/Aktau/1460/2006	H5N1	2006	Cygnus olor	8869	avian	Anseriformes	Kazakhstan	Asia		1743
+EF165056.1	A/mute swan/Bavaria/12/2006	H5N1	2006					Germany	Europe		1707
+EF395820.1	A/mute swan/France/06299/2006	H5N1	2006	Cygnus olor	8869	avian	Anseriformes	France	Europe		1707
+AM498630.1	A/mute swan/France/06303/2006	H5N1	2006	Cygnus olor	8869	avian	Anseriformes	France	Europe		1707
+AM498632.1	A/mute swan/France/06631a/2006	H5N1	2006	Cygnus olor	8869	avian	Anseriformes	France	Europe		1707
 CY034679.1	A/mute swan/Michigan/451072/2006(H5N1)	H5N1	2006	Cygnus olor	8869	avian	Anseriformes	USA	North America		1767
+EU016350.1	A/mute swan/Switzerland/V68/2006	H5N1	2006					Switzerland	Europe		1707
 GU050038.1	A/northern pintail/California/466371/2006	H5N2	2006	Anas acuta	28680	avian	Anseriformes	USA	North America		1742
 GQ923301.1	A/northern pintail/California/469993/2006	H5N2	2006	Anas acuta	28680	avian	Anseriformes	USA	North America		1742
 GU050098.1	A/northern pintail/California/473046/2006	H5N2	2006	Anas acuta	28680	avian	Anseriformes	USA	North America		1742
 GU051980.1	A/northern pintail/Illinois/464067-4/2006	H5N9	2006	Anas acuta	28680	avian	Anseriformes	USA	North America		1723
 GU050015.1	A/northern pintail/Iowa/463992/2006	H5N2	2006	Anas acuta	28680	avian	Anseriformes	USA	North America		1742
 GQ923293.1	A/northern pintail/Utah/469648/2006	H5N2	2006	Anas acuta	28680	avian	Anseriformes	USA	North America		1742
+HF563057.1	A/ostrich/Germany/R5-10/2006	H5N3	2006						Europe		1767
 CY016915.1	A/ostrich/Nigeria/1047-25/2006	H5N1	2006	Struthio camelus	8801	avian	Struthioniformes	Nigeria	Africa	Egg 1 passage(s)	1740
+EF591749.2	A/ostrich/South Africa/AI1091/2006	H5N2	2006	Struthio camelus	8801	avian	Struthioniformes	South Africa	Africa		1772
+EF591757.2	A/ostrich/South Africa/AI1160/2006	H5N2	2006	Struthio camelus	8801	avian	Struthioniformes	South Africa	Africa		1771
 CY036045.1	A/peregrine falcon/Hong Kong/5211/2006(H5N1)	H5N1	2006	Falco peregrinus	8954	avian	Falconiformes	Hong Kong	Asia		1692
 HM172456.1	A/pied megpie/Liaoning/7/2006	H5N1	2006	Corvidae	28725	avian	Passeriformes	China: Liaoning	Asia		1707
+DQ992835.1	A/robin/Hong Kong/75/2006	H5N1	2006					China	Asia		1692
 HM172101.1	A/shrike/Tibet/13/2006	H5N1	2006	Laniidae	9193	avian	Passeriformes	China: Tibet	Asia		1704
 GQ923261.1	A/snow goose/Montana/466771-4/2006	H5N2	2006	Anser caerulescens	8849	avian	Anseriformes	USA	North America		1742
 JF800144.1	A/spot-billed duck/Korea/KNU SYG06/2006	H5N3	2006	Anas platyrhynchos	8839	avian	Anseriformes	South Korea	Asia		1695
+EF165058.1	A/swan/Bavaria/14/2006	H5N1	2006					Germany	Europe		1707
+EF165060.1	A/swan/Bavaria/16/2006	H5N1	2006					Germany	Europe		1707
+EF165061.1	A/swan/Bavaria/17/2006	H5N1	2006					Germany	Europe		1707
+EF165065.1	A/swan/Bavaria/21/2006	H5N1	2006					Germany	Europe		1707
+EF165050.1	A/swan/Bavaria/6/2006	H5N1	2006					Germany	Europe		1707
 CY017043.1	A/swan/Slovenia/760/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	Slovenia	Europe	Egg 1 passage(s)	1731
 HM440083.1	A/swine/Banten/UT6001/2006	H5N1	2006	Sus scrofa	9823	non-human mammal	Artiodactyla	Indonesia	Asia		1707
 HM440091.1	A/swine/East Java/UT6003/2006	H5N1	2006	Sus scrofa	9823	non-human mammal	Artiodactyla	Indonesia	Asia		1707
 HM440107.1	A/swine/East Java/UT6005/2006	H5N1	2006	Sus scrofa	9823	non-human mammal	Artiodactyla	Indonesia	Asia		1707
 HM440099.1	A/swine/North Sumatra/UT6004/2006	H5N1	2006	Sus scrofa	9823	non-human mammal	Artiodactyla	Indonesia	Asia		1707
+EF165048.1	A/tufted duck/Bavaria/4/2006	H5N1	2006					Germany	Europe		1707
+EF165052.1	A/tufted duck/Bavaria/8/2006	H5N1	2006					Germany	Europe		1707
+EF165053.1	A/tufted duck/Bavaria/9/2006	H5N1	2006					Germany	Europe		1707
 GQ923413.1	A/tundra swan/Alaska/442960/2006	H5N2	2006	Cygnus columbianus	110926	avian	Anseriformes	USA	North America		1742
 GQ923461.1	A/tundra swan/Alaska/450959/2006	H5N2	2006	Cygnus columbianus	110926	avian	Anseriformes	USA	North America		1742
 GQ923165.1	A/tundra swan/Alaska/462958/2006	H5N2	2006	Cygnus columbianus	110926	avian	Anseriformes	USA	North America		1742
 CY020653.1	A/turkey/Egypt/2253-2/2006	H5N1	2006	Meleagris gallopavo	9103	avian	Galliformes	Egypt	Africa	Egg 1 passage(s)	1745
+AM498629.1	A/turkey/France/06222-1.1/2006	H5N1	2006	Meleagris gallopavo	9103	avian	Galliformes	France	Europe		1707
+EF532623.1	A/turkey/Israel/345/2006	H5N1	2006						Asia		1721
+EF532624.1	A/turkey/Israel/364/2006	H5N1	2006						Asia		1721
+EF532625.1	A/turkey/Israel/365/2006	H5N1	2006						Asia		1721
+EF532627.1	A/turkey/Israel/446/2006	H5N1	2006						Asia		1721
 GQ117161.1	A/turkey/New York/465977/2006	H5N2	2006	Meleagris gallopavo	9103	avian	Galliformes	USA	North America		1742
 CY039303.1	A/unknown/New York/78436/2006	H5N2	2006					USA: New York	North America	Egg p1 passage(s)	1721
 GQ923517.1	A/waterfowl/Colorado/443593/2006	H5N2	2006	Anatidae	8830	avian	Anseriformes	USA	North America		1742
@@ -733,6 +1275,7 @@ GU050002.1	A/waterfowl/Colorado/462963/2006	H5N2	2006	Anatidae	8830	avian	Anseri
 GQ923141.1	A/waterfowl/Minnesota/459675/2006	H5N2	2006	Anatidae	8830	avian	Anseriformes	USA	North America		1742
 GU050182.1	A/white front goose/Alaska//445210/2006	H5N2	2006	Anser albifrons	50365	avian	Anseriformes	USA	North America		1742
 GQ923437.1	A/white front goose/Alaska/446843/2006	H5N2	2006	Anser albifrons	50365	avian	Anseriformes	USA	North America		1742
+DQ992846.1	A/white-backed munia/Hong Kong/2469/2006	H5N1	2006					China	Asia		1695
 CY107854.1	A/whooperswan/Germany/R65-2/2006	H5N1	2006	Anatidae	8830	avian	Anseriformes	Germany	Europe		1704
 GQ923509.1	A/wild bird/Minnesota/459254-5/2006	H5N2	2006	Aves	8782	avian		USA	North America		1742
 GQ923149.1	A/wild bird/Minnesota/460613-12/2006	H5N2	2006	Aves	8782	avian		USA	North America		1742
@@ -750,6 +1293,7 @@ GU454581.1	A/chicken/Nandurbar/7966/2006	H5N1	2006-02	Gallus gallus	9031	avian	G
 GU354065.1	A/chicken/Nandurbar/7979/2006	H5N1	2006-02	Gallus gallus	9031	avian	Galliformes	India: Maharashtra	Asia		1735
 MF566119.1	A/duck/Niger/2090/2006	H5N1	2006-02	Anatidae	8830	avian	Anseriformes	Niger	Africa		1745
 EF395845.1	A/swan/Austria/216/2006	H5N1	2006-02	Anatidae	8830	avian	Anseriformes	Austria	Europe		1740
+DQ464354.1	A/swan/Germany/R65/2006	H5N1	2006-02					Germany	Europe		1779
 MW547669.1	A/aquatic bird/Cheongju/120/2006	H5N2	2006-02-03	Aves	8782	avian		South Korea: Cheongju	Asia		1695
 FJ492879.1	A/Hunan/1/2006	H5N1	2006-02-04	Homo sapiens	9606	human	Primates	China	Asia		1704
 HQ200450.1	A/duck/Cambodia/D14AL/2006	H5N1	2006-02-04	Anatidae	8830	avian	Anseriformes	Cambodia: Kampong Cham Province	Asia		1764
@@ -763,6 +1307,7 @@ EU443552.1	A/Peregrine falcon/Slovakia/Vh246/06	H5N1	2006-02-18	Falco peregrinus
 KP969039.1	A/mute swan/Hungary/4999/2006	H5N1	2006-02-20	Cygnus olor	8869	avian	Anseriformes	Hungary	Europe		1707
 FJ492880.1	A/Zhejiang/1/2006	H5N1	2006-02-21	Homo sapiens	9606	human	Primates	China	Asia		1704
 HQ200435.1	A/duck/Cambodia/D2KC/2006	H5N1	2006-02-21	Anatidae	8830	avian	Anseriformes	Cambodia: Kampong Cham Province	Asia		1704
+EU183321.1	A/turkey/Egypt/F1/2006	H5N1	2006-02-25	Meleagris gallopavo	9103	avian	Galliformes	Egypt: El-Minia Governorate	Africa	SPF embryonated chicken eggs	1707
 CY048363.1	A/chicken/Nigeria/08RS848-5/2006(H5N1)	H5N1	2006-02-27	Gallus gallus	9031	avian	Galliformes	Nigeria: Jigawa	Africa	E1 passage(s)	1707
 CY048419.1	A/chicken/Nigeria/08RS848-6/2006(H5N1)	H5N1	2006-02-27	Gallus gallus	9031	avian	Galliformes	Nigeria: Ogun	Africa	E1 passage(s)	1707
 KF178948.1	A/chicken/Egypt/0626/2006	H5N1	2006-02-28	Gallus gallus	9031	avian	Galliformes	Egypt: Alexandria	Africa		1707
@@ -770,6 +1315,7 @@ GU046706.1	A/swan/Bavaria/23/2006	H5N1	2006-03	Anatidae	8830	avian	Anseriformes	
 GU046708.1	A/swan/Bavaria/24/2006	H5N1	2006-03	Anatidae	8830	avian	Anseriformes	Germany	Europe		1707
 GU046710.1	A/swan/Bavaria/25/2006	H5N1	2006-03	Anatidae	8830	avian	Anseriformes	Germany	Europe		1707
 GU046712.1	A/tufted duck/Bavaria/26/2006	H5N1	2006-03	Aythya fuligula	219594	avian	Anseriformes	Germany	Europe		1707
+EU183322.1	A/turkey/Egypt/F2/2006	H5N1	2006-03-01	Meleagris gallopavo	9103	avian	Galliformes	Egypt: Qaluobiya Governorate	Africa	SPF embryonated chicken eggs	1707
 FJ492884.1	A/Guangdong/1/2006	H5N1	2006-03-04	Homo sapiens	9606	human	Primates	China	Asia		1704
 CY048539.1	A/chicken/Nigeria/08RS848-8/2006(H5N1)	H5N1	2006-03-10	Gallus gallus	9031	avian	Galliformes	Nigeria: Lagos	Africa	E1 passage(s)	1707
 CY098634.1	A/Shanghai/1/2006	H5N1	2006-03-13	Homo sapiens	9606	human	Primates	China: Shanghai	Asia	E3 passage(s)	1715
@@ -778,7 +1324,9 @@ KC690156.1	A/domestic green-winged teal/Hunan/3450/2006	H5N1	2006-03-16	Anas car
 EU372945.1	A/chicken/Egypt/06495-NLQP/2006	H5N1	2006-03-17	Gallus gallus	9031	avian	Galliformes	Egypt: Sharkia	Africa		1709
 EU372946.2	A/chicken/Egypt/06541-NLQP/2006	H5N1	2006-03-20	Gallus gallus	9031	avian	Galliformes	Egypt: Cairo	Africa		1780
 FJ436942.1	A/swan/Mangystau/3/2006	H5N1	2006-03-20	Anatidae	8830	avian	Anseriformes	Kazakhstan: Mangystau Oblast	Asia		1769
+EU496383.1	A/chicken/Egypt/06553-NLQP/2006	H5N1	2006-03-21	Gallus gallus	9031	avian	Galliformes	Egypt: Zaraka-Damitta	Africa		1716
 CY046150.1	A/duck/France/06436/2006(H5N3)	H5N3	2006-03-21	Anatidae	8830	avian	Anseriformes	France	Europe	E2 passage(s)	1744
+EU496384.1	A/chicken/Egypt/06612-NLQP/2006	H5N1	2006-03-24	Gallus gallus	9031	avian	Galliformes	Egypt: Belena, Sohag	Africa		1736
 HQ200519.1	A/duck/Cambodia/D3KP/2006	H5N1	2006-03-24	Anatidae	8830	avian	Anseriformes	Cambodia: Kampot	Asia		1755
 EU443543.1	A/cygnus olor/Czech Republic/5583/06	H5N1	2006-03-25	Cygnus olor	8869	avian	Anseriformes	Czech Republic: Ceske Budejovice	Europe		1745
 EU443547.1	A/cygnus olor/Czech Republic/5761/06	H5N1	2006-03-27	Cygnus olor	8869	avian	Anseriformes	Czech Republic: Hluboka nad Vltavou	Europe		1745
@@ -807,6 +1355,10 @@ EU443546.1	A/cygnus olor/Czech Republic/7185/06	H5N1	2006-04-08	Cygnus olor	8869
 GQ355837.1	A/swan/Wien/2323/2006	H5N1	2006-04-13	Anatidae	8830	avian	Anseriformes	Austria	Europe		1698
 HM208702.1	A/chicken/Lahore/NARC-3320/2006	H5N1	2006-04-18	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1786
 GQ355827.1	A/swan/Krems/2547/2006	H5N1	2006-04-21	Anatidae	8830	avian	Anseriformes	Austria	Europe		1698
+DQ838517.1	A/chicken/Niger/2130-7/2006	H5N1	2006-05					Niger	Africa		1707
+DQ838516.1	A/chicken/Niger/2130-8/2006	H5N1	2006-05					Niger	Africa		1707
+DQ861999.1	A/chicken/Sudan/2115-12/2006	H5N1	2006-05					Sudan	Africa		1707
+DQ862000.1	A/chicken/Sudan/2115-9/2006	H5N1	2006-05					Sudan	Africa		1707
 EU124163.1	A/Chicken/West Java/HAMD/2006	H5N1	2006-05-01	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1737
 EU124162.1	A/Chicken/West Java/SMI-ENDRI1/2006	H5N1	2006-05-01	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1728
 EU124161.1	A/Chicken/West Java/SMI-ENDRI2/2006	H5N1	2006-05-01	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1735
@@ -823,9 +1375,12 @@ EU146755.1	A/Indonesia/546H/2006	H5N1	2006-05-13	Homo sapiens	9606	human	Primate
 FJ602794.1	A/bar-headed goose/Qinghai/1/2006	H5N1	2006-05-15	Anser indicus	8846	avian	Anseriformes	China	Asia		1735
 CY062439.1	A/Egypt/7021-NAMRU3/2006	H5N1	2006-05-16	Homo sapiens	9606	human	Primates	Egypt: Menia	Africa		1707
 CY014465.1	A/Indonesia/CDC625L/2006	H5N1	2006-05-22	Homo sapiens	9606	human	Primates	Indonesia	Asia	E2 passage(s)	1707
+DQ862001.1	A/chicken/Egypt/2253-1/2006	H5N1	2006-06					Egypt	Africa		1707
 CY047483.1	A/chicken/Reshoty/02/2006(H5N1)	H5N1	2006-06	Gallus gallus	9031	avian	Galliformes	Russia: Novosibirsk region	Europe	E2 passage(s)	1707
 MH988771.1	A/cormorant/Strilkova Kherson/63/2006	H5N1	2006-06	Phalacrocoracidae	9206	avian	Suliformes	Ukraine: Strilkova Kherson	Europe		1744
+DQ862002.1	A/duck/Egypt/2253-3/2006	H5N1	2006-06					Egypt	Africa		1707
 EU124159.1	A/Quail/Central Java/SMRG/2006	H5N1	2006-06-01	Galliformes	8976	avian	Galliformes	Indonesia	Asia		1729
+EU183323.1	A/chicken/Egypt/F3/2006	H5N1	2006-06-01	Gallus gallus	9031	avian	Galliformes	Egypt: Al-Fayoum Governorate	Africa	SPF embryonated chicken eggs	1707
 CY098655.1	A/Guangdong/2/2006	H5N1	2006-06-03	Homo sapiens	9606	human	Primates	China: Guangdong	Asia	E2 passage(s)	1715
 FJ445242.2	A/goose/Hungary/14756/2006	H5N1	2006-06-06	Anatidae	8830	avian	Anseriformes	Hungary	Europe		1707
 FJ602795.1	A/bar-headed goose/Qinghai/2/2006	H5N1	2006-06-07	Anser indicus	8846	avian	Anseriformes	China	Asia		1735
@@ -834,6 +1389,9 @@ CY048211.1	A/chicken/Nigeria/08RS848-15/2006(H5N1)	H5N1	2006-06-07	Gallus gallus
 CY014489.1	A/Indonesia/CDC669P/2006	H5N1	2006-06-13	Homo sapiens	9606	human	Primates	Indonesia	Asia	E1 passage(s)	1707
 FJ602797.1	A/bar-headed goose/Qinghai/4/2006	H5N1	2006-06-17	Anser indicus	8846	avian	Anseriformes	China	Asia		1735
 CY203645.1	A/mallard/Maryland/06OS471/2006	H5N2	2006-06-19	Anas platyrhynchos	8839	avian	Anseriformes	USA: MD	North America	egg 1 passage(s)	1742
+DQ863503.1	A/Grebe/Tyva/Tyv06-8/2006	H5N1	2006-06-24					Russia	Europe		1754
+DQ914808.1	A/grebe/Tyva/Tyv06-1/2006	H5N1	2006-06-24					Russia	Europe		1754
+DQ852600.1	A/grebe/Tyva/Tyv06-2/06	H5N1	2006-06-24					Russia	Europe		1754
 CY048227.1	A/duck/Nigeria/08RS848-20/2006	H5N1	2006-06-25	Anatidae	8830	avian	Anseriformes	Nigeria: Taraba	Africa	E1 passage(s)	1707
 CY048243.1	A/chicken/Nigeria/08RS848-22/2006(H5N1)	H5N1	2006-06-28	Gallus gallus	9031	avian	Galliformes	Nigeria: Lagos	Africa	E1 passage(s)	1707
 CY047475.1	A/duck/Omsk/1822/2006(H5N1)	H5N1	2006-07	Anas platyrhynchos	8839	avian	Anseriformes	Russia: Omsk region	Europe	E2 passage(s)	1771
@@ -947,6 +1505,7 @@ CY020693.1	A/turkey/Ivory Coast/4372-2/2006	H5N1	2006-12	Meleagris gallopavo	910
 CY020701.1	A/turkey/Ivory Coast/4372-3/2006	H5N1	2006-12	Meleagris gallopavo	9103	avian	Galliformes	Cote d'Ivoire	Africa	Egg 1 passage(s)	1744
 CY020709.1	A/turkey/Ivory Coast/4372-4/2006	H5N1	2006-12	Meleagris gallopavo	9103	avian	Galliformes	Cote d'Ivoire	Africa	Egg 1 passage(s)	1744
 CY048347.1	A/chicken/Nigeria/08RS848-45/2006(H5N1)	H5N1	2006-12-02	Gallus gallus	9031	avian	Galliformes	Nigeria: Kwara	Africa	E1 passage(s)	1707
+EU183324.1	A/chicken/Egypt/F4/2006	H5N1	2006-12-05	Gallus gallus	9031	avian	Galliformes	Egypt: Beni-Suef Governorate	Africa	SPF embryonated chicken eggs	1707
 CY098668.1	A/Anhui/1/2006	H5N1	2006-12-10	Homo sapiens	9606	human	Primates	China: Anhui	Asia	E1 passage(s)	1715
 CY048371.1	A/chicken/Nigeria/08RS848-50/2006(H5N1)	H5N1	2006-12-13	Gallus gallus	9031	avian	Galliformes	Nigeria: Kaduna	Africa	E1 passage(s)	1707
 FJ784841.1	A/duck/Hunan/689/2006	H5N1	2006-12-15	Anatidae	8830	avian	Anseriformes	China	Asia		1704
@@ -955,6 +1514,8 @@ KC790061.1	A/goose/MB/428/2006	H5N2	2006-12-18	Anatidae	8830	avian	Anseriformes	
 EU124165.1	A/Duck/Vietnam/Ca Mau498/2006	H5N1	2006-12-19	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1740
 EU124164.1	A/Duck/Vietnam/Ca Mau498A/2006	H5N1	2006-12-19	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1728
 EU124166.1	A/Duck/Vietnam/Tien Giang 409/2006	H5N1	2006-12-19	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1739
+EU183327.1	A/chicken/Egypt/R1/2006	H5N1	2006-12-25	Gallus gallus	9031	avian	Galliformes	Egypt: Beni-Suef Governorate, Eshmant Village	Africa	SPF embryonated chicken eggs	1707
+EU183325.1	A/duck/Egypt/F5/2006	H5N1	2006-12-25	Anatidae	8830	avian	Anseriformes	Egypt: El-Minia Governorate	Africa	SPF embryonated chicken eggs	1707
 JX420238.1	A/Muscovy duck/Ca Mau/1159/2006	H5N1	2006-12-27	Cairina moschata	8855	avian	Anseriformes	Viet Nam	Asia		1707
 JX420206.1	A/chicken/Ca Mau/1180/2006	H5N1	2006-12-27	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1779
 JX420222.1	A/Muscovy duck/Ca Mau/1185/2006	H5N1	2006-12-28	Cairina moschata	8855	avian	Anseriformes	Viet Nam	Asia		1707
@@ -965,6 +1526,18 @@ FJ784845.1	A/duck/Henan/1650/2006	H5N1	2006-12-30	Anatidae	8830	avian	Anseriform
 FJ784846.1	A/duck/Henan/1652/2006	H5N1	2006-12-30	Anatidae	8830	avian	Anseriformes	China	Asia		1704
 GQ923357.1	A/Canada goose/New York/475813-2/2007	H5N2	2007	Branta canadensis	8853	avian	Anseriformes	USA	North America		1742
 FM165522.1	A/Cygnus olor/R1372/Germany/2007	H5N1	2007					Germany	Europe		1747
+EF535818.1	A/Egypt/1604-NAMRU3/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Egypt	Africa		1716
+EF535819.1	A/Egypt/1731-NAMRU3/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Egypt	Africa		1717
+EF535820.1	A/Egypt/1902-NAMRU3/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Egypt	Africa		1716
+EF535821.1	A/Egypt/2256-NAMRU3/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Egypt	Africa		1730
+EF535822.1	A/Egypt/2321-NAMRU3/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Egypt	Africa		1730
+EF535823.1	A/Egypt/2331-NAMRU3/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Egypt	Africa		1730
+EF535824.1	A/Egypt/2616-NAMRU3/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Egypt	Africa		1730
+EF535826.1	A/Egypt/2621-NAMRU3/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Egypt	Africa		1727
+FJ888348.1	A/Egypt/321/2007(H5N1)-PR8-IDCDC-RG11	H5N1	2007						Africa		1695
+EU434686.1	A/Jiangsu/1/2007	H5N1	2007					China	Asia		1704
+EU434694.1	A/Jiangsu/2/2007	H5N1	2007					China	Asia		1704
+EU499372.1	A/Laos/Nong Khai 1/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Thailand: Nong Khai	Asia		1698
 GU186745.1	A/Muscovy duck/Ca Mau/07-04/2007	H5N1	2007	Cairina moschata	8855	avian	Anseriformes	Viet Nam	Asia		1754
 JX420190.1	A/Muscovy duck/Ca Mau/22/2007	H5N1	2007	Cairina moschata	8855	avian	Anseriformes	Viet Nam	Asia		1704
 JX420230.1	A/Muscovy duck/Hai Duong/46/2007	H5N1	2007	Cairina moschata	8855	avian	Anseriformes	Viet Nam	Asia		1704
@@ -976,6 +1549,9 @@ CY029703.1	A/Muscovy duck/Vietnam/49/2007(H5N1)	H5N1	2007	Cairina moschata	8855	
 CY029719.1	A/Muscovy duck/Vietnam/51/2007(H5N1)	H5N1	2007	Cairina moschata	8855	avian	Anseriformes	Viet Nam	Asia		1695
 CY029759.1	A/Muscovy duck/Vietnam/56/2007(H5N1)	H5N1	2007	Cairina moschata	8855	avian	Anseriformes	Viet Nam	Asia		1692
 FM165530.1	A/Peking duck/R1959/Germany/2007	H5N1	2007					Germany	Europe		1747
+EU294369.1	A/Viet Nam/HN31242/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1704
+EU294370.1	A/Viet Nam/HN31242/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1704
+EU294371.1	A/Viet Nam/HN31242/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1704
 HQ215515.1	A/Vietnam/HN31244/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1704
 HM114553.1	A/Vietnam/UT31239/2007	H5N1	2007	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1704
 GU050317.1	A/avian/Hong Kong/0719/2007	H5N1	2007	Aves	8782	avian		Hong Kong	Asia		1751
@@ -992,11 +1568,37 @@ CY043381.1	A/chicken/Bangladesh/364/2007(H5N1)	H5N1	2007	Gallus gallus	9031	avia
 CY043376.1	A/chicken/Bangladesh/376/2007(H5N1)	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Bangladesh	Asia		1730
 CY043375.1	A/chicken/Bangladesh/394/2007(H5N1)	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Bangladesh	Asia		1730
 CY043379.1	A/chicken/Bangladesh/531/2007(H5N1)	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Bangladesh	Asia		1717
+EU436612.1	A/chicken/Benin/6693-16/2007	H5N1	2007						Africa		1707
 GU050397.1	A/chicken/Cao Bang/07-42/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1751
 MN882393.1	A/chicken/Dominican Republic/07-002397-7/2007	H5N2	2007	Gallus gallus	9031	avian	Galliformes	Dominican Republic	North America		1763
 KR732539.1	A/chicken/Egypt/07118-NLQP/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1779
+EF441277.1	A/chicken/Egypt/1079-NAMRU3/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt: Beni Suef governorate	Africa		1707
+EF469650.1	A/chicken/Egypt/1129N3-HK9/2007	H5N1	2007					Egypt: Fayoum governorate	Africa		1741
+EF441280.1	A/chicken/Egypt/1300-NAMRU3/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt: Gharbiya governorate	Africa		1707
+EF469653.1	A/chicken/Egypt/1889N3-SM26/2007	H5N1	2007					Egypt: Giza governorate	Africa		1741
+EF469654.1	A/chicken/Egypt/1890N3-HK45/2007	H5N1	2007					Egypt: Gharbiya governorate	Africa		1741
+EF469659.1	A/chicken/Egypt/1891N3-CLEVB/2007	H5N1	2007					Egypt: Gharbiya governorate	Africa		1738
+EU373736.1	A/chicken/Egypt/2628-1/2007	H5N1	2007						Africa		1718
+EU371898.1	A/chicken/Egypt/3044NAMRU3-CLEVB59/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1742
+EU371899.1	A/chicken/Egypt/3045NAMRU3-CLEVB60/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1742
+EU371900.1	A/chicken/Egypt/3046NAMRU3-CLEVB62/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1742
+EU371903.1	A/chicken/Egypt/3049NAMRU3-CLEVB75/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1742
+EU371906.1	A/chicken/Egypt/3052NAMRU3-CLEVB104/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1742
+EU371909.1	A/chicken/Egypt/9384NAMRU3-CLEVB118/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1742
+EU371910.1	A/chicken/Egypt/9385NAMRU3-CLEVB125/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1730
+EU371911.1	A/chicken/Egypt/9386NAMRU3-CLEVB136/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1730
+EU371912.1	A/chicken/Egypt/9387NAMRU3-CLEVB148/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1742
+EU371913.1	A/chicken/Egypt/9388NAMRU3-CLEVB149/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1742
+EU371914.1	A/chicken/Egypt/9389NAMRU3-CLEVB150/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1742
+EU371915.1	A/chicken/Egypt/9390NAMRU3-CLEVB157/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1742
+EU371919.1	A/chicken/Egypt/9397NAMRU3-CLEVB188/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1742
 HM172096.1	A/chicken/Fujian/1/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	China: Fujian	Asia		1704
 KR732400.1	A/chicken/Garut/BBVW-223/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1779
+FM177119.1	A/chicken/Germany/R3234/2007	H5N1	2007					Germany	Europe		1779
+EU373734.1	A/chicken/Ghana/2534/2007	H5N1	2007						Africa		1707
+EF624253.1	A/chicken/Ghana/3158-NAMRU3/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Ghana: Tema	Africa		1746
+EF624254.1	A/chicken/Ghana/3159-NAMRU3/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Ghana: Tema	Africa		1746
+EF624255.1	A/chicken/Ghana/3160-NAMRU3/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Ghana: Tema	Africa		1746
 GU050475.1	A/chicken/Ha Nam/07-83/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1751
 JX420174.1	A/chicken/Ha Tay/44/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1704
 JX420166.1	A/chicken/Hai Duong/41/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1704
@@ -1021,18 +1623,43 @@ CY029775.1	A/chicken/Malaysia/5223/2007(H5N1)	H5N1	2007	Gallus gallus	9031	avian
 CY034733.1	A/chicken/Manshera/NARC10337/2007(H5N1)	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Pakistan: Manshera	Asia	egg passage(s)	1779
 EU919136.1	A/chicken/Mukdahan/NIAH403901/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Thailand: Mukdahan province	Asia		1729
 GU050381.1	A/chicken/Nam Dinh/07-32/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1751
+EU148356.1	A/chicken/Nigeria/1071-1/2007	H5N1	2007						Africa		1708
+EU148404.1	A/chicken/Nigeria/1071-10/2007	H5N1	2007						Africa		1718
+EU148436.1	A/chicken/Nigeria/1071-29/2007	H5N1	2007						Africa		1709
+EU148364.1	A/chicken/Nigeria/1071-3/2007	H5N1	2007						Africa		1721
+EU148444.1	A/chicken/Nigeria/1071-30/2007	H5N1	2007						Africa		1707
+EU148372.1	A/chicken/Nigeria/1071-4/2007	H5N1	2007						Africa		1708
+EU148380.1	A/chicken/Nigeria/1071-5/2007	H5N1	2007						Africa		1707
+EU148388.1	A/chicken/Nigeria/1071-7/2007	H5N1	2007						Africa		1707
+EU148396.1	A/chicken/Nigeria/1071-9/2007	H5N1	2007						Africa		1707
+FM160637.1	A/chicken/Nigeria/OG5/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Nigeria	Africa		1704
+EF419243.1	A/chicken/Nongkhai/NIAH400802/2007	H5N1	2007								1729
 CY068904.1	A/chicken/Pakistan/SPVC-5/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1707
 CY068906.1	A/chicken/Pakistan/SPVC-7/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1707
 CY068910.1	A/chicken/Pakistan/SPVC-8/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1707
 KR732505.1	A/chicken/Pekalongan/BBVW/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1779
+FM163440.1	A/chicken/Poland/R3248/2007	H5N1	2007					Poland	Europe		1707
+EU402398.1	A/chicken/Rostov/22-1/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Russia	Europe		1753
 GU050523.1	A/chicken/Thai Binh/07-89/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1751
+EU497920.1	A/chicken/Thailand/ICRC-195/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Thailand	Asia	MDCK cells	1778
+EU497921.2	A/chicken/Thailand/ICRC-213/2007	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Thailand	Asia	MDCK cells	1736
+EU373738.1	A/chicken/Togo/4106-1/2007	H5N1	2007						Africa		1713
 CY029631.1	A/chicken/Vietnam/29/2007(H5N1)	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1752
 KR732466.1	A/chicken/WestJava(Sbg)/29/2007(H5N1)	H5N1	2007	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1773
+FM177127.1	A/chicken/germany/R3272/2007	H5N1	2007					Germany	Europe		1779
+FM177135.1	A/chicken/germany/R3294/2007	H5N1	2007					Germany	Europe		1779
 CY036221.1	A/common buzzard/Hong Kong/9213/2007(H5N1)	H5N1	2007	Buteo buteo	30397	avian	Accipitriformes	Hong Kong	Asia		1704
 CY034729.1	A/crow/Peshawer/NARC7914/2007(H5N1)	H5N1	2007	Corvus	30420	avian	Passeriformes	Pakistan: Peshawer	Asia	egg passage(s)	1779
 GU186753.1	A/duck/Bac Lieu/07-06/2007	H5N1	2007	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1754
 GU052526.1	A/duck/Bac Lieu/07-09/2007	H5N1	2007	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1754
 JX420198.1	A/duck/Cao Bang/43/2007	H5N1	2007	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1704
+EF441281.1	A/duck/Egypt/1301-NAMRU3/2007	H5N1	2007	Anas platyrhynchos	8839	avian	Anseriformes	Egypt: Gharbiya governorate	Africa		1707
+EF469657.1	A/duck/Egypt/1888N3-SM25/2007	H5N1	2007					Egypt: Giza governorate	Africa		1741
+EU371897.1	A/duck/Egypt/3043NAMRU3-CLEVB56/2007	H5N1	2007	Anas platyrhynchos	8839	avian	Anseriformes	Egypt	Africa		1742
+EU371901.1	A/duck/Egypt/3047NAMRU3-CLEVB63/2007	H5N1	2007	Anas platyrhynchos	8839	avian	Anseriformes	Egypt	Africa		1742
+EU371902.1	A/duck/Egypt/3048NAMRU3-CLEVB74/2007	H5N1	2007	Anas platyrhynchos	8839	avian	Anseriformes	Egypt	Africa		1742
+EU373737.1	A/duck/Egypt/5169-1/2007	H5N1	2007						Africa		1714
+EU371921.1	A/duck/Egypt/9399NAMRU3-CLEVB202/2007	H5N1	2007	Anatidae	8830	avian	Anseriformes	Egypt	Africa		1742
 AB465593.1	A/duck/Egypt/D2br10/2007	H5N1	2007	Anatidae	8830	avian	Anseriformes	Egypt: Damanhour	Africa		1707
 GU050428.1	A/duck/Ha Tinh/07-53/2007	H5N1	2007	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1751
 GU050389.1	A/duck/Hai Duong/07-40/2007	H5N1	2007	Anatidae	8830	avian	Anseriformes	Viet Nam	Asia		1751
@@ -1097,10 +1724,14 @@ GQ117209.1	A/environment/New York/481173/2007	H5N2	2007					USA	North America		1
 GU049928.1	A/environment/New York/483238/2007	H5N2	2007					USA	North America		1742
 GQ117217.1	A/environment/New York/484056/2007	H5N2	2007					USA	North America		1742
 GQ117233.1	A/environment/New York/484678/2007	H5N2	2007					USA	North America		1742
+EU391537.1	A/falcon/Kuwait/1019-7/2007	H5N1	2007						Asia		1710
 GU050144.1	A/gadwall/California/490899/2007	H5N2	2007	Mareca strepera	75861	avian	Anseriformes	USA	North America		1742
+EF446771.1	A/goose/Hungary/2823/2/2007	H5N1	2007	Anatidae	8830	avian	Anseriformes	Hungary	Europe		1735
+EF446779.1	A/goose/Hungary/3413/2007	H5N1	2007	Anatidae	8830	avian	Anseriformes	Hungary	Europe		1722
 CY034725.1	A/goose/Islamabad/NARC7757/2007(H5N1)	H5N1	2007	Anatidae	8830	avian	Anseriformes	Pakistan: Islamabad	Asia	egg passage(s)	1779
 CY036213.1	A/grey heron/Hong Kong/3088/2007(H5N1)	H5N1	2007	Ardea cinerea	30390	avian	Pelecaniformes	Hong Kong	Asia		1707
 AB474083.1	A/guinea fowl/North Okkalarpa/834/2007	H5N1	2007					Myanmar	Asia		1704
+EU424135.1	A/houbara bustard/Saudi Arabia/6732-1/2007	H5N1	2007						Asia		1707
 CY036197.1	A/little egret/Hong Kong/8550/2007(H5N1)	H5N1	2007	Egretta garzetta	188379	avian	Pelecaniformes	Hong Kong	Asia		1704
 CY036205.1	A/little egret/Hong Kong/8863/2007(H5N1)	H5N1	2007	Egretta garzetta	188379	avian	Pelecaniformes	Hong Kong	Asia		1704
 CY036157.1	A/long-tailed shrike/Hong Kong/2762/2007(H5N1)	H5N1	2007	Lanius schach	276763	avian	Passeriformes	Hong Kong	Asia		1695
@@ -1116,6 +1747,7 @@ GU050483.1	A/muscovy duck/Ha Nam/07-84/2007	H5N1	2007	Cairina moschata	8855	avia
 GU050507.1	A/muscovy duck/Nam Dinh/07-87/2007	H5N1	2007	Cairina moschata	8855	avian	Anseriformes	Viet Nam	Asia		1751
 GU050491.1	A/muscovy duck/Son La/07-85/2007	H5N1	2007	Cairina moschata	8855	avian	Anseriformes	Viet Nam	Asia		1751
 GU050531.1	A/muscovy duck/Thai Binh/07-90/2007	H5N1	2007	Cairina moschata	8855	avian	Anseriformes	Viet Nam	Asia		1751
+AM749300.2	A/mute swan/France/070203/2007(H5N1)	H5N1	2007	Cygnus olor	8869	avian	Anseriformes	France	Europe		1721
 AB516414.1	A/northern pintail/Akita/1256/2007	H5N2	2007	Anas acuta	28680	avian	Anseriformes	Japan:Akita, Jumonji	Asia		1695
 AB516416.1	A/northern pintail/Akita/1355/2007	H5N2	2007	Anas acuta	28680	avian	Anseriformes	Japan:Akita, Jumonji	Asia		1695
 GU050151.1	A/northern pintail/California/491335/2007	H5N2	2007	Anas acuta	28680	avian	Anseriformes	USA	North America		1742
@@ -1123,6 +1755,7 @@ GQ923405.1	A/northern pintail/Florida/480645-5/2007	H5N2	2007	Anas acuta	28680	a
 CY034731.1	A/peacock/Chakshahzad/NARC9238/2007(H5N1)	H5N1	2007	Phasianinae	9072	avian	Galliformes	Pakistan: Chakshahzad	Asia	egg passage(s)	1779
 CY040899.1	A/pigeon/Laos/P0022/2007(H5N1)	H5N1	2007	Columbidae	8930	avian	Columbiformes	Laos	Asia		1704
 JQ794478.1	A/pigeon/Thailand/TS01/2007	H5N1	2007	Columbidae	8930	avian	Columbiformes	Thailand	Asia		1725
+EU371904.1	A/quail/Egypt/3050NAMRU3-CLEVB77/2007	H5N1	2007	Coturnix	9090	avian	Galliformes	Egypt	Africa		1742
 AB474084.1	A/quail/Mingalardone/866/2007	H5N1	2007					Myanmar	Asia		1704
 GQ923549.1	A/quail/New York/501360/2007	H5N2	2007	Galliformes	8976	avian	Galliformes	USA	North America		1742
 AB478025.1	A/quail/Thanatpin/2283/2007	H5N1	2007					Myanmar	Asia		1704
@@ -1136,6 +1769,8 @@ HM440131.1	A/swine/East Java/UT6012/2007	H5N1	2007	Sus scrofa	9823	non-human mam
 HM440147.1	A/swine/North Sumatra/UT6034/2007	H5N1	2007	Sus scrofa	9823	non-human mammal	Artiodactyla	Indonesia	Asia		1707
 GU050136.1	A/tundra swan/Alaska//480410/2007	H5N2	2007	Cygnus columbianus	110926	avian	Anseriformes	USA	North America		1742
 CY055191.1	A/turkey/Egypt/7/2007	H5N1	2007	Meleagris gallopavo	9103	avian	Galliformes	Egypt	Africa		1745
+EU401794.1	A/turkey/Islamabad-Pakistan/NARC-7871/02/2007	H5N1	2007					Pakistan	Asia		1779
+FM163448.1	A/turkey/Poland/R3249/2007	H5N1	2007					Poland	Europe		1707
 GU186509.1	A/turkey/VA/505477-18/2007	H5N1	2007	Meleagris gallopavo	9103	avian	Galliformes	USA	North America		1742
 GU051957.1	A/turkey/Virginia/505477-17/2007	H5N1	2007	Meleagris gallopavo	9103	avian	Galliformes	USA	North America		1742
 AB478026.1	A/village chicken/Kyaing Tong/2433/2007	H5N1	2007					Myanmar	Asia		1704
@@ -1160,6 +1795,7 @@ AB497016.1	A/duck/Egypt/D3Lu6/2007	H5N1	2007-01					Egypt:Damanhur	Africa		1707
 MH236436.1	A/mallard duck/New Zealand/07.106.17C/2007	H5N7	2007-01	Anas platyrhynchos	8839	avian	Anseriformes	New Zealand	Oceania		1743
 MH230000.1	A/mallard duck/New Zealand/NZ0700316-53c/2007	H5N2	2007-01	Anas platyrhynchos	8839	avian	Anseriformes	New Zealand	Oceania		1743
 GU046782.1	A/swan/Bavaria/15/2007	H5N2	2007-01	Anatidae	8830	avian	Anseriformes	Germany	Europe		1695
+EU183328.1	A/chicken/Egypt/R2/2007	H5N1	2007-01-01	Gallus gallus	9031	avian	Galliformes	Egypt: Beni-Suef Governorate, Reyad basha Village	Africa	SPF embryonated chicken eggs	1705
 GU183458.1	A/chicken/Jakarta/DKI-Nurs/2007	H5N1	2007-01-04	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1704
 CY019376.1	A/Indonesia/CDC1031RE2/2007	H5N1	2007-01-05	Homo sapiens	9606	human	Primates	Indonesia	Asia	E2 passage(s)	1707
 JX420158.1	A/chicken/Bac Lieu/1214/2007	H5N1	2007-01-06	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1779
@@ -1180,15 +1816,21 @@ FJ784842.1	A/chicken/Anhui/1089/2007	H5N1	2007-01-28	Gallus gallus	9031	avian	Ga
 FJ784851.1	A/chicken/Hubei/2856/2007	H5N1	2007-01-29	Gallus gallus	9031	avian	Galliformes	China	Asia		1704
 FJ784853.1	A/chicken/Hubei/3002/2007	H5N1	2007-01-29	Gallus gallus	9031	avian	Galliformes	China	Asia		1704
 FJ784852.1	A/duck/Hubei/2911/2007	H5N1	2007-01-29	Anatidae	8830	avian	Anseriformes	China	Asia		1704
+EU183329.1	A/chicken/Egypt/R3/2007	H5N1	2007-02-01	Gallus gallus	9031	avian	Galliformes	Egypt: Beni-Suef Governorate, Aborady Village	Africa	SPF embryonated chicken eggs	1704
+EU183330.1	A/goose/Egypt/R4/2007	H5N1	2007-02-01	Anatidae	8830	avian	Anseriformes	Egypt: Beni-Suef Governorate, Aborady Village	Africa	SPF embryonated chicken eggs	1704
 CY076880.1	A/cinnamon teal/California/JN1504/2007	H5N3	2007-02-03	Spatula cyanoptera	75840	avian	Anseriformes	USA: Gridley, CA	North America	egg 2 passage(s)	1742
+EU496385.1	A/quail/Egypt/07120-NLQP/2007	H5N1	2007-02-03	Galliformes	8976	avian	Galliformes	Egypt: Amerya, Alexandria	Africa		1709
+EF474450.1	A/chicken/Moscow/2/2007	H5N1	2007-02-13	Gallus gallus	9031	avian	Galliformes	Russia: Domodedovsky region, Pokrovskoe	Europe		1754
 CY046166.1	A/Muscovy duck/France/070090b/2007(H5N3)	H5N3	2007-02-15	Cairina moschata	8855	avian	Anseriformes	France	Europe	E2 passage(s)	1695
 CY048475.1	A/chicken/Nigeria/08RS848-70/2007(H5N1)	H5N1	2007-02-16	Gallus gallus	9031	avian	Galliformes	Nigeria: Kaduna	Africa	E1 passage(s)	1707
 CY048483.1	A/chicken/Nigeria/08RS848-71/2007(H5N1)	H5N1	2007-02-16	Gallus gallus	9031	avian	Galliformes	Nigeria: Kaduna	Africa	E1 passage(s)	1707
 EU544248.1	A/spur-winged goose/Nigeria/5388-2/2007	H5N2	2007-02-17	Plectropterus gambensis	658924	avian	Anseriformes	Nigeria	Africa		1707
 EU544242.1	A/spur-winged goose/Nigeria/5388-5/2007	H5N2	2007-02-17	Plectropterus gambensis	658924	avian	Anseriformes	Nigeria	Africa		1707
+EU183331.1	A/duck/Egypt/R5/2007	H5N1	2007-02-20	Anatidae	8830	avian	Anseriformes	Egypt: Beni-Suef Governorate, Tanssa Village	Africa	SPF embryonated chicken eggs	1704
 JX021299.1	A/duck/Vietnam/MB2/2007	H5N1	2007-02-20	Anas platyrhynchos	8839	avian	Anseriformes	Viet Nam: Ha Noi province	Asia		1707
 FJ492883.1	A/Fujian/1/2007	H5N1	2007-02-25	Homo sapiens	9606	human	Primates	China	Asia		1704
 EU717849.1	A/chicken/Egypt/1709-1VIR08/2007	H5N1	2007-02-25	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1707
+EU183332.1	A/chicken/Egypt/R6/2007	H5N1	2007-02-26	Gallus gallus	9031	avian	Galliformes	Egypt: Beni-Suef Governorate	Africa	SPF embryonated chicken eggs	1704
 CY048499.1	A/chicken/Nigeria/08RS848-74/2007(H5N1)	H5N1	2007-02-26	Gallus gallus	9031	avian	Galliformes	Nigeria: Enugu	Africa	E1 passage(s)	1707
 GQ122402.1	A/chicken/East Java/UT6044/2007	H5N1	2007-03	Gallus gallus	9031	avian	Galliformes	Indonesia: East Java	Asia		1707
 GQ122403.1	A/chicken/East Java/UT6045/2007	H5N1	2007-03	Gallus gallus	9031	avian	Galliformes	Indonesia: East Java	Asia		1707
@@ -1202,12 +1844,14 @@ GU182222.1	A/environment/Hunan/1-35/2007	H5N1	2007-03					China: Dongting Lake	A
 GU182214.1	A/environment/Hunan/1-8/2007	H5N1	2007-03					China: Dongting Lake	Asia		1776
 GQ184214.1	A/chicken/Egypt/07118-NLQP/2007	H5N1	2007-03-01	Gallus gallus	9031	avian	Galliformes	Egypt: Qalyobia	Africa		1707
 EU717851.1	A/duck/Egypt/1709-3VIR08/2007	H5N1	2007-03-04	Anatidae	8830	avian	Anseriformes	Egypt	Africa		1707
+EU183326.1	A/chicken/Egypt/F6/2007	H5N1	2007-03-06	Gallus gallus	9031	avian	Galliformes	Egypt: Beni-Suef Governorate	Africa	SPF embryonated chicken eggs	1707
 GU183456.1	A/chicken/Pessel/BPPVRII/2007	H5N1	2007-03-07	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1704
 CY048507.1	A/chicken/Nigeria/08RS848-75/2007(H5N1)	H5N1	2007-03-09	Gallus gallus	9031	avian	Galliformes	Nigeria: Jigawa	Africa	E1 passage(s)	1707
 CY048515.1	A/chicken/Nigeria/08RS848-76/2007(H5N1)	H5N1	2007-03-09	Gallus gallus	9031	avian	Galliformes	Nigeria: Katsina	Africa	E1 passage(s)	1707
 CY091791.1	A/chicken/Tabanan/BBVD-107/2007	H5N1	2007-03-09	Gallus gallus	9031	avian	Galliformes	Indonesia: Tabanan	Asia	E3 passage(s)	1746
 CY048523.1	A/chicken/Nigeria/08RS848-77/2007(H5N1)	H5N1	2007-03-14	Gallus gallus	9031	avian	Galliformes	Nigeria: Lagos	Africa	E1 passage(s)	1707
 CY098681.1	A/Anhui/1/2007	H5N1	2007-03-17	Homo sapiens	9606	human	Primates	China: Anhui	Asia	E2 passage(s)	1715
+EU496392.1	A/duck/Egypt/07322S-NLQP/2007	H5N1	2007-03-20	Anatidae	8830	avian	Anseriformes	Egypt: Samalot, Menia	Africa		1752
 CY048547.1	A/chicken/Nigeria/08RS848-82/2007(H5N1)	H5N1	2007-03-21	Gallus gallus	9031	avian	Galliformes	Nigeria: Oyo	Africa	E1 passage(s)	1707
 CY091792.1	A/chicken/Tabanan/BBVD-142/2007	H5N1	2007-03-26	Gallus gallus	9031	avian	Galliformes	Indonesia: Tabanan	Asia	E3 passage(s)	1746
 CY091774.1	A/chicken/Denpasar/BBVD-145/2007	H5N1	2007-03-27	Gallus gallus	9031	avian	Galliformes	Indonesia: Denpasar	Asia	E3 passage(s)	1746
@@ -1215,6 +1859,7 @@ CY048555.1	A/chicken/Nigeria/08RS848-83/2007(H5N1)	H5N1	2007-03-27	Gallus gallus
 CY048563.1	A/ostrich/Nigeria/08RS848-84/2007(H5N1)	H5N1	2007-03-27	Struthio camelus	8801	avian	Struthioniformes	Nigeria: Plateau	Africa	E1 passage(s)	1692
 GU182246.1	A/environment/Hunan/2-1/2007	H5N1	2007-04					China: Dongting Lake	Asia		1779
 GU182238.1	A/environment/Hunan/2-16/2007	H5N1	2007-04					China: Dongting Lake	Asia		1735
+EU496386.1	A/chicken/Egypt/07125-NLQP/2007	H5N1	2007-04-03	Gallus gallus	9031	avian	Galliformes	Egypt: Kafr-Eldawar, Behera	Africa		1720
 FJ390061.2	A/plateau pika/Qinghai/04/2007	H5N1	2007-04-19	Ochotona curzoniae	130825	non-human mammal	Lagomorpha	China	Asia		1779
 HQ020365.1	A/bar-headed goose/Qinghai/2/2007	H5N1	2007-05	Anser indicus	8846	avian	Anseriformes	China	Asia		1779
 HQ020366.1	A/bar-headed goose/Qinghai/3/2007	H5N1	2007-05	Anser indicus	8846	avian	Anseriformes	China	Asia		1779
@@ -1236,6 +1881,7 @@ CY077110.1	A/ruddy turnstone/Delaware/103/2007	H5N1	2007-05-22	Arenaria interpre
 CY091814.1	A/chicken/Badung/BBVD-219/2007	H5N1	2007-05-23	Gallus gallus	9031	avian	Galliformes	Indonesia: Badung	Asia	E3 passage(s)	1746
 CY091806.1	A/chicken/Klungkung/BBVD-225/2007	H5N1	2007-05-24	Gallus gallus	9031	avian	Galliformes	Indonesia: Klungkung	Asia	E3 passage(s)	1746
 CY043928.1	A/shorebird/Delaware/472/2007	H5N1	2007-05-24	Aves	8782	avian		USA: Delaware	North America	E2 passage(s)	1719
+EU496394.1	A/turkey/Egypt/07444S-NLQP/2007	H5N1	2007-05-24	Meleagris gallopavo	9103	avian	Galliformes	Egypt: Faraskor, Damitta	Africa		1717
 CY091867.1	A/duck/Magelang/BBVW-604-44401/2007	H5N1	2007-05-28	Anatidae	8830	avian	Anseriformes	Indonesia: Magelang	Asia	E3 passage(s)	1746
 CY091869.1	A/duck/Magelang/BBVW-604-44402/2007	H5N1	2007-05-28	Anatidae	8830	avian	Anseriformes	Indonesia: Magelang	Asia	E3 passage(s)	1746
 CY091775.1	A/chicken/Denpasar/BBVD-182/2007	H5N1	2007-05-29	Gallus gallus	9031	avian	Galliformes	Indonesia: Denpasar	Asia	E3 passage(s)	1746
@@ -1361,6 +2007,8 @@ CY048139.1	A/chicken/Nigeria/08RS848-111/2007(H5N1)	H5N1	2007-09-03	Gallus gallu
 HQ200575.1	A/chicken/Cambodia/LC1AL/2007	H5N1	2007-09-04	Gallus gallus	9031	avian	Galliformes	Cambodia: Kampong Cham	Asia		1770
 HQ200583.1	A/chicken/Cambodia/LC3AL/2007	H5N1	2007-09-04	Gallus gallus	9031	avian	Galliformes	Cambodia: Kampong Cham	Asia		1767
 CY091789.1	A/chicken/Buleleng/BBVD-545b/2007	H5N1	2007-09-05	Gallus gallus	9031	avian	Galliformes	Indonesia: Buleleng	Asia	E3 passage(s)	1746
+EU163431.1	A/chicken/Krasnodar/300/07	H5N1	2007-09-05					Russia	Europe		1754
+EU257631.1	A/Cygnus cygnus/Krasnodar/329/07	H5N1	2007-09-06					Russia	Europe		1754
 CY048147.1	A/chicken/Nigeria/08RS848-115/2007(H5N1)	H5N1	2007-09-06	Gallus gallus	9031	avian	Galliformes	Nigeria: Oyo	Africa	E1 passage(s)	1707
 CY095482.1	A/mallard/Ontario/26078/2007	H5N1	2007-09-06	Anas platyrhynchos	8839	avian	Anseriformes	Canada: Ontario	North America	Egg 2 passage(s)	1724
 HM849027.1	A/mallard/PT/28006/2007	H5N3	2007-09-06	Anas platyrhynchos	8839	avian	Anseriformes	Portugal: Tomar	Europe		1710
@@ -1461,21 +2109,30 @@ GQ227367.1	A/pika/Qinghai/HMH/2007	H5N1	2007-12-03	Ochotonidae	9976	non-human ma
 GQ227380.1	A/pika/Qinghai/GRL/2007	H5N1	2007-12-04	Ochotonidae	9976	non-human mammal	Lagomorpha	China	Asia		1760
 MH546251.1	A/Muscovy duck/New Jersey/07-002376-001/2007	H5N2	2007-12-05	Cairina moschata	8855	avian	Anseriformes	USA: New Jersey	North America		1734
 GQ227391.1	A/pika/Qinghai/QW/2007	H5N1	2007-12-05	Ochotonidae	9976	non-human mammal	Lagomorpha	China	Asia		1760
+EU496395.1	A/chicken/Egypt/07632S-NLQP/2007	H5N1	2007-12-06	Gallus gallus	9031	avian	Galliformes	Egypt: Belbes, Sharkia	Africa		1692
 HM114585.1	A/Vietnam/HN31388M1/2007	H5N1	2007-12-14	Homo sapiens	9606	human	Primates	Viet Nam	Asia		1704
+EU401751.1	A/chicken/Rostov-on-Don/35/2007	H5N1	2007-12-14	Gallus gallus	9031	avian	Galliformes	Russia: Rostov-on-Don Region, Zelenogradsky District, Gulyai-Borisovka Village	Europe		1754
+EU441937.1	A/pigeon/Rostov-on-Don/6/2007	H5N1	2007-12-14					Russia: farmstead Gulyaj-Borisovka, Zernogradskij district, Rostov region	Europe		1754
 EU814503.1	A/rook/Rostov-on-Don/26/2007	H5N1	2007-12-14	Corvus frugilegus	75140	avian	Passeriformes	Russia: Rostov-on-Don region, Zelenogradsky district	Europe		1754
+EU441929.1	A/muscovy duck/Rostov-on-Don/51/2007	H5N1	2007-12-15					Russia: poultry mill Gulyaj-Borisovka, Zernogradskij district, Rostov region	Europe		1754
 EU486855.1	A/starling/Rostov-on-Don/39/07	H5N1	2007-12-15					Russia: farmstead Gulyaj-Borisovka, district Zernogradskij, Rostov	Europe		1754
 CY091949.1	A/duck/Sleman/BBVW-1003-34368/2007	H5N1	2007-12-16	Anatidae	8830	avian	Anseriformes	Indonesia: Sleman	Asia	E3 passage(s)	1746
 CY091951.1	A/duck/Bantul/BBVW-1005-24442/2007	H5N1	2007-12-17	Anatidae	8830	avian	Anseriformes	Indonesia: Bantul	Asia	E3 passage(s)	1746
+EU496389.1	A/chicken/Egypt/07202-NLQP/2007	H5N1	2007-12-19	Gallus gallus	9031	avian	Galliformes	Egypt: Quena	Africa		1752
 JQ906601.1	A/chicken/Mymensingh/1/2007	H5N1	2007-12-20	Gallus gallus	9031	avian	Galliformes	Bangladesh	Asia		1743
+EU496396.1	A/chicken/Egypt/07665S-NLQP/2007	H5N1	2007-12-24	Gallus gallus	9031	avian	Galliformes	Egypt: Abo-Hammad, Sharkia	Africa		1734
 GQ184217.1	A/peacock/Egypt/07667S-NLQP/2007	H5N1	2007-12-25	Phasianinae	9072	avian	Galliformes	Egypt: Giza	Africa		1707
 CY091786.1	A/chicken/Gianyar/BBVD-687/2007	H5N1	2007-12-26	Gallus gallus	9031	avian	Galliformes	Indonesia: Gianyar	Asia	E3 passage(s)	1746
 CY202802.1	A/mallard/Maryland/07OS2433/2007	H5N2	2007-12-27	Anas platyrhynchos	8839	avian	Anseriformes	USA: MD	North America	egg 1 passage(s)	1742
 CY202810.1	A/mallard/Maryland/07OS2435/2007	H5N2	2007-12-27	Anas platyrhynchos	8839	avian	Anseriformes	USA: MD	North America	egg 1 passage(s)	1742
+EU676317.1	A/Kalij pheasant/Thailand/vsmu-1/2008	H5N1	2008	Lophura leucomelanos	140445	avian	Galliformes	Thailand	Asia		1735
+EU676325.1	A/brown-head gull/Thailand/vsmu-4/2008	H5N1	2008					Thailand: Samutprakarn province	Asia		1758
 CY043373.1	A/chicken/Bangladesh/FD(G)-92-BL-416/2008(H5N1)	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Bangladesh	Asia		1707
 KR732574.1	A/chicken/Egypt/0813-NLQP/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1779
 CY061552.1	A/chicken/Egypt/1/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Egypt: Qalubia	Africa		1707
 HM172079.1	A/chicken/Guizhou/7/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	China: Guizhou	Asia		1704
 FJ445017.1	A/chicken/Iran/53-3/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Iran	Asia		1708
+EU574927.1	A/chicken/Israel/1055/2008	H5N1	2008						Asia		1715
 HM172092.1	A/chicken/Jiangsu/18/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	China: Jiangsu	Asia		1707
 CY041047.1	A/chicken/Laos/LPQ001/2008(H5N1)	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Laos	Asia		1704
 CY041048.1	A/chicken/Laos/OX005/2008(H5N1)	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Laos	Asia		1704
@@ -1487,11 +2144,14 @@ CY068908.1	A/chicken/Pakistan/SPVC-7/2008	H5N1	2008	Gallus gallus	9031	avian	Gal
 CY068912.1	A/chicken/Pakistan/SPVC-8/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1707
 FJ868025.1	A/chicken/Sukhothai/NIAH114843/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Thailand	Asia		1747
 EU547798.1	A/chicken/Thailand/ICRC-618/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Thailand	Asia		1755
+EU497919.1	A/chicken/Thailand/ICRC-V586/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Thailand	Asia	MDCK cells	1756
+EU620660.1	A/chicken/Thailand/PC-340/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Thailand	Asia		1734
 FJ868014.1	A/chicken/Thailand/ST-351/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Thailand	Asia		1767
 HM172086.1	A/chicken/Tibet/6/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	China: Tibet	Asia		1707
 CY105894.1	A/chicken/Ukraine/AV453/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Ukraine	Europe		1735
 FJ868033.1	A/chicken/Uthaithani/NIAH115067/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Thailand	Asia		1783
 FJ842476.1	A/chicken/Vietnam/NCVD-016/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1710
+FJ888346.1	A/chicken/Vietnam/NCVD-016/2008(H5N1)-PR8-IDCDC-RG12	H5N1	2008								1695
 KP097921.1	A/chicken/Vietnam/NCVD-03.08/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1710
 FJ842480.1	A/chicken/Vietnam/NCVD-093/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1707
 KR732499.1	A/chicken/Vietnam/NCVD-117/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1779
@@ -1503,6 +2163,7 @@ FJ842479.1	A/chicken/Vietnam/NCVD-swab18/2008	H5N1	2008	Gallus gallus	9031	avian
 FJ842486.1	A/chicken/Vietnam/NCVD-swab19/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1707
 KR732416.1	A/chicken/West Java/TJA/2008	H5N1	2008	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1779
 CY107849.1	A/duck/Germany/R1789/2008	H5N3	2008	Anatidae	8830	avian	Anseriformes	Germany	Europe		1692
+EU676307.1	A/duck/Thailand/ICRC-V629/2008	H5N1	2008	Anatidae	8830	avian	Anseriformes	Thailand: Supanburi province	Asia		1755
 AB558479.1	A/duck/Tsukuba/189/2008	H5N2	2008	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Ibaraki, Kasumigaura Lake	Asia		1695
 CY036237.1	A/great egret/Hong Kong/807/2008(H5N1)	H5N1	2008	Ardea alba	110620	avian	Pelecaniformes	Hong Kong	Asia		1707
 CY036245.1	A/grey heron/Hong Kong/1046/2008(H5N1)	H5N1	2008	Ardea cinerea	30390	avian	Pelecaniformes	Hong Kong	Asia		1707
@@ -1511,6 +2172,7 @@ CY036261.1	A/magpie robin/Hong Kong/1897/2008(H5N1)	H5N1	2008	Copsychus	125862	a
 AB516420.1	A/northern pintail/Aomori/1192/2008	H5N9	2008	Anas acuta	28680	avian	Anseriformes	Japan:Aomori	Asia		1695
 AB516418.1	A/northern pintail/Aomori/385/2008	H5N3	2008	Anas acuta	28680	avian	Anseriformes	Japan:Aomori	Asia		1695
 CY036269.1	A/peregrine falcon/Hong Kong/2142/2008(H5N1)	H5N1	2008	Falco peregrinus	8954	avian	Falconiformes	Hong Kong	Asia		1704
+AB436736.1	A/whooper swan/Akita/1/2008	H5N1	2008					Japan	Asia		1704
 KC784946.1	A/Jiangsu/6/2008	H5N1	2008-01	Homo sapiens	9606	human	Primates	China	Asia		1704
 GU183461.1	A/chicken/Banten/Srg-Fadh/2008	H5N1	2008-01	Gallus gallus	9031	avian	Galliformes	Indonesia	Asia		1704
 JF746739.1	A/chicken/Egypt/0827-NLQP/2008	H5N1	2008-01	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1728
@@ -1531,6 +2193,7 @@ CY103953.1	A/swan/England/AV346-2195/2008	H5N1	2008-01	Anatidae	8830	avian	Anser
 CY103954.1	A/swan/England/AV346-2197/2008	H5N1	2008-01	Anatidae	8830	avian	Anseriformes	United Kingdom: Dorset	Europe		1730
 CY103958.1	A/swan/England/AV380-2326/2008	H5N1	2008-01	Anatidae	8830	avian	Anseriformes	United Kingdom: Dorset	Europe		1730
 FJ461592.1	A/swine/Korea/C12/2008	H5N2	2008-01	Sus scrofa	9823	non-human mammal	Artiodactyla	South Korea	Asia		1695
+EU496399.1	A/chicken/Egypt/088S-NLQP/2008	H5N1	2008-01-01	Gallus gallus	9031	avian	Galliformes	Egypt: Mansura, Dakahlia	Africa		1710
 CY044032.1	A/chicken/Egypt/083/2008	H5N1	2008-01-02	Gallus gallus	9031	avian	Galliformes	Egypt: Gharbia	Africa	E1 passage(s)	1719
 GQ184218.1	A/chicken/Egypt/085-NLQP/2008	H5N1	2008-01-03	Gallus gallus	9031	avian	Galliformes	Egypt: Alexandria	Africa		1707
 EU717857.1	A/chicken/Egypt/1709-6/2008	H5N1	2008-01-03	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1707
@@ -1652,6 +2315,7 @@ JX021302.1	A/chicken/Vietnam/DT382/2008	H5N1	2008-03-21	Gallus gallus	9031	avian
 JX021301.1	A/chicken/Vietnam/KG8/2008	H5N1	2008-03-21	Gallus gallus	9031	avian	Galliformes	Viet Nam: Kien Giang province	Asia		1707
 GU083637.1	A/chicken/West Bengal/100879/2008	H5N1	2008-03-23	Gallus gallus	9031	avian	Galliformes	India: West Bengal	Asia		1707
 KJ018192.1	A/chicken/New Jersey/577-6/2008	H5N2	2008-03-27	Gallus gallus	9031	avian	Galliformes	USA: New Jersey	North America		1734
+FR771823.1	A/spur-winged goose/Nigeria/2/2008	H5N2	2008-03-31					Nigeria	Africa		1695
 OL371311.1	A/wild duck/Victoria/D1462/2008	H5N3	2008-03-31	Anas platyrhynchos	8839	avian	Anseriformes	Australia: Victoria	Oceania		1695
 AB601128.1	A/chicken/Egypt/RIMD9-2/2008	H5N1	2008-04	Gallus gallus	9031	avian	Galliformes	Egypt:Gharbia	Africa		1707
 GU252822.1	A/duck/Tripura/103597/2008	H5N1	2008-04	Anatidae	8830	avian	Anseriformes	India	Asia		1734
@@ -1660,6 +2324,7 @@ GU252830.1	A/goose/Tripura/103596/2008	H5N1	2008-04-01	Anatidae	8830	avian	Anser
 MH546339.1	A/chicken/New Jersey/08-000640-006/2008	H5N2	2008-04-03	Gallus gallus	9031	avian	Galliformes	USA: New Jersey	North America		1734
 CY046102.1	A/duck/India/TR-NIV4396/2008(H5N1)	H5N1	2008-04-03	Anatidae	8830	avian	Anseriformes	India: Agartala, Tripura	Asia		1707
 MH546491.1	A/guinea fowl/New Jersey/08-000640-008/2008	H5N2	2008-04-03	Numididae	8990	avian	Galliformes	USA: New Jersey	North America		1734
+FR771825.1	A/spur-winged goose/Nigeria/226/2008	H5N2	2008-04-03					Nigeria	Africa		1695
 GQ184236.1	A/chicken/Egypt/0876-NLQP/2008	H5N1	2008-04-06	Gallus gallus	9031	avian	Galliformes	Egypt: Qalyobia	Africa		1707
 GQ184235.1	A/duck/Egypt/0875-NLQP/2008	H5N1	2008-04-06	Anatidae	8830	avian	Anseriformes	Egypt: Matrouh	Africa		1707
 JF827078.1	A/chicken/Pakistan-Lhr/NARC-610/2008	H5N1	2008-04-08	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1809
@@ -2072,6 +2737,7 @@ KP735806.1	A/goose/Shandong/k1201/2009	H5N1	2009-12-10	Anatidae	8830	avian	Anser
 JQ973670.1	A/goose/Shandong/k1204/2009	H5N5	2009-12-16	Anatidae	8830	avian	Anseriformes	China	Asia		1779
 KC631943.1	A/chicken/Jiangsu/WJ/2009	H5N1	2009-12-20	Gallus gallus	9031	avian	Galliformes	China	Asia		1704
 JN543378.1	A/environment/Chang Sha/25/2009	H5N1	2009-12-22					China	Asia		1745
+KC590652.1	A/barnswallow/Hong Kong/1161-SJC001_RG1/2010	H5N1	2010						Asia		1779
 HQ156765.1	A/chicken/Bangladesh/1151-10/2010	H5N1	2010	Gallus gallus	9031	avian	Galliformes	Bangladesh	Asia		1707
 HQ156776.1	A/chicken/Bangladesh/1151-11/2010	H5N1	2010	Gallus gallus	9031	avian	Galliformes	Bangladesh	Asia		1707
 HQ156760.1	A/chicken/Bangladesh/1151-9/2010	H5N1	2010	Gallus gallus	9031	avian	Galliformes	Bangladesh	Asia		1707
@@ -2082,7 +2748,17 @@ FR687258.1	A/chicken/Egypt/Q1182/2010	H5N1	2010	Gallus gallus	9031	avian	Gallifo
 FR687257.1	A/chicken/Egypt/Q1185/2010	H5N1	2010	Gallus gallus	9031	avian	Galliformes	Egypt:Qalubiya	Africa		1774
 KR732425.1	A/chicken/Vietnam/NCVD-398/2010	H5N1	2010	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1776
 KR732552.1	A/chicken/Vietnam/NCVD-421/2010	H5N1	2010	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1776
+MN400359.1	A/duck/Moscow/4182-C-MA/2010	H5N3	2010							State collection of viruses, Federal State Budgetary Institution Federal Research Centre for Epidemiology and Microbiology named after the honorary academician N.F. Gamaleya of the Ministry of Health of the Russian Federation, strain ID: 2922, deposition date: Aug-2019.	1737
+MF992974.1	A/duck/Moscow/4182-C/2010	H5N3	2010								1737
+MF992990.1	A/duck/Moscow/4182-C/2010	H5N3	2010								1737
 MF992942.1	A/duck/Moscow/4182-C/2010	H5N3	2010	Anatidae	8830	avian	Anseriformes	Russia	Europe		1737
+MF992958.1	A/duck/Moscow/4182-C/2010	H5N3	2010								1737
+MF992950.1	A/duck/Moscow/4182-C/2010	H5N3	2010								1737
+MF992982.1	A/duck/Moscow/4182-C/2010	H5N3	2010								1737
+MF992998.1	A/duck/Moscow/4182-C/2010	H5N3	2010								1737
+MF993006.1	A/duck/Moscow/4182-C/2010	H5N3	2010								1737
+MF992966.1	A/duck/Moscow/4182-C/2010	H5N3	2010								1737
+MF993014.1	A/duck/Moscow/4182-C/2010	H5N3	2010								1737
 JX262650.2	A/teal/Djankoy/4-17-11/2010	H5N2	2010	Anas	8835	avian	Anseriformes	Ukraine	Europe		1695
 HQ198261.1	A/chicken/Egypt/1029/2010	H5N1	2010-01	Gallus gallus	9031	avian	Galliformes	Egypt: Monofia	Africa		1729
 HQ198255.2	A/chicken/Egypt/1050ss/2010	H5N1	2010-01	Gallus gallus	9031	avian	Galliformes	Egypt: Sharkia	Africa		1707
@@ -3002,6 +3678,7 @@ KP035012.1	A/chicken/Egypt/14VIR784-11-133AL/2013	H5N1	2013	Gallus gallus	9031	a
 KP035022.1	A/chicken/Egypt/14VIR784-5-1318S/2013	H5N1	2013	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1704
 KP035030.1	A/duck/Egypt/14VIR784-4-133AD/2013	H5N1	2013	Anatidae	8830	avian	Anseriformes	Egypt	Africa		1704
 KP035038.1	A/duck/Egypt/14VIR784-6-1328S/2013	H5N1	2013	Anatidae	8830	avian	Anseriformes	Egypt	Africa		1704
+KX714306.1	A/duck/Zhejiang/6DK19-MA/2013	H5N2	2013								1704
 KP742900.1	A/chicken/Barru/BBVM 41-13/2013	H5N1	2013-01	Gallus gallus	9031	avian	Galliformes	Indonesia: Barru	Asia		1707
 KP742886.1	A/duck/Berau/BPPV5-0513022-A/2013	H5N1	2013-01	Anatidae	8830	avian	Anseriformes	Indonesia: Berau	Asia		1704
 KP742887.1	A/duck/Berau/BPPV5-0513022-B/2013	H5N1	2013-01	Anatidae	8830	avian	Anseriformes	Indonesia: Berau	Asia		1704
@@ -4713,6 +5390,7 @@ MH546939.1	A/northern shoveler/Oregon/16-000283-1/2015	H5N3	2015-12-28	Spatula c
 MF112616.1	A/chicken/Nigeria/16VIR5840-75/2015	H5N1	2015-12-31	Gallus gallus	9031	avian	Galliformes	Nigeria	Africa		1704
 OP782324.1	A/Tiger/China/HDHZ03/2016	H5N1	2016	Panthera tigris	9694	non-human mammal	Carnivora	China	Asia		1713
 PQ064250.1	A/chicken/Egypt/F12505B/2016	H5N1	2016	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1771
+MH558951.1	A/chicken/Egypt/ME1010-RG/2016	H5N1	2016						Africa		1695
 MH558952.1	A/chicken/Egypt/ME1010/2016	H5N1	2016	Gallus gallus	9031	avian	Galliformes	Egypt	Africa		1707
 MN025431.1	A/tufted duck/Denmark/11740/2016	H5N8	2016	Aythya fuligula	219594	avian	Anseriformes	Denmark	Europe		1766
 MH613072.1	A/duck/China/waterfowl/2016	H5N2	2016-01	Anatidae	8830	avian	Anseriformes	China	Asia		1704
@@ -5208,7 +5886,16 @@ OQ793920.1	A/little grebe/Egypt/MB-D-1056C/2016	H5N8	2016-12-28	Tachybaptus rufi
 MH546723.1	A/mallard/Oregon/17-000383-4/2016	H5N2	2016-12-28	Anas platyrhynchos	8839	avian	Anseriformes	USA: Columbia County, Oregon	North America		1757
 LC318647.1	A/whooper swan/Aomori/9/2016	H5N6	2016-12-29	Cygnus cygnus	219595	avian	Anseriformes	Japan: Aomori	Asia		1763
 MT634258.1	A/Chicken/Viet Nam/AI-1606/2016	H5N6	2016-12-30	Gallus gallus	9031	avian	Galliformes	Viet Nam	Asia		1704
+MG192005.1	A/chicken/Egypt/RG-173CAL/2017	H5N1	2017						Africa		1735
 MZ019509.1	A/chicken/Netherlands/2113/2017	H5N8	2017	Gallus gallus	9031	avian	Galliformes	Netherlands	Europe		1704
+MK358001.1	A/duck/Moscow/4182-C/2017	H5N3	2017							State collection of viruses, Federal State Budgetary Institution Federal Research Centre for Epidemiology and Microbiology named after the honorary academician N.F. Gamaleya of the Ministry of Health of the Russian Federation, strain ID: 2878, deposition date: Mar-2018.	1737
+MK357985.1	A/duck/Moscow/4182-C/2017	H5N3	2017							State collection of viruses, Federal State Budgetary Institution Federal Research Centre for Epidemiology and Microbiology named after the honorary academician N.F. Gamaleya of the Ministry of Health of the Russian Federation, strain ID: 2876, deposition date: Mar-2018.	1734
+MK357961.1	A/duck/Moscow/4182-C/2017	H5N3	2017							State collection of viruses, Federal State Budgetary Institution Federal Research Centre for Epidemiology and Microbiology named after the honorary academician N.F. Gamaleya of the Ministry of Health of the Russian Federation, strain ID: 2875, deposition date: Mar-2018.	1737
+MK358009.1	A/duck/Moscow/4182-C/2017	H5N3	2017							State collection of viruses, Federal State Budgetary Institution Federal Research Centre for Epidemiology and Microbiology named after the honorary academician N.F. Gamaleya of the Ministry of Health of the Russian Federation, strain ID: 2879, deposition date: Mar-2018.	1737
+MK357977.1	A/duck/Moscow/4182-C/2017	H5N3	2017							State collection of viruses, Federal State Budgetary Institution Federal Research Centre for Epidemiology and Microbiology named after the honorary academician N.F. Gamaleya of the Ministry of Health of the Russian Federation, strain ID: 2873, deposition date: Mar-2018.	1737
+MK357993.1	A/duck/Moscow/4182-C/2017	H5N3	2017							State collection of viruses, Federal State Budgetary Institution Federal Research Centre for Epidemiology and Microbiology named after the honorary academician N.F. Gamaleya of the Ministry of Health of the Russian Federation, strain ID: 2877, deposition date: Mar-2018.	1737
+MK357969.1	A/duck/Moscow/4182-C/2017	H5N3	2017							State collection of viruses, Federal State Budgetary Institution Federal Research Centre for Epidemiology and Microbiology named after the honorary academician N.F. Gamaleya of the Ministry of Health of the Russian Federation, strain ID:2872, deposition date: Mar-2018.	1737
+MK357953.1	A/duck/Moscow/4182-C/2017	H5N3	2017							State collection of viruses, Federal State Budgetary Institution Federal Research Centre for Epidemiology and Microbiology named after the honorary academician N.F. Gamaleya of the Ministry of Health of the Russian Federation, strain ID: 2874, deposition date: Mar-2018.	1737
 MH569621.1	A/chicken/Uganda/17RS115-15/2017	H5N8	2017-01	Gallus gallus	9031	avian	Galliformes	Uganda	Africa		1704
 MG650620.1	A/duck/Cameroon/17RS1661-3/2017	H5N8	2017-01	Anatidae	8830	avian	Anseriformes	Cameroon	Africa		1704
 MH569629.1	A/duck/Uganda/17RS115-9/2017	H5N8	2017-01	Anatidae	8830	avian	Anseriformes	Uganda	Africa		1704
