@@ -26,6 +26,7 @@ METADATA_COLUMNS = [
 VALID_NUCS = set("ACTGactg")
 DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
 HA_GENE_NAMES = {"HA", "ha", "HA1"}
+STRAIN_YEAR_RE = re.compile(r"/(\d{4})(?:\(|$)")
 
 
 def parse_subtypes_from_headers(headers_file):
@@ -217,8 +218,19 @@ def main():
     stats.append(f"Accessions with full-length HA CDS found: {len(found)}")
     stats.append(f"Accessions without full-length HA CDS: {len(not_found)}")
 
-    # validate date format and drop missing dates
+    # fill missing dates from strain name year as fallback, then validate
     metadata = metadata[metadata["accession"].isin(sequences)]
+    no_date = metadata["date"].isna() | (metadata["date"] == "")
+    n_no_date = int(no_date.sum())
+    parsed_years = metadata.loc[no_date, "strain"].str.extract(
+        STRAIN_YEAR_RE, expand=False
+    )
+    metadata.loc[no_date, "date"] = parsed_years
+    n_recovered = int(parsed_years.notna().sum())
+    stats.append(
+        f"Recovered date from strain name: {n_recovered} of {n_no_date}"
+        " missing-date accessions"
+    )
     bad_dates = metadata[~metadata["date"].str.match(DATE_RE, na=True)]
     if len(bad_dates):
         raise ValueError(

@@ -32,7 +32,8 @@ This processes the large zip once so downstream per-subtype rules can work from 
 ### `extract_ha_cds`: Extract HA sequences and metadata per subtype
 For each tree defined in [config.yaml](config.yaml), extract full-length hemagglutinin (HA) coding sequences and associated metadata.
 HA accessions are identified by segment 4 in the genome metadata or gene-name of "HA", "ha", or "HA1" in the annotation report (some older NCBI records lack the segment field but have the gene annotation).
-Subtypes are parsed from genomic FASTA headers and filtered by the `subtype` regex in the config (e.g., `H5N\d{1,2}` for all H5Nx) and the CDS length range specified in `cds_length_range` YAML pointed to in config (either bound can be `null` for no limit); note also we drop any sequences with ambiguous nucleotides, missing dates, or that are not valid coding sequences.
+Subtypes are parsed from genomic FASTA headers and filtered by the `subtype` regex in the config (e.g., `H5N\d{1,2}` for all H5Nx) and the CDS length range specified in `cds_length_range` YAML pointed to in config (either bound can be `null` for no limit).
+For accessions with missing collection dates, the year is parsed from the strain name as a fallback (e.g., "1930" from "A/swine/Iowa/15/1930"); sequences with no date even after this fallback are dropped, as are sequences with ambiguous nucleotides or that are not valid coding sequences.
 Outputs per-tree FASTA and metadata TSV files in `results/trees/{tree}/`.
 
 ### `download_taxonomy`: Download NCBI taxonomy
