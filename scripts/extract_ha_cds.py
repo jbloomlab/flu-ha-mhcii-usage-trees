@@ -25,6 +25,7 @@ METADATA_COLUMNS = [
 
 VALID_NUCS = set("ACTGactg")
 DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
+HA_GENE_NAMES = {"HA", "ha", "HA1"}
 
 
 def parse_subtypes_from_headers(headers_file):
@@ -42,23 +43,39 @@ def parse_subtypes_from_headers(headers_file):
     return acc_subtypes
 
 
-def filter_metadata(metadata_file, acc_subtypes, subtype_regex):
-    """Read genome metadata, filter to HA segment matching subtype regex.
+def filter_metadata(metadata_file, annotation_genes_file, acc_subtypes, subtype_regex):
+    """Read genome metadata, filter to HA accessions matching subtype regex.
+
+    HA accessions are identified by segment == "4" in genome metadata OR
+    gene-name in HA_GENE_NAMES in the annotation report.
 
     Returns (filtered_df, stats_lines).
     """
     df = pd.read_csv(metadata_file, sep="\t", dtype=str)
-    df = df[df["Segment"] == "4"].copy()
+    annot = pd.read_csv(annotation_genes_file, sep="\t", dtype=str)
+    ha_gene_accs = set(annot.loc[annot["Gene Name"].isin(HA_GENE_NAMES), "Accession"])
+    is_seg4 = df["Segment"] == "4"
+    is_ha_gene = df["Accession"].isin(ha_gene_accs)
+    df = df[is_seg4 | is_ha_gene].copy()
     df["subtype"] = df["Accession"].map(acc_subtypes)
     df = df.dropna(subset=["subtype"])
 
     stats = []
+    n_seg4_only = int((is_seg4 & ~is_ha_gene).sum())
+    n_gene_only = int((~is_seg4 & is_ha_gene).sum())
+    n_both = int((is_seg4 & is_ha_gene).sum())
+    stats.append(
+        f"HA accessions (segment=4 OR gene-name in {HA_GENE_NAMES}): {len(df)}"
+    )
+    stats.append(f"  segment=4 only: {n_seg4_only}")
+    stats.append(f"  gene-name only: {n_gene_only}")
+    stats.append(f"  both: {n_both}")
     hxnx_re = re.compile(r"H\d{1,2}N\d{1,2}")
     n_with_subtype = len(df)
     n_hxnx = int(df["subtype"].str.fullmatch(hxnx_re).sum())
     n_tree = int(df["subtype"].str.fullmatch(subtype_regex).sum())
     n_non_hxnx = n_with_subtype - n_hxnx
-    stats.append(f"HA-segment accessions with parseable subtype: {n_with_subtype}")
+    stats.append(f"HA accessions with parseable subtype: {n_with_subtype}")
     stats.append(f"  matching any HxNx pattern: {n_hxnx}")
     stats.append(f"  matching tree subtype regex '{subtype_regex}': {n_tree}")
     stats.append(f"  not matching any HxNx pattern: {n_non_hxnx}")
@@ -168,6 +185,7 @@ def main():
 
     metadata_file = snakemake.input.genome_metadata  # noqa: F821
     headers_file = snakemake.input.genomic_headers  # noqa: F821
+    annotation_genes_file = snakemake.input.annotation_genes  # noqa: F821
     zip_path = snakemake.input.zipfile  # noqa: F821
     subtype_regex = snakemake.params.subtype_regex  # noqa: F821
     with open(snakemake.input.cds_length_range) as f:  # noqa: F821
@@ -180,7 +198,9 @@ def main():
     out_stats = snakemake.output.stats  # noqa: F821
 
     acc_subtypes = parse_subtypes_from_headers(headers_file)
-    metadata, stats = filter_metadata(metadata_file, acc_subtypes, subtype_regex)
+    metadata, stats = filter_metadata(
+        metadata_file, annotation_genes_file, acc_subtypes, subtype_regex
+    )
     accepted_accessions = set(metadata["accession"])
     stats.append(
         f"Metadata accessions matching subtype regex: {len(accepted_accessions)}"

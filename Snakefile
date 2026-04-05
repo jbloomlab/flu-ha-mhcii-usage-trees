@@ -46,6 +46,7 @@ rule format_ncbi_dataset:
     output:
         genome_metadata="results/ncbi_dataset/genome_metadata.tsv",
         genomic_headers="results/ncbi_dataset/genomic_headers.txt",
+        annotation_genes="results/ncbi_dataset/annotation_genes.tsv",
     log:
         "results/logs/format_ncbi_dataset.txt",
     conda:
@@ -61,6 +62,10 @@ sra-accs,is-vaccine-strain,purpose-of-sampling \
             > {output.genome_metadata} 2> {log}
         unzip -p {input.zipfile} ncbi_dataset/data/genomic.fna \
             | grep '^>' > {output.genomic_headers} 2>> {log}
+        dataformat tsv virus-annotation \
+            --package {input.zipfile} \
+            --fields accession,gene-name \
+            > {output.annotation_genes} 2>> {log}
         """
 
 
@@ -69,6 +74,7 @@ rule extract_ha_cds:
     input:
         genome_metadata=rules.format_ncbi_dataset.output.genome_metadata,
         genomic_headers=rules.format_ncbi_dataset.output.genomic_headers,
+        annotation_genes=rules.format_ncbi_dataset.output.annotation_genes,
         zipfile=rules.get_ncbi_dataset_zip.output.zipfile,
         cds_length_range=lambda wc: config["trees"][wc.tree]["cds_length_range"],
     output:

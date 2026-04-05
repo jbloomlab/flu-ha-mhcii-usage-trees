@@ -26,12 +26,13 @@ The taxon ID for the downloaded sequences is specified in [config.yaml](config.y
 The datestamp file in [results/ncbi_dataset/ncbi_dataset_download_date.txt](results/ncbi_dataset/ncbi_dataset_download_date.txt) records the download date.
 
 ### `format_ncbi_dataset`: Process NCBI zip into TSV intermediates
-Extract genome metadata and genomic FASTA headers from the NCBI zip file using `dataformat`.
+Extract genome metadata, genomic FASTA headers, and per-gene annotation from the NCBI zip file using `dataformat`.
 This processes the large zip once so downstream per-subtype rules can work from smaller TSV files.
 
 ### `extract_ha_cds`: Extract HA sequences and metadata per subtype
 For each tree defined in [config.yaml](config.yaml), extract full-length hemagglutinin (HA) coding sequences and associated metadata.
-Subtypes are parsed from genomic FASTA headers and filtered by the `subtype` regex in the config (e.g., `H5N\d{1,2}` for all H5Nx) and the CDS length range specified in `cds_length_range` YAML poninted to in config (either bound can be `null` for no limit); note also we drop any sequences with ambiguous nucleotides, missing dates, or that are not valid coding sequences.
+HA accessions are identified by segment 4 in the genome metadata or gene-name of "HA", "ha", or "HA1" in the annotation report (some older NCBI records lack the segment field but have the gene annotation).
+Subtypes are parsed from genomic FASTA headers and filtered by the `subtype` regex in the config (e.g., `H5N\d{1,2}` for all H5Nx) and the CDS length range specified in `cds_length_range` YAML pointed to in config (either bound can be `null` for no limit); note also we drop any sequences with ambiguous nucleotides, missing dates, or that are not valid coding sequences.
 Outputs per-tree FASTA and metadata TSV files in `results/trees/{tree}/`.
 
 ### `download_taxonomy`: Download NCBI taxonomy
