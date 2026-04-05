@@ -35,7 +35,7 @@ trees:
         samples:
           subsample_all:
             exclude: ?f'data/trees/{subtype}/accessions_to_exclude.txt'
-            exclude_ambiguous_dates_by: month
+            exclude_ambiguous_dates_by: year
             max_sequences: 2000
             group_by: [year, region]
       reference_sequence: ?f'data/trees/{subtype}/reference_sequence.fa'
