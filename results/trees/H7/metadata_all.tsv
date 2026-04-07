@@ -15,6 +15,18 @@ CY015065.1	A/turkey/England/1963	H7N3	1963	Aves	8782	avian		United Kingdom: Engl
 CY130150.1	A/turkey/England/1963	H7N3	1963	Meleagris gallopavo	9103	avian	Galliformes	United Kingdom: England	Europe	XE1 passage(s)	1713
 KF435057.1	A/equine/Detroit/3/1964	H7N7	1964	Equus caballus	9796	non-human mammal	Perissodactyla	USA	North America		1713
 CY039391.1	A/equine/Lexington/1/1966	H7N7	1966	Equus caballus	9796	non-human mammal	Perissodactyla	USA: Lexington	North America		1721
+MW080982.1	A/turkey/Oregon/1-PC4_RG/1971	H7N3	1971						Asia		1731
+MW081038.1	A/turkey/Oregon/1-PC4_RG/1971	H7N3	1971						Asia		1731
+MW081006.1	A/turkey/Oregon/1-PC4_RG/1971	H7N3	1971						Asia		1731
+MW080990.1	A/turkey/Oregon/1-PC4_RG/1971	H7N3	1971						Asia		1731
+MW080998.1	A/turkey/Oregon/1-PC4_RG/1971	H7N3	1971						Asia		1731
+MW080974.1	A/turkey/Oregon/1-PC4_RG/1971	H7N3	1971						Asia		1731
+MW081014.1	A/turkey/Oregon/1-PC4_RG/1971	H7N3	1971						Asia		1731
+MW081022.1	A/turkey/Oregon/1-PC4_RG/1971	H7N3	1971						Asia		1731
+MW081030.1	A/turkey/Oregon/1-PC4_RG/1971	H7N3	1971						Asia		1731
+MW081046.1	A/turkey/Oregon/1-PC4_RG/1971	H7N3	1971						Asia		1731
+M31689.1	A/turkey/Oregon/1971	H7N3	1971						Asia		1731
+M58657.1	A/equine/London/1416/1973	H7N7	1973								1761
 LC414434.1	A/equine/New York/49/1973	H7N7	1973	Equus caballus	9796	non-human mammal	Perissodactyla	USA	North America		1728
 JX983548.1	A/equine/Kirgiziya/26/1974	H7N7	1974	Equus caballus	9796	non-human mammal	Perissodactyla	USSR: Kirgizya	Europe		1717
 CY036871.1	A/equine/Kentucky/1a/1975	H7N7	1975	Equus caballus	9796	non-human mammal	Perissodactyla	USA: Kentucky	North America		1720
@@ -24,12 +36,14 @@ CY036887.1	A/equine/Uruguay/1063/1976	H7N7	1976	Equus caballus	9796	non-human ma
 CY024786.1	A/chicken/Victoria/1976	H7N7	1976-01	Gallus gallus	9031	avian	Galliformes	Australia: Victoria	Oceania	Egg 4 passage(s)	1706
 CY185713.1	A/mallard/Alberta/49/1976	H7N3	1976-08-11	Anas platyrhynchos	8839	avian	Anseriformes	Canada: Alberta	North America	E? passage(s)	1706
 CY036895.1	A/equine/Argentina/1/1977	H7N7	1977	Equus caballus	9796	non-human mammal	Perissodactyla	Argentina	South America		1713
+AF202247.1	A/turkey/England/647/1977	H7N7	1977						Asia		1732
 KJ889439.1	A/turkey/England/647/1977	H7N7	1977	Meleagris gallopavo	9103	avian	Galliformes	United Kingdom: England	Europe		1727
 CY005973.1	A/mallard duck/ALB/224/1977	H7N5	1977-08-05	Aves	8782	avian		Canada: Alberta	North America		1731
 CY005974.1	A/blue-winged teal/ALB/295/1977	H7N3	1977-09-01	Aves	8782	avian		Canada: Alberta	North America		1731
 CY005976.1	A/mallard duck/ALB/279/1977	H7N3	1977-09-01	Aves	8782	avian		Canada: Alberta	North America		1731
 CY005975.1	A/widgeon/ALB/284/1977	H7N3	1977-09-01	Aves	8782	avian		Canada: Alberta	North America		1731
 CY006029.1	A/dk/Hong Kong/293/1978	H7N2	1978	Aves	8782	avian		Hong Kong: Hong Kong	Asia		1732
+AF202232.1	A/African starling/England-Q/983/1979	H7N1	1979								1732
 CY107844.1	A/chicken/Germany/01/1979	H7N7	1979	Gallus gallus	9031	avian	Galliformes	Germany	Europe		1701
 CY180644.1	A/mallard/Wisconsin/223/1979	H7N3	1979	Anas platyrhynchos	8839	avian	Anseriformes	USA: Wisconsin	North America		1695
 CY180652.1	A/mallard/Wisconsin/438/1979	H7N3	1979	Anas platyrhynchos	8839	avian	Anseriformes	USA: DeSoto, WI	North America		1695
@@ -53,6 +67,7 @@ CY179507.1	A/mallard/Wisconsin/1279/1983	H7N3	1983	Anas platyrhynchos	8839	avian
 CY179515.1	A/mallard/Wisconsin/1319/1983	H7N4	1983	Anas platyrhynchos	8839	avian	Anseriformes	USA: Madison, WI	North America		1707
 CY179523.1	A/mallard/Wisconsin/1360/1983	H7N4	1983	Anas platyrhynchos	8839	avian	Anseriformes	USA: Madison, WI	North America		1706
 CY179531.1	A/mallard/Wisconsin/1391/1983	H7N4	1983	Anas platyrhynchos	8839	avian	Anseriformes	USA: Madison, WI	North America		1707
+EU559270.1	A/duck/Hubei/126/1985	H7N8	1985	Anatidae	8830	avian	Anseriformes	China	Asia		1683
 CY024778.1	A/starling/Victoria/1985	H7N7	1985	Sturnus vulgaris	9172	avian	Passeriformes	Australia: Victoria	Oceania	Egg 3 passage(s)	1705
 CY005928.1	A/ruddy turnstone/NJ/65/1985	H7N3	1985-05-29	Aves	8782	avian		USA: New Jersey	North America		1731
 CY185829.1	A/ruddy turnstone/New Jersey/65/1985	H7N3	1985-05-29	Arenaria interpres	54971	avian	Charadriiformes	USA: Stone Harbor, NJ	North America	E3 passage(s)	1706
@@ -76,6 +91,7 @@ GU052961.1	A/softbill/California/33445-136/1992	H7N1	1992	Aves	8782	avian		USA	N
 CY025077.1	A/chicken/Victoria/224/1992	H7N3	1992-07-30	Gallus gallus	9031	avian	Galliformes	Australia: Victoria	Oceania	Egg 3 passage(s)	1702
 LC431460.1	A/duck/Alaska/3111/1993	H7N3	1993	Anseriformes	8826	avian	Anseriformes	USA:Alaska	North America		1712
 FJ610056.1	A/rhea/North Carolina/39482/1993	H7N1	1993	Rhea	8796	avian	Rheiformes	USA	North America		1702
+EF470586.1	A/rhea/North Carolina/39482/1993	H7N1	1993					USA	North America		1731
 MH574757.1	A/magpie robin/California/28709-5/1993	H7N8	1993-04-19	Copsychus	125862	avian	Passeriformes	USA: Los Angeles County, California	North America		1715
 MH574765.1	A/magpie robin/California/28710-14/1993	H7N8	1993-04-19	Copsychus	125862	avian	Passeriformes	USA: Los Angeles County, California	North America		1715
 GU052922.1	A/Pekin robin/California/30412/1994	H7N1	1994	Leiothrix lutea	36275	avian	Passeriformes	USA	North America		1711
@@ -89,10 +105,14 @@ CY185821.1	A/shorebird/Delaware Bay/285/1994	H7N7	1994-05-23	Aves	8782	avian		US
 CY022685.1	A/chicken/Queensland/1994	H7N3	1994-12-21	Gallus gallus	9031	avian	Galliformes	Australia: Queensland	Oceania	Egg 5 passage(s)	1701
 FJ577510.1	A/chicken/Murree/NARC-01/1995	H7N3	1995	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1689
 CY015033.1	A/chicken/Pakistan/34669/1995	H7N3	1995	Aves	8782	avian		Pakistan	Asia		1741
+AF202226.1	A/chicken/Pakistan/447/1995	H7N3	1995						Asia		1741
 EU980454.1	A/emu/TX/25414/1995	H7N2	1995	Dromaius novaehollandiae	8790	avian	Casuariiformes	USA	North America		1706
+AF028021.1	A/turkey/Ireland/PV74/1995	H7N7	1995						Asia		1732
 CY107857.1	A/turkey/Ireland/PV8/1995	H7N7	1995	Meleagris gallopavo	9103	avian	Galliformes	Ireland	Europe		1689
+EF470585.1	A/turkey/Utah/24721-10/1995	H7N3	1995					USA	North America		1731
 HM346477.1	A/chicken/Murree/NARC-1/1995	H7N3	1995-01	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1757
 CY127253.1	A/ruddy turnstone/Delaware Bay/220/1995	H7N9	1995-05-21	Arenaria interpres	54971	avian	Charadriiformes	USA: Delaware	North America	E1 passage(s)	1706
+AF028020.1	A/England/268/1996	H7N7	1996								1732
 GU053110.1	A/England/AV877/1996	H7N7	1996	Homo sapiens	9606	human	Primates	United Kingdom: England	Europe		1707
 JQ988864.1	A/duck/Guangdong/1/1996	H7N3	1996	Anatidae	8830	avian	Anseriformes	China	Asia		1731
 KY947516.1	A/ostrich/Zimbabwe/222-DF1/1996	H7N1	1996	Struthio camelus	8801	avian	Struthioniformes	Zimbabwe	Africa		1683
@@ -161,8 +181,10 @@ KF493067.1	A/turkey/Italy/4906/1999	H7N1	1999-12-28	Meleagris gallopavo	9103	avi
 CY025117.1	A/quail/Italy/4992/1999	H7N1	1999-12-30	Galliformes	8976	avian	Galliformes	Italy	Europe	Egg 1 passage(s)	1708
 KF493090.1	A/turkey/Italy/5005/1999	H7N1	1999-12-30	Meleagris gallopavo	9103	avian	Galliformes	Italy: Vicenza	Europe		1695
 CY015014.1	A/chicken/Italy/1285/2000	H7N1	2000	Aves	8782	avian		Italy	Europe		1745
+AY240897.1	A/chicken/NJ/30749-3/2000(H7N2)	H7N2	2000								1673
 CY014718.1	A/mallard/Netherlands/12/2000	H7N3	2000	Aves	8782	avian		Netherlands	Europe		1726
 GU053030.1	A/mallard/Netherlands/12/2000	H7N3	2000	Anas platyrhynchos	8839	avian	Anseriformes	Netherlands	Europe		1707
+AY338460.1	A/mallard/Netherlands/12/2000	H7N3	2000						Europe		1732
 EU684261.1	A/ruddy turnstone/DE/1538/2000	H7N9	2000	Arenaria interpres	54971	avian	Charadriiformes	USA	North America		1698
 GU053007.1	A/turkey/Italy/2379/2000	H7N1	2000	Meleagris gallopavo	9103	avian	Galliformes	Italy	Europe		1707
 EU742881.1	A/unknown/NY/85161/2000	H7N2	2000					USA	North America		1681
@@ -191,6 +213,7 @@ GU053277.1	A/American black duck/Maryland/424/2001	H7N3	2001	Anas rubripes	75857
 EU684257.2	A/black duck/MD/415/2001	H7N3	2001	Anas rubripes	75857	avian	Anseriformes	USA	North America		1698
 FJ577518.1	A/chicken/Chakwal/NARC-35/2001	H7N3	2001	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1683
 AB558260.1	A/chicken/NY/119055-7/2001	H7N2	2001	Gallus gallus	9031	avian	Galliformes	USA:New York	North America		1659
+DQ525411.1	A/cinnamon teal/Bolivia/4537/2001	H7N3	2001						South America		1712
 EU743008.1	A/duck/PA/143585/2001	H7N3	2001	Anatidae	8830	avian	Anseriformes	USA	North America		1700
 EU742912.1	A/guinea fowl/NJ/119063-8/2001	H7N2	2001	Numididae	8990	avian	Galliformes	USA	North America		1674
 GU053270.1	A/mallard/Maryland/423/2001	H7N3	2001	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1706
@@ -216,11 +239,14 @@ CY139937.1	A/blue-winged teal/Texas/578588/2002	H7N1	2002	Spatula discors	75842	
 GU053038.1	A/chicken/Chile/184240-1/2002	H7N3	2002	Gallus gallus	9031	avian	Galliformes	Chile	South America		1735
 AB558258.1	A/chicken/Chile/184240-2/2002	H7N3	2002	Gallus gallus	9031	avian	Galliformes	Chile	South America		1713
 CY015027.1	A/chicken/Chile/184240-4322/2002	H7N3	2002	Aves	8782	avian		Chile	South America		1760
+AY724257.1	A/chicken/Hebei/1/2002(H7N2)	H7N2	2002					China	Asia		1732
 CY014896.1	A/chicken/Pennsylvania/143586/2002	H7N2	2002	Aves	8782	avian		USA: Pennsylvania	North America		1707
 CY035823.1	A/chicken/Rawalpindi/NARC68/2002(H7N3)	H7N3	2002	Gallus gallus	9031	avian	Galliformes	Pakistan: Rawalpindi	Asia		1707
 CY099313.1	A/laughing gull/Delaware/22/2002	H7N3	2002	Laridae	8910	avian	Charadriiformes	USA: Delaware	North America	E1 passage(s)	1686
 GU053143.1	A/mallard/Sweden/105/2002	H7N7	2002	Anas platyrhynchos	8839	avian	Anseriformes	Sweden	Europe		1707
 GU053135.2	A/mallard/Sweden/85/2002	H7N7	2002	Anas platyrhynchos	8839	avian	Anseriformes	Sweden	Europe		1702
+AJ627491.1	A/turkey/Italy/214845/2002	H7N3	2002	Meleagris gallopavo	9103	avian	Galliformes	Italy:Lombardia	Europe		1683
+AJ627493.1	A/turkey/Italy/220158/2002	H7N3	2002	Meleagris gallopavo	9103	avian	Galliformes	Italy:Lombardia	Europe		1683
 CY024738.1	A/turkey/Italy/8000/2002	H7N3	2002	Meleagris gallopavo	9103	avian	Galliformes	Italy	Europe	Egg 1 passage(s)	1696
 CY095530.1	A/turkey/Italy/8534/2002	H7N3	2002	Meleagris gallopavo	9103	avian	Galliformes	Italy	Europe	Egg 1 passage(s)	1691
 CY029905.1	A/turkey/Italy/8535/2002	H7N3	2002	Meleagris gallopavo	9103	avian	Galliformes	Italy	Europe	Egg 1 passage(s)	1696
@@ -245,6 +271,16 @@ CY186324.1	A/mallard/Sweden/1681/2002	H7N7	2002-12-15	Anas platyrhynchos	8839	av
 CY186332.1	A/mallard/Sweden/1682/2002	H7N7	2002-12-15	Anas platyrhynchos	8839	avian	Anseriformes	Sweden: Ottenby	Europe	egg passage(s)	1684
 CY184528.1	A/mallard/Sweden/1689/2002	H7N7	2002-12-15	Anas platyrhynchos	8839	avian	Anseriformes	Sweden: Ottenby	Europe	E2 passage(s)	1702
 CY184536.1	A/mallard/Sweden/1690/2002	H7N7	2002-12-15	Anas platyrhynchos	8839	avian	Anseriformes	Sweden: Ottenby	Europe	E2 passage(s)	1702
+AY338459.1	A/Netherlands/219/2003	H7N7	2003						Europe		1737
+MK784820.1	A/Netherlands/219_1/2003	H7N7	2003						Europe		1706
+MK784828.1	A/Netherlands/219_2/2003	H7N7	2003						Europe		1703
+MK784836.1	A/Netherlands/219_3/2003	H7N7	2003						Europe		1703
+MK784844.1	A/Netherlands/219_4/2003	H7N7	2003						Europe		1703
+MK784852.1	A/Netherlands/219_5/2003	H7N7	2003						Europe		1707
+MK784860.1	A/Netherlands/219_6/2003	H7N7	2003						Europe		1707
+MK784868.1	A/Netherlands/219_7/2003	H7N7	2003						Europe		1707
+MK784876.1	A/Netherlands/219_8/2003	H7N7	2003						Europe		1707
+MK784884.1	A/Netherlands/219_9/2003	H7N7	2003						Europe		1707
 EU587368.1	A/New York/107/2003	H7N2	2003	Homo sapiens	9606	human	Primates	USA	North America		1665
 EU742995.2	A/chicken/CT/260413-2/2003	H7N2	2003	Gallus gallus	9031	avian	Galliformes	USA	North America		1670
 FJ577534.1	A/chicken/Chakwal/NARC-46/2003	H7N3	2003	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1689
@@ -289,6 +325,7 @@ HM346493.1	A/chicken/Karachi/NARC-23/2003	H7N3	2003-11	Gallus gallus	9031	avian	
 HM346501.1	A/chicken/Chakwal/NARC-46/2003	H7N3	2003-12-28	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1751
 EU684260.1	A/blue-winged teal/MD/658/2004	H7N3	2004	Spatula discors	75842	avian	Anseriformes	USA	North America		1715
 GU053291.1	A/blue-winged teal/Ohio/658/2004	H7N3	2004	Spatula discors	75842	avian	Anseriformes	USA	North America		1706
+EF470587.1	A/chicken/British Columbia/CN-7/2004	H7N3	2004					Canada	North America		1754
 OK104427.1	A/chicken/Canada/CN006/2004	H7N3	2004	Gallus gallus	9031	avian	Galliformes	Canada	North America		1724
 FJ577550.1	A/chicken/Chakwal/NARC-148/2004	H7N3	2004	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1689
 FJ577542.1	A/chicken/Karachi/NARC-100/2004	H7N3	2004	Gallus gallus	9031	avian	Galliformes	Pakistan	Asia		1689
@@ -334,6 +371,7 @@ KP055076.1	A/chicken/BC/CN-007/2004	H7N3	2004-10-14	Gallus gallus	9031	avian	Gal
 MK592525.1	A/duck/Hokkaido/W106/2004	H7N7	2004-10-24	Anas platyrhynchos	8839	avian	Anseriformes	Japan: Hokkaido	Asia		1709
 CY183417.1	A/mallard/Sweden/7206/2004	H7N7	2004-11-22	Anas platyrhynchos	8839	avian	Anseriformes	Sweden: Ottenby	Europe	egg passage(s)	1683
 JN674638.1	A/mallard/Sweden/7206/2004	H7N7	2004-11-22	Anas platyrhynchos	8839	avian	Anseriformes	Sweden: Ottenby Bird Observatory, Oland	Europe		1683
+AB818922.1	A/duck/Fukui/1/2004	H7N7	2004-12-01					Japan:Fukui	Asia		1683
 GU186474.1	A/Northern shoveler/NC/6412-052/2005	H7N6	2005	Spatula clypeata	75838	avian	Anseriformes	USA	North America		1706
 GU186602.1	A/chicken/Canada/314514-1/2005	H7N3	2005	Gallus gallus	9031	avian	Galliformes	Canada	North America		1708
 GU053023.1	A/chicken/Canada/314514-2/2005	H7N3	2005	Gallus gallus	9031	avian	Galliformes	Canada	North America		1729
@@ -489,6 +527,7 @@ CY024818.1	A/blue-winged teal/Ohio/566/2006	H7N9	2006	Spatula discors	75842	avia
 CY028628.1	A/chicken/New York/29047-4/2006	H7N2	2006	Gallus gallus	9031	avian	Galliformes	USA: New York, City, NY	North America	Egg 1 passage(s)	1669
 CY028540.1	A/chicken/New York/3181-5/2006	H7N2	2006	Gallus gallus	9031	avian	Galliformes	USA: New York, City, NY	North America	Egg 1 passage(s)	1669
 CY028580.1	A/chicken/New York/8391-2/2006	H7N2	2006	Gallus gallus	9031	avian	Galliformes	USA: New York, City, NY	North America	Egg 1 passage(s)	1669
+AB558255.1	A/duck/Shimane/137/2006	H7N3	2006	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Shimane	Asia		1683
 AB558256.1	A/duck/Shimane/18/2006	H7N7	2006	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Shimane	Asia		1704
 AB558254.1	A/duck/Shimane/83/2006	H7N3	2006	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Shimane	Asia		1683
 CY081332.1	A/environment/Maryland/1626/2006	H7N3	2006					USA: Maryland	North America	EGG 1 + LD 1 passage(s)	1695
@@ -496,6 +535,7 @@ CY031164.1	A/environment/Maryland/1631/2006	H7N3	2006					USA: MD	North America	
 CY022749.1	A/environment/Maryland/261/2006	H7N3	2006					USA: MD	North America	EGG 1 + LD 1 passage(s)	1695
 CY022757.1	A/environment/Maryland/267/2006	H7N3	2006					USA: MD	North America	EGG 1 + LD 2 passage(s)	1695
 CY053853.1	A/environment/Maryland/276/2006	H7N3	2006					USA: Maryland	North America	EGG 1 + LD 2 passage(s)	1685
+DQ907527.1	A/environment/NY/3185-28/2006	H7N2	2006					USA	North America		1691
 CY028588.1	A/environment/New York/19501-1/2006	H7N2	2006					USA: New York, City, NY	North America	Egg 1 passage(s)	1669
 CY028604.1	A/environment/New York/29047-1/2006	H7N2	2006					USA: New York, City, NY	North America	Egg 1 passage(s)	1669
 CY028612.1	A/environment/New York/29047-2/2006	H7N2	2006					USA: New York, City, NY	North America	Egg 1 passage(s)	1669
@@ -510,6 +550,7 @@ CY029865.1	A/environment/New York/3185-4/2006	H7N2	2006					USA: New York City, 
 CY028564.1	A/environment/New York/3185-5/2006	H7N2	2006					USA: New York, City, NY	North America	Egg 1 passage(s)	1669
 CY028596.1	A/guinea fowl/New York/19501-4/2006	H7N2	2006	Numididae	8990	avian	Galliformes	USA: New York, City, NY	North America	Egg 1 passage(s)	1669
 CY028572.1	A/guinea fowl/New York/8391-1/2006	H7N2	2006	Numididae	8990	avian	Galliformes	USA: New York, City, NY	North America	Egg 1 passage(s)	1669
+DQ907528.1	A/guineafowl/NY/4649-18/2006	H7N2	2006					USA	North America		1691
 GU051593.1	A/red knot/New Jersey/253/2006	H7N3	2006	Calidris canutus	227173	avian	Charadriiformes	USA	North America		1706
 GU050665.1	A/red knot/New Jersey/96/2006	H7N3	2006	Calidris canutus	227173	avian	Charadriiformes	USA	North America		1706
 EU684262.2	A/ruddy turnstone/DE/892/2006	H7N7	2006	Arenaria interpres	54971	avian	Charadriiformes	USA	North America		1703
@@ -649,6 +690,9 @@ CY076317.1	A/northern shoveler/Washington/44249-783/2006	H7N3	2006-12-14	Spatula
 KX297745.1	A/environment/Korea/W148/2006	H7N7	2006-12-19					South Korea	Asia		1683
 KX297746.1	A/environment/Korea/W152/2006	H7N7	2006-12-26					South Korea	Asia		1683
 KX297747.1	A/environment/Korea/W156/2006	H7N7	2006-12-26					South Korea	Asia		1683
+EU500852.1	A/American black duck/NB/2538/2007	H7N3	2007					Canada	North America		1730
+EU500844.1	A/Canada goose/BC/3752/2007	H7N3	2007					Canada	North America		1731
+EU500860.1	A/chicken/SK/HR-00011/2007	H7N3	2007					Canada	North America		1749
 AB558257.1	A/duck/Shiga/B149/2007	H7N7	2007	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Shiga	Asia		1683
 CY033161.1	A/duck/Tasmania/277/2007	H7N2	2007	Anatidae	8830	avian	Anseriformes	Australia: Tasmania	Oceania	Egg 5 passage(s)	1695
 AB558261.1	A/duck/Tsukuba/30/2007	H7N7	2007	Anas platyrhynchos	8839	avian	Anseriformes	Japan:Ibaraki, Kasumigaura Lake	Asia		1683
@@ -837,6 +881,7 @@ KU289959.1	A/blue winged teal/Texas/A00676566/2009	H7N3	2009-01-24	Spatula disco
 KU290007.1	A/mallard/Delaware/A00456271/2009	H7N3	2009-01-24	Anas platyrhynchos	8839	avian	Anseriformes	USA	North America		1683
 KU290236.1	A/northern shoveler/Louisiana/A00557321/2009	H7N3	2009-01-24	Spatula clypeata	75838	avian	Anseriformes	USA	North America		1706
 KU290244.1	A/northern shoveler/Mississippi/A00630207/2009	H7N6	2009-01-24	Spatula clypeata	75838	avian	Anseriformes	USA	North America		1706
+AB538456.1	A/quail/Aichi/1/2009	H7N6	2009-02	Galliformes	8976	avian	Galliformes	Japan	Asia		1683
 KC609770.1	A/wild duck/Korea/CSM27-12/2009	H7N6	2009-02	Anas platyrhynchos	8839	avian	Anseriformes	South Korea	Asia		1690
 MF575038.1	A/mallard duck/Netherlands/6/2009	H7N7	2009-02-02	Anas platyrhynchos	8839	avian	Anseriformes	Netherlands	Europe		1732
 KX977692.1	A/mallard duck/Netherlands/7/2009	H7N7	2009-02-02	Anas platyrhynchos	8839	avian	Anseriformes	Netherlands	Europe		1732
@@ -846,6 +891,9 @@ KU289818.1	A/American green winged teal/Texas/A00604032/2009	H7N3	2009-02-03	Ana
 KU289826.1	A/American green winged teal/Texas/A00604814/2009	H7N3	2009-02-03	Anas carolinensis	75836	avian	Anseriformes	USA	North America		1706
 GU060482.1	A/goose/Czech Republic/1848-K9/2009(H7N9)	H7N9	2009-02-04	Anatidae	8830	avian	Anseriformes	Czech Republic: Hodonin, Pisecny pond	Europe		1700
 CY129418.1	A/black scoter/New Brunswick/00003/2009	H7N6	2009-02-05	Melanitta americana	1581554	avian	Anseriformes	Canada: Quebec	North America	Egg passage(s)	1706
+AB538457.1	A/quail/Aichi/2/2009	H7N6	2009-03	Galliformes	8976	avian	Galliformes	Japan	Asia		1683
+AB538458.1	A/quail/Aichi/3/2009	H7N6	2009-03	Galliformes	8976	avian	Galliformes	Japan	Asia		1683
+AB538461.1	A/quail/Aichi/6/2009	H7N6	2009-03	Galliformes	8976	avian	Galliformes	Japan	Asia		1683
 KU289951.1	A/blue winged teal/Texas/A00605473/2009	H7N3	2009-03-13	Spatula discors	75842	avian	Anseriformes	USA	North America		1706
 KU646960.1	A/Tadorna tadorna/Belgium/3441-P3/2009	H7N1	2009-03-25	Tadorna tadorna	75865	avian	Anseriformes	Belgium	Europe		1732
 KX130820.1	A/pika/Maduo/01/2009	H7N2	2009-04-15	Ochotonidae	9976	non-human mammal	Lagomorpha	China	Asia		1683
@@ -904,6 +952,62 @@ KF258981.1	A/duck/Jiangxi/16326/2010	H7N7	2010	Anatidae	8830	avian	Anseriformes	
 KF258982.1	A/duck/Jiangxi/16736/2010	H7N3	2010	Anatidae	8830	avian	Anseriformes	China	Asia		1683
 KF258983.1	A/duck/Jiangxi/16769/2010	H7N7	2010	Anatidae	8830	avian	Anseriformes	China	Asia		1683
 KF258984.1	A/duck/Jiangxi/21980/2010	H7N7	2010	Anatidae	8830	avian	Anseriformes	China	Asia		1683
+CY141531.1	A/mallard/Interior Alaska/10BM07066R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141539.1	A/mallard/Interior Alaska/10BM07072R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141547.1	A/mallard/Interior Alaska/10BM07085R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141555.1	A/mallard/Interior Alaska/10BM07092R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141620.1	A/mallard/Interior Alaska/10BM07501R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141628.1	A/mallard/Interior Alaska/10BM07575R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1695
+CY141662.1	A/mallard/Interior Alaska/10BM08100R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141670.1	A/mallard/Interior Alaska/10BM08120R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141702.1	A/mallard/Interior Alaska/10BM08874R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141710.1	A/mallard/Interior Alaska/10BM08883R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141718.1	A/mallard/Interior Alaska/10BM08884R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141750.1	A/mallard/Interior Alaska/10BM09528R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141758.1	A/mallard/Interior Alaska/10BM09539R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141766.1	A/mallard/Interior Alaska/10BM09548R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141774.1	A/mallard/Interior Alaska/10BM09563R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141798.1	A/mallard/Interior Alaska/10BM09818R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141822.1	A/mallard/Interior Alaska/10BM10324R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141838.1	A/mallard/Interior Alaska/10BM10787R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141886.1	A/mallard/Interior Alaska/10BM10811R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141902.1	A/mallard/Interior Alaska/10BM10859R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141910.1	A/mallard/Interior Alaska/10BM10861R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141918.1	A/mallard/Interior Alaska/10BM10876R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141950.1	A/mallard/Interior Alaska/10BM11434R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141982.1	A/mallard/Interior Alaska/10BM12534R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141782.1	A/mallard/Interior Alaska/10CH00016R0/2010	H7N3	2010	Anas platyrhynchos	8839	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141523.1	A/northern pintail/Interior Alaska/10BM07029R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141563.1	A/northern pintail/Interior Alaska/10BM07106R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141571.1	A/northern pintail/Interior Alaska/10BM07114R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141579.1	A/northern pintail/Interior Alaska/10BM07120R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141587.1	A/northern pintail/Interior Alaska/10BM07121R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141334.1	A/northern pintail/Interior Alaska/10BM07399R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141604.1	A/northern pintail/Interior Alaska/10BM07458R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141612.1	A/northern pintail/Interior Alaska/10BM07469R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141636.1	A/northern pintail/Interior Alaska/10BM07737R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141678.1	A/northern pintail/Interior Alaska/10BM08400R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141686.1	A/northern pintail/Interior Alaska/10BM08586R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141694.1	A/northern pintail/Interior Alaska/10BM08705R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141966.1	A/northern pintail/Interior Alaska/10BM09015R0/2010	H7N6	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141726.1	A/northern pintail/Interior Alaska/10BM09181R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141734.1	A/northern pintail/Interior Alaska/10BM09347R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141742.1	A/northern pintail/Interior Alaska/10BM09348R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141790.1	A/northern pintail/Interior Alaska/10BM09481R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141806.1	A/northern pintail/Interior Alaska/10BM09832R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141814.1	A/northern pintail/Interior Alaska/10BM10166R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141830.1	A/northern pintail/Interior Alaska/10BM10476R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141846.1	A/northern pintail/Interior Alaska/10BM10790R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141854.1	A/northern pintail/Interior Alaska/10BM10801R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141862.1	A/northern pintail/Interior Alaska/10BM10805R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141870.1	A/northern pintail/Interior Alaska/10BM10807R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141878.1	A/northern pintail/Interior Alaska/10BM10809R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141894.1	A/northern pintail/Interior Alaska/10BM10853R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141926.1	A/northern pintail/Interior Alaska/10BM10906R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141974.1	A/northern pintail/Interior Alaska/10BM11038R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141934.1	A/northern pintail/Interior Alaska/10BM11208R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141942.1	A/northern pintail/Interior Alaska/10BM11366R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
+CY141958.1	A/northern pintail/Interior Alaska/10BM11945R0/2010	H7N3	2010	Anas acuta	28680	avian	Anseriformes	USA: Alaska	North America	R0 passage(s)	1706
 JQ973643.1	A/Baer's pochard/HuNan/414/2010(H7N1)	H7N1	2010-01	Aythya baeri	1177618	avian	Anseriformes	China	Asia		1683
 KC609772.1	A/wild duck/Korea/SH19-50/2010	H7N9	2010-01	Anas platyrhynchos	8839	avian	Anseriformes	South Korea	Asia		1698
 KY551143.1	A/duck/New Jersey/10-001022-21/2010	H7N3	2010-01-08	Anas platyrhynchos	8839	avian	Anseriformes	USA: New Jersey	North America		1683
@@ -996,6 +1100,7 @@ JX307213.1	A/duck/Thailand/CU-9744C /2010	H7N4	2010-12-22	Anas platyrhynchos	883
 JX307167.1	A/duck/Thailand/CU-9754C/2010	H7N4	2010-12-22	Anas platyrhynchos	8839	avian	Anseriformes	Thailand: village	Asia		1691
 KU684460.1	A/mallard/Novomyhalivka/10-23-12/2010	H7N7	2010-12-23	Anas platyrhynchos	8839	avian	Anseriformes	Ukraine	Europe		1693
 CY132141.1	A/mallard/Missouri/10MO0551/2010	H7N7	2010-12-29	Anas platyrhynchos	8839	avian	Anseriformes	USA: Missouri	North America	E1 passage(s)	1706
+KY067452.1	A/aquatic bird/Korea/MA-44/2011	H7N3	2011						Asia		1683
 KF259003.1	A/common teal/Hong Kong/MPL634/2011	H7N7	2011	Anas crecca	75839	avian	Anseriformes	China	Asia		1683
 KF259001.1	A/common teal/Hong Kong/MPM1645/2011	H7N1	2011	Anas crecca	75839	avian	Anseriformes	China	Asia		1683
 KF259002.1	A/common teal/Hong Kong/MPM1670/2011	H7N7	2011	Anas crecca	75839	avian	Anseriformes	China	Asia		1683
@@ -1112,7 +1217,234 @@ CY187037.1	A/northern shoveler/Ohio/12OS5539/2012	H7N3	2012-11-17	Spatula clypea
 CY186748.1	A/northern shoveler/Illinois/12OS4951/2012	H7N3	2012-12-01	Spatula clypeata	75838	avian	Anseriformes	USA: Illinois	North America	E1 passage(s)	1706
 MN648373.1	A/cloacal swab_ECE1/Belgium/25576/2012	H7N7	2012-12-17					Belgium	Europe		1732
 KX297754.1	A/environment/Korea/W437/2012	H7N7	2012-12-31					South Korea	Asia		1683
+CY187578.1	A/Anhui/1-BALF_RG1/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1733
+CY187466.1	A/Anhui/1-BALF_RG17/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187474.1	A/Anhui/1-BALF_RG18/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187482.1	A/Anhui/1-BALF_RG19/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187586.1	A/Anhui/1-BALF_RG2/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1733
+CY187490.1	A/Anhui/1-BALF_RG20/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187498.1	A/Anhui/1-BALF_RG21/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187506.1	A/Anhui/1-BALF_RG29/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187594.1	A/Anhui/1-BALF_RG3/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1733
+CY187514.1	A/Anhui/1-BALF_RG31/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187522.1	A/Anhui/1-BALF_RG32/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187402.1	A/Anhui/1-BALF_RG33/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187602.1	A/Anhui/1-BALF_RG4/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1733
+CY187530.1	A/Anhui/1-BALF_RG40/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187538.1	A/Anhui/1-BALF_RG41/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187546.1	A/Anhui/1-BALF_RG42/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187554.1	A/Anhui/1-BALF_RG43/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187562.1	A/Anhui/1-BALF_RG44/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187570.1	A/Anhui/1-BALF_RG45/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1732
+CY187610.1	A/Anhui/1-BALF_RG5/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1733
+CY187434.1	A/Anhui/1-BALF_RG6/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1733
+CY187442.1	A/Anhui/1-BALF_RG7/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1733
+CY187450.1	A/Anhui/1-BALF_RG8/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1733
+CY187458.1	A/Anhui/1-BALF_RG9/2013	H7N9	2013	Homo sapiens	9606	human	Primates			1 passage in swine passage(s)	1733
 CY187618.1	A/Anhui/1-DEWH730/2013	H7N9	2013	Homo sapiens	9606	human	Primates	China: Anhui	Asia	egg 3 passage(s)	1731
+CY187410.1	A/Anhui/1-JCVI1_RG1/2013	H7N9	2013	Homo sapiens	9606	human	Primates			Passage 2 passage(s)	1732
+CY187418.1	A/Anhui/1-JCVI1_RG2/2013	H7N9	2013	Homo sapiens	9606	human	Primates			Passage 2 passage(s)	1732
+CY187426.1	A/Anhui/1-JCVI1_RG3/2013	H7N9	2013	Homo sapiens	9606	human	Primates			Passage 2 passage(s)	1732
+CY191659.1	A/Anhui/1-YK_RG01/2013	H7N9	2013								1708
+CY191667.1	A/Anhui/1-YK_RG02/2013	H7N9	2013								1708
+CY191675.1	A/Anhui/1-YK_RG03/2013	H7N9	2013								1708
+CY191683.1	A/Anhui/1-YK_RG04/2013	H7N9	2013								1708
+CY191691.1	A/Anhui/1-YK_RG05/2013	H7N9	2013								1708
+CY191699.1	A/Anhui/1-YK_RG06/2013	H7N9	2013								1708
+CY191707.1	A/Anhui/1-YK_RG07/2013	H7N9	2013								1708
+CY191715.1	A/Anhui/1-YK_RG08/2013	H7N9	2013								1708
+CY191723.1	A/Anhui/1-YK_RG09/2013	H7N9	2013								1708
+CY191731.1	A/Anhui/1-YK_RG10/2013	H7N9	2013								1708
+CY192443.1	A/Anhui/1-YK_RG100/2013	H7N9	2013								1708
+CY192451.1	A/Anhui/1-YK_RG101/2013	H7N9	2013								1708
+CY192459.1	A/Anhui/1-YK_RG102/2013	H7N9	2013								1708
+CY192467.1	A/Anhui/1-YK_RG103/2013	H7N9	2013								1708
+CY192475.1	A/Anhui/1-YK_RG104/2013	H7N9	2013								1708
+CY192483.1	A/Anhui/1-YK_RG105/2013	H7N9	2013								1708
+CY192491.1	A/Anhui/1-YK_RG106/2013	H7N9	2013								1708
+CY192499.1	A/Anhui/1-YK_RG107/2013	H7N9	2013								1708
+CY192507.1	A/Anhui/1-YK_RG108/2013	H7N9	2013								1708
+CY192515.1	A/Anhui/1-YK_RG109/2013	H7N9	2013								1708
+CY192523.1	A/Anhui/1-YK_RG110/2013	H7N9	2013								1708
+CY192531.1	A/Anhui/1-YK_RG111/2013	H7N9	2013								1708
+CY192539.1	A/Anhui/1-YK_RG112/2013	H7N9	2013								1708
+CY192547.1	A/Anhui/1-YK_RG113/2013	H7N9	2013								1708
+CY192555.1	A/Anhui/1-YK_RG114/2013	H7N9	2013								1708
+CY192563.1	A/Anhui/1-YK_RG115/2013	H7N9	2013								1708
+CY192571.1	A/Anhui/1-YK_RG116/2013	H7N9	2013								1708
+CY192579.1	A/Anhui/1-YK_RG117/2013	H7N9	2013								1708
+CY192587.1	A/Anhui/1-YK_RG118/2013	H7N9	2013								1708
+CY192595.1	A/Anhui/1-YK_RG119/2013	H7N9	2013								1708
+CY191739.1	A/Anhui/1-YK_RG12/2013	H7N9	2013								1708
+CY192603.1	A/Anhui/1-YK_RG120/2013	H7N9	2013								1708
+CY192611.1	A/Anhui/1-YK_RG121/2013	H7N9	2013								1708
+CY192619.1	A/Anhui/1-YK_RG122/2013	H7N9	2013								1708
+CY192627.1	A/Anhui/1-YK_RG123/2013	H7N9	2013								1708
+CY192635.1	A/Anhui/1-YK_RG124/2013	H7N9	2013								1708
+CY192643.1	A/Anhui/1-YK_RG125/2013	H7N9	2013								1708
+CY192651.1	A/Anhui/1-YK_RG126/2013	H7N9	2013								1708
+CY192659.1	A/Anhui/1-YK_RG127/2013	H7N9	2013								1708
+CY192667.1	A/Anhui/1-YK_RG128/2013	H7N9	2013								1708
+CY192675.1	A/Anhui/1-YK_RG129/2013	H7N9	2013								1708
+CY191747.1	A/Anhui/1-YK_RG13/2013	H7N9	2013								1708
+CY192683.1	A/Anhui/1-YK_RG130/2013	H7N9	2013								1708
+CY192691.1	A/Anhui/1-YK_RG131/2013	H7N9	2013								1708
+CY192699.1	A/Anhui/1-YK_RG132/2013	H7N9	2013								1708
+CY192707.1	A/Anhui/1-YK_RG133/2013	H7N9	2013								1708
+CY192715.1	A/Anhui/1-YK_RG134/2013	H7N9	2013								1708
+CY192723.1	A/Anhui/1-YK_RG135/2013	H7N9	2013								1708
+CY192731.1	A/Anhui/1-YK_RG136/2013	H7N9	2013								1708
+CY192739.1	A/Anhui/1-YK_RG137/2013	H7N9	2013								1708
+CY192747.1	A/Anhui/1-YK_RG138/2013	H7N9	2013								1708
+CY192755.1	A/Anhui/1-YK_RG139/2013	H7N9	2013								1708
+CY191755.1	A/Anhui/1-YK_RG14/2013	H7N9	2013								1708
+CY192763.1	A/Anhui/1-YK_RG140/2013	H7N9	2013								1708
+CY192771.1	A/Anhui/1-YK_RG141/2013	H7N9	2013								1708
+CY192779.1	A/Anhui/1-YK_RG142/2013	H7N9	2013								1708
+CY192787.1	A/Anhui/1-YK_RG143/2013	H7N9	2013								1708
+CY192795.1	A/Anhui/1-YK_RG144/2013	H7N9	2013								1708
+CY192803.1	A/Anhui/1-YK_RG145/2013	H7N9	2013								1708
+CY192811.1	A/Anhui/1-YK_RG146/2013	H7N9	2013								1708
+CY192819.1	A/Anhui/1-YK_RG147/2013	H7N9	2013								1708
+CY192827.1	A/Anhui/1-YK_RG148/2013	H7N9	2013								1708
+CY192835.1	A/Anhui/1-YK_RG149/2013	H7N9	2013								1708
+CY191763.1	A/Anhui/1-YK_RG15/2013	H7N9	2013								1708
+CY192843.1	A/Anhui/1-YK_RG150/2013	H7N9	2013								1708
+CY192851.1	A/Anhui/1-YK_RG151/2013	H7N9	2013								1708
+CY192859.1	A/Anhui/1-YK_RG152/2013	H7N9	2013								1708
+CY192867.1	A/Anhui/1-YK_RG153/2013	H7N9	2013								1708
+CY192875.1	A/Anhui/1-YK_RG154/2013	H7N9	2013								1708
+CY192883.1	A/Anhui/1-YK_RG155/2013	H7N9	2013								1708
+CY192891.1	A/Anhui/1-YK_RG156/2013	H7N9	2013								1708
+CY192899.1	A/Anhui/1-YK_RG157/2013	H7N9	2013								1708
+CY192907.1	A/Anhui/1-YK_RG158/2013	H7N9	2013								1708
+CY192915.1	A/Anhui/1-YK_RG159/2013	H7N9	2013								1708
+CY191771.1	A/Anhui/1-YK_RG16/2013	H7N9	2013								1708
+CY192923.1	A/Anhui/1-YK_RG160/2013	H7N9	2013								1708
+CY192931.1	A/Anhui/1-YK_RG161/2013	H7N9	2013								1708
+CY192939.1	A/Anhui/1-YK_RG162/2013	H7N9	2013								1708
+CY192947.1	A/Anhui/1-YK_RG163/2013	H7N9	2013								1708
+CY192955.1	A/Anhui/1-YK_RG164/2013	H7N9	2013								1708
+CY192963.1	A/Anhui/1-YK_RG165/2013	H7N9	2013								1708
+CY192971.1	A/Anhui/1-YK_RG166/2013	H7N9	2013								1708
+CY192979.1	A/Anhui/1-YK_RG167/2013	H7N9	2013								1708
+CY192987.1	A/Anhui/1-YK_RG168/2013	H7N9	2013								1708
+CY192995.1	A/Anhui/1-YK_RG169/2013	H7N9	2013								1708
+CY191779.1	A/Anhui/1-YK_RG17/2013	H7N9	2013								1708
+CY193003.1	A/Anhui/1-YK_RG170/2013	H7N9	2013								1708
+CY193011.1	A/Anhui/1-YK_RG171/2013	H7N9	2013								1708
+CY193019.1	A/Anhui/1-YK_RG172/2013	H7N9	2013								1708
+CY193027.1	A/Anhui/1-YK_RG173/2013	H7N9	2013								1708
+CY193035.1	A/Anhui/1-YK_RG174/2013	H7N9	2013								1708
+CY193043.1	A/Anhui/1-YK_RG176/2013	H7N9	2013								1708
+CY193051.1	A/Anhui/1-YK_RG177/2013	H7N9	2013								1708
+CY193059.1	A/Anhui/1-YK_RG178/2013	H7N9	2013								1708
+CY193067.1	A/Anhui/1-YK_RG179/2013	H7N9	2013								1708
+CY191787.1	A/Anhui/1-YK_RG18/2013	H7N9	2013								1708
+CY193075.1	A/Anhui/1-YK_RG180/2013	H7N9	2013								1708
+CY193083.1	A/Anhui/1-YK_RG181/2013	H7N9	2013								1708
+CY193091.1	A/Anhui/1-YK_RG182/2013	H7N9	2013								1708
+CY193099.1	A/Anhui/1-YK_RG183/2013	H7N9	2013								1708
+CY193107.1	A/Anhui/1-YK_RG184/2013	H7N9	2013								1708
+CY193115.1	A/Anhui/1-YK_RG185/2013	H7N9	2013								1708
+CY193123.1	A/Anhui/1-YK_RG186/2013	H7N9	2013								1708
+CY193131.1	A/Anhui/1-YK_RG187/2013	H7N9	2013								1708
+CY193139.1	A/Anhui/1-YK_RG188/2013	H7N9	2013								1708
+CY193147.1	A/Anhui/1-YK_RG189/2013	H7N9	2013								1708
+CY191795.1	A/Anhui/1-YK_RG19/2013	H7N9	2013								1708
+CY193155.1	A/Anhui/1-YK_RG190/2013	H7N9	2013								1708
+CY193163.1	A/Anhui/1-YK_RG191/2013	H7N9	2013								1708
+CY193171.1	A/Anhui/1-YK_RG192/2013	H7N9	2013								1708
+CY193179.1	A/Anhui/1-YK_RG193/2013	H7N9	2013								1708
+CY193187.1	A/Anhui/1-YK_RG194/2013	H7N9	2013								1708
+CY193195.1	A/Anhui/1-YK_RG195/2013	H7N9	2013								1708
+CY193203.1	A/Anhui/1-YK_RG196/2013	H7N9	2013								1708
+CY193211.1	A/Anhui/1-YK_RG197/2013	H7N9	2013								1708
+CY193219.1	A/Anhui/1-YK_RG198/2013	H7N9	2013								1708
+CY193227.1	A/Anhui/1-YK_RG199/2013	H7N9	2013								1708
+CY191803.1	A/Anhui/1-YK_RG20/2013	H7N9	2013								1708
+CY193235.1	A/Anhui/1-YK_RG200/2013	H7N9	2013								1708
+CY193243.1	A/Anhui/1-YK_RG201/2013	H7N9	2013								1708
+CY193251.1	A/Anhui/1-YK_RG202/2013	H7N9	2013								1708
+CY191811.1	A/Anhui/1-YK_RG21/2013	H7N9	2013								1708
+CY191819.1	A/Anhui/1-YK_RG22/2013	H7N9	2013								1708
+CY191827.1	A/Anhui/1-YK_RG23/2013	H7N9	2013								1708
+CY191835.1	A/Anhui/1-YK_RG24/2013	H7N9	2013								1708
+CY191843.1	A/Anhui/1-YK_RG25/2013	H7N9	2013								1708
+CY191851.1	A/Anhui/1-YK_RG26/2013	H7N9	2013								1708
+CY191859.1	A/Anhui/1-YK_RG27/2013	H7N9	2013								1708
+CY191867.1	A/Anhui/1-YK_RG28/2013	H7N9	2013								1708
+CY191875.1	A/Anhui/1-YK_RG29/2013	H7N9	2013								1708
+CY191883.1	A/Anhui/1-YK_RG30/2013	H7N9	2013								1708
+CY191891.1	A/Anhui/1-YK_RG31/2013	H7N9	2013								1708
+CY191899.1	A/Anhui/1-YK_RG32/2013	H7N9	2013								1708
+CY191907.1	A/Anhui/1-YK_RG33/2013	H7N9	2013								1708
+CY191915.1	A/Anhui/1-YK_RG34/2013	H7N9	2013								1708
+CY191923.1	A/Anhui/1-YK_RG35/2013	H7N9	2013								1708
+CY191931.1	A/Anhui/1-YK_RG36/2013	H7N9	2013								1708
+CY191939.1	A/Anhui/1-YK_RG37/2013	H7N9	2013								1708
+CY191947.1	A/Anhui/1-YK_RG38/2013	H7N9	2013								1708
+CY191955.1	A/Anhui/1-YK_RG39/2013	H7N9	2013								1708
+CY191963.1	A/Anhui/1-YK_RG40/2013	H7N9	2013								1708
+CY191971.1	A/Anhui/1-YK_RG41/2013	H7N9	2013								1708
+CY191979.1	A/Anhui/1-YK_RG42/2013	H7N9	2013								1708
+CY191987.1	A/Anhui/1-YK_RG43/2013	H7N9	2013								1708
+CY191995.1	A/Anhui/1-YK_RG44/2013	H7N9	2013								1708
+CY192003.1	A/Anhui/1-YK_RG45/2013	H7N9	2013								1708
+CY192011.1	A/Anhui/1-YK_RG46/2013	H7N9	2013								1708
+CY192019.1	A/Anhui/1-YK_RG47/2013	H7N9	2013								1708
+CY192027.1	A/Anhui/1-YK_RG48/2013	H7N9	2013								1708
+CY192035.1	A/Anhui/1-YK_RG49/2013	H7N9	2013								1708
+CY192043.1	A/Anhui/1-YK_RG50/2013	H7N9	2013								1708
+CY192051.1	A/Anhui/1-YK_RG51/2013	H7N9	2013								1708
+CY192059.1	A/Anhui/1-YK_RG52/2013	H7N9	2013								1708
+CY192067.1	A/Anhui/1-YK_RG53/2013	H7N9	2013								1708
+CY192075.1	A/Anhui/1-YK_RG54/2013	H7N9	2013								1708
+CY192083.1	A/Anhui/1-YK_RG55/2013	H7N9	2013								1708
+CY192091.1	A/Anhui/1-YK_RG56/2013	H7N9	2013								1708
+CY192099.1	A/Anhui/1-YK_RG57/2013	H7N9	2013								1708
+CY192107.1	A/Anhui/1-YK_RG58/2013	H7N9	2013								1708
+CY192115.1	A/Anhui/1-YK_RG59/2013	H7N9	2013								1708
+CY192123.1	A/Anhui/1-YK_RG60/2013	H7N9	2013								1708
+CY192131.1	A/Anhui/1-YK_RG61/2013	H7N9	2013								1708
+CY192139.1	A/Anhui/1-YK_RG62/2013	H7N9	2013								1708
+CY192147.1	A/Anhui/1-YK_RG63/2013	H7N9	2013								1708
+CY192155.1	A/Anhui/1-YK_RG64/2013	H7N9	2013								1708
+CY192163.1	A/Anhui/1-YK_RG65/2013	H7N9	2013								1708
+CY192171.1	A/Anhui/1-YK_RG66/2013	H7N9	2013								1708
+CY192179.1	A/Anhui/1-YK_RG67/2013	H7N9	2013								1708
+CY192187.1	A/Anhui/1-YK_RG68/2013	H7N9	2013								1708
+CY192195.1	A/Anhui/1-YK_RG69/2013	H7N9	2013								1708
+CY192203.1	A/Anhui/1-YK_RG70/2013	H7N9	2013								1708
+CY192211.1	A/Anhui/1-YK_RG71/2013	H7N9	2013								1708
+CY192219.1	A/Anhui/1-YK_RG72/2013	H7N9	2013								1708
+CY192227.1	A/Anhui/1-YK_RG73/2013	H7N9	2013								1708
+CY192235.1	A/Anhui/1-YK_RG74/2013	H7N9	2013								1708
+CY192243.1	A/Anhui/1-YK_RG75/2013	H7N9	2013								1708
+CY192251.1	A/Anhui/1-YK_RG76/2013	H7N9	2013								1708
+CY192259.1	A/Anhui/1-YK_RG77/2013	H7N9	2013								1708
+CY192267.1	A/Anhui/1-YK_RG78/2013	H7N9	2013								1708
+CY192275.1	A/Anhui/1-YK_RG79/2013	H7N9	2013								1708
+CY192283.1	A/Anhui/1-YK_RG80/2013	H7N9	2013								1708
+CY192291.1	A/Anhui/1-YK_RG81/2013	H7N9	2013								1708
+CY192299.1	A/Anhui/1-YK_RG82/2013	H7N9	2013								1708
+CY192307.1	A/Anhui/1-YK_RG83/2013	H7N9	2013								1708
+CY192315.1	A/Anhui/1-YK_RG84/2013	H7N9	2013								1708
+CY192323.1	A/Anhui/1-YK_RG85/2013	H7N9	2013								1708
+CY192331.1	A/Anhui/1-YK_RG86/2013	H7N9	2013								1708
+CY192339.1	A/Anhui/1-YK_RG87/2013	H7N9	2013								1708
+CY192347.1	A/Anhui/1-YK_RG88/2013	H7N9	2013								1708
+CY192355.1	A/Anhui/1-YK_RG89/2013	H7N9	2013								1708
+CY192363.1	A/Anhui/1-YK_RG90/2013	H7N9	2013								1708
+CY192371.1	A/Anhui/1-YK_RG91/2013	H7N9	2013								1708
+CY192379.1	A/Anhui/1-YK_RG92/2013	H7N9	2013								1708
+CY192387.1	A/Anhui/1-YK_RG93/2013	H7N9	2013								1708
+CY192395.1	A/Anhui/1-YK_RG94/2013	H7N9	2013								1708
+CY192403.1	A/Anhui/1-YK_RG95/2013	H7N9	2013								1708
+CY192411.1	A/Anhui/1-YK_RG96/2013	H7N9	2013								1708
+CY192419.1	A/Anhui/1-YK_RG97/2013	H7N9	2013								1708
+CY192427.1	A/Anhui/1-YK_RG98/2013	H7N9	2013								1708
+CY192435.1	A/Anhui/1-YK_RG99/2013	H7N9	2013								1708
 CY181513.1	A/Anhui/DEWH72-01/2013	H7N9	2013	Homo sapiens	9606	human	Primates	China: Anhui	Asia	3 egg 1 MDCK passage(s)	1732
 CY181521.1	A/Anhui/DEWH72-02/2013	H7N9	2013	Homo sapiens	9606	human	Primates	China: Anhui	Asia	1 ferret passage passage(s)	1732
 CY181529.1	A/Anhui/DEWH72-03/2013	H7N9	2013	Homo sapiens	9606	human	Primates	China: Anhui	Asia	2 ferrets passage passage(s)	1732
@@ -1122,6 +1454,8 @@ CY181553.1	A/Anhui/DEWH72-06/2013	H7N9	2013	Homo sapiens	9606	human	Primates	Chi
 CY181561.1	A/Anhui/DEWH72-07/2013	H7N9	2013	Homo sapiens	9606	human	Primates	China: Anhui	Asia	2 ferrets passage passage(s)	1732
 CY181569.1	A/Anhui/DEWH72-08/2013	H7N9	2013	Homo sapiens	9606	human	Primates	China: Anhui	Asia	3 ferrets passage passage(s)	1732
 CY181577.1	A/Anhui/DEWH72-09/2013	H7N9	2013	Homo sapiens	9606	human	Primates	China: Anhui	Asia	4 ferrets passage passage(s)	1732
+KF768181.1	A/Anhui/PA-1/2013	H7N9	2013								1683
+KF997839.1	A/Shanghai/5190T/2013	H7N9	2013								1683
 KF018039.1	A/Taiwan/1/2013	H7N9	2013	Homo sapiens	9606	human	Primates	Taiwan	Asia		1683
 KP185931.1	A/chicken/Henan/100/2013	H7N9	2013	Gallus gallus	9031	avian	Galliformes	China	Asia		1683
 KP185932.1	A/chicken/Henan/102/2013	H7N9	2013	Gallus gallus	9031	avian	Galliformes	China	Asia		1683
@@ -1179,6 +1513,7 @@ KF259033.1	A/chicken/Wenzhou/690/2013	H7N7	2013	Gallus gallus	9031	avian	Gallifo
 KF259049.1	A/chicken/Wenzhou/692/2013	H7N7	2013	Gallus gallus	9031	avian	Galliformes	China	Asia		1683
 KF259034.1	A/chicken/Wenzhou/698/2013	H7N7	2013	Gallus gallus	9031	avian	Galliformes	China	Asia		1683
 KF259010.1	A/chicken/Wenzhou/89/2013	H7N7	2013	Gallus gallus	9031	avian	Galliformes	China	Asia		1683
+KF768178.1	A/chicken/Zhejiang/PA-DTID-ZJU01/2013	H7N9	2013								1683
 AB813060.1	A/duck/Chiba/25-51-14/2013	H7N1	2013	Anas platyrhynchos	8839	avian	Anseriformes	Japan	Asia		1683
 AB813057.1	A/duck/Chiba/25-51-15/2013	H7N1	2013	Anas platyrhynchos	8839	avian	Anseriformes	Japan	Asia		1659
 AB813059.1	A/duck/Tochigi/090206/2013	H7N1	2013	Anas platyrhynchos	8839	avian	Anseriformes	Japan	Asia		1683
@@ -2122,6 +2457,9 @@ KY551379.1	A/mallard/Utah/AH0020535/2015	H7N2	2015-12-17	Anas platyrhynchos	8839
 KY284444.1	A/northern shoveler/Mississippi/15OS8011/2015	H7N3	2015-12-22	Spatula clypeata	75838	avian	Anseriformes	USA	North America		1703
 KY238130.1	A/magpie robin/Hubei/SZY300/2015	H7N9	2015-12-26	Copsychus	125862	avian	Passeriformes	China: Hubei	Asia		1683
 PQ208182.1	A/cinnamon-teal/Mexico/2817/2016	H7N3	2016					Mexico: Mexico	North America		1731
+KY067453.1	A/environment/Korea/MA-109/2016	H7N7	2016						Asia		1683
+KY067454.1	A/environment/Korea/MA-410/2016	H7N9	2016						Asia		1683
+KY067455.1	A/environment/Korea/MA-478/2016	H7N7	2016						Asia		1683
 MF978406.1	A/feline/New York/WVDL-14/2016	H7N2	2016	Feliformia	379583	non-human mammal	Carnivora	USA	North America		1709
 MF978414.1	A/feline/New York/WVDL-16/2016	H7N2	2016	Feliformia	379583	non-human mammal	Carnivora	USA	North America		1709
 MF978422.1	A/feline/New York/WVDL-20/2016	H7N2	2016	Feliformia	379583	non-human mammal	Carnivora	USA	North America		1709
