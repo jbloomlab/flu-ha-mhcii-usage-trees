@@ -1,0 +1,11 @@
+# manual includes from Bernadeta (https://github.com/jbloomlab/flu-ha-trees-mhcII-binding/issues/3#issue-4220131862)
+FJ752502.1  # A/swine/Changhua/199-3/2000
+CY091729.1  # A/swine/Guangdong/01/2008
+CY159674.1  # A/swine/North Carolina/00396/2004
+CY070311.1  # A/England/980/2009
+PX344135.1  # A/New Zealand/16CF0168/2016
+CY036823.1  # A/Siena/10/1989
+CY002624.1  # A/New York/230/2003
+MK787452.1  # A/mallard duck/Alberta/282/1977
+MN416649.1  # A/swine/Shandong/9/2016
+CY034132.1  # A/WSN/1933

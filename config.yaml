@@ -34,6 +34,7 @@ trees:
       augur_subsample:  # subsampling of sequences by augur subsample
         samples:
           subsample_all:
+            include: ?f'data/trees/{subtype}/accessions_to_include.txt'
             exclude: ?f'data/trees/{subtype}/accessions_to_exclude.txt'
             exclude_ambiguous_dates_by: year
             max_sequences: 2000

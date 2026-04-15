@@ -25,6 +25,8 @@ Each subdirectory has the following files:
   - `annotation.gff`: a GFF file annotating the proteins in `reference_sequence.fa`. Should annotate *SigPep* (signal peptide), *HA1* (HA1), and *HA2* (HA2). See [this paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC4229193/) if you are trying to determine where the signal peptide ends and HA1 (ectodomain) begins.
 
   - `accessions_to_exclude.txt`: a list of Genbank accessions to exclude from the final tree, listed one-per-line. You should manually add to this file if there are outlier or incorrect sequences you want to exclude from the tree. If there are no sequences to exclude, make this an empty file.
+  
+  - `accessions_to_include.txt`: a list of Genbank accessions to exclude from the final tree, listed one-per-line. You should manually add to this file if there are outlier or incorrect sequences you want to exclude from the tree. If there are no sequences to exclude, make this an empty file.
 
   - `cds_length_range.yaml`: YAML file specifying the allowed CDS nucleotide length range for filtering sequences. Has a single key `cds_length_range` with a two-element list `[min, max]`. Either bound can be `null` to impose no limit on that side (e.g., `[1692, null]` for no upper bound). To set this length range for a new subtype, first set contents to `cds_length_range: [null, null]` and then look at the output in `results/trees/{tree}/extract_cds_stats.txt` which prints distribution of length ranges to set reasonable limits.
 
