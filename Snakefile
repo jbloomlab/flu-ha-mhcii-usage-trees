@@ -290,6 +290,8 @@ rule parse_refine_outliers:
         refine_output=rules.refine.output.refine_output,
     output:
         tsv="results/trees/{tree}/accessions_with_bad_dates_reset.tsv",
+    params:
+        bad_dates_action=config["bad_dates_in_keep_accessions_action"],
     log:
         "results/logs/parse_refine_outliers_{tree}.txt",
     conda:

@@ -16,5 +16,6 @@ results/trees/*/*
 !results/trees/*/cds_subsampled.fasta
 !results/trees/*/metadata_subsampled.tsv
 !results/trees/*/alignment.fasta
+!results/trees/*/accessions_with_bad_dates_reset.tsv
 
 results/logs

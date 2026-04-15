@@ -21,6 +21,10 @@ def format_date(s):
 def main():
     sys.stdout = sys.stderr = open(snakemake.log[0], "w")  # noqa: F821
 
+    bad_dates_action = snakemake.params.bad_dates_action  # noqa: F821
+    if bad_dates_action not in ("ignore", "error"):
+        raise ValueError(f"Invalid {bad_dates_action=}, must be 'ignore' or 'error'")
+
     with open(snakemake.input.refine_output) as f:  # noqa: F821
         text = f.read()
 
@@ -85,6 +89,18 @@ def main():
             "Found unexpected mention of 'outlier' outside the known outlier block "
             "in augur refine output. The output format may have changed."
         )
+
+    if entries and bad_dates_action == "error":
+        msg = (
+            "The following accessions in keep-ids had their dates reset as outliers "
+            "by augur refine, and bad_dates_in_keep_accessions_action is 'error':\n"
+        )
+        for e in entries:
+            msg += (
+                f"  {e['accession']}: metadata_date={e['metadata_date']}, "
+                f"inferred_date={e['inferred_date']}\n"
+            )
+        raise ValueError(msg)
 
     df = pd.DataFrame(entries, columns=["accession", "metadata_date", "inferred_date"])
     df.to_csv(snakemake.output.tsv, sep="\t", index=False)  # noqa: F821
