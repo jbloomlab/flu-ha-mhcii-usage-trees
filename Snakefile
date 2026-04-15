@@ -242,6 +242,11 @@ rule tree:
 rule refine:
     """Refine the tree using augur refine."""
     input:
+        lambda wc: (
+            [config["trees"][wc.tree]["augur_refine"]["keep-ids"]]
+            if "keep-ids" in config["trees"][wc.tree]["augur_refine"]
+            else []
+        ),
         tree=rules.tree.output.tree,
         alignment=rules.align.output.alignment,
         metadata=rules.collapse_host_order.output.metadata,
@@ -250,10 +255,8 @@ rule refine:
         node_data="results/trees/{tree}/branch_lengths.json",
     params:
         strain_id="accession",
-        clock_filter_iqd_arg=lambda wc: (
-            f"--clock-filter-iqd {config['trees'][wc.tree]['clock_filter_iqd']}"
-            if config["trees"][wc.tree]["clock_filter_iqd"] is not None
-            else ""
+        addtl_flags=lambda wc: " ".join(
+            f"--{k} {v}" for k, v in config["trees"][wc.tree]["augur_refine"].items()
         ),
     conda:
         "environment.yaml"
@@ -270,7 +273,7 @@ rule refine:
             --output-node-data {output.node_data} \
             --timetree \
             --use-fft \
-            {params.clock_filter_iqd_arg} \
+            {params.addtl_flags} \
             &> {log}
         """
 

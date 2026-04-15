@@ -67,7 +67,7 @@ Outputs a raw Newick tree in `results/trees/{tree}/` (before any temporal refine
 
 ### `refine`: Refine tree with temporal information
 Refine the raw tree using [augur refine](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/refine.html) (which wraps TreeTime) to build a time-resolved phylogeny.
-A molecular clock filter (`clock_filter_iqd` in [config.yaml](config.yaml)) removes tips that deviate too far from the root-to-tip regression; set to `null` for no filtering.
+Additional `augur refine` flags are configured per tree in [config.yaml](config.yaml) under `augur_refine`; this can include a molecular clock filter (`clock-filter-iqd`) to remove tips that deviate too far from the root-to-tip regression, and `keep-ids` exempts specific accessions from clock-filter pruning so that manually requested strains are retained even if they are clock outliers.
 Outputs a refined Newick tree and a node-data JSON with branch lengths and inferred dates in `results/trees/{tree}/`.
 
 ### `ancestral`: Infer ancestral sequences

@@ -92,7 +92,7 @@ Outputs per tree:
 - `results/trees/{tree}/tree_raw.nwk`: inferred maximum-likelihood tree in Newick format
 
 ### `refine`
-Per-subtype rule that refines the raw tree using `augur refine` (which wraps TreeTime). Takes the raw tree, alignment, and collapsed subsampled metadata as inputs. Uses `--metadata-id-columns accession` to match the metadata format. Builds a time-resolved tree (`--timetree`) using FFT-based marginal date estimation (`--use-fft`). Applies `--clock-filter-iqd` from `config["trees"][tree]["clock_filter_iqd"]` to remove molecular clock outliers (tips deviating more than N interquartile ranges from the root-to-tip regression); set to `null` in config for no clock filtering.
+Per-subtype rule that refines the raw tree using `augur refine` (which wraps TreeTime). Takes the raw tree, alignment, and collapsed subsampled metadata as inputs. Uses `--metadata-id-columns accession` to match the metadata format. Builds a time-resolved tree (`--timetree`) using FFT-based marginal date estimation (`--use-fft`). Additional `augur refine` flags are configured per tree in `config["trees"][tree]["augur_refine"]` as a dict of flag-name to value; all entries are passed as `--{key} {value}` flags. These can include `--clock-filter-iqd` to remove molecular clock outliers (tips deviating more than N interquartile ranges from the root-to-tip regression) and `--keep-ids` to exempt specific accessions. If a `keep-ids` file is specified, it is tracked as a Snakemake input dependency.
 
 Outputs per tree:
 - `results/trees/{tree}/tree.nwk`: time-resolved refined tree in Newick format
