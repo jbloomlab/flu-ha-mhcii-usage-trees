@@ -68,7 +68,12 @@ Outputs a raw Newick tree in `results/trees/{tree}/` (before any temporal refine
 ### `refine`: Refine tree with temporal information
 Refine the raw tree using [augur refine](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/refine.html) (which wraps TreeTime) to build a time-resolved phylogeny.
 Additional `augur refine` flags are configured per tree in [config.yaml](config.yaml) under `augur_refine`; this can include a molecular clock filter (`clock-filter-iqd`) to remove tips that deviate too far from the root-to-tip regression, and `keep-ids` exempts specific accessions from clock-filter pruning so that manually requested strains are retained even if they are clock outliers.
-Outputs a refined Newick tree and a node-data JSON with branch lengths and inferred dates in `results/trees/{tree}/`.
+Outputs a refined Newick tree, a node-data JSON with branch lengths and inferred dates, and the combined stdout+stderr from `augur refine` (for downstream parsing) in `results/trees/{tree}/`.
+
+### `parse_refine_outliers`: Identify strains with reset dates
+Parse the `augur refine` output to extract any strains whose dates were reset because they were flagged as molecular clock outliers (kept in the tree via `keep-ids` but with date constraints removed).
+Outputs a TSV with accession, metadata date, and inferred date for each outlier strain, or an empty table if none.
+The script includes safety checks to error (rather than silently report zero outliers) if the `augur refine` output format has changed.
 
 ### `ancestral`: Infer ancestral sequences
 Infer ancestral nucleotide sequences using [augur ancestral](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/ancestral.html).

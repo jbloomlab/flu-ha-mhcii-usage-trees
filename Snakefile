@@ -15,6 +15,10 @@ rule all:
             os.path.join("auspice", config["auspice_prefix"] + "_{tree}.json"),
             tree=config["trees"],
         ),
+        bad_dates=expand(
+            "results/trees/{tree}/accessions_with_bad_dates_reset.tsv",
+            tree=config["trees"],
+        ),
 
 
 rule get_ncbi_dataset_zip:
@@ -253,6 +257,7 @@ rule refine:
     output:
         tree="results/trees/{tree}/tree.nwk",
         node_data="results/trees/{tree}/branch_lengths.json",
+        refine_output="results/trees/{tree}/refine_output.txt",
     params:
         strain_id="accession",
         addtl_flags=lambda wc: " ".join(
@@ -264,6 +269,7 @@ rule refine:
         "results/logs/refine_{tree}.txt",
     shell:
         """
+        set -euo pipefail
         augur refine \
             --tree {input.tree} \
             --alignment {input.alignment} \
@@ -274,8 +280,22 @@ rule refine:
             --timetree \
             --use-fft \
             {params.addtl_flags} \
-            &> {log}
+            2>&1 | tee {output.refine_output} > {log}
         """
+
+
+rule parse_refine_outliers:
+    """Parse augur refine output to extract strains with dates reset as outliers."""
+    input:
+        refine_output=rules.refine.output.refine_output,
+    output:
+        tsv="results/trees/{tree}/accessions_with_bad_dates_reset.tsv",
+    log:
+        "results/logs/parse_refine_outliers_{tree}.txt",
+    conda:
+        "environment.yaml"
+    script:
+        "scripts/parse_refine_outliers.py"
 
 
 rule ancestral:
