@@ -1,23 +1,23 @@
 All HA CDSs extracted from NCBI metadata for subtype regex 'H1N\d{1,2}' (before subsampling)
 
-HA accessions (segment=4 OR gene-name in {'ha', 'HA1', 'HA'}): 256411
+HA accessions (segment=4 OR gene-name in {'HA', 'ha', 'HA1'}): 258656
   segment=4 only: 2256
   gene-name only: 6877
-  both: 252428
-HA accessions with parseable subtype: 256411
-  matching any HxNx pattern: 248447
-  matching tree subtype regex 'H1N\d{1,2}': 84838
-  not matching any HxNx pattern: 7964
-Metadata accessions matching subtype regex: 84838
-Accessions with full-length HA CDS found: 84498
+  both: 254674
+HA accessions with parseable subtype: 258656
+  matching any HxNx pattern: 250681
+  matching tree subtype regex 'H1N\d{1,2}': 85275
+  not matching any HxNx pattern: 7975
+Metadata accessions matching subtype regex: 85275
+Accessions with full-length HA CDS found: 84935
 Accessions without full-length HA CDS: 340
-Recovered date from strain name: 3574 of 3853 missing-date accessions
-Dropped for missing collection date: 279
-Dropped for ambiguous nucleotides: 6391
-Dropped for invalid CDS: 9202
-CDS length distribution (n=68626):
+Recovered date from strain name: 3574 of 3854 missing-date accessions
+Dropped for missing collection date: 280
+Dropped for ambiguous nucleotides: 6413
+Dropped for invalid CDS: 9275
+CDS length distribution (n=68967):
   min: 153, max: 1719
-  0.1th percentile: 856
+  0.1th percentile: 857
   1st percentile: 939
   10th percentile: 1695
   median: 1701
@@ -27,5 +27,5 @@ CDS length distribution (n=68626):
 CDS length range filter [1692, 1704]:
   dropped too short (<1692): 5086
   dropped too long (>1704): 53
-  kept: 63487 of 68626
-Written 63487 HA CDS sequences for 'H1N\d{1,2}'
+  kept: 63828 of 68967
+Written 63828 HA CDS sequences for 'H1N\d{1,2}'
