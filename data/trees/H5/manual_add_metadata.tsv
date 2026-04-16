@@ -1,0 +1,21 @@
+accession	strain	subtype	date	host	host_tax_id	location	region	passage_history	length
+A_Guizhou_1_2013	A/Guizhou/1/2013	H5N1	2013-02-08	Human	9606	Asia / China / Guizhou Province	Asia	E1/E1	1704
+A_duck_Vietnam_NCVD-1494_2012	A/duck/Vietnam/NCVD-1494/2012	H5N1	2012-06-11	Avian	8782	Asia / Vietnam	Asia	E2 (2012-11-01)	1704
+A_chicken_Vietnam_Raho4-Cd-20-421_2020	A/chicken/Vietnam/Raho4-Cd-20-421/2020	H5N6	2020-01-12	Avian	8782	Asia / Vietnam	Asia	E2	1704
+A_chicken_Ghana_AVL-763_21VIR7050-39_2021	A/chicken/Ghana/AVL-763_21VIR7050-39/2021	H5N1	2021-06-08	Chicken	9031	Africa / Ghana	Africa	E1 (isolate ID 21VIR7050-64)	1704
+A_Cambodia_2302009_2023	A/Cambodia/2302009/2023	H5N1	2023-02-23	Human	9606	Asia / Cambodia / Krong Phnum Penh	Asia	e1	1704
+A_Jiangsu_NJ210_2023	A/Jiangsu/NJ210/2023	H5N1	2023-02-10	Human	9606	Asia / China / Jiangsu Provice	Asia	e1	1704
+A_Victoria_149_2024	A/Victoria/149/2024	H5N1	2024-03-06	Human	9606	Oceania / Australia / Victoria	Oceania	SIAT2	1704
+A_Cambodia_SVH240441_2024	A/Cambodia/SVH240441/2024	H5N1	2024-08-02	Human	9606	Asia / Cambodia / Khett Svay Rieng	Asia	Original	1704
+A_mute_swan_Ibaraki_236T_2016	A/mute swan/Ibaraki/236T/2016	H5N6	2016-12-15	Swan	8867	Asia / Japan	Asia		1701
+A_Hubei_29578_2016	A/Hubei/29578/2016	H5N6	2016-04-15	Human	9606	Asia / China / Hubei Province	Asia	E1	1701
+A_mandarin_duck_Korea_H71_2017	A/mandarin duck/Korea/H71/2017	H5N6	2017-12-20	Avian	8782	Asia / Korea, Republic of	Asia		1704
+A_duck_France_150234_2015	A/duck/France/150234/2015	H5N3	2015-12-09	Duck	8835	Europe / France	Europe		1695
+A_Fujian-Sanyuan_21099_2017	A/Fujian-Sanyuan/21099/2017	H5N6	2017-12-25	Human	9606	Asia / China / Fujian Province	Asia	C1	1704
+A_duck_Bangladesh_17D1012_2018	A/duck/Bangladesh/17D1012/2018	H5N1	2018-01-07	Avian	8782	Asia / Bangladesh	Asia	Original	1704
+A_Chicken_Netherlands_18000887-005_2018	A/Chicken/Netherlands/18000887-005/2018	H5N6	2018-01-20	Gallus gallus	9031	Europe / Netherlands / Rhoon	Europe	Original	1704
+A_Hong_Kong_48013_1997	A/Hong Kong/48013/1997	H5N1	2003	Human	9606	Asia / Hong Kong (SAR) / Hanoi	Asia	E3	1707
+A_Guangdong_18SF020_2018	A/Guangdong/18SF020/2018	H5N6	2018-09-29	Human	9606	Asia / China / Guangdong	Asia	E1	1701
+A_Indonesia_NIHRD11771_2011	A/Indonesia/NIHRD11771/2011	H5N1	2011-08-07	Human	9606	Asia / Indonesia / Bali	Asia	E1	1707
+A_chicken_Vietnam_NCVD-03_2008	A/chicken/Vietnam/NCVD-03/2008	H5N1	2008-05	Avian	8782	Asia / Vietnam / LANG SON	Asia	E2	1713
+A_chicken_England_053052_2021	A/chicken/England/053052/2021	H5N1	2021-10-24	Gallus gallus domesticus	9031	Europe / United Kingdom / Worcestershire / England	Europe	Clinical Material	1704

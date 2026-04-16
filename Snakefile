@@ -1,5 +1,6 @@
 """Snakemake file that runs analysis."""
 
+import copy
 import os
 import shlex
 
@@ -117,10 +118,51 @@ rule download_taxonomy:
         """
 
 
+rule merge_manual_add:
+    """Merge manual-add CDS sequences and metadata into Genbank-extracted data."""
+    input:
+        genbank_metadata=rules.extract_ha_cds.output.metadata,
+        genbank_sequences=rules.extract_ha_cds.output.fasta,
+        manual_add_metadata=lambda wc: config["trees"][wc.tree]["manual_adds"][
+            "metadata"
+        ],
+        manual_add_sequences=lambda wc: config["trees"][wc.tree]["manual_adds"][
+            "sequences"
+        ],
+    output:
+        metadata="results/trees/{tree}/metadata_all_pre_host_merged.tsv",
+        sequences="results/trees/{tree}/cds_all_merged.fasta.gz",
+    log:
+        "results/logs/merge_manual_add_{tree}.txt",
+    conda:
+        "environment.yaml"
+    script:
+        "scripts/merge_manual_add.py"
+
+
+rule build_include_file:
+    """Combine accessions_to_include.txt with manual-add accessions."""
+    input:
+        accessions_to_include=lambda wc: config["trees"][wc.tree][
+            "accessions_to_include"
+        ],
+        manual_add_metadata=lambda wc: config["trees"][wc.tree]["manual_adds"][
+            "metadata"
+        ],
+    output:
+        include="results/trees/{tree}/accessions_to_include_combined.txt",
+    log:
+        "results/logs/build_include_file_{tree}.txt",
+    conda:
+        "environment.yaml"
+    script:
+        "scripts/build_include_file.py"
+
+
 rule annotate_host_taxonomy:
     """Annotate metadata with host taxonomy (general class, order)."""
     input:
-        metadata=rules.extract_ha_cds.output.metadata,
+        metadata=rules.merge_manual_add.output.metadata,
         taxonomy_dir=rules.download_taxonomy.output.taxonomy_dir,
     output:
         metadata="results/trees/{tree}/metadata_all.tsv",
@@ -132,14 +174,28 @@ rule annotate_host_taxonomy:
         "scripts/annotate_host_taxonomy.py"
 
 
+def _subsample_config_with_include(wc):
+    """Return augur_subsample config with the combined-include path injected."""
+    cfg = copy.deepcopy(config["trees"][wc.tree]["augur_subsample"])
+    include_path = rules.build_include_file.output.include.format(tree=wc.tree)
+    for key in ["defaults", "samples"]:
+        if key not in cfg:
+            continue
+        entries = [cfg[key]] if key == "defaults" else cfg[key].values()
+        for entry in entries:
+            entry["include"] = include_path
+    return cfg
+
+
 rule subsample:
     """Subsample the CDSs for a tree using augur subsample."""
     input:
-        sequences=rules.extract_ha_cds.output.fasta,
+        sequences=rules.merge_manual_add.output.sequences,
         metadata=rules.annotate_host_taxonomy.output.metadata,
-        # the list below is files listing sequences to include / exclude
-        include_exclude_files=lambda wc: [
-            cfg[key2]
+        combined_include=rules.build_include_file.output.include,
+        # the list below is files listing sequences to exclude
+        exclude_files=lambda wc: [
+            cfg["exclude"]
             for key1 in ["defaults", "samples"]
             if key1 in config["trees"][wc.tree]["augur_subsample"]
             for cfg in (
@@ -147,8 +203,7 @@ rule subsample:
                 if key1 == "defaults"
                 else config["trees"][wc.tree]["augur_subsample"][key1].values()
             )
-            for key2 in ["exclude", "include"]
-            if key2 in cfg
+            if "exclude" in cfg
         ],
     output:
         sequences="results/trees/{tree}/cds_subsampled.fasta",
@@ -156,7 +211,7 @@ rule subsample:
         config="results/trees/{tree}/subsample_config.yaml",
     params:
         build_config_yaml=lambda wc: yaml.dump(
-            config["trees"][wc.tree]["augur_subsample"], default_flow_style=False
+            _subsample_config_with_include(wc), default_flow_style=False
         ),
         seed=1,
         strain_id="accession",
@@ -246,14 +301,10 @@ rule tree:
 rule refine:
     """Refine the tree using augur refine."""
     input:
-        lambda wc: (
-            [config["trees"][wc.tree]["augur_refine"]["keep-ids"]]
-            if "keep-ids" in config["trees"][wc.tree]["augur_refine"]
-            else []
-        ),
         tree=rules.tree.output.tree,
         alignment=rules.align.output.alignment,
         metadata=rules.collapse_host_order.output.metadata,
+        keep_ids=rules.build_include_file.output.include,
     output:
         tree="results/trees/{tree}/tree.nwk",
         node_data="results/trees/{tree}/branch_lengths.json",
@@ -279,6 +330,7 @@ rule refine:
             --output-node-data {output.node_data} \
             --timetree \
             --use-fft \
+            --keep-ids {input.keep_ids} \
             {params.addtl_flags} \
             2>&1 | tee {output.refine_output} > {log}
         """

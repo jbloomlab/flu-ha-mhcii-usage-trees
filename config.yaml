@@ -35,18 +35,24 @@ trees:
   ?for subtype in ["H1", "H2", "H3", "H5", "H7"]:
     ?subtype:
       subtype: ?f'{subtype}N\\d{{1,2}}'  # regex for subtype
+      manual_adds:  # sequences specified to add manually not in Genbank accessions
+        sequences: ?f'data/trees/{subtype}/manual_add_sequences.fa'
+        metadata: ?f'data/trees/{subtype}/manual_add_metadata.tsv'
+      # user-editable list of Genbank accessions to include. The pipeline merges
+      # this with all manual_add accessions into the combined include file, and
+      # that combined file is what is passed to augur subsample --include and
+      # augur refine --keep-ids (wired in the Snakefile, not here).
+      accessions_to_include: ?f'data/trees/{subtype}/accessions_to_include.txt'
       cds_length_range: ?f'data/trees/{subtype}/cds_length_range.yaml'  # only keep CDSs in this length range
       augur_subsample:  # subsampling of sequences by augur subsample
         samples:
           subsample_all:
-            include: ?f'data/trees/{subtype}/accessions_to_include.txt'
             exclude: ?f'data/trees/{subtype}/accessions_to_exclude.txt'
             exclude_ambiguous_dates_by: year
             max_sequences: 2000
             group_by: [year, region]
       augur_refine:  # keyword arguments to augur refine
         clock-filter-iqd: 4   # filter in augur refine to remove outliers from molecular clock
-        keep-ids: ?f'data/trees/{subtype}/accessions_to_include.txt'  # keep even if the fail filter; if strains kept this way fail filter their dates are inferred rather than taken from metadata.
       reference_sequence: ?f'data/trees/{subtype}/reference_sequence.fa'
       annotation: ?f'data/trees/{subtype}/annotation.gff'
       genes: [SigPep, HA1, HA2]
