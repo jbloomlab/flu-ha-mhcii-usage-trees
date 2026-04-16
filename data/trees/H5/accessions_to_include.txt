@@ -1,0 +1,59 @@
+# Strains in Bernadeta experimental library
+DQ371928.1  # A/Anhui/1/2005
+OP597562.1  # A/Astrakhan/3212/2020 = A/dalmatian pelican/Astrakhan/417-2/2021
+EF587277.1  # A/Beijing/01/2003
+KF918470.1  # A/Cambodia/X0810301/2013
+EF535822.1  # A/Egypt/2321-NAMRU3/2007
+KP864432.1  # A/Egypt/N04915/2014 = A/Egypt/N0001/2015
+NC_007362.1  # A/Goose/Guangdong/1/96 = A/goose/Guangdong/1/1996
+CY098758.1  # A/Hubei/1/2010
+CY116646.1  # A/Indonesia/5/2005
+PV344195.1  # A/Ohio/06-1/2025
+KM873638.1  # A/Sichuan/26221/2014 = A/cat/Sichuan/SC18/2014
+MH998486.1  # A/chicken/Egypt/B13826C/2017
+CY099579.1  # A/chicken/Egypt/Q1995D/2010
+KT220551.1  # A/chicken/Egypt/Q7630D/2013
+KU971405.1  # A/chicken/Ghana/20/2015 = A/chicken/Ghana/15VIR5480-12/2015
+MT126478.1  # A/chicken/Guizhou/1153/2016
+GU454581.1  # A/chicken/India/NIV33487/06 = A/chicken/Nandurbar/7966/2006
+DQ914814.3  # A/chicken/Shanxi/2/2006
+FJ842476.1  # A/chicken/Vietnam/NCVD-016/2008
+KY171725.1  # A/chicken/Vietnam/NCVD-15A59/2015
+AB189061.1  # A/crow/Osaka/102/2004 = A/crow/Osaka/102/2004(H5N1)
+KF715205.1  # A/duck/Bangladesh/19097/2013
+MW466048.1  # A/duck/Bangladesh/43127/2020
+OP030702.1  # A/duck/Bangladesh/51601/2021
+AY585360.1  # A/duck/Guangdong/01/2001
+HM172105.1  # A/duck/Hunan/70/2004
+KC417274.1  # A/duck/Tegal/BBVW-1727-11/2012
+KY171560.1  # A/duck/Vietnam/NCVD-1584/2012 = A/duck/Vietnam/NCVD-0145/2012
+DQ997405.1  # A/goose/Fujian/bb/2003
+HM172089.1  # A/goose/Guangdong/72/2004
+DQ997392.1  # A/swine/Anhui/ca/2004
+DQ407519.1  # A/turkey/Turkey/1/2005
+OQ958044.1  # A/American_Wigeon/South_Carolina/22-000345-001/2021 = A/American Wigeon/South Carolina/22-000345-001/2021
+EU124050.1  # A/Chicken/Indonesia/Wates130/2005
+FJ686837.1  # A/Egypt/3300-NAMRU3/2008 = A/chicken/Egypt/7NLQP-CLEVB305/2008
+JN807779.1  # A/Egypt/N03072/2010 = A/goose/Egypt/10209SF/2010
+OQ959076.1  # A/Ezo_red_fox/Hokkaido/1/2022 = A/Bald Eagle/Alaska/22-013001-001/2022
+EF541402.1  # A/Vietnam/1194/2004 = A/Viet Nam/1194/2004
+EF541403.1  # A/Vietnam/1203/2004 = A/Viet Nam/1203/2004
+DQ230522.1  # A/bar_headed_goose/Qinghai/*/2005 = A/duck/Novosibirsk/56/2005
+KC357320.1  # A/barn_swallow/Hong_Kong/1161/2010 = A/barn swallow/Hong Kong/1161/2010
+PP836471.1  # A/bovine/Ohio/B24OSU439/2024 = A/bovine/Ohio/B24OSU-439/2024
+PV839281.1  # A/bovine/Texas/43134/2024
+GQ122395.1  # A/chicken/Central_Java/UT3091/2005 = A/chicken/Central Java/UT3091/2005
+EF541407.1  # A/chicken/Viet_Nam/Ncvd8/2003 = A/chicken/Viet Nam/Ncvd8/2003
+LC317070.1  # A/duck/Hyogo/1/2016 = A/owl/Hokkaido/X6/2016
+KP307984.1  # A/gyrfalcon/Washington/410886/2014 = A/gyrfalcon/Washington/41088-6/2014
+GU186700.1  # A/whooper_swan/Mongolia/244/2005 = A/whooper swan/Mongolia/244/2005
+PX441231.1  # A/dairy cow/California/022470-005/2025 = A/cattle/CA/25-022470-005-original/2025
+KM821633.1  # A/chicken/Khanhhoa/CVVI-28/2014
+KP288324.1  # A/duck/Nanchang/9789/2013
+MF112559.1  # A/chicken/Nigeria/16VIR5840-51/2015 = A/chicken/Nigeria/16VIR5840-18/2015
+MH283037.1  # A/duck/Ningxia/YG71/2017 = A/spot-billed duck/Ningxia/YG83/2017
+CY110933.1  # A/duck/Taiwan/DV30-2/2005
+CY146652.1  # A/duck/Hunan/S4101/2011
+AB558460.1  # A/duck/Tsukuba/394/2005
+AB558470.1  # A/duck/Tsukuba/541/06 = A/duck/Tsukuba/541/2006
+OQ632895.1  # A/chicken/Scotland/054477/2021 = A/chicken/France/21328/2021

@@ -11,10 +11,6 @@ results/ncbi_taxonomy
 
 results/trees/*/*
 !results/trees/*/extract_cds_stats.txt
-!results/trees/*/metadata_all.tsv
-!results/trees/*/cds_all.fasta.gz
-!results/trees/*/cds_subsampled.fasta
-!results/trees/*/metadata_subsampled.tsv
-!results/trees/*/alignment.fasta
+!results/trees/*/accessions_with_bad_dates_reset.tsv
 
 results/logs

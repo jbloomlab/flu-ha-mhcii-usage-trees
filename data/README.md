@@ -24,7 +24,21 @@ Each subdirectory has the following files:
 
   - `annotation.gff`: a GFF file annotating the proteins in `reference_sequence.fa`. Should annotate *SigPep* (signal peptide), *HA1* (HA1), and *HA2* (HA2). See [this paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC4229193/) if you are trying to determine where the signal peptide ends and HA1 (ectodomain) begins.
 
+  - `manual_add_sequences.fa` and `manual_add_metadata.tsv`: FASTA and TSV file giving CDS sequences to manually add to the tree; these are always included. Use this if there are sequences lacking Genbank accessions that you want to include. The `manual_add_sequences.fa` should have the accession as the header, and the TSV file should give the metadata with columns including. If these sequences do not have accessions (eg, they are not on Genbank) you can make accession any string identifier with no spaces:
+    + *accession*
+    + *strain*
+    + *subtype*
+    + *date*
+    + *host*
+    + *host_tax_id*
+    + *location*
+    + *region*
+    + *passage_history*
+    + *length*
+
   - `accessions_to_exclude.txt`: a list of Genbank accessions to exclude from the final tree, listed one-per-line. You should manually add to this file if there are outlier or incorrect sequences you want to exclude from the tree. If there are no sequences to exclude, make this an empty file.
+  
+  - `accessions_to_include.txt`: a list of Genbank accessions to always include in the final tree (exempt from subsampling filters and the molecular clock filter), listed one-per-line. Lines beginning with `#` (or any trailing `# …` portion of a line) are treated as comments and ignored, so you can annotate accessions with the strain name. You should manually add to this file if there are sequences you want to guarantee are in the tree. If there are none, make this an empty file. The pipeline merges this list with all accessions in `manual_add_metadata.tsv` into `results/trees/{tree}/accessions_to_include_combined.txt`, which is what is actually passed to `augur subsample --include` and `augur refine --keep-ids`. The `validate_includes` rule checks that every accession in this list and in `manual_add_metadata.tsv` appears in the final Auspice JSON; the pipeline errors if any are missing.
 
   - `cds_length_range.yaml`: YAML file specifying the allowed CDS nucleotide length range for filtering sequences. Has a single key `cds_length_range` with a two-element list `[min, max]`. Either bound can be `null` to impose no limit on that side (e.g., `[1692, null]` for no upper bound). To set this length range for a new subtype, first set contents to `cds_length_range: [null, null]` and then look at the output in `results/trees/{tree}/extract_cds_stats.txt` which prints distribution of length ranges to set reasonable limits.
 

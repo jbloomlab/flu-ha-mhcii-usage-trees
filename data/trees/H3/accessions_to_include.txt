@@ -1,0 +1,11 @@
+# manual includes from Bernadeta (https://github.com/jbloomlab/flu-ha-trees-mhcII-binding/issues/3#issue-4220131862)
+CY080515.1  # A/Hong Kong/1-4-MA21-1/1968
+MK907683.1  # A/duck/Buryatia/664-5465/1988
+CY185705.1  # A/blue-winged teal/Alberta/221/1978
+PP502597.1  # A/yellow-billed pintail/Argentina/CIP112-3626/2019
+KP765915.1  # A/duck/Anhui/A1809/2014
+CY113269.1  # A/Netherlands/209/1980
+CY012160.1  # A/New York/762/1993
+PX599020.1  # A/Hong Kong/EPI1231/2025
+CY116315.1  # A/swine/England/87842/1990
+KX815361.1  # A/equine/Argentina/E131/1994

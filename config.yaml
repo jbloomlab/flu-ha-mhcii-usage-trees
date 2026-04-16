@@ -25,11 +25,24 @@ phenotype_color_scale: &phenotype_color_scale
   - "#addc30"
   - "#fde725"
 
+# What to do if accessions specified to include / keep have bad dates that are
+# reset by augur refine given the value of `clock-filter-iqd`? Options:
+# "ignore" -> let dates be reset; "error" -> raise an error
+bad_dates_in_keep_accessions_action: ignore
+
 # make separate trees for each of these HA subtypes, with per-tree configuration
 trees:
   ?for subtype in ["H1", "H2", "H3", "H5", "H7"]:
     ?subtype:
       subtype: ?f'{subtype}N\\d{{1,2}}'  # regex for subtype
+      manual_adds:  # sequences specified to add manually not in Genbank accessions
+        sequences: ?f'data/trees/{subtype}/manual_add_sequences.fa'
+        metadata: ?f'data/trees/{subtype}/manual_add_metadata.tsv'
+      # user-editable list of Genbank accessions to include. The pipeline merges
+      # this with all manual_add accessions into the combined include file, and
+      # that combined file is what is passed to augur subsample --include and
+      # augur refine --keep-ids (wired in the Snakefile, not here).
+      accessions_to_include: ?f'data/trees/{subtype}/accessions_to_include.txt'
       cds_length_range: ?f'data/trees/{subtype}/cds_length_range.yaml'  # only keep CDSs in this length range
       augur_subsample:  # subsampling of sequences by augur subsample
         samples:
@@ -38,7 +51,8 @@ trees:
             exclude_ambiguous_dates_by: year
             max_sequences: 2000
             group_by: [year, region]
-      clock_filter_iqd: 4  # filter in augur refine to remove outliers from molecular clock; null for no filter
+      augur_refine:  # keyword arguments to augur refine
+        clock-filter-iqd: 4   # filter in augur refine to remove outliers from molecular clock
       reference_sequence: ?f'data/trees/{subtype}/reference_sequence.fa'
       annotation: ?f'data/trees/{subtype}/annotation.gff'
       genes: [SigPep, HA1, HA2]
