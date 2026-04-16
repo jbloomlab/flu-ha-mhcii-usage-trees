@@ -5,6 +5,17 @@ import sys
 import pandas as pd
 
 
+def parse_accessions_file(path):
+    """Read an accessions_to_include.txt file, stripping `#` comments and blanks."""
+    accs = set()
+    with open(path) as f:
+        for line in f:
+            token = line.split("#", 1)[0].strip()
+            if token:
+                accs.add(token)
+    return accs
+
+
 def main():
     sys.stdout = sys.stderr = open(snakemake.log[0], "w")  # noqa: F821
 
@@ -12,8 +23,7 @@ def main():
     manual_add_metadata = snakemake.input.manual_add_metadata  # noqa: F821
     out_file = snakemake.output.include  # noqa: F821
 
-    with open(accessions_to_include) as f:
-        genbank_accs = {line.strip() for line in f if line.strip()}
+    genbank_accs = parse_accessions_file(accessions_to_include)
     print(f"Genbank accessions_to_include: {len(genbank_accs)}")
 
     manual_df = pd.read_csv(manual_add_metadata, sep="\t", dtype=str)

@@ -20,6 +20,10 @@ rule all:
             "results/trees/{tree}/accessions_with_bad_dates_reset.tsv",
             tree=config["trees"],
         ),
+        include_validation=expand(
+            "results/trees/{tree}/include_validation.tsv",
+            tree=config["trees"],
+        ),
 
 
 rule get_ncbi_dataset_zip:
@@ -516,3 +520,23 @@ rule export:
             --description {input.description} \
             &> {log}
         """
+
+
+rule validate_includes:
+    """Check every accession specified to include is a tip in the final Auspice JSON."""
+    input:
+        auspice_json=rules.export.output.auspice_json,
+        accessions_to_include=lambda wc: config["trees"][wc.tree][
+            "accessions_to_include"
+        ],
+        manual_add_metadata=lambda wc: config["trees"][wc.tree]["manual_adds"][
+            "metadata"
+        ],
+    output:
+        tsv="results/trees/{tree}/include_validation.tsv",
+    log:
+        "results/logs/validate_includes_{tree}.txt",
+    conda:
+        "environment.yaml"
+    script:
+        "scripts/validate_includes.py"

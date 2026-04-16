@@ -105,4 +105,8 @@ This produces a tree-specific description file in `results/trees/{tree}/` that i
 Export interactive auspice v2 JSONs using [augur export](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/export_v2.html).
 Each tree uses an auspice config file (configured as `auspice_config` in [config.yaml](config.yaml)) that defines colorings, filters, display defaults, and metadata; a generated phenotype auspice config with color scales for mutation effect scores; a markdown `description` file for the tree sidebar; and a `title` for the tree visualization.
 The output files are placed in `auspice/` with names like `{auspice_prefix}_{tree}.json` (the prefix is set in [config.yaml](config.yaml), typically matching the repo name for [Nextstrain community builds](https://docs.nextstrain.org/en/latest/guides/share/community-builds.html)).
-These are the final pipeline outputs targeted by `rule all`.
+
+### `validate_includes`: Confirm every include accession is in the final tree
+For each tree, verify that every accession listed in `data/trees/{tree}/accessions_to_include.txt` (comments and blank lines are ignored) and every accession in `data/trees/{tree}/manual_add_metadata.tsv` appears as a leaf in the exported Auspice JSON.
+Writes `results/trees/{tree}/include_validation.tsv` with one row per expected accession (`accession`, `source`, `in_tree`) and errors the pipeline if any are missing.
+These TSVs are final `rule all` targets.
