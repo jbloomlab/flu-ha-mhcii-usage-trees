@@ -52,7 +52,7 @@ trees:
             max_sequences: 2000
             group_by: [year, region]
       augur_refine:  # keyword arguments to augur refine
-        clock-filter-iqd: 4   # filter in augur refine to remove outliers from molecular clock
+        clock-filter-iqd: 5   # filter in augur refine to remove outliers from molecular clock
       reference_sequence: ?f'data/trees/{subtype}/reference_sequence.fa'
       annotation: ?f'data/trees/{subtype}/annotation.gff'
       genes: [SigPep, HA1, HA2]
