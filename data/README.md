@@ -37,6 +37,8 @@ Each subdirectory has the following files:
     + *length*
 
   - `accessions_to_exclude.txt`: a list of Genbank accessions to exclude from the final tree, listed one-per-line. You should manually add to this file if there are outlier or incorrect sequences you want to exclude from the tree. If there are no sequences to exclude, make this an empty file.
+
+  - `strain_annotations.txt`: a file with a column giving the strain and then other columns giving annotations for those strains mapped directly to the tips for the strains. Can also be an empty file if no strain annotations. These represent directly measured properties for that strain.
   
   - `accessions_to_include.txt`: a list of Genbank accessions to always include in the final tree (exempt from subsampling filters and the molecular clock filter), listed one-per-line. Lines beginning with `#` (or any trailing `# …` portion of a line) are treated as comments and ignored, so you can annotate accessions with the strain name. You should manually add to this file if there are sequences you want to guarantee are in the tree. If there are none, make this an empty file. The pipeline merges this list with all accessions in `manual_add_metadata.tsv` into `results/trees/{tree}/accessions_to_include_combined.txt`, which is what is actually passed to `augur subsample --include` and `augur refine --keep-ids`. The `validate_includes` rule checks that every accession in this list and in `manual_add_metadata.tsv` appears in the final Auspice JSON; the pipeline errors if any are missing.
 
