@@ -30,6 +30,11 @@ phenotype_color_scale: &phenotype_color_scale
 # "ignore" -> let dates be reset; "error" -> raise an error
 bad_dates_in_keep_accessions_action: ignore
 
+# What to do if an accession in a tree's strain_annotations.tsv is not a tip
+# in the final refined tree? Options: "ignore" -> warn and drop that row;
+# "error" -> raise an error listing the missing accessions.
+missing_strain_annotations_action: ignore
+
 # make separate trees for each of these HA subtypes, with per-tree configuration
 trees:
   ?for subtype in ["H1", "H2", "H3", "H5", "H7"]:
@@ -57,6 +62,7 @@ trees:
       annotation: ?f'data/trees/{subtype}/annotation.gff'
       genes: [SigPep, HA1, HA2]
       mutation_effects: ?f'data/trees/{subtype}/mutation_effects.tsv'
+      strain_annotations: ?f'data/trees/{subtype}/strain_annotations.tsv'
       phenotypes:
         H5 tufted duck MHCII entry increase: MHCII entry increase (H5)
         H5 tufted duck MHCII binding: MHCII binding (H5)
