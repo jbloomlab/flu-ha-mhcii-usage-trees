@@ -10,8 +10,8 @@ collapse_low_freq_host_order: 0.005
 # "auspices/{auspice_prefix}_{tree}.json" for each {tree} in `trees`
 # defined below. Typically make this the same name as this repo if
 # you want to be able to view via Nextstrain community builds, eg
-# https://nextstrain.org/community/jbloomlab/flu-ha-trees-mhcII-binding@main/H5
-auspice_prefix: flu-ha-trees-mhcII-binding
+# https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees@main/H5
+auspice_prefix: flu-ha-mhcii-usage-trees
 
 # Shared viridis color scale for phenotype scores on trees
 phenotype_color_scale: &phenotype_color_scale

@@ -1,4 +1,4 @@
-# manual includes from Bernadeta (https://github.com/jbloomlab/flu-ha-trees-mhcII-binding/issues/3#issue-4220131862)
+# manual includes from Bernadeta (https://github.com/jbloomlab/flu-ha-mhcii-usage-trees/issues/3#issue-4220131862)
 CY014976.1  # A/Japan/305/1957
 CY020541.1  # A/Albany/1/1959
 KM402809.1  # A/Netherlands/B1/1968

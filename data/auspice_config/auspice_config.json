@@ -8,7 +8,7 @@
       "url": "https://www.ncbi.nlm.nih.gov/genbank/"
     }
   ],
-  "build_url": "https://github.com/jbloomlab/flu-ha-trees-mhcII-binding",
+  "build_url": "https://github.com/jbloomlab/flu-ha-mhcii-usage-trees",
   "colorings": [
     {
       "key": "gt",

@@ -8,7 +8,6 @@ Specifically, you can color:
 
 You can also color sites by amino-acid identity (using the *Genotype* option in *Color By* dropdown).
 The site numbering is sequential 1, 2, ... numbering of each of the three protein regions (*SigPep*, *HA1*, and *HA2*).
-For a mapping of that site numbering to H3 numbering, compare the *protein* and *protein_site* columns to the *H3_site* column in the TSV at [https://github.com/jbloomlab/flu-ha-trees-mhcII-binding/blob/main/data/trees/{tree}/protein_sites.tsv](https://github.com/jbloomlab/flu-ha-trees-mhcII-binding/blob/main/data/trees/{tree}/protein_sites.tsv).
+For a mapping of that site numbering to H3 numbering, compare the *protein* and *protein_site* columns to the *H3_site* column in the TSV at [https://github.com/jbloomlab/flu-ha-mhcii-usage-trees/blob/main/data/trees/{tree}/protein_sites.tsv](https://github.com/jbloomlab/flu-ha-mhcii-usage-trees/blob/main/data/trees/{tree}/protein_sites.tsv).
 
-See [https://github.com/jbloomlab/flu-ha-trees-mhcII-binding](https://github.com/jbloomlab/flu-ha-trees-mhcII-binding) for the code and data used to generate these trees.
-
+See [https://github.com/jbloomlab/flu-ha-mhcii-usage-trees](https://github.com/jbloomlab/flu-ha-mhcii-usage-trees) for the code used to generate these trees.

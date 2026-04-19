@@ -1,4 +1,4 @@
-name: flu-ha-trees-mhcII-binding
+name: flu-ha-mhcii-usage-trees
 
 channels:
   - conda-forge
