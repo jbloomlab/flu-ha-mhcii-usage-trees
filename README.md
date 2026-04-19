@@ -1,6 +1,20 @@
-# Phylogenetic trees of influenza hemagglutinin annotated by MHC II binding
-Build interactive Nextstrain phylogenetic trees of influenza HA from different subtypes and annotate by MHC II binding.
+# Phylogenetic trees of influenza hemagglutinin annotated by MHC II usage
+Build interactive Nextstrain phylogenetic trees of influenza HA from different subtypes and annotate by MHC II usage.
 Trees are built and maintained by the [Bloom lab](https://jbloomlab.org/).
+
+## Overview
+Trees are built for different HA subtypes.
+The configuration for these trees is specified under *trees* in [config.yaml](config.yaml).
+The trees are built subsampling sequences from Genbank, and you can also specify specific accessions to include under *manual_adds* and *accessions_to_include*, and accessions to exclude under *exclude*.
+
+Molecular clock outliers are excluded according to *clock-filter-iqd*; the value of *bad_dates_in_keep_accessions_action* specifies what to do if strains specified for inclusion fail this filter.
+
+The trees are annotated by the tufted duck MHC II usage predicted under an additive model from the measurements in [data/mutation_effect_data](data/mutation_effect_data); these predictions are applied to all sequences.
+The trees are also annotated by direct measurements of MHC II usage for specific strains in the `data/trees/{subtype}/strain_annotations.tsv` files.; the value of *missing_strain_annotations_action* specifies what to do if strains with specified titers are not found.
+
+See [./data/README.md](data/README.md) for more explanation of the input data.
+
+The final trees are placed in [./auspice](auspice) where they can be viewed as [Nextstrain Community Builds](https://docs.nextstrain.org/en/latest/guides/share/community-builds.html) once this repo is made public, or can be uploaded to [auspice.us](https://auspice.us/).
 
 
 ## Running pipeline
