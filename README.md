@@ -97,13 +97,20 @@ Generate an auspice config JSON that defines continuous viridis color scales for
 The color scale is configured per tree as `phenotype_color_scale` in [config.yaml](config.yaml).
 Outputs an auspice config JSON in `results/trees/{tree}/`.
 
+### `annotate_strains`: Map per-strain annotations onto tree tips
+For each tree, read the per-strain annotations TSV (configured as `strain_annotations` in [config.yaml](config.yaml)) and map each non-`accession` column onto the corresponding tree tip.
+If the TSV is empty, nothing is annotated.
+Numeric columns are colored continuously using the shared `phenotype_color_scale` from [config.yaml](config.yaml); non-numeric columns become categorical colorings and are added to the Auspice filters.
+Behavior when an accession in the TSV is not a tip in the final refined tree is controlled by `missing_strain_annotations_action` in [config.yaml](config.yaml) (`ignore` warns and drops those rows; `error` fails the pipeline).
+Outputs a node-data JSON and an auspice config JSON (both consumed by `augur export`) in `results/trees/{tree}/`.
+
 ### `format_description`: Format description markdown per tree
 For each tree, format the shared description markdown file by replacing `{tree}` with the tree name (e.g., "H5").
 This produces a tree-specific description file in `results/trees/{tree}/` that is passed to `augur export`.
 
 ### `export`: Export auspice JSONs
 Export interactive auspice v2 JSONs using [augur export](https://docs.nextstrain.org/projects/augur/en/stable/usage/cli/export_v2.html).
-Each tree uses an auspice config file (configured as `auspice_config` in [config.yaml](config.yaml)) that defines colorings, filters, display defaults, and metadata; a generated phenotype auspice config with color scales for mutation effect scores; a markdown `description` file for the tree sidebar; and a `title` for the tree visualization.
+Each tree uses an auspice config file (configured as `auspice_config` in [config.yaml](config.yaml)) that defines colorings, filters, display defaults, and metadata; a generated phenotype auspice config with color scales for mutation effect scores; a generated strain annotations auspice config with colorings (and filters) for columns from `strain_annotations.tsv`; a markdown `description` file for the tree sidebar; and a `title` for the tree visualization.
 The output files are placed in `auspice/` with names like `{auspice_prefix}_{tree}.json` (the prefix is set in [config.yaml](config.yaml), typically matching the repo name for [Nextstrain community builds](https://docs.nextstrain.org/en/latest/guides/share/community-builds.html)).
 
 ### `validate_includes`: Confirm every include accession is in the final tree

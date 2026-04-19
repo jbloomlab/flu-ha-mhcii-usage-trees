@@ -468,6 +468,27 @@ rule generate_phenotype_auspice_config:
         """
 
 
+rule annotate_strains:
+    """Annotate tips from the per-strain annotations TSV for a tree."""
+    input:
+        tree=rules.refine.output.tree,
+        strain_annotations=lambda wc: config["trees"][wc.tree]["strain_annotations"],
+    output:
+        node_data="results/trees/{tree}/strain_annotations_node_data.json",
+        auspice_config="results/trees/{tree}/auspice_config_strain_annotations.json",
+    params:
+        missing_strain_annotations_action=config["missing_strain_annotations_action"],
+        phenotype_color_scale=lambda wc: config["trees"][wc.tree][
+            "phenotype_color_scale"
+        ],
+    log:
+        "results/logs/annotate_strains_{tree}.txt",
+    conda:
+        "environment.yaml"
+    script:
+        "scripts/annotate_strains.py"
+
+
 rule format_description:
     """Format description markdown, replacing {tree} with the tree name."""
     input:
@@ -493,9 +514,11 @@ rule export:
         nt_muts=rules.ancestral.output.node_data,
         aa_muts=rules.translate.output.node_data,
         mutation_effects_scores=rules.score_mutation_effects.output.node_data,
+        strain_annotations_node_data=rules.annotate_strains.output.node_data,
         metadata=rules.collapse_host_order.output.metadata,
         auspice_config=lambda wc: config["trees"][wc.tree]["auspice_config"],
         phenotype_auspice_config=rules.generate_phenotype_auspice_config.output.auspice_config,
+        strain_annotations_auspice_config=rules.annotate_strains.output.auspice_config,
         description=rules.format_description.output.description,
     output:
         auspice_json=os.path.join("auspice", config["auspice_prefix"] + "_{tree}.json"),
@@ -510,13 +533,13 @@ rule export:
         """
         augur export v2 \
             --tree {input.tree} \
-            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.mutation_effects_scores} \
+            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.mutation_effects_scores} {input.strain_annotations_node_data} \
             --include-root-sequence-inline \
             --metadata {input.metadata} \
             --metadata-id-columns {params.strain_id} \
             --output {output.auspice_json} \
             --title {params.title} \
-            --auspice-config {input.auspice_config} {input.phenotype_auspice_config} \
+            --auspice-config {input.auspice_config} {input.phenotype_auspice_config} {input.strain_annotations_auspice_config} \
             --description {input.description} \
             &> {log}
         """

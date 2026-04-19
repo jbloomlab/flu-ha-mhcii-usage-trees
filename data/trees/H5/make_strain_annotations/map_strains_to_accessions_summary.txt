@@ -1,0 +1,91 @@
+Total strains in log10_titers_relative_to.csv: 80
+Mapped: 71
+  accessions_to_include: 56
+  manual_add_metadata: 15
+Unmapped: 9
+
+Mappings (strain -> accession [source; matched name]):
+  A/American_Wigeon/South_Carolina/22-000345-001/2021 -> OQ958044.1 [accessions_to_include; matched 'A/American_Wigeon/South_Carolina/22-000345-001/2021']
+  A/Anhui/1/2005 -> DQ371928.1 [accessions_to_include; matched 'A/Anhui/1/2005']
+  A/Astrakhan/3212/2020 -> OP597562.1 [accessions_to_include; matched 'A/Astrakhan/3212/2020']
+  A/Cambodia/2302009/2023 -> A_Cambodia_2302009_2023 [manual_add_metadata; matched 'A/Cambodia/2302009/2023']
+  A/Cambodia/X0810301/2013 -> KF918470.1 [accessions_to_include; matched 'A/Cambodia/X0810301/2013']
+  A/Chicken/Indonesia/Wates130/2005 -> EU124050.1 [accessions_to_include; matched 'A/Chicken/Indonesia/Wates130/2005']
+  A/Chicken/Netherlands/18000887-005/2018 -> A_Chicken_Netherlands_18000887-005_2018 [manual_add_metadata; matched 'A/Chicken/Netherlands/18000887-005/2018']
+  A/Egypt/2321-NAMRU3/2007 -> EF535822.1 [accessions_to_include; matched 'A/Egypt/2321-NAMRU3/2007']
+  A/Egypt/3300-NAMRU3/2008 -> FJ686837.1 [accessions_to_include; matched 'A/Egypt/3300-NAMRU3/2008']
+  A/Egypt/N03072/2010 -> JN807779.1 [accessions_to_include; matched 'A/Egypt/N03072/2010']
+  A/Egypt/N04915/2014 -> KP864432.1 [accessions_to_include; matched 'A/Egypt/N04915/2014']
+  A/Ezo_red_fox/Hokkaido/1/2022 -> OQ959076.1 [accessions_to_include; matched 'A/Ezo_red_fox/Hokkaido/1/2022']
+  A/Fujian-Sanyuan/21099/2017 -> A_Fujian-Sanyuan_21099_2017 [manual_add_metadata; matched 'A/Fujian-Sanyuan/21099/2017']
+  A/Goose/Guangdong/1/96 -> NC_007362.1 [accessions_to_include; matched 'A/Goose/Guangdong/1/96']
+  A/Guangdong/18SF020/2018 -> A_Guangdong_18SF020_2018 [manual_add_metadata; matched 'A/Guangdong/18SF020/2018']
+  A/Guizhou/1/2013 -> A_Guizhou_1_2013 [manual_add_metadata; matched 'A/Guizhou/1/2013']
+  A/Hong_Kong/483/1997 -> GU052097.1 [accessions_to_include; matched 'A/Hong_Kong/483/1997']
+  A/Hubei/1/2010 -> CY098758.1 [accessions_to_include; matched 'A/Hubei/1/2010']
+  A/Hubei/29578/2016 -> A_Hubei_29578_2016 [manual_add_metadata; matched 'A/Hubei/29578/2016']
+  A/Indonesia/5/2005 -> CY116646.1 [accessions_to_include; matched 'A/Indonesia/5/2005']
+  A/Indonesia/NIHRD11771/2011 -> A_Indonesia_NIHRD11771_2011 [manual_add_metadata; matched 'A/Indonesia/NIHRD11771/2011']
+  A/Jiangsu/NJ210/2023 -> A_Jiangsu_NJ210_2023 [manual_add_metadata; matched 'A/Jiangsu/NJ210/2023']
+  A/Ohio/06-1/2025 -> PV344195.1 [accessions_to_include; matched 'A/Ohio/06-1/2025']
+  A/Sichuan/26221/2014 -> KM873638.1 [accessions_to_include; matched 'A/Sichuan/26221/2014']
+  A/Victoria/149/2024 -> A_Victoria_149_2024 [manual_add_metadata; matched 'A/Victoria/149/2024']
+  A/Vietnam/1194/2004 -> EF541402.1 [accessions_to_include; matched 'A/Vietnam/1194/2004']
+  A/Vietnam/1203/2004 -> EF541403.1 [accessions_to_include; matched 'A/Vietnam/1203/2004']
+  A/bar_headed_goose/Qinghai/*/2005 -> DQ230522.1 [accessions_to_include; matched 'A/bar_headed_goose/Qinghai/*/2005']
+  A/barn_swallow/Hong_Kong/1161/2010 -> KC357320.1 [accessions_to_include; matched 'A/barn_swallow/Hong_Kong/1161/2010']
+  A/bovine/Texas/43134/2024 -> PV839281.1 [accessions_to_include; matched 'A/bovine/Texas/43134/2024']
+  A/chicken/Central_Java/UT3091/2005 -> GQ122395.1 [accessions_to_include; matched 'A/chicken/Central_Java/UT3091/2005']
+  A/chicken/Egypt/B13826C/2017 -> MH998486.1 [accessions_to_include; matched 'A/chicken/Egypt/B13826C/2017']
+  A/chicken/Egypt/Q1995D/2010 -> CY099579.1 [accessions_to_include; matched 'A/chicken/Egypt/Q1995D/2010']
+  A/chicken/Egypt/Q7630D/2013 -> KT220551.1 [accessions_to_include; matched 'A/chicken/Egypt/Q7630D/2013']
+  A/chicken/Ghana/20/2015 -> KU971405.1 [accessions_to_include; matched 'A/chicken/Ghana/20/2015']
+  A/chicken/Ghana/AVL-763_21VIR7050-39/2021 -> A_chicken_Ghana_AVL-763_21VIR7050-39_2021 [manual_add_metadata; matched 'A/chicken/Ghana/AVL-763_21VIR7050-39/2021']
+  A/chicken/Guizhou/1153/2016 -> MT126478.1 [accessions_to_include; matched 'A/chicken/Guizhou/1153/2016']
+  A/chicken/India/NIV33487/06 -> GU454581.1 [accessions_to_include; matched 'A/chicken/India/NIV33487/06']
+  A/chicken/Khanhhoa/CVVI-28/2014 -> KM821633.1 [accessions_to_include; matched 'A/chicken/Khanhhoa/CVVI-28/2014']
+  A/chicken/Nigeria/16VIR5840-51/2015 -> MF112559.1 [accessions_to_include; matched 'A/chicken/Nigeria/16VIR5840-51/2015']
+  A/chicken/Scotland/054477/2021 -> OQ632895.1 [accessions_to_include; matched 'A/chicken/Scotland/054477/2021']
+  A/chicken/Shanxi/2/2006 -> DQ914814.3 [accessions_to_include; matched 'A/chicken/Shanxi/2/2006']
+  A/chicken/Viet_Nam/Ncvd8/2003 -> EF541407.1 [accessions_to_include; matched 'A/chicken/Viet_Nam/Ncvd8/2003']
+  A/chicken/Vietnam/NCVD-016/2008 -> FJ842476.1 [accessions_to_include; matched 'A/chicken/Vietnam/NCVD-016/2008']
+  A/chicken/Vietnam/NCVD-03/2008 -> A_chicken_Vietnam_NCVD-03_2008 [manual_add_metadata; matched 'A/chicken/Vietnam/NCVD-03/2008']
+  A/chicken/Vietnam/NCVD-15A59/2015 -> KY171725.1 [accessions_to_include; matched 'A/chicken/Vietnam/NCVD-15A59/2015']
+  A/chicken/Vietnam/Raho4-Cd-20-421/2020 -> A_chicken_Vietnam_Raho4-Cd-20-421_2020 [manual_add_metadata; matched 'A/chicken/Vietnam/Raho4-Cd-20-421/2020']
+  A/crow/Osaka/102/2004 -> AB189061.1 [accessions_to_include; matched 'A/crow/Osaka/102/2004']
+  A/dairy cow/California/022470-005/2025 -> PX441231.1 [accessions_to_include; matched 'A/dairy cow/California/022470-005/2025']
+  A/duck/Bangladesh/17D1012/2018 -> A_duck_Bangladesh_17D1012_2018 [manual_add_metadata; matched 'A/duck/Bangladesh/17D1012/2018']
+  A/duck/Bangladesh/19097/2013 -> KF715205.1 [accessions_to_include; matched 'A/duck/Bangladesh/19097/2013']
+  A/duck/Bangladesh/43127/2020 -> MW466048.1 [accessions_to_include; matched 'A/duck/Bangladesh/43127/2020']
+  A/duck/Bangladesh/51601/2021 -> OP030702.1 [accessions_to_include; matched 'A/duck/Bangladesh/51601/2021']
+  A/duck/France/150234/2015 -> A_duck_France_150234_2015 [manual_add_metadata; matched 'A/duck/France/150234/2015']
+  A/duck/Guangdong/01/2001 -> AY585360.1 [accessions_to_include; matched 'A/duck/Guangdong/01/2001']
+  A/duck/Hunan/S4101/2011 -> CY146652.1 [accessions_to_include; matched 'A/duck/Hunan/S4101/2011']
+  A/duck/Hyogo/1/2016 -> LC317070.1 [accessions_to_include; matched 'A/duck/Hyogo/1/2016']
+  A/duck/Nanchang/9789/2013 -> KP288324.1 [accessions_to_include; matched 'A/duck/Nanchang/9789/2013']
+  A/duck/Ningxia/YG71/2017 -> MH283037.1 [accessions_to_include; matched 'A/duck/Ningxia/YG71/2017']
+  A/duck/Taiwan/DV30-2/2005 -> CY110933.1 [accessions_to_include; matched 'A/duck/Taiwan/DV30-2/2005']
+  A/duck/Tegal/BBVW-1727-11/2012 -> KC417274.1 [accessions_to_include; matched 'A/duck/Tegal/BBVW-1727-11/2012']
+  A/duck/Tsukuba/394/2005 -> AB558460.1 [accessions_to_include; matched 'A/duck/Tsukuba/394/2005']
+  A/duck/Tsukuba/541/06 -> AB558470.1 [accessions_to_include; matched 'A/duck/Tsukuba/541/06']
+  A/duck/Vietnam/NCVD-1584/2012 -> KY171560.1 [accessions_to_include; matched 'A/duck/Vietnam/NCVD-1584/2012']
+  A/goose/Fujian/bb/2003 -> DQ997405.1 [accessions_to_include; matched 'A/goose/Fujian/bb/2003']
+  A/goose/Guangdong/72/2004 -> HM172089.1 [accessions_to_include; matched 'A/goose/Guangdong/72/2004']
+  A/gyrfalcon/Washington/410886/2014 -> KP307984.1 [accessions_to_include; matched 'A/gyrfalcon/Washington/410886/2014']
+  A/mute swan/Ibaraki/236T/2016 -> A_mute_swan_Ibaraki_236T_2016 [manual_add_metadata; matched 'A/mute swan/Ibaraki/236T/2016']
+  A/swine/Anhui/ca/2004 -> DQ997392.1 [accessions_to_include; matched 'A/swine/Anhui/ca/2004']
+  A/turkey/Turkey/1/2005 -> DQ407519.1 [accessions_to_include; matched 'A/turkey/Turkey/1/2005']
+  A/whooper_swan/Mongolia/244/2005 -> GU186700.1 [accessions_to_include; matched 'A/whooper_swan/Mongolia/244/2005']
+
+Unmapped strains (9):
+  A/Cambodia/R0405050/2007
+  A/Ck/HK/61.9/02
+  A/Fujian/2/2024
+  A/Japanese_white-eye/Hong_Kong/1038/2006
+  A/chicken/Bangladesh/11rs1984-30/2011
+  A/common_magpie/Hong_Kong/5052/2007
+  A/duck/Hunan/795/2002
+  A/duck/Laos/3295/2006
+  A/goose/Guiyang/337/2006
+
+Cross-source collisions (0):

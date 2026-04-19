@@ -139,6 +139,19 @@ Per-subtype rule that generates an auspice config JSON defining color scales for
 Outputs per tree:
 - `results/trees/{tree}/auspice_config_phenotypes.json`: auspice config JSON with phenotype color scales
 
+### `annotate_strains`
+Per-subtype rule that maps the per-strain annotations TSV (`config["trees"][tree]["strain_annotations"]`) onto tree tips. Uses `scripts/annotate_strains.py`. Takes the refined tree and the strain annotations TSV as inputs. Params are the global `config["missing_strain_annotations_action"]` and the tree's `phenotype_color_scale` (reused from the phenotype color config).
+
+Behavior:
+- If the TSV is empty (header-only or fully empty), writes `{"nodes": {}}` and `{"colorings": [], "filters": []}` and returns — nothing else happens.
+- Otherwise requires an `accession` column (any position). Errors on duplicates, whitespace in `accession` values, or a missing `accession` column.
+- Reads tip names from the refined `tree.nwk` via `Bio.Phylo`. For accessions not present as tips, obeys `missing_strain_annotations_action`: `"ignore"` warns and drops those rows; `"error"` raises a `ValueError` listing them; any other value errors immediately.
+- Classifies each non-`accession` column as numeric (all non-null values parse as numbers) or non-numeric. Numeric columns are cast to floats and get a `continuous` auspice `coloring` with a scale built by interpolating each entry of `phenotype_color_scale` across `[min, max]` of the column's observed values. Non-numeric columns get a `categorical` coloring and are added to `filters`.
+
+Outputs per tree:
+- `results/trees/{tree}/strain_annotations_node_data.json`: node data JSON with per-tip annotation values (passed to `augur export --node-data`)
+- `results/trees/{tree}/auspice_config_strain_annotations.json`: auspice config JSON with colorings (and filters for categorical columns)
+
 ### `format_description`
 Per-subtype rule that formats the shared description markdown file for a specific tree. Takes the description markdown file from `config["trees"][tree]["description"]` and replaces all occurrences of `{tree}` with the tree name (e.g., "H5"). Uses `sed` in a shell command.
 
@@ -146,7 +159,7 @@ Outputs per tree:
 - `results/trees/{tree}/description.md`: formatted description markdown with `{tree}` replaced by the tree name
 
 ### `export`
-Per-subtype rule that exports an auspice JSON for visualization. Uses `augur export v2`. Takes the refined tree, branch lengths, nucleotide mutations, amino acid mutations, mutation effects scores, collapsed subsampled metadata, an auspice config file (`config["trees"][tree]["auspice_config"]`), the generated phenotype auspice config, and the formatted description markdown from `format_description` as inputs. Uses `--metadata-id-columns accession`, `--include-root-sequence-inline`, `--title` (from `config["trees"][tree]["title"]`, shell-escaped with `shlex.quote`), `--description`, and `--auspice-config` (both the base config and the phenotype config). The output path is `auspice/{auspice_prefix}_{tree}.json`, where `auspice_prefix` is set in `config.yaml` (typically matching the repo name for Nextstrain community builds).
+Per-subtype rule that exports an auspice JSON for visualization. Uses `augur export v2`. Takes the refined tree, branch lengths, nucleotide mutations, amino acid mutations, mutation effects scores, strain annotations node data from `annotate_strains`, collapsed subsampled metadata, an auspice config file (`config["trees"][tree]["auspice_config"]`), the generated phenotype auspice config, the generated strain annotations auspice config from `annotate_strains`, and the formatted description markdown from `format_description` as inputs. Uses `--metadata-id-columns accession`, `--include-root-sequence-inline`, `--title` (from `config["trees"][tree]["title"]`, shell-escaped with `shlex.quote`), `--description`, and `--auspice-config` (the base config plus the phenotype and strain annotations configs). The output path is `auspice/{auspice_prefix}_{tree}.json`, where `auspice_prefix` is set in `config.yaml` (typically matching the repo name for Nextstrain community builds).
 
 Outputs per tree:
 - `auspice/{auspice_prefix}_{tree}.json`: auspice v2 JSON for interactive tree visualization

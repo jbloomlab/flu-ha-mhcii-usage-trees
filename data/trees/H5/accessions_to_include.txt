@@ -57,3 +57,4 @@ CY146652.1  # A/duck/Hunan/S4101/2011
 AB558460.1  # A/duck/Tsukuba/394/2005
 AB558470.1  # A/duck/Tsukuba/541/06 = A/duck/Tsukuba/541/2006
 OQ632895.1  # A/chicken/Scotland/054477/2021 = A/chicken/France/21328/2021
+GU052097.1  # A/Hong_Kong/483/1997
