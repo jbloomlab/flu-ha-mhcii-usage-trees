@@ -164,6 +164,12 @@ Per-subtype rule that exports an auspice JSON for visualization. Uses `augur exp
 Outputs per tree:
 - `auspice/{auspice_prefix}_{tree}.json`: auspice v2 JSON for interactive tree visualization
 
+### `prune_tree`
+Per-entry rule (wildcard `{pruned_tree}`) that post-processes a source tree's exported Auspice JSON down to only tips whose rows in the source tree's `strain_annotations.tsv` match a column/value filter. Driven by the top-level `config["pruned_trees"]` mapping; each entry requires `source_tree` (a key in `config["trees"]`) and `keep_where` (a dict of column->value pairs; a tip is kept iff every column equals the given value after string coercion), and may specify an optional `title` to overwrite `meta.title` on the pruned JSON. Uses `scripts/prune_auspice_json.py`. Internal unary nodes left after pruning are collapsed, with the collapsed node's `branch_attrs.mutations` prepended (per gene) onto the surviving child's branch so no mutation info is lost. Errors if `keep_where` references a missing column, if no rows match, if any matched accession is not a tip in the source Auspice JSON, or if pruning removes the entire tree. The pipeline uses `wildcard_constraints` on `{tree}` (the export rule's wildcard) restricted to `config["trees"]` keys so the `{pruned_tree}` wildcard can't accidentally match an export target.
+
+Outputs per entry:
+- `auspice/{auspice_prefix}_{pruned_tree}.json`: pruned Auspice v2 JSON (listed as a `rule all` target)
+
 ### `validate_includes`
 Per-subtype rule that verifies every accession specified to include (user's `accessions_to_include.txt` plus all accessions in `manual_add_metadata.tsv`) appears as a leaf in the final Auspice JSON. Uses `scripts/validate_includes.py`. The Genbank include file is parsed with `parse_accessions_file` from `scripts/build_include_file.py` (both scripts share the parser), which strips `#` comments and blank lines. For each expected accession, `source` is `manual_add` if it is in `manual_add_metadata.tsv` else `genbank` (manual_add wins on overlap). The rule walks the Auspice JSON tree, collects leaf `name` values, and writes `include_validation.tsv` with columns `accession`, `source`, `in_tree`. If any expected accession is missing from the tree, raises a `ValueError` listing the missing accessions (grouped by source), which fails the Snakemake job. The validation TSVs are targets of `rule all`, so the pipeline errors by default if any include is dropped.
 

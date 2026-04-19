@@ -10,11 +10,23 @@ import yaml
 configfile: "config.yaml"
 
 
+# Constrain {tree} and {pruned_tree} so neither wildcard matches the other
+# rule's output (rule `export` and rule `prune_tree` both write to
+# `auspice/{auspice_prefix}_*.json`).
+wildcard_constraints:
+    tree="|".join(config["trees"]),
+    pruned_tree="|".join(config["pruned_trees"]),
+
+
 rule all:
     input:
         auspice_jsons=expand(
             os.path.join("auspice", config["auspice_prefix"] + "_{tree}.json"),
             tree=config["trees"],
+        ),
+        pruned_auspice_jsons=expand(
+            os.path.join("auspice", config["auspice_prefix"] + "_{pruned_tree}.json"),
+            pruned_tree=config["pruned_trees"],
         ),
         bad_dates=expand(
             "results/trees/{tree}/accessions_with_bad_dates_reset.tsv",
@@ -543,6 +555,34 @@ rule export:
             --description {input.description} \
             &> {log}
         """
+
+
+rule prune_tree:
+    """Prune a source Auspice JSON to tips matching a strain-annotations filter."""
+    input:
+        source_json=lambda wc: os.path.join(
+            "auspice",
+            config["auspice_prefix"]
+            + "_"
+            + config["pruned_trees"][wc.pruned_tree]["source_tree"]
+            + ".json",
+        ),
+        strain_annotations=lambda wc: config["trees"][
+            config["pruned_trees"][wc.pruned_tree]["source_tree"]
+        ]["strain_annotations"],
+    output:
+        auspice_json=os.path.join(
+            "auspice", config["auspice_prefix"] + "_{pruned_tree}.json"
+        ),
+    params:
+        keep_where=lambda wc: config["pruned_trees"][wc.pruned_tree]["keep_where"],
+        title=lambda wc: config["pruned_trees"][wc.pruned_tree].get("title"),
+    log:
+        "results/logs/prune_tree_{pruned_tree}.txt",
+    conda:
+        "environment.yaml"
+    script:
+        "scripts/prune_auspice_json.py"
 
 
 rule validate_includes:
