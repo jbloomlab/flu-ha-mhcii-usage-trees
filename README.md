@@ -113,6 +113,12 @@ Export interactive auspice v2 JSONs using [augur export](https://docs.nextstrain
 Each tree uses an auspice config file (configured as `auspice_config` in [config.yaml](config.yaml)) that defines colorings, filters, display defaults, and metadata; a generated phenotype auspice config with color scales for mutation effect scores; a generated strain annotations auspice config with colorings (and filters) for columns from `strain_annotations.tsv`; a markdown `description` file for the tree sidebar; and a `title` for the tree visualization.
 The output files are placed in `auspice/` with names like `{auspice_prefix}_{tree}.json` (the prefix is set in [config.yaml](config.yaml), typically matching the repo name for [Nextstrain community builds](https://docs.nextstrain.org/en/latest/guides/share/community-builds.html)).
 
+### `prune_tree`: Post-process a source tree into a filtered subtree
+For each entry in `pruned_trees` in [config.yaml](config.yaml), post-process the source tree's exported Auspice JSON down to only the tips whose rows in `strain_annotations.tsv` match a column/value filter (e.g. keep only H5 tips with `has_titers == "yes"`).
+Internal nodes left with a single descendant after pruning are collapsed, with their branch mutations merged onto the surviving child so no mutation information is lost.
+An optional `title` can override the Auspice title on the pruned JSON.
+Outputs a pruned Auspice JSON in `auspice/` alongside the full trees.
+
 ### `validate_includes`: Confirm every include accession is in the final tree
 For each tree, verify that every accession listed in `data/trees/{tree}/accessions_to_include.txt` (comments and blank lines are ignored) and every accession in `data/trees/{tree}/manual_add_metadata.tsv` appears as a leaf in the exported Auspice JSON.
 Writes `results/trees/{tree}/include_validation.tsv` with one row per expected accession (`accession`, `source`, `in_tree`) and errors the pipeline if any are missing.

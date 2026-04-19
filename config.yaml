@@ -69,6 +69,22 @@ trees:
         H7 tufted duck MHCII entry increase: MHCII entry increase (H7)
         H7 tufted duck MHCII binding: MHCII binding (H7)
       phenotype_color_scale: *phenotype_color_scale
-      title: ?f'Influenza {subtype} HA phylogeny colored by predicted tufted duck MHC-II usage'
+      title: ?f'Influenza {subtype} HA phylogeny annotated by MHC-II usage'
       auspice_config: data/auspice_config/auspice_config.json
       description: data/auspice_config/description.md  # in file, "{tree}" replaced with tree name (eg, "H5")
+
+# Derived (pruned) trees produced by post-processing a source tree's Auspice
+# JSON down to tips whose per-strain annotations match a filter. Each entry's
+# key becomes the pruned tree name (the Auspice output will be
+# "auspice/{auspice_prefix}_{name}.json"). Required sub-keys: `source_tree`
+# (a key in `trees` above) and `keep_where` (mapping of column->value applied
+# to the source tree's strain_annotations.tsv; tips whose row matches all
+# pairs are retained). Optional `title` overrides the source tree's Auspice
+# title. YAML parses unquoted `yes`/`no` as booleans, so keep_where string
+# values should be quoted to match the TSV.
+pruned_trees:
+  H5-with-titers:
+    source_tree: H5
+    keep_where:
+      has_titers: "yes"
+    title: "Influenza H5 HA phylogeny of only sequences with directly measured MHC-II mediated entry titers"
