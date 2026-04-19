@@ -39,9 +39,6 @@ rule all:
 
 
 rule get_ncbi_dataset_zip:
-    """Get zipped dataset of all influenza sequences."""
-    params:
-        taxid=config["dataset_taxid"],
     output:
         zipfile="results/ncbi_dataset/ncbi_dataset.zip",
         datestamp="results/ncbi_dataset/ncbi_dataset_download_date.txt",
@@ -49,6 +46,9 @@ rule get_ncbi_dataset_zip:
         "results/logs/get_ncbi_dataset_zip.txt",
     conda:
         "environment.yaml"
+    """Get zipped dataset of all influenza sequences."""
+    params:
+        taxid=config["dataset_taxid"],
     shell:
         """
         datasets download virus genome taxon {params.taxid} \
@@ -102,12 +102,12 @@ rule extract_ha_cds:
         metadata="results/trees/{tree}/metadata_all_pre_host.tsv",
         fasta="results/trees/{tree}/cds_all.fasta.gz",
         stats="results/trees/{tree}/extract_cds_stats.txt",
-    params:
-        subtype_regex=lambda wc: config["trees"][wc.tree]["subtype"],
     log:
         "results/logs/extract_ha_cds_{tree}.txt",
     conda:
         "environment.yaml"
+    params:
+        subtype_regex=lambda wc: config["trees"][wc.tree]["subtype"],
     script:
         "scripts/extract_ha_cds.py"
 
@@ -225,16 +225,16 @@ rule subsample:
         sequences="results/trees/{tree}/cds_subsampled.fasta",
         metadata="results/trees/{tree}/metadata_subsampled.tsv",
         config="results/trees/{tree}/subsample_config.yaml",
+    log:
+        "results/logs/subsample_{tree}.txt",
+    conda:
+        "environment.yaml"
     params:
         build_config_yaml=lambda wc: yaml.dump(
             _subsample_config_with_include(wc), default_flow_style=False
         ),
         seed=1,
         strain_id="accession",
-    conda:
-        "environment.yaml"
-    log:
-        "results/logs/subsample_{tree}.txt",
     shell:
         """
         cat > {output.config} <<'EOF'
@@ -258,12 +258,12 @@ rule collapse_host_order:
         metadata=rules.subsample.output.metadata,
     output:
         metadata="results/trees/{tree}/metadata_subsampled_collapsed.tsv",
-    params:
-        collapse_low_freq_host_order=config["collapse_low_freq_host_order"],
     log:
         "results/logs/collapse_host_order_{tree}.txt",
     conda:
         "environment.yaml"
+    params:
+        collapse_low_freq_host_order=config["collapse_low_freq_host_order"],
     script:
         "scripts/collapse_host_order.py"
 
@@ -275,11 +275,11 @@ rule align:
         reference_sequence=lambda wc: config["trees"][wc.tree]["reference_sequence"],
     output:
         alignment="results/trees/{tree}/alignment.fasta",
-    threads: 4
-    conda:
-        "environment.yaml"
     log:
         "results/logs/align_{tree}.txt",
+    conda:
+        "environment.yaml"
+    threads: 4
     shell:
         """
         augur align \
@@ -298,11 +298,11 @@ rule tree:
         alignment=rules.align.output.alignment,
     output:
         tree="results/trees/{tree}/tree_raw.nwk",
-    threads: 4
-    conda:
-        "environment.yaml"
     log:
         "results/logs/tree_{tree}.txt",
+    conda:
+        "environment.yaml"
+    threads: 4
     shell:
         """
         augur tree \
@@ -325,15 +325,15 @@ rule refine:
         tree="results/trees/{tree}/tree.nwk",
         node_data="results/trees/{tree}/branch_lengths.json",
         refine_output="results/trees/{tree}/refine_output.txt",
+    log:
+        "results/logs/refine_{tree}.txt",
+    conda:
+        "environment.yaml"
     params:
         strain_id="accession",
         addtl_flags=lambda wc: " ".join(
             f"--{k} {v}" for k, v in config["trees"][wc.tree]["augur_refine"].items()
         ),
-    conda:
-        "environment.yaml"
-    log:
-        "results/logs/refine_{tree}.txt",
     shell:
         """
         set -euo pipefail
@@ -358,12 +358,12 @@ rule parse_refine_outliers:
         refine_output=rules.refine.output.refine_output,
     output:
         tsv="results/trees/{tree}/accessions_with_bad_dates_reset.tsv",
-    params:
-        bad_dates_action=config["bad_dates_in_keep_accessions_action"],
     log:
         "results/logs/parse_refine_outliers_{tree}.txt",
     conda:
         "environment.yaml"
+    params:
+        bad_dates_action=config["bad_dates_in_keep_accessions_action"],
     script:
         "scripts/parse_refine_outliers.py"
 
@@ -376,10 +376,10 @@ rule ancestral:
         root_sequence=lambda wc: config["trees"][wc.tree]["reference_sequence"],
     output:
         node_data="results/trees/{tree}/nt_muts.json",
-    conda:
-        "environment.yaml"
     log:
         "results/logs/ancestral_{tree}.txt",
+    conda:
+        "environment.yaml"
     shell:
         """
         augur ancestral \
@@ -400,12 +400,12 @@ rule translate:
         annotation=lambda wc: config["trees"][wc.tree]["annotation"],
     output:
         node_data="results/trees/{tree}/aa_muts.json",
-    params:
-        genes=lambda wc: " ".join(config["trees"][wc.tree]["genes"]),
-    conda:
-        "environment.yaml"
     log:
         "results/logs/translate_{tree}.txt",
+    conda:
+        "environment.yaml"
+    params:
+        genes=lambda wc: " ".join(config["trees"][wc.tree]["genes"]),
     shell:
         """
         augur translate \
@@ -426,6 +426,10 @@ rule score_mutation_effects:
         mutation_effects=lambda wc: config["trees"][wc.tree]["mutation_effects"],
     output:
         node_data="results/trees/{tree}/mutation_effects_scores.json",
+    log:
+        "results/logs/score_mutation_effects_{tree}.txt",
+    conda:
+        "environment.yaml"
     params:
         phenotypes=lambda wc: " ".join(
             shlex.quote(p) for p in config["trees"][wc.tree]["phenotypes"]
@@ -434,10 +438,6 @@ rule score_mutation_effects:
             shlex.quote(config["trees"][wc.tree]["phenotypes"][p])
             for p in config["trees"][wc.tree]["phenotypes"]
         ),
-    conda:
-        "environment.yaml"
-    log:
-        "results/logs/score_mutation_effects_{tree}.txt",
     shell:
         """
         python scripts/score_mutation_effects.py \
@@ -457,6 +457,10 @@ rule generate_phenotype_auspice_config:
         node_data=rules.score_mutation_effects.output.node_data,
     output:
         auspice_config="results/trees/{tree}/auspice_config_phenotypes.json",
+    log:
+        "results/logs/generate_phenotype_auspice_config_{tree}.txt",
+    conda:
+        "environment.yaml"
     params:
         phenotype_names=lambda wc: " ".join(
             shlex.quote(config["trees"][wc.tree]["phenotypes"][p])
@@ -465,10 +469,6 @@ rule generate_phenotype_auspice_config:
         continuous_scale=lambda wc: " ".join(
             shlex.quote(c) for c in config["trees"][wc.tree]["phenotype_color_scale"]
         ),
-    conda:
-        "environment.yaml"
-    log:
-        "results/logs/generate_phenotype_auspice_config_{tree}.txt",
     shell:
         """
         python scripts/generate_phenotype_auspice_config.py \
@@ -488,15 +488,15 @@ rule annotate_strains:
     output:
         node_data="results/trees/{tree}/strain_annotations_node_data.json",
         auspice_config="results/trees/{tree}/auspice_config_strain_annotations.json",
+    log:
+        "results/logs/annotate_strains_{tree}.txt",
+    conda:
+        "environment.yaml"
     params:
         missing_strain_annotations_action=config["missing_strain_annotations_action"],
         phenotype_color_scale=lambda wc: config["trees"][wc.tree][
             "phenotype_color_scale"
         ],
-    log:
-        "results/logs/annotate_strains_{tree}.txt",
-    conda:
-        "environment.yaml"
     script:
         "scripts/annotate_strains.py"
 
@@ -534,13 +534,13 @@ rule export:
         description=rules.format_description.output.description,
     output:
         auspice_json=os.path.join("auspice", config["auspice_prefix"] + "_{tree}.json"),
+    log:
+        "results/logs/export_{tree}.txt",
+    conda:
+        "environment.yaml"
     params:
         strain_id="accession",
         title=lambda wc: shlex.quote(config["trees"][wc.tree]["title"]),
-    conda:
-        "environment.yaml"
-    log:
-        "results/logs/export_{tree}.txt",
     shell:
         """
         augur export v2 \

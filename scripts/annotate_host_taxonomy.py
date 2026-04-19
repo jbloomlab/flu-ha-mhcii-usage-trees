@@ -8,12 +8,16 @@ import pandas as pd
 HUMAN_TAX_ID = "9606"
 AVES_CLASS = "Aves"
 MAMMALIA_CLASS = "Mammalia"
+CARNIVORA_ORDER = "Carnivora"
+PERISSODACTYLA_ORDER = "Perissodactyla"
+SUS_GENUS = "Sus"
+BOS_GENUS = "Bos"
 
 
 def get_taxonomy_for_ids(tax_ids, taxonomy_dir):
-    """Get lineage, class, and order for each tax ID using taxonkit.
+    """Get lineage, class, order, and genus for each tax ID using taxonkit.
 
-    Returns dict of {tax_id: (lineage, class_name, order_name)}.
+    Returns dict of {tax_id: (lineage, class_name, order_name, genus_name)}.
     """
     input_text = "\n".join(tax_ids)
     result = subprocess.run(
@@ -24,7 +28,7 @@ def get_taxonomy_for_ids(tax_ids, taxonomy_dir):
         check=True,
     )
     result2 = subprocess.run(
-        ["taxonkit", "reformat", "--data-dir", taxonomy_dir, "-f", "{c}\t{o}"],
+        ["taxonkit", "reformat", "--data-dir", taxonomy_dir, "-f", "{c}\t{o}\t{g}"],
         input=result.stdout,
         capture_output=True,
         text=True,
@@ -37,20 +41,21 @@ def get_taxonomy_for_ids(tax_ids, taxonomy_dir):
         parts = line.split("\t")
         tax_id = parts[0]
         lineage = parts[1] if len(parts) >= 2 else ""
-        class_name = parts[-2] if len(parts) >= 4 else ""
-        order_name = parts[-1] if len(parts) >= 4 else ""
-        taxonomy[tax_id] = (lineage, class_name, order_name)
+        class_name = parts[-3] if len(parts) >= 5 else ""
+        order_name = parts[-2] if len(parts) >= 5 else ""
+        genus_name = parts[-1] if len(parts) >= 5 else ""
+        taxonomy[tax_id] = (lineage, class_name, order_name, genus_name)
     return taxonomy
 
 
 def classify_host_general(tax_id, taxonomy):
-    """Classify a tax ID as avian, human, or non-human mammal."""
+    """Classify a tax ID as human, avian, swine, bovine, equine, carnivore, or other mammal."""
     if pd.isna(tax_id) or str(tax_id).strip() == "":
         return pd.NA
     tax_id_str = str(int(float(tax_id)))
     if tax_id_str not in taxonomy:
         raise ValueError(f"No taxonomy found for tax ID {tax_id_str}")
-    lineage, class_name, _ = taxonomy[tax_id_str]
+    lineage, class_name, order_name, genus_name = taxonomy[tax_id_str]
     # deleted tax IDs have empty lineage; treat as unknown
     if not lineage:
         print(
@@ -63,7 +68,15 @@ def classify_host_general(tax_id, taxonomy):
     if class_name == AVES_CLASS or (not class_name and AVES_CLASS in lineage):
         return "avian"
     if class_name == MAMMALIA_CLASS or (not class_name and MAMMALIA_CLASS in lineage):
-        return "non-human mammal"
+        if order_name == CARNIVORA_ORDER:
+            return "carnivore"
+        if order_name == PERISSODACTYLA_ORDER:
+            return "equine"
+        if genus_name == SUS_GENUS:
+            return "swine"
+        if genus_name == BOS_GENUS:
+            return "bovine"
+        return "other mammal"
     raise ValueError(
         f"Tax ID {tax_id_str} has class '{class_name}' and lineage "
         f"'{lineage}', expected '{AVES_CLASS}' or '{MAMMALIA_CLASS}'"
@@ -75,7 +88,7 @@ def get_host_order(tax_id, taxonomy):
     if pd.isna(tax_id) or str(tax_id).strip() == "":
         return pd.NA
     tax_id_str = str(int(float(tax_id)))
-    lineage, _, order_name = taxonomy[tax_id_str]
+    lineage, _, order_name, _ = taxonomy[tax_id_str]
     if not lineage:
         return pd.NA
     return order_name if order_name else pd.NA

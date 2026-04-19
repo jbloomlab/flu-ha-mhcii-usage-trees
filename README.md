@@ -56,7 +56,7 @@ These files are used to look up host taxonomy (class, order) from NCBI taxonomy 
 
 ### `annotate_host_taxonomy`: Classify hosts by taxonomy
 For each tree, annotate the metadata with host taxonomy information using `taxonkit` to look up lineage from NCBI taxonomy IDs.
-Renames `host` to `host_specific` (the NCBI Taxonomy scientific name), and adds `host_general` (classifying each host as "avian", "human", or "non-human mammal") and `host_order` (the taxonomic order).
+Renames `host` to `host_specific` (the NCBI Taxonomy scientific name), and adds `host_general` (classifying each host as "human", "avian", "swine", "bovine", "equine", "carnivore", or "other mammal") and `host_order` (the taxonomic order).
 Outputs the annotated metadata TSV in `results/trees/{tree}/`.
 
 ### `subsample`: Subsample sequences per subtype
