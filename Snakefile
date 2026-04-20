@@ -175,10 +175,25 @@ rule build_include_file:
         "scripts/build_include_file.py"
 
 
+rule infer_missing_host:
+    """Infer host from strain name when NCBI host info is missing."""
+    input:
+        metadata=rules.merge_manual_add.output.metadata,
+        strain_token_host_map=config["strain_token_host_map"],
+    output:
+        metadata="results/trees/{tree}/metadata_all_pre_host_inferred.tsv",
+    log:
+        "results/logs/infer_missing_host_{tree}.txt",
+    conda:
+        "environment.yaml"
+    script:
+        "scripts/infer_missing_host.py"
+
+
 rule annotate_host_taxonomy:
     """Annotate metadata with host taxonomy (general class, order)."""
     input:
-        metadata=rules.merge_manual_add.output.metadata,
+        metadata=rules.infer_missing_host.output.metadata,
         taxonomy_dir=rules.download_taxonomy.output.taxonomy_dir,
     output:
         metadata="results/trees/{tree}/metadata_all.tsv",

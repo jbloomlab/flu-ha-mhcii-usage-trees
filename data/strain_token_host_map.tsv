@@ -1,0 +1,290 @@
+token	host_tax_id	host_scientific_name	notes
+environment			environmental sample
+california			location
+denmark			location
+anhui			location
+chicken	9031	Gallus gallus	
+switzerland			location
+duck	8830	Anatidae	
+backyard bird	8782	Aves	
+ross's goose	8842	Anser	
+trumpeter swan	8867	Cygnus	
+swine	9823	Sus scrofa	
+wild waterbird	8830	Anatidae	waterfowl family
+mallard	8839	Anas platyrhynchos	
+moscow			location
+goose	8830	Anatidae	
+eared grebe	8782	Aves	
+american blue-winged teal	8835	Anas	
+turkey			ambiguous bird vs country Turkiye - user requested skip
+barred owl	8782	Aves	
+merganser	8830	Anatidae	
+unknown			explicit unknown
+canine	9615	Canis lupus familiaris	
+pet food			processed product
+quebec			location
+red-breasted merganser	8830	Anatidae	
+morioka			location
+brown pelican	8782	Aves	
+env			environmental sample
+mule-duck	8830	Anatidae	
+taiwan			location
+mule_duck	8830	Anatidae	
+raw pet food			processed product
+black brant	8830	Anatidae	
+common crane	8782	Aves	
+netherlands			location
+black crow	8782	Aves	
+cattle milk product			processed product
+domestic grower			ambiguous poultry-industry term - conservative skip
+equine	9796	Equus caballus	
+swainsons hawk	8782	Aves	
+thailand			location
+water			environmental sample
+bufflehead duck	8830	Anatidae	
+quail	8782	Aves	
+red necked stint	8782	Aves	
+cygnus olor	8867	Cygnus	mute swan
+montana			location
+swan	8867	Cygnus	
+tree sparrow	8782	Aves	
+broiler breeders chicken	9031	Gallus gallus	
+lesser snow goose white-morph	8830	Anatidae	
+migratory duck	8830	Anatidae	
+open-billed stork	8782	Aves	
+spot-billed duck(anas poecilohyncha)	8835	Anas	
+viet nam			location (Vietnam)
+white peckin duck	8830	Anatidae	Pekin duck
+aichi			location
+avian	8782	Aves	
+ck	9031	Gallus gallus	abbreviation for chicken; 5 records
+common pochard	8830	Anatidae	Aythya ferina - diving duck
+poultry	8782	Aves	
+brant	8830	Anatidae	
+brisbane			location
+great white pelican	8782	Aves	
+grebe	8782	Aves	
+hawaiian goose	8830	Anatidae	
+mandarin duck	8830	Anatidae	
+open-bill stork	8782	Aves	
+parasitic jaeger	8782	Aves	
+tufted duck	8830	Anatidae	
+wild bird feces			feces - host uncertain
+american goshawk	8782	Aves	
+canvasback duck	8830	Anatidae	
+common magpie	8782	Aves	
+dairy cattle	9913	Bos taurus	
+feral cat	9685	Felis catus	
+japan			location
+mallard x american black duck hybrid	8830	Anatidae	
+mdck serial passage			MDCK cell passage - lab
+mongolian horses	9796	Equus caballus	
+pigeon	8782	Aves	
+red-necked grebe	8782	Aves	
+sand crane	8782	Aves	
+swift tern	8782	Aves	
+tomsk			location
+wild waterfowl	8830	Anatidae	
+american wood stork	8782	Aves	
+belcher's_gull	8782	Aves	
+buzzard	8782	Aves	
+cougar	9696	Puma concolor	
+crow	8782	Aves	
+dog	9615	Canis lupus familiaris	
+domestic mallard duck	8839	Anas platyrhynchos	
+duck hybrid	8830	Anatidae	
+eastern screech owl	8782	Aves	
+egypt			location
+eider	8830	Anatidae	
+embden goose	8830	Anatidae	
+falcon	8782	Aves	
+franklins gull	8782	Aves	
+gannet	8782	Aves	
+goosander	8830	Anatidae	
+great crested grebe	8782	Aves	
+guanay cormorant	8782	Aves	
+guinea fowl	8782	Aves	
+hiroshima			location
+hongkong			location
+house crow	8782	Aves	
+irere			unclear token
+jiangsu			location
+kawasaki			location
+lesser snow goose blue-morph	8830	Anatidae	
+little grebe	8782	Aves	
+moscovy duck	8830	Anatidae	Muscovy duck
+mute swan	8867	Cygnus	
+new caledonia			location
+northern herrier	8782	Aves	likely northern harrier typo
+ontario			location
+panama			location
+pekin-duck	8830	Anatidae	
+peregrine falcon	8782	Aves	
+peruvian_pelican	8782	Aves	
+puerto rico			location
+raccoon dog	34880	Nyctereutes procyonoides	
+red-breasted goose	8830	Anatidae	
+redhead duck	8830	Anatidae	
+reverse genetic			reverse-genetics construct - lab
+ri			location (Rhode Island)
+rosss goose	8842	Anser	
+short-billed gull	8782	Aves	
+southern fulmar	8782	Aves	
+spur-winged goose	8830	Anatidae	
+whooper_swan	8867	Cygnus	
+wild bird(anas platyrhynchos)	8839	Anas platyrhynchos	
+wild duck	8830	Anatidae	
+wisconsin			location
+yellow-headed caracara	8782	Aves	
+african starling	8782	Aves	
+air			environmental sample
+american black duck	8830	Anatidae	
+american pelican	8782	Aves	
+aquatic bird	8782	Aves	
+aviafauna	8782	Aves	avian fauna
+bangkok			location
+barnswallow	8782	Aves	barn swallow
+beijing			location
+belcher gull	8782	Aves	
+belgium			location
+black-headed seagull	8782	Aves	
+blackbird	8782	Aves	
+blow fly			insect host - outside Aves/Mammalia scope
+blue-winged and cinnamon teal	8835	Anas	
+brant goose	8830	Anatidae	
+brown-head gull	8782	Aves	
+canada goose	8830	Anatidae	
+canard	8830	Anatidae	French for duck
+catalina island fox	9608	Canidae	Catalina Island fox - genus Urocyon
+chciken	9031	Gallus gallus	typo for chicken
+chicken egg			egg passage - lab; conservative skip
+chicken-cobb	9031	Gallus gallus	Cobb breed
+chinese pond heron	8782	Aves	
+cinnamon teal	8835	Anas	
+cinnamon-teal	8835	Anas	
+cloacal swab_ece1			swab/sample
+common blackbird	8782	Aves	
+common bussard	8782	Aves	typo buzzard
+common buzzard	8782	Aves	
+common myna	8782	Aves	
+comon goldeneye	8830	Anatidae	common goldeneye typo
+crested eagle	8782	Aves	
+cygnus cygnus	8867	Cygnus	whooper swan
+domestic goose	8830	Anatidae	
+dovekie	8782	Aves	
+duck feces			feces - host uncertain
+eagle owl	8782	Aves	
+eastern buzzard	8782	Aves	
+embryonated eggs			egg passage - lab
+england			location
+environment sample			environmental sample
+environmental			environmental sample
+environmental fecal			environmental sample
+feces			environmental
+florida			location
+fort monmouth			location
+fur seal	9702	Otariidae	eared seals family
+fuzhou			location
+glaucose-winged gull	8782	Aves	
+goldeneye duck	8830	Anatidae	
+great_white_pelican	8782	Aves	
+greater yellowlegs	8782	Aves	
+greenwing duck	8830	Anatidae	
+grey duck	8830	Anatidae	
+grey heron	8782	Aves	
+ground jay	8782	Aves	
+guangxi			location
+guinea			ambiguous - country vs guinea fowl
+guineafowl	8782	Aves	
+hamburg			location
+hanoi			location
+harris-hawk	8782	Aves	
+homosapien_female	9606	Homo sapiens	explicit human
+homosapien_female_27y	9606	Homo sapiens	explicit human
+homosapien_female_31y	9606	Homo sapiens	explicit human
+homosapien_male_65y	9606	Homo sapiens	explicit human
+homosapien_male_69y	9606	Homo sapiens	explicit human
+hooded crane	8782	Aves	
+hosre	9796	Equus caballus	typo for horse
+houbara bustard	8782	Aves	
+human	9606	Homo sapiens	explicit human
+indonesa			location (Indonesia typo)
+iowa			location
+japanese white-eye	8782	Aves	
+kiev			location
+korea			location
+large-billed crow	8782	Aves	
+little egret	8782	Aves	
+long-billed calandra	8782	Aves	
+loon, common	8782	Aves	
+mallard duck	8839	Anas platyrhynchos	
+manx shearwater	8782	Aves	
+marbled duck	8830	Anatidae	
+md			location (Maryland)
+mdckcells			MDCK cells - lab
+memphis			location
+merlin	8782	Aves	
+munia	8782	Aves	
+muscovy duck	8830	Anatidae	
+nene goose	8830	Anatidae	
+new york			location
+norway			location
+ohio			location
+osaka			location
+ostrich	8782	Aves	
+owl	8782	Aves	
+paradise shelduck	8830	Anatidae	
+peking duck	8830	Anatidae	
+pelican	8782	Aves	
+philippines			location
+pie-billed grebe	8782	Aves	
+pooled faecal material from mallard			feces - host uncertain
+port chalmers			location
+quarter horse	9796	Equus caballus	
+radjah shelduck	8830	Anatidae	
+raptor	8782	Aves	
+reassortant			lab reassortant
+red shoveler	8830	Anatidae	
+red-back shrike	8782	Aves	
+regensburg			location
+reverse genetics			reverse-genetics construct - lab
+rhea	8782	Aves	
+robin	8782	Aves	
+rock goose	8830	Anatidae	
+roseate spoonbill	8782	Aves	
+rufous turtle dove	8782	Aves	
+russia			location
+savannah cat	9685	Felis catus	domestic Savannah breed
+sck			unclear abbreviation
+sea gull	8782	Aves	
+seal	9709	Phocidae	true-seal family - order Carnivora
+sendai			location
+shanghai			location
+singapore			location
+spot-billed (anas poecilohyncha)	8835	Anas	
+starling	8782	Aves	
+surface water			environmental sample
+swanson's hawk	8782	Aves	Swainson's hawk typo
+taiwanese chicken	9031	Gallus gallus	
+teal	8835	Anas	
+texas			location
+thayers gull	8782	Aves	
+tibetan black bear	9639	Ursus	Ursus thibetanus
+tundra swan	8867	Cygnus	
+udorn			location (Udon Thani)
+usa			location
+ussr			location
+village chicken	9031	Gallus gallus	
+washington			location
+weasel	9665	Mustela	
+western screech owl	8782	Aves	
+western snowy plover	8782	Aves	
+white-backed munia	8782	Aves	
+white-cheeked pintail	8835	Anas	
+whooper swan	8867	Cygnus	
+wide bird			likely typo; unclear
+wild bird	8782	Aves	
+wild-bird	8782	Aves	
+wildduck	8830	Anatidae	
+wyoming			location
+yokohama			location

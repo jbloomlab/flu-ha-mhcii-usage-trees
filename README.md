@@ -54,6 +54,9 @@ Outputs per-tree FASTA and metadata TSV files in `results/trees/{tree}/`.
 Download the NCBI taxonomy dump files for use by `taxonkit`.
 These files are used to look up host taxonomy (class, order) from NCBI taxonomy IDs.
 
+### `infer_missing_host`: Fill host info from strain name when NCBI metadata is blank
+NCBI's structured `host` / `host_tax_id` fields are empty for a small fraction of records. For each such row, this rule parses the 2nd `/`-delimited token from the strain name (e.g. "chicken" in `A/chicken/Scotland/1959`) and, if that token is mapped to a tax ID in [data/strain_token_host_map.tsv](data/strain_token_host_map.tsv), fills in `host` and `host_tax_id`. Tokens that are locations, environmental samples, processed products, or ambiguous are explicitly listed in the map with a blank tax ID so they remain empty-host. Unknown tokens (not in the map) are logged as warnings but also left empty — the default is conservative.
+
 ### `annotate_host_taxonomy`: Classify hosts by taxonomy
 For each tree, annotate the metadata with host taxonomy information using `taxonkit` to look up lineage from NCBI taxonomy IDs.
 Renames `host` to `host_specific` (the NCBI Taxonomy scientific name), and adds `host_general` (classifying each host as "human", "avian", "swine", "bovine", "equine", "carnivore", or "other mammal") and `host_order` (the taxonomic order).
