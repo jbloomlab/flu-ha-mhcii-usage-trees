@@ -6,12 +6,16 @@ dataset_taxid: 11320  # influenza A virus taxon id
 # host orders with frequency below this in subsampled data are collapsed to "other"
 collapse_low_freq_host_order: 0.005
 
+# Token -> host tax ID map used by `infer_missing_host` to fill host info for
+# rows where NCBI has neither `host` nor `host_tax_id`. See data/README.md.
+strain_token_host_map: data/strain_token_host_map.tsv
+
 # The final exported auspice JSONs are put in a file with the name
 # "auspices/{auspice_prefix}_{tree}.json" for each {tree} in `trees`
 # defined below. Typically make this the same name as this repo if
 # you want to be able to view via Nextstrain community builds, eg
-# https://nextstrain.org/community/jbloomlab/flu-ha-trees-mhcII-binding@main/H5
-auspice_prefix: flu-ha-trees-mhcII-binding
+# https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees@main/H5
+auspice_prefix: flu-ha-mhcii-usage-trees
 
 # Shared viridis color scale for phenotype scores on trees
 phenotype_color_scale: &phenotype_color_scale

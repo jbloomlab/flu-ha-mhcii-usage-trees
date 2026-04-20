@@ -14,6 +14,19 @@ The input (experimental) data used for the mutation effects is in [./mutation_ef
   - [mutation_effect_data/H5_data.csv](mutation_effect_data/H5_data.csv): file downloaded from [https://github.com/dms-vep/Flu-H5N1-American-Wigeon-2021-HA-MHCII-DMS/blob/main/results/summaries/tufted_duck_MHCII_binding.csv](https://github.com/dms-vep/Flu-H5N1-American-Wigeon-2021-HA-MHCII-DMS/blob/main/results/summaries/tufted_duck_MHCII_binding.csv)
 
 
+## Strain-token host map
+
+[./strain_token_host_map.tsv](strain_token_host_map.tsv) is a shared hand-curated table that the `infer_missing_host` rule uses to fill `host` / `host_tax_id` for rows where NCBI's structured fields are empty. For each such row the pipeline parses the 2nd `/`-delimited token from the strain name (e.g. `chicken` in `A/chicken/Scotland/1959`), lowercases and trims it, and looks it up here.
+
+Columns:
+
+  - *token*: the lowercased, whitespace-stripped 2nd `/`-delimited token from the strain name.
+  - *host_tax_id*: NCBI Taxonomy ID to assign. **Leave blank to explicitly skip** the token (e.g. locations like `california`, environmental samples like `environment`, processed products like `pet food`, or ambiguous terms like `turkey`). Blank rows serve as explicit documentation that the token was considered.
+  - *host_scientific_name*: NCBI Taxonomy scientific name for `host_tax_id` (used to populate the `host` column so it matches NCBI's convention). Must be blank iff `host_tax_id` is blank.
+  - *notes*: free-text notes (e.g. `location`, `environmental sample`, `typo for chicken`).
+
+Tax IDs should be chosen at a granularity sufficient to produce the correct `host_general` classification in `annotate_host_taxonomy` (species-level for confident identifications, genus/family/order for generic terms, class `Aves` 8782 for very generic avian terms). Tokens not present in this file are treated as unknown: the row is left empty-host and the token is logged as a warning so the file can be extended.
+
 ## Tree input data
 
 [./trees/](trees) has the input data for each tree specified under *trees* in [../config.yaml](../config.yaml).

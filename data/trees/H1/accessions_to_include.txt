@@ -1,4 +1,4 @@
-# manual includes from Bernadeta (https://github.com/jbloomlab/flu-ha-trees-mhcII-binding/issues/3#issue-4220131862)
+# manual includes from Bernadeta (https://github.com/jbloomlab/flu-ha-mhcii-usage-trees/issues/3#issue-4220131862)
 FJ752502.1  # A/swine/Changhua/199-3/2000
 CY091729.1  # A/swine/Guangdong/01/2008
 CY159674.1  # A/swine/North Carolina/00396/2004

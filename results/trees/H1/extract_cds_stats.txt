@@ -1,6 +1,6 @@
 All HA CDSs extracted from NCBI metadata for subtype regex 'H1N\d{1,2}' (before subsampling)
 
-HA accessions (segment=4 OR gene-name in {'HA1', 'ha', 'HA'}): 258656
+HA accessions (segment=4 OR gene-name in {'HA', 'HA1', 'ha'}): 258656
   segment=4 only: 2256
   gene-name only: 6877
   both: 254674
