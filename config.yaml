@@ -37,7 +37,7 @@ bad_dates_in_keep_accessions_action: ignore
 # What to do if an accession in a tree's strain_annotations.tsv is not a tip
 # in the final refined tree? Options: "ignore" -> warn and drop that row;
 # "error" -> raise an error listing the missing accessions.
-missing_strain_annotations_action: ignore
+missing_strain_annotations_action: error
 
 # make separate trees for each of these HA subtypes, with per-tree configuration
 trees:
