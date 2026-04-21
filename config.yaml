@@ -55,11 +55,18 @@ trees:
       cds_length_range: ?f'data/trees/{subtype}/cds_length_range.yaml'  # only keep CDSs in this length range
       augur_subsample:  # subsampling of sequences by augur subsample
         samples:
-          subsample_all:
+          subsample_non-avian:
             exclude: ?f'data/trees/{subtype}/accessions_to_exclude.txt'
             exclude_ambiguous_dates_by: year
-            max_sequences: 2000
+            max_sequences: 1000
             group_by: [year, region]
+            query: "host_general != 'avian'"
+          subsample_avian:
+            exclude: ?f'data/trees/{subtype}/accessions_to_exclude.txt'
+            exclude_ambiguous_dates_by: year
+            max_sequences: 1000
+            group_by: [year, region]
+            query: "host_general == 'avian'"
       augur_refine:  # keyword arguments to augur refine
         clock-filter-iqd: 5   # filter in augur refine to remove outliers from molecular clock
       reference_sequence: ?f'data/trees/{subtype}/reference_sequence.fa'
