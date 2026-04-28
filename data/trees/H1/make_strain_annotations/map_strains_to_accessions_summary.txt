@@ -1,6 +1,6 @@
-Total strains in log10_titers_relative_to.csv: 10
-Mapped: 10
-  accessions_to_include: 10
+Total strains in log10_titers_relative_to.csv: 9
+Mapped: 9
+  accessions_to_include: 9
   manual_add_metadata: 0
 Unmapped: 0
 
@@ -14,7 +14,6 @@ Mappings (strain -> accession [source; matched name]):
   A/swine/Guangdong/01/2008 -> CY091729.1 [accessions_to_include; matched 'A/swine/Guangdong/01/2008']
   A/swine/Iowa/15/1930 -> EU139823.1 [accessions_to_include; matched 'A/swine/Iowa/15/1930']
   A/swine/North Carolina/00396/2004 -> CY159674.1 [accessions_to_include; matched 'A/swine/North Carolina/00396/2004']
-  A/swine/Shandong/9/2016 -> MN416649.1 [accessions_to_include; matched 'A/swine/Shandong/9/2016']
 
 Unmapped strains (0):
 

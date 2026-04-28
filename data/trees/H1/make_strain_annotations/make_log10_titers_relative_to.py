@@ -12,7 +12,7 @@ def _():
 
     import pandas as pd
 
-    input_csv = "virus_titer_aggregated.csv"
+    input_csv = "virus_titer_QC_pass.csv"
     output_csv = "log10_titers_relative_to.csv"
 
     norm_to = ["293-noSA", "293-SA23", "293-SA26"]
