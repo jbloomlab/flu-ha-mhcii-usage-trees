@@ -8,3 +8,5 @@ CY002624.1  # A/New York/230/2003
 MK787452.1  # A/mallard duck/Alberta/282/1977
 MN416649.1  # A/swine/Shandong/9/2016
 CY034132.1  # A/WSN/1933
+OR133599.2  # A/New York City/2/1918
+EU139823.1  # A/swine/Iowa/15/1930
