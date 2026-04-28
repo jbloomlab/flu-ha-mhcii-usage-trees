@@ -32,7 +32,7 @@ phenotype_color_scale: &phenotype_color_scale
 # What to do if accessions specified to include / keep have bad dates that are
 # reset by augur refine given the value of `clock-filter-iqd`? Options:
 # "ignore" -> let dates be reset; "error" -> raise an error
-bad_dates_in_keep_accessions_action: ignore
+bad_dates_in_keep_accessions_action: error
 
 # What to do if an accession in a tree's strain_annotations.tsv is not a tip
 # in the final refined tree? Options: "ignore" -> warn and drop that row;
