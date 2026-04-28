@@ -1,0 +1,21 @@
+Total strains in log10_titers_relative_to.csv: 10
+Mapped: 10
+  accessions_to_include: 10
+  manual_add_metadata: 0
+Unmapped: 0
+
+Mappings (strain -> accession [source; matched name]):
+  A/Hong Kong/1-4-MA21-1/1968 -> CY080515.1 [accessions_to_include; matched 'A/Hong Kong/1-4-MA21-1/1968']
+  A/Hong Kong/EPI1231/2025 -> PX599020.1 [accessions_to_include; matched 'A/Hong Kong/EPI1231/2025']
+  A/Netherlands/209/1980 -> CY113269.1 [accessions_to_include; matched 'A/Netherlands/209/1980']
+  A/New York/762/1993 -> CY012160.1 [accessions_to_include; matched 'A/New York/762/1993']
+  A/blue-winged teal/Alberta/221/1978 -> CY185705.1 [accessions_to_include; matched 'A/blue-winged teal/Alberta/221/1978']
+  A/duck/Anhui/A1809/2014 -> KP765915.1 [accessions_to_include; matched 'A/duck/Anhui/A1809/2014']
+  A/duck/Buryatia/664-5465/1988 -> MK907683.1 [accessions_to_include; matched 'A/duck/Buryatia/664-5465/1988']
+  A/equine/Argentina/E131/1994 -> KX815361.1 [accessions_to_include; matched 'A/equine/Argentina/E131/1994']
+  A/swine/England/87842/1990 -> CY116315.1 [accessions_to_include; matched 'A/swine/England/87842/1990']
+  A/yellow-billed pintail/Argentina/CIP112-3626/2019 -> PP502597.1 [accessions_to_include; matched 'A/yellow-billed pintail/Argentina/CIP112-3626/2019']
+
+Unmapped strains (0):
+
+Cross-source collisions (0):

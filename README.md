@@ -10,7 +10,8 @@ The trees are built subsampling sequences from Genbank, and you can also specify
 Molecular clock outliers are excluded according to *clock-filter-iqd*; the value of *bad_dates_in_keep_accessions_action* specifies what to do if strains specified for inclusion fail this filter.
 
 The trees are annotated by the tufted duck MHC II usage predicted under an additive model from the measurements in [data/mutation_effect_data](data/mutation_effect_data); these predictions are applied to all sequences.
-The trees are also annotated by direct measurements of MHC II usage for specific strains in the `data/trees/{subtype}/strain_annotations.tsv` files.; the value of *missing_strain_annotations_action* specifies what to do if strains with specified titers are not found.
+
+The trees are also annotated by direct measurements of MHC II usage (as relative titers for different strains) for specific strains in the `data/trees/{subtype}/strain_annotations.tsv` files.; the value of *missing_strain_annotations_action* specifies what to do if strains with specified titers are not found.
 
 See [./data/README.md](data/README.md) for more explanation of the input data.
 
