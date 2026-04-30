@@ -1,0 +1,15 @@
+MW397109.1  # mouse sequence
+MW132303.1  # pipeline mis-annotates host
+CY183433.1  # clock outlier
+MW132193.1  # host discrepancy
+AB538461.1  # long singleton branch
+PV422394.1  # long branch
+MN400383.1  # long branch
+MN400391.1  # long branch
+MW132263.1  # misannotated host
+MW132391.1  # misannotated host
+PQ208054.1  # clock outlier
+GU186777.1  # dated as 1902 sequence
+CY014992.1  # dated as 1927 sequence
+CY130142.1  # dated as 1927 sequence
+AY724257.1  # clock outlier

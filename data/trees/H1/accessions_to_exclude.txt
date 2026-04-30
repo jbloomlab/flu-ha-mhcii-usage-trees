@@ -1,1 +1,26 @@
 FJ752502.1  # A/swine/Changhua/199-3/2000 is a misdated 1930s sequence
+MW345940.1  # avian sequence on long branch
+CY005735.1  # avian sequence that is somewhat of clock outlier
+EU735794.3  # avian sequence that is somewhat of clock outlier
+MK615215.1  # human sequence that is substantial clock outlier
+MK615231.1  # human sequence that is substantial clock outlier
+MK615247.1  # human sequence that is substantial clock outlier
+MK615255.1  # human sequence that is substantial clock outlier
+MK615263.1  # human sequence that is substantial clock outlier
+MK615271.1  # human sequence that is substantial clock outlier
+MK615279.1  # human sequence that is substantial clock outlier
+MN220710.1  # WSN variant annotated as mouse
+LC333185.1  # redundant WSN sequence - another already in tree
+U02085.1  # redundant w other A/Fort Monmouth/1/1947 sequences that have host annotation
+MH293472.1  # swine sequence that is substantial clock outlier
+OL331050.1  # swine sequence that is substantial clock outlier
+PQ384660.1  # mouse sequence
+PQ384684.1  # mouse sequence
+PQ384692.1  # mouse sequence
+PQ384708.1  # mouse sequence
+MN220702.1  # WSN sequence dated as 2000
+MT658731.1  # human sequence substantial clock outlier
+DQ508889.1  # human sequence that lacks host annotation
+JF816589.1  # human sequence that lacks host annotation
+PQ115536.1  # swine sequence somewhat clock outlier
+PQ208166.1  # chicken sequence somewhat clock outlier

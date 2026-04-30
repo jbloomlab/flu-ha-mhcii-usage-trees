@@ -1,3 +1,29 @@
 # accessions on very long branches
 PP751703.1
 PX908144.1
+KF805640.1  # human clock outlier
+OM679367.1  # MDCK strain
+FJ215811.1  # human clock outlier
+LC155885.1  # human clock outlier
+PX414062.1  # possible human sequence mislabeled as turkey
+PZ127573.1  # possible human sequence mislabeled as duck
+LC500374.1  # extreme outlier, may not even be H3
+PQ384805.1  # mouse sequence
+CY006763.1  # human clock outlier
+PZ059030.1  # human clock outlier
+PZ059086.1  # human clock outlier
+MW023635.1  # swine clock outlier
+MF993038.1  # human clock outlier
+PZ128101.1  # likely avian sequence mislabeled as human
+CY009308.1  # possible swine sequence mislabeled as human
+LC431428.1  # possible swine sequence mislabeled as human
+CY077927.1  # possible swine sequence mislabeled as human
+PV643430.1  # lab-adapted H3 strain
+PP999606.1  # possible human sequence mislabeled as avian
+MG021151.1  # human clock outlier
+KJ955533.1  # human clock outlier
+PZ059158.1  # human clock outlier
+PQ510581.1  # possible mislabeled human sequence
+CY077834.1  # human clock outlier
+OQ535103.1  # human clock outlier
+U07146.1  # swine clock outlier

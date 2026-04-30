@@ -2,6 +2,7 @@
 
 import copy
 import os
+import re
 import shlex
 
 import yaml
@@ -14,8 +15,8 @@ configfile: "config.yaml"
 # rule's output (rule `export` and rule `prune_tree` both write to
 # `auspice/{auspice_prefix}_*.json`).
 wildcard_constraints:
-    tree="|".join(config["trees"]),
-    pruned_tree="|".join(config["pruned_trees"]),
+    tree="|".join(map(re.escape, config["trees"])),
+    pruned_tree="|".join(map(re.escape, config["pruned_trees"])),
 
 
 rule all:

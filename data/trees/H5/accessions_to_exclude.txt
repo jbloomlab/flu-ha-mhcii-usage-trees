@@ -1,3 +1,9 @@
 # very long branches highly diverged from other sequences to extent probably an error
 MH598105.1
 PZ039261.1
+MW132176.1  # clock outlier
+PX955767.1  # clock outlier
+OQ291577.1  # rat host
+CY146652.1  # very long branch
+CY077685.1  # very long branch
+PX955750.1  # clock outlier

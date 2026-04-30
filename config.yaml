@@ -39,10 +39,170 @@ bad_dates_in_keep_accessions_action: error
 # "error" -> raise an error listing the missing accessions.
 missing_strain_annotations_action: error
 
-# make separate trees for each of these HA subtypes, with per-tree configuration
+# Make separate trees for each HA subtype, with per-tree configuration.
+# For some subtypes we also make compact trees.
+# Configuration defined using YTE templating.
+__variables__:
+  tree_specs:  # define subtype, treename, augur_subsample
+    - - H1
+      - H1
+      - samples:
+          subsample_non-avian:
+            exclude: data/trees/H1/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 1100
+            group_by: [year]
+            # strains with "VFFSP_UNITHER" in name are from lab-passaging study
+            query: "(host_general != 'avian') and (host_general != '') and (not strain.str.contains('VFFSP_UNITHER'))"
+          subsample_avian:
+            exclude: data/trees/H1/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 400
+            group_by: [year, region]
+            query: "(host_general == 'avian')"
+    - - H1
+      - H1-compact
+      - samples:
+          subsample_non-avian:
+            exclude: data/trees/H1/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 200
+            group_by: [year]
+            # strains with "VFFSP_UNITHER" in name are from lab-passaging study
+            query: "(host_general != 'avian') and (host_general != '') and (not strain.str.contains('VFFSP_UNITHER'))"
+          subsample_avian:
+            exclude: data/trees/H1/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 75
+            group_by: [year, region]
+            query: "(host_general == 'avian')"
+    - - H2
+      - H2
+      - samples:
+          subsample_non-avian:
+            exclude: data/trees/H2/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 1000
+            group_by: [year]
+            query: "(host_general != 'avian') and (host_general != '')"
+          subsample_avian:
+            exclude: data/trees/H2/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 1000
+            group_by: [year, region]
+            query: "(host_general == 'avian')"
+    - - H2
+      - H2-compact
+      - samples:
+          subsample_non-avian:
+            exclude: data/trees/H2/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 125
+            group_by: [year]
+            query: "(host_general != 'avian') and (host_general != '')"
+          subsample_avian:
+            exclude: data/trees/H2/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 125
+            group_by: [year, region]
+            query: "(host_general == 'avian')"
+    - - H3
+      - H3
+      - samples:
+          subsample_non-avian:
+            exclude: data/trees/H3/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 1100
+            group_by: [year]
+            # FJ2158* is set of mouse-adapted strains
+            query: "(host_general != 'avian') and (host_general != '') and (not accession.str.startswith('FJ2158'))"
+          subsample_avian:
+            exclude: data/trees/H3/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 450
+            group_by: [year, region]
+            query: "host_general == 'avian'"
+    - - H3
+      - H3-compact
+      - samples:
+          subsample_non-avian:
+            exclude: data/trees/H3/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 200
+            group_by: [year]
+            # FJ2158* is set of mouse-adapted strains
+            query: "(host_general != 'avian') and (host_general != '') and (not accession.str.startswith('FJ2158'))"
+          subsample_avian:
+            exclude: data/trees/H3/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 75
+            group_by: [year, region]
+            query: "host_general == 'avian'"
+    - - H5
+      - H5
+      - samples:
+          subsample_non-avian:
+            exclude: data/trees/H5/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 400
+            group_by: [year]
+            query: "(host_general != 'avian') and (host_general != '')"
+          subsample_avian:
+            exclude: data/trees/H5/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 1100
+            group_by: [year, region]
+            query: "host_general == 'avian'"
+    - - H5
+      - H5-compact
+      - samples:
+          subsample_non-avian:
+            exclude: data/trees/H5/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 75
+            group_by: [year]
+            query: "(host_general != 'avian') and (host_general != '')"
+          subsample_avian:
+            exclude: data/trees/H5/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 175
+            group_by: [year, region]
+            query: "host_general == 'avian'"
+    - - H7
+      - H7
+      - samples:
+          subsample_non-avian:
+            exclude: data/trees/H7/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 400
+            group_by: [year]
+            query: "(host_general != 'avian') and (host_general != '')"
+          subsample_avian:
+            exclude: data/trees/H7/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 1100
+            group_by: [year, region]
+            # exclude Rostock 1934 strains, which are clock outliers
+            query: "(host_general == 'avian') and (not strain.str.endswith('1934'))"
+    - - H7
+      - H7-compact
+      - samples:
+          subsample_non-avian:
+            exclude: data/trees/H7/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 75
+            group_by: [year]
+            query: "(host_general != 'avian') and (host_general != '')"
+          subsample_avian:
+            exclude: data/trees/H7/accessions_to_exclude.txt
+            exclude_ambiguous_dates_by: year
+            max_sequences: 175
+            group_by: [year, region]
+            # exclude Rostock 1934 strains, which are clock outliers
+            query: "(host_general == 'avian') and (not strain.str.endswith('1934'))"
 trees:
-  ?for subtype in ["H1", "H2", "H3", "H5", "H7"]:
-    ?subtype:
+  ?for subtype, treename, augur_subsample in tree_specs:
+    ?treename:
       subtype: ?f'{subtype}N\\d{{1,2}}'  # regex for subtype
       manual_adds:  # sequences specified to add manually not in Genbank accessions
         sequences: ?f'data/trees/{subtype}/manual_add_sequences.fa'
@@ -53,22 +213,9 @@ trees:
       # augur refine --keep-ids (wired in the Snakefile, not here).
       accessions_to_include: ?f'data/trees/{subtype}/accessions_to_include.txt'
       cds_length_range: ?f'data/trees/{subtype}/cds_length_range.yaml'  # only keep CDSs in this length range
-      augur_subsample:  # subsampling of sequences by augur subsample
-        samples:
-          subsample_non-avian:
-            exclude: ?f'data/trees/{subtype}/accessions_to_exclude.txt'
-            exclude_ambiguous_dates_by: year
-            max_sequences: 1000
-            group_by: [year, region]
-            query: "host_general != 'avian'"
-          subsample_avian:
-            exclude: ?f'data/trees/{subtype}/accessions_to_exclude.txt'
-            exclude_ambiguous_dates_by: year
-            max_sequences: 1000
-            group_by: [year, region]
-            query: "host_general == 'avian'"
+      augur_subsample: ?augur_subsample
       augur_refine:  # keyword arguments to augur refine
-        clock-filter-iqd: 5   # filter in augur refine to remove outliers from molecular clock
+        clock-filter-iqd: 4   # filter in augur refine to remove outliers from molecular clock
       reference_sequence: ?f'data/trees/{subtype}/reference_sequence.fa'
       annotation: ?f'data/trees/{subtype}/annotation.gff'
       genes: [SigPep, HA1, HA2]
@@ -94,8 +241,9 @@ trees:
 # title. YAML parses unquoted `yes`/`no` as booleans, so keep_where string
 # values should be quoted to match the TSV.
 pruned_trees:
-  H5-with-titers:
-    source_tree: H5
-    keep_where:
-      has_titers: "yes"
-    title: "Influenza H5 HA phylogeny of only sequences with directly measured MHC-II mediated entry titers"
+  ?for subtype in ["H1", "H2", "H3", "H5"]:
+    ?f"{subtype}-with-titers":
+      source_tree: ?subtype
+      keep_where:
+        has_titers: "yes"
+      title: ?f'Influenza {subtype} HA phylogeny of only sequences with directly measured MHC-II mediated entry titers'
