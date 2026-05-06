@@ -22,7 +22,7 @@ def _():
 
     print("Converting to wide form log10 titers")
     titers_wide = input_titers.pivot_table(
-        index="strain",
+        index=["strain", "clade"],
         columns="cell_line",
         values="mean_RLUperuL",
     )
