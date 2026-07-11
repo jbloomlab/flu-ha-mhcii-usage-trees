@@ -2,7 +2,44 @@
 Build interactive Nextstrain phylogenetic trees of influenza HA from different subtypes and annotate by MHC II usage.
 Trees are built and maintained by the [Bloom lab](https://jbloomlab.org/).
 
-## Overview
+See [Dadonaite et al (2026)]() **[ADD CITATION]** for details.
+
+Specifically, these trees are designed to show a broad range of sequences from different species for each subtype.
+The dropdowns at the left enable the trees to be colored by:
+  - The directly measured titers of pseudovirus with tested HAs on sialic-acid versus MHC-II versus no-sialic-acid cells. These are the properties with names like *log10_<cells being compared>_titers*.
+  - The identity of amino acids at each protein site (color by *Genotype*, see links below to understand site numbering scheme).
+  - The predicted tufted duck MHC-II usage as determined by summing effects of all mutations as measured in H5 or H7 HA pseudovirus deep mutational scanning, quantified as the *total effect* of all mutations of the *max magnitude effect* of the mutation with the single largest impact. Note that these predictions assume mutations are non-epistatic and have the same effects across genetic backgrounds, which will not always be true.
+
+## Links to view interactive Nextstrain trees
+
+Interactive Nextstrain trees are at [https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees), specifically:
+
+- H1 HAs:
+  + [HAs with directly measured pseudovirus entry titers](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H1-with-titers)
+  + [HAs, compact sequence set](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H1-compact)
+  + [HAs, larger sequence set](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H1)
+  + [File mapping the site labels used for the Nextstrain trees (*protein*, *protein_site*) to H3 numbering (*H3_site*) and other numbering schemes](https://github.com/jbloomlab/flu-ha-mhcii-usage-trees/blob/master/data/trees/H1/protein_sites.tsv)
+- H2 HAs:
+  + [HAs with directly measured pseudovirus entry titers](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H2-with-titers)
+  + [HAs, compact sequence set](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H2-compact)
+  + [HAs, larger sequence set](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H2)
+  + [File mapping the site labels used for the Nextstrain trees (*protein*, *protein_site*) to H3 numbering (*H3_site*) and other numbering schemes](https://github.com/jbloomlab/flu-ha-mhcii-usage-trees/blob/master/data/trees/H2/protein_sites.tsv)
+- H3 HAs:
+  + [HAs with directly measured pseudovirus entry titers](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H3-with-titers)
+  + [HAs, compact sequence set](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H3-compact)
+  + [HAs, larger sequence set](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H3)
+  + [File mapping the site labels used for the Nextstrain trees (*protein*, *protein_site*) to H3 numbering (*H3_site*) and other numbering schemes](https://github.com/jbloomlab/flu-ha-mhcii-usage-trees/blob/master/data/trees/H3/protein_sites.tsv)
+- H5 HAs:
+  + [HAs with directly measured pseudovirus entry titers](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H5-with-titers)
+  + [HAs, compact sequence set](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H5-compact)
+  + [HAs, larger sequence set](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H5)
+  + [File mapping the site labels used for the Nextstrain trees (*protein*, *protein_site*) to H3 numbering (*H3_site*) and other numbering schemes](https://github.com/jbloomlab/flu-ha-mhcii-usage-trees/blob/master/data/trees/H5/protein_sites.tsv)
+- H7 HAs:
+  + [HAs, compact sequence set](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H7-compact)
+  + [HAs, larger sequence set](https://nextstrain.org/community/jbloomlab/flu-ha-mhcii-usage-trees/H7)
+  + [File mapping the site labels used for the Nextstrain trees (*protein*, *protein_site*) to H3 numbering (*H3_site*) and other numbering schemes](https://github.com/jbloomlab/flu-ha-mhcii-usage-trees/blob/master/data/trees/H7/protein_sites.tsv)
+
+## Overview of pipeline
 Trees are built for different HA subtypes.
 The configuration for these trees is specified under *trees* in [config.yaml](config.yaml).
 The trees are built subsampling sequences from Genbank, and you can also specify specific accessions to include under *manual_adds* and *accessions_to_include*, and accessions to exclude under *exclude*.
@@ -15,8 +52,7 @@ The trees are also annotated by direct measurements of MHC II usage (as relative
 
 See [./data/README.md](data/README.md) for more explanation of the input data.
 
-The final trees are placed in [./auspice](auspice) where they can be viewed as [Nextstrain Community Builds](https://docs.nextstrain.org/en/latest/guides/share/community-builds.html) once this repo is made public, or can be uploaded to [auspice.us](https://auspice.us/).
-
+The final trees are placed in [./auspice](auspice) where they can be viewed as [Nextstrain Community Builds](https://docs.nextstrain.org/en/latest/guides/share/community-builds.html) at the links above.
 
 ## Running pipeline
 Structure of repo:
