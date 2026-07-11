@@ -50,7 +50,6 @@
   "panels": [
      "tree",
      "entropy",
-     "frequencies"
   ],
   "display_defaults": {
     "tip_label": "strain",
