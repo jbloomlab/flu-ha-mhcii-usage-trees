@@ -49,7 +49,7 @@
   ],
   "panels": [
      "tree",
-     "entropy",
+     "entropy"
   ],
   "display_defaults": {
     "tip_label": "strain",
