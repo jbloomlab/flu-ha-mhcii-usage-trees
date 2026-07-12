@@ -9,9 +9,9 @@ This subdirectory has input data to the pipeline.
 ## Mutation effect data
 The input (experimental) data used for the mutation effects is in [./mutation_effect_data/](mutation_effect_data):
 
-  - [mutation_effect_data/H7_data.csv](mutation_effect_data/H7_data.csv): file downloaded from [https://github.com/dms-vep/Flu-H7-Anhui13-MHCII-binding/blob/master/results/summaries/tufted_duck_MHCII_binding.csv](https://github.com/dms-vep/Flu-H7-Anhui13-MHCII-binding/blob/master/results/summaries/tufted_duck_MHCII_binding.csv)
+  - [mutation_effect_data/H5_data.csv](mutation_effect_data/H5_data.csv): file downloaded from [https://github.com/dms-vep/Flu-H5N1-American-Wigeon-2021-HA-tufted-duck-MHCII-DMS/blob/master/results/summaries/tufted_duck_MHCII_binding.csv](https://github.com/dms-vep/Flu-H5N1-American-Wigeon-2021-HA-tufted-duck-MHCII-DMS/blob/master/results/summaries/tufted_duck_MHCII_binding.csv)
 
-  - [mutation_effect_data/H5_data.csv](mutation_effect_data/H5_data.csv): file downloaded from [https://github.com/dms-vep/Flu-H5N1-American-Wigeon-2021-HA-MHCII-DMS/blob/main/results/summaries/tufted_duck_MHCII_binding.csv](https://github.com/dms-vep/Flu-H5N1-American-Wigeon-2021-HA-MHCII-DMS/blob/main/results/summaries/tufted_duck_MHCII_binding.csv)
+  - [mutation_effect_data/H7_data.csv](mutation_effect_data/H7_data.csv): file downloaded from [https://github.com/dms-vep/Flu-H7-Anhui13-MHCII-binding/blob/master/results/summaries/tufted_duck_MHCII_binding.csv](https://github.com/dms-vep/Flu-H7-Anhui13-MHCII-binding/blob/master/results/summaries/tufted_duck_MHCII_binding.csv)
 
 
 ## Strain-token host map

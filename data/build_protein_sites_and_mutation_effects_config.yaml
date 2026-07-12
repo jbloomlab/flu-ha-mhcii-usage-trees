@@ -5,9 +5,9 @@ mutation_effect_data:
     csv: mutation_effect_data/H5_data.csv
     phenotypes:
       tufted duck MHCII binding escape: H5 tufted duck MHCII binding
-      entry difference between noSA tufted duck MHCII and SA23 cells: H5 tufted duck MHCII entry increase
+      entry difference MHCII vs SA cells: H5 tufted duck MHCII entry increase
   H7_data:
     csv: mutation_effect_data/H7_data.csv
     phenotypes:
       tufted duck MHCII binding escape: H7 tufted duck MHCII binding
-      entry difference between noSA tufted duck MHCII and 293T cells: H7 tufted duck MHCII entry increase
+      entry difference MHCII vs SA cells: H7 tufted duck MHCII entry increase
