@@ -29,6 +29,10 @@ MANUAL_ADD_METADATA = os.path.join(H5_DIR, "manual_add_metadata.tsv")
 OUT_TSV = os.path.join(H5_DIR, "strain_annotations.tsv")
 OUT_SUMMARY = os.path.join(SCRIPT_DIR, "map_strains_to_accessions_summary.txt")
 
+STRAINS_TO_EXCLUDE = [
+    "A/Netherlands/B1/1968",  # experimental data may have high noSA background for this strain
+]
+
 
 def normalize(strain):
     """Lowercase, convert underscores to spaces, collapse whitespace."""
@@ -106,6 +110,8 @@ def main():
     titers = pd.read_csv(TITERS_CSV)
     if "strain" not in titers.columns:
         raise ValueError(f"{TITERS_CSV} missing 'strain' column")
+
+    titers = titers[~titers["strain"].isin(STRAINS_TO_EXCLUDE)]
 
     accessions = []
     sources = []
