@@ -1,5 +1,5 @@
 ## Overview
-These are trees of influenza {tree} hemagglutinin that can be colored (using the *Color By* dropdown) by their predicted or measured usage of MHC class II for cell entry as measured by Bernadeta Dadonaite using pseudovirus deep mutational scanning or measurements of pseudovirus cell entry in different cell variants.
+These are trees of influenza {tree} hemagglutinin that can be colored (using the *Color By* dropdown) by their predicted or measured usage of MHC class II for cell entry as measured by [Dadonaite et al (2026)](https://doi.org/10.64898/2026.07.17.738765) using pseudovirus deep mutational scanning or measurements of pseudovirus cell entry in different cell variants.
 
 Specifically, you can color the tree in various ways using the *Color By* dropdown:
 
@@ -11,4 +11,4 @@ Specifically, you can color the tree in various ways using the *Color By* dropdo
     The site numbering is sequential 1, 2, ... numbering of each of the three protein regions (*SigPep*, *HA1*, and *HA2*).
     For a mapping of that site numbering to H3 numbering, compare the *protein* and *protein_site* columns to the *H3_site* column in the TSV at [https://github.com/jbloomlab/flu-ha-mhcii-usage-trees/blob/master/data/trees/{tree}/protein_sites.tsv](https://github.com/jbloomlab/flu-ha-mhcii-usage-trees/blob/master/data/trees/{tree}/protein_sites.tsv).
 
-See [https://github.com/jbloomlab/flu-ha-mhcii-usage-trees](https://github.com/jbloomlab/flu-ha-mhcii-usage-trees) for the code used to generate these trees.
+See [https://github.com/jbloomlab/flu-ha-mhcii-usage-trees](https://github.com/jbloomlab/flu-ha-mhcii-usage-trees) for the code used to generate these trees, and [Dadonaite et al (2026)](https://doi.org/10.64898/2026.07.17.738765) for more study details.

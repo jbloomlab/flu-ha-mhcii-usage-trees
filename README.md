@@ -1,8 +1,7 @@
 # Phylogenetic trees of influenza hemagglutinin annotated by MHC II usage
 Build interactive Nextstrain phylogenetic trees of influenza HA from different subtypes and annotate by MHC II usage.
-Trees are built and maintained by the [Bloom lab](https://jbloomlab.org/).
 
-See [Dadonaite et al (2026)]() **[ADD CITATION]** for details.
+See [Dadonaite et al (2026)](https://doi.org/10.64898/2026.07.17.738765).
 
 Specifically, these trees are designed to show a broad range of sequences from different species for each subtype.
 The dropdowns at the left enable the trees to be colored by:
